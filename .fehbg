@@ -1,0 +1,2 @@
+#!/bin/sh
+feh --no-xinerama --image-bg black --bg-max '/home/cory/Documents/desktop.png' 

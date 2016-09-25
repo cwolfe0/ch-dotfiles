@@ -1,0 +1,25 @@
+// vim:ts=4:sw=4:et
+{
+    "border": "pixel",
+    "current_border_width": 0,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 1045,
+       "width": 1916,
+       "x": 1292,
+       "y": 26
+    },
+    "name": "i3: Layout saving in i3 - Google Chrome",
+    "percent": 1,
+    "swallows": [
+       {
+       // "class": "^google\\-chrome$",
+       // "instance": "^google\\-chrome$",
+       // "title": "^i3\\:\\ Layout\\ saving\\ in\\ i3\\ \\-\\ Google\\ Chrome$",
+       // "transient_for": "^$",
+       // "window_role": "^browser$"
+       }
+    ],
+    "type": "con"
+}
+

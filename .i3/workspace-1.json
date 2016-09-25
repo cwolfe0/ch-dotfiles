@@ -1,0 +1,50 @@
+// vim:ts=4:sw=4:et
+{
+"layout": "splitv",
+"percent": 0.5,
+"type": "con",
+"nodes":[
+
+{
+    "border": "normal",
+    "current_border_width": 2,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 536,
+       "width": 752,
+       "x": 0,
+       "y": 0
+    },
+    "name": "Funkadelic-I'll Bet You",
+    "percent": 0.359631147540984,
+    "swallows": [
+
+       {"class": "^URxvt$"},
+       {"class": "^urxvt$"}
+    ],
+    "type": "con"
+},
+
+{
+    "border": "normal",
+    "current_border_width": 2,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 989,
+       "width": 636,
+       "x": 642,
+       "y": 16
+    },
+    "name": "comy_ryndolf",
+    "percent": 0.640368852459016,
+    "swallows": [
+       
+       {"class": "^discord$"}
+      
+    ],
+    "type": "con"
+}
+
+]
+}
+

@@ -1,0 +1,1 @@
+body > div:not([class]):not([style]):not(#content-wrapper):not(#search-overlay):not([id*="fancybox"]) {display:none !important}

@@ -1,0 +1,1272 @@
+Setting breakpad minidump AppID = 301970
+Steam_SetMinidumpSteamID:  Caching Steam ID:  76561198032779062 [API loaded no]
+ZE=8
+GLX_ALPHA_SIZE=8
+GLX_DEPTH_SIZE=24
+GLX_STENCIL_SIZE=8
+GLX_SAMPLES_ARB=0
+GLX_SAMPLE_BUFFERS_ARB=0
+GLX_STEREO=0
+GLX_CONFIG_CAVEAT=NONE
+
+Desktop is 3200 x 1080 @ 60 Hz
+Initialize engine version: 5.3.4f1 (fdbb5133b820)
+GfxDevice: creating device client; threaded=1
+GLX Extensions: GLX_EXT_visual_info GLX_EXT_visual_rating GLX_EXT_import_context GLX_SGIX_fbconfig GLX_SGIX_pbuffer GLX_SGI_video_sync GLX_SGI_swap_control GLX_EXT_swap_control GLX_EXT_swap_control_tear GLX_EXT_texture_from_pixmap GLX_EXT_buffer_age GLX_ARB_create_context GLX_ARB_create_context_profile GLX_EXT_create_context_es_profile GLX_EXT_create_context_es2_profile GLX_ARB_create_context_robustness GLX_NV_delay_before_swap GLX_EXT_stereo_tree GLX_ARB_context_flush_control GLX_NV_robustness_video_memory_purge GLX_ARB_multisample GLX_NV_float_buffer GLX_ARB_fbconfig_float GLX_EXT_framebuffer_sRGB GLX_NV_multisample_coverage GLX_NV_copy_image GLX_ARB_get_proc_address 
+Setting maxVSyncInterval to 4
+Renderer: GeForce GTX 760/PCIe/SSE2
+Vendor:   NVIDIA Corporation
+Version:  4.5.0 NVIDIA 370.28
+GLES:     0
+ GL_AMD_multi_draw_indirect GL_AMD_seamless_cubemap_per_texture GL_ARB_arrays_of_arrays GL_ARB_base_instance GL_ARB_bindless_texture GL_ARB_blend_func_extended GL_ARB_buffer_storage GL_ARB_clear_buffer_object GL_ARB_clear_texture GL_ARB_clip_control GL_ARB_color_buffer_float GL_ARB_compressed_texture_pixel_storage GL_ARB_conservative_depth GL_ARB_compute_shader GL_ARB_compute_variable_group_size GL_ARB_conditional_render_inverted GL_ARB_copy_buffer GL_ARB_copy_image GL_ARB_cull_distance GL_ARB_debug_output GL_ARB_depth_buffer_float GL_ARB_depth_clamp GL_ARB_depth_texture GL_ARB_derivative_control GL_ARB_direct_state_access GL_ARB_draw_buffers GL_ARB_draw_buffers_blend GL_ARB_draw_indirect GL_ARB_draw_elements_base_vertex GL_ARB_draw_instanced GL_ARB_enhanced_layouts GL_ARB_ES2_compatibility GL_ARB_ES3_compatibility GL_ARB_ES3_1_compatibility GL_ARB_ES3_2_compatibility GL_ARB_explicit_attrib_location GL_ARB_explicit_uniform_location GL_ARB_fragment_coord_conventions GL_ARB_fragment_layer_viewport GL_ARB_fragm
+ent_program GL_ARB_fragment_program_shadow GL_ARB_fragment_shader GL_ARB_framebuffer_no_attachments GL_ARB_framebuffer_object GL_ARB_framebuffer_sRGB GL_ARB_geometry_shader4 GL_ARB_get_program_binary GL_ARB_get_texture_sub_image GL_ARB_gl_spirv GL_ARB_gpu_shader5 GL_ARB_gpu_shader_fp64 GL_ARB_gpu_shader_int64 GL_ARB_half_float_pixel GL_ARB_half_float_vertex GL_ARB_imaging GL_ARB_indirect_parameters GL_ARB_instanced_arrays GL_ARB_internalformat_query GL_ARB_internalformat_query2 GL_ARB_invalidate_subdata GL_ARB_map_buffer_alignment GL_ARB_map_buffer_range GL_ARB_multi_bind GL_ARB_multi_draw_indirect GL_ARB_multisample GL_ARB_multitexture GL_ARB_occlusion_query GL_ARB_occlusion_query2 GL_ARB_parallel_shader_compile GL_ARB_pipeline_statistics_query GL_ARB_pixel_buffer_object GL_ARB_point_parameters GL_ARB_point_sprite GL_ARB_program_interface_query GL_ARB_provoking_vertex GL_ARB_query_buffer_object GL_ARB_robust_buffer_access_behavior GL_ARB_robustness GL_ARB_sample_shading GL_ARB_sampler_objects GL_ARB_seamles
+s_cube_map GL_ARB_seamless_cubemap_per_texture GL_ARB_separate_shader_objects GL_ARB_shader_atomic_counter_ops GL_ARB_shader_atomic_counters GL_ARB_shader_ballot GL_ARB_shader_bit_encoding GL_ARB_shader_clock GL_ARB_shader_draw_parameters GL_ARB_shader_group_vote GL_ARB_shader_image_load_store GL_ARB_shader_image_size GL_ARB_shader_objects GL_ARB_shader_precision GL_ARB_shader_storage_buffer_object GL_ARB_shader_subroutine GL_ARB_shader_texture_image_samples GL_ARB_shader_texture_lod GL_ARB_shading_language_100 GL_ARB_shading_language_420pack GL_ARB_shading_language_include GL_ARB_shading_language_packing GL_ARB_shadow GL_ARB_sparse_buffer GL_ARB_sparse_texture GL_ARB_stencil_texturing GL_ARB_sync GL_ARB_tessellation_shader GL_ARB_texture_barrier GL_ARB_texture_border_clamp GL_ARB_texture_buffer_object GL_ARB_texture_buffer_object_rgb32 GL_ARB_texture_buffer_range GL_ARB_texture_compression GL_ARB_texture_compression_bptc GL_ARB_texture_compression_rgtc GL_ARB_texture_cube_map GL_ARB_texture_cube_map_array G
+L_ARB_texture_env_add GL_ARB_texture_env_combine GL_ARB_texture_env_crossbar GL_ARB_texture_env_dot3 GL_ARB_texture_float GL_ARB_texture_gather GL_ARB_texture_mirror_clamp_to_edge GL_ARB_texture_mirrored_repeat GL_ARB_texture_multisample GL_ARB_texture_non_power_of_two GL_ARB_texture_query_levels GL_ARB_texture_query_lod GL_ARB_texture_rectangle GL_ARB_texture_rg GL_ARB_texture_rgb10_a2ui GL_ARB_texture_stencil8 GL_ARB_texture_storage GL_ARB_texture_storage_multisample GL_ARB_texture_swizzle GL_ARB_texture_view GL_ARB_timer_query GL_ARB_transform_feedback2 GL_ARB_transform_feedback3 GL_ARB_transform_feedback_instanced GL_ARB_transform_feedback_overflow_query GL_ARB_transpose_matrix GL_ARB_uniform_buffer_object GL_ARB_vertex_array_bgra GL_ARB_vertex_array_object GL_ARB_vertex_attrib_64bit GL_ARB_vertex_attrib_binding GL_ARB_vertex_buffer_object GL_ARB_vertex_program GL_ARB_vertex_shader GL_ARB_vertex_type_10f_11f_11f_rev GL_ARB_vertex_type_2_10_10_10_rev GL_ARB_viewport_array GL_ARB_window_pos GL_ATI_draw_buf
+fers GL_ATI_texture_float GL_ATI_texture_mirror_once GL_S3_s3tc GL_EXT_texture_env_add GL_EXT_abgr GL_EXT_bgra GL_EXT_bindable_uniform GL_EXT_blend_color GL_EXT_blend_equation_separate GL_EXT_blend_func_separate GL_EXT_blend_minmax GL_EXT_blend_subtract GL_EXT_compiled_vertex_array GL_EXT_Cg_shader GL_EXT_depth_bounds_test GL_EXT_direct_state_access GL_EXT_draw_buffers2 GL_EXT_draw_instanced GL_EXT_draw_range_elements GL_EXT_fog_coord GL_EXT_framebuffer_blit GL_EXT_framebuffer_multisample GL_EXTX_framebuffer_mixed_formats GL_EXT_framebuffer_multisample_blit_scaled GL_EXT_framebuffer_object GL_EXT_framebuffer_sRGB GL_EXT_geometry_shader4 GL_EXT_gpu_program_parameters GL_EXT_gpu_shader4 GL_EXT_multi_draw_arrays GL_EXT_packed_depth_stencil GL_EXT_packed_float GL_EXT_packed_pixels GL_EXT_pixel_buffer_object GL_EXT_point_parameters GL_EXT_polygon_offset_clamp GL_EXT_provoking_vertex GL_EXT_rescale_normal GL_EXT_secondary_color GL_EXT_separate_shader_objects GL_EXT_separate_specular_color GL_EXT_shader_image_load_
+store GL_EXT_shader_integer_mix GL_EXT_shadow_funcs GL_EXT_stencil_two_side GL_EXT_stencil_wrap GL_EXT_texture3D GL_EXT_texture_array GL_EXT_texture_buffer_object GL_EXT_texture_compression_dxt1 GL_EXT_texture_compression_latc GL_EXT_texture_compression_rgtc GL_EXT_texture_compression_s3tc GL_EXT_texture_cube_map GL_EXT_texture_edge_clamp GL_EXT_texture_env_combine GL_EXT_texture_env_dot3 GL_EXT_texture_filter_anisotropic GL_EXT_texture_integer GL_EXT_texture_lod GL_EXT_texture_lod_bias GL_EXT_texture_mirror_clamp GL_EXT_texture_object GL_EXT_texture_shared_exponent GL_EXT_texture_sRGB GL_EXT_texture_sRGB_decode GL_EXT_texture_storage GL_EXT_texture_swizzle GL_EXT_timer_query GL_EXT_transform_feedback2 GL_EXT_vertex_array GL_EXT_vertex_array_bgra GL_EXT_vertex_attrib_64bit GL_EXT_window_rectangles GL_EXT_x11_sync_object GL_EXT_import_sync_object GL_NV_robustness_video_memory_purge GL_IBM_rasterpos_clip GL_IBM_texture_mirrored_repeat GL_KHR_context_flush_control GL_KHR_debug GL_KHR_no_error GL_KHR_robust_buff
+er_access_behavior GL_KHR_robustness GL_KTX_buffer_region GL_NV_alpha_to_coverage_dither_control GL_NV_bindless_multi_draw_indirect GL_NV_bindless_multi_draw_indirect_count GL_NV_bindless_texture GL_NV_blend_equation_advanced GL_NV_blend_square GL_NV_command_list GL_NV_compute_program5 GL_NV_conditional_render GL_NV_copy_depth_to_color GL_NV_copy_image GL_NV_depth_buffer_float GL_NV_depth_clamp GL_NV_draw_texture GL_NV_draw_vulkan_image GL_NV_ES1_1_compatibility GL_NV_ES3_1_compatibility GL_NV_explicit_multisample GL_NV_fence GL_NV_float_buffer GL_NV_fog_distance GL_NV_fragment_program GL_NV_fragment_program_option GL_NV_fragment_program2 GL_NV_framebuffer_multisample_coverage GL_NV_geometry_shader4 GL_NV_gpu_program4 GL_NV_internalformat_sample_query GL_NV_gpu_program4_1 GL_NV_gpu_program5 GL_NV_gpu_program5_mem_extended GL_NV_gpu_program_fp64 GL_NV_gpu_shader5 GL_NV_half_float GL_NV_light_max_exponent GL_NV_multisample_coverage GL_NV_multisample_filter_hint GL_NV_occlusion_query GL_NV_packed_depth_stencil 
+GL_NV_parameter_buffer_object GL_NV_parameter_buffer_object2 GL_NV_path_rendering GL_NV_pixel_data_range GL_NV_point_sprite GL_NV_primitive_restart GL_NV_register_combiners GL_NV_register_combiners2 GL_NV_shader_atomic_counters GL_NV_shader_atomic_float GL_NV_shader_buffer_load GL_NV_shader_storage_buffer_object GL_NV_texgen_reflection GL_NV_texture_barrier GL_NV_texture_compression_vtc GL_NV_texture_env_combine4 GL_NV_texture_multisample GL_NV_texture_rectangle GL_NV_texture_shader GL_NV_texture_shader2 GL_NV_texture_shader3 GL_NV_transform_feedback GL_NV_transform_feedback2 GL_NV_uniform_buffer_unified_memory GL_NV_vdpau_interop GL_NV_vertex_array_range GL_NV_vertex_array_range2 GL_NV_vertex_attrib_integer_64bit GL_NV_vertex_buffer_unified_memory GL_NV_vertex_program GL_NV_vertex_program1_1 GL_NV_vertex_program2 GL_NV_vertex_program2_option GL_NV_vertex_program3 GL_NVX_conditional_render GL_NVX_gpu_memory_info GL_NVX_nvenc_interop GL_NV_shader_thread_group GL_NV_shader_thread_shuffle GL_KHR_blend_equation_
+advanced GL_SGIS_generate_mipmap GL_SGIS_texture_lod GL_SGIX_depth_texture GL_SGIX_shadow GL_SUN_slice_accum
+OPENGL LOG: Creating OpenGL 4.5 graphics device
+AudioManager: Using PulseAudio: Default Output Device
+Begin MonoManager ReloadAssembly
+Platform assembly: /storage/SteamLibrary/steamapps/common/Screencheat/screencheat_Data/Managed/UnityEngine.dll (this message is harmless)
+Loading /storage/SteamLibrary/steamapps/common/Screencheat/screencheat_Data/Managed/UnityEngine.dll into Unity Child Domain
+Platform assembly: /storage/SteamLibrary/steamapps/common/Screencheat/screencheat_Data/Managed/Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading /storage/SteamLibrary/steamapps/common/Screencheat/screencheat_Data/Managed/Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: /storage/SteamLibrary/steamapps/common/Screencheat/screencheat_Data/Managed/Assembly-CSharp.dll (this message is harmless)
+Loading /storage/SteamLibrary/steamapps/common/Screencheat/screencheat_Data/Managed/Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: /storage/SteamLibrary/steamapps/common/Screencheat/screencheat_Data/Managed/Assembly-UnityScript-firstpass.dll (this message is harmless)
+Loading /storage/SteamLibrary/steamapps/common/Screencheat/screencheat_Data/Managed/Assembly-UnityScript-firstpass.dll into Unity Child Domain
+Platform assembly: /storage/SteamLibrary/steamapps/common/Screencheat/screencheat_Data/Managed/UnityEngine.UI.dll (this message is harmless)
+Loading /storage/SteamLibrary/steamapps/common/Screencheat/screencheat_Data/Managed/UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: /storage/SteamLibrary/steamapps/common/Screencheat/screencheat_Data/Managed/UnityEngine.Networking.dll (this message is harmless)
+Loading /storage/SteamLibrary/steamapps/common/Screencheat/screencheat_Data/Managed/UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: /storage/SteamLibrary/steamapps/common/Screencheat/screencheat_Data/Managed/Pathfinding.ClipperLib.dll (this message is harmless)
+Loading /storage/SteamLibrary/steamapps/common/Screencheat/screencheat_Data/Managed/Pathfinding.ClipperLib.dll into Unity Child Domain
+Platform assembly: /storage/SteamLibrary/steamapps/common/Screencheat/screencheat_Data/Managed/Pathfinding.Ionic.Zip.Reduced.dll (this message is harmless)
+Loading /storage/SteamLibrary/steamapps/common/Screencheat/screencheat_Data/Managed/Pathfinding.Ionic.Zip.Reduced.dll into Unity Child Domain
+Platform assembly: /storage/SteamLibrary/steamapps/common/Screencheat/screencheat_Data/Managed/Pathfinding.JsonFx.dll (this message is harmless)
+Loading /storage/SteamLibrary/steamapps/common/Screencheat/screencheat_Data/Managed/Pathfinding.JsonFx.dll into Unity Child Domain
+Platform assembly: /storage/SteamLibrary/steamapps/common/Screencheat/screencheat_Data/Managed/Pathfinding.Poly2Tri.dll (this message is harmless)
+Loading /storage/SteamLibrary/steamapps/common/Screencheat/screencheat_Data/Managed/Pathfinding.Poly2Tri.dll into Unity Child Domain
+Platform assembly: /storage/SteamLibrary/steamapps/common/Screencheat/screencheat_Data/Managed/ArabicSupport.dll (this message is harmless)
+Loading /storage/SteamLibrary/steamapps/common/Screencheat/screencheat_Data/Managed/ArabicSupport.dll into Unity Child Domain
+Platform assembly: /storage/SteamLibrary/steamapps/common/Screencheat/screencheat_Data/Managed/Photon3Unity3D.dll (this message is harmless)
+Loading /storage/SteamLibrary/steamapps/common/Screencheat/screencheat_Data/Managed/Photon3Unity3D.dll into Unity Child Domain
+Platform assembly: /storage/SteamLibrary/steamapps/common/Screencheat/screencheat_Data/Managed/UnityEngine.Cloud.Analytics.dll (this message is harmless)
+Loading /storage/SteamLibrary/steamapps/common/Screencheat/screencheat_Data/Managed/UnityEngine.Cloud.Analytics.dll into Unity Child Domain
+Platform assembly: /storage/SteamLibrary/steamapps/common/Screencheat/screencheat_Data/Managed/UnityEngine.Cloud.Analytics.Util.dll (this message is harmless)
+Loading /storage/SteamLibrary/steamapps/common/Screencheat/screencheat_Data/Managed/UnityEngine.Cloud.Analytics.Util.dll into Unity Child Domain
+Platform assembly: /storage/SteamLibrary/steamapps/common/Screencheat/screencheat_Data/Managed/SonyPS4CommonDialog.dll (this message is harmless)
+Loading /storage/SteamLibrary/steamapps/common/Screencheat/screencheat_Data/Managed/SonyPS4CommonDialog.dll into Unity Child Domain
+Platform assembly: /storage/SteamLibrary/steamapps/common/Screencheat/screencheat_Data/Managed/SonyPS4SavedGames.dll (this message is harmless)
+Loading /storage/SteamLibrary/steamapps/common/Screencheat/screencheat_Data/Managed/SonyPS4SavedGames.dll into Unity Child Domain
+- Completed reload, in  0.032 seconds
+Platform assembly: /storage/SteamLibrary/steamapps/common/Screencheat/screencheat_Data/Managed/System.Core.dll (this message is harmless)
+Platform assembly: /storage/SteamLibrary/steamapps/common/Screencheat/screencheat_Data/Managed/System.dll (this message is harmless)
+Default vsync count 1
+requesting resize 1920 x 1080
+Using native desktop resolution 3200 x 1080
+requesting fullscreen 3200 x 1080 at 0 Hz
+Desktop is 3200 x 1080 @ 60 Hz
+Using libudev for joystick management
+
+
+Importing game controller configs
+Found /dev/input/event18
+Mapping raw axis 0 to 0
+Mapping raw axis 1 to 1
+Mapping raw axis 2 to 2
+Mapping raw axis 3 to 3
+Mapping raw axis 4 to 4
+Mapping raw axis 5 to 5
+Sony Computer Entertainment Wireless Controller: Mapping b1.0 to b0
+Sony Computer Entertainment Wireless Controller: Mapping b2.0 to b1
+Sony Computer Entertainment Wireless Controller: Mapping b8.0 to b6
+Sony Computer Entertainment Wireless Controller: Mapping h0.4 to a7
+Sony Computer Entertainment Wireless Controller: Mapping h0.8 to a6
+Sony Computer Entertainment Wireless Controller: Mapping h0.2 to a6
+Sony Computer Entertainment Wireless Controller: Mapping h0.1 to a7
+Sony Computer Entertainment Wireless Controller: Mapping b12.0 to b8
+Sony Computer Entertainment Wireless Controller: Mapping b4.0 to b4
+Sony Computer Entertainment Wireless Controller: Mapping b10.0 to b9
+Sony Computer Entertainment Wireless Controller: Mapping a3.0 to a2
+Sony Computer Entertainment Wireless Controller: Mapping a0.0 to a0
+Sony Computer Entertainment Wireless Controller: Mapping a1.0 to a1
+Sony Computer Entertainment Wireless Controller: Mapping b5.0 to b5
+Sony Computer Entertainment Wireless Controller: Mapping b11.0 to b10
+Sony Computer Entertainment Wireless Controller: Mapping a4.0 to a5
+Sony Computer Entertainment Wireless Controller: Mapping a2.0 to a3
+Sony Computer Entertainment Wireless Controller: Mapping a5.0 to a4
+Sony Computer Entertainment Wireless Controller: Mapping b9.0 to b7
+Sony Computer Entertainment Wireless Controller: Mapping b0.0 to b2
+Sony Computer Entertainment Wireless Controller: Mapping b3.0 to b3
+Assigning joystick 1
+/dev/input/js1: driver version: 2.1.0 (20100)
+/dev/input/js1: fd 57, buttons 11, axes 8, name Microsoft X-Box One pad (Firmware 2015)
+/dev/input/js1: axis  0: raw    563, mapped 0.000000
+/dev/input/js1: axis  1: raw   -202, mapped 0.000000
+/dev/input/js1: axis  2: raw -32767, mapped 0.000000
+/dev/input/js1: axis  3: raw   -559, mapped 0.000000
+/dev/input/js1: axis  4: raw   -792, mapped 0.000000
+/dev/input/js1: axis  5: raw -32767, mapped 0.000000
+/dev/input/js1: axis  6: raw      0, mapped 0.000000
+/dev/input/js1: axis  7: raw      0, mapped 0.000000
+Assigning joystick 2
+UnloadTime: 0.881000 ms
+Steam controller init: True
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+User has license: True
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+System language is English
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Steamworks initialised for language detectionTrue
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Steam's current language: english
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Steam language sautodetection found English (United States)
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+SET LANGUAGE TO English (United States)
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+Setup InputManager
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 8369.
+Total: 3.708000 ms (FindLiveObjects: 0.296000 ms CreateObjectMapping: 0.154000 ms MarkObjects: 3.238000 ms  DeleteObjects: 0.019000 ms)
+
+Changing real window size to 931 x 1005
+Changing real window size to 931 x 1005
+Changing real window size to 1920 x 1080
+Changing real window size to 1920 x 1080
+Changing real window size to 1920 x 1080
+No main loop source
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.927000 ms
+Couldn't extract exception string from exception (another exception of class 'ArgumentException' was thrown while processing the stack trace)
+ 
+(Filename:  Line: 496)
+
+
+ 
+(Error: -172313672 Filename:  Line: 917208)
+
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 10069.
+Total: 5.044000 ms (FindLiveObjects: 0.404000 ms CreateObjectMapping: 0.273000 ms MarkObjects: 4.334000 ms  DeleteObjects: 0.033000 ms)
+
+DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
+ 
+(Filename:  Line: 374)
+
+Unsupported controller Unknown Device (Microsoft X-Box One pad (Firmware 2015))
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Cloud exists
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Expecting 329 bytes, found 329
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Data loaded :v00­000ÿ00?*0A0t0h0r0e0o0s0,0 0G0o0d0 0o0f0 0F0i0l0t0h0ÿÿÿÿ0000000%0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+000000?
+0A0r0t0i0c000000000000%0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Loading profile: data index=5/329
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+v110110173000225500128?420A0t0h0r0e0o0s0440320G0o0d0320o0f0320F0i0l0t0h02552552552550000001037012000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000101410000700128?100A0r0t0i0c00000000000103701200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Weapon = 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Loaded profile: Athreos, God of Filth 1 -1
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Loading profile: data index=183/329
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+v110110173000225500128?420A0t0h0r0e0o0s0440320G0o0d0320o0f0320F0i0l0t0h02552552552550000001037012000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000101410000700128?100A0r0t0i0c00000000000103701200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Weapon = 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Loaded profile: Artic 1 7
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+requesting resize 1920 x 1080
+Using native desktop resolution 3200 x 1080
+Clamping fullscreen resolution to 1920 x 1080
+requesting fullscreen 1920 x 1080 at 0 Hz
+Desktop is 3200 x 1080 @ 60 Hz
+time: <timestamp time="1474146039024569" delay="0"/>
+
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Control Left Stick X(LeftStickX) mapped to axis 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Control Left Stick Y(LeftStickY) mapped to axis 1
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Control Right Stick X(RightStickX) mapped to axis 3
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Control Right Stick Y(RightStickY) mapped to axis 4
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Setting level prefix to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.755000 ms
+Loaded into empty scene, ignoring
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 7813.
+Total: 3.902000 ms (FindLiveObjects: 0.291000 ms CreateObjectMapping: 0.155000 ms MarkObjects: 3.375000 ms  DeleteObjects: 0.081000 ms)
+
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 7728.
+Total: 3.645000 ms (FindLiveObjects: 0.309000 ms CreateObjectMapping: 0.138000 ms MarkObjects: 3.185000 ms  DeleteObjects: 0.013000 ms)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.349000 ms
+Loading custom gamemodes
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Expecting 284 bytes, found 284
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+LOADED1: v 1 132 0 v 1 14 0 3 10 0 S 0 t 0 o 0 c 0 k 0 " 0 3 @ 0 B 0 e 0 32 0 t 0 h 0 e 0 32 0 l 0 a 0 s 0 t 0 32 0 o 0 n 0 e 0 32 0 s 0 t 0 a 0 n 0 d 0 i 0 n 0 g 0 32 0 t 0 o 0 32 0 w 0 i 0 n 0 . 0 11 0 2 5 0 0 0 16 0 2 5 0 0 0 0 0 2 1 0 0 0 9 0 2 1 0 0 0 3 0 2 0 0 0 0 7 0 2 0 0 0 0 ! 0 5 1 146 0 v 1 14 0 3 20 0 T 0 e 0 a 0 m 0 32 0 S 0 t 0 o 0 c 0 k 0 " 0 3 @ 0 B 0 e 0 32 0 t 0 h 0 e 0 32 0 l 0 a 0 s 0 t 0 32 0 o 0 n 0 e 0 32 0 s 0 t 0 a 0 n 0 d 0 i 0 n 0 g 0 32 0 t 0 o 0 32 0 w 0 i 0 n 0 . 0 11 0 2 5 0 0 0 16 0 2 5 0 0 0 0 0 2 1 0 0 0 9 0 2 1 0 0 0 3 0 2 0 0 0 0 7 0 2 0 0 0 0 ! 0 5 1 26 0 5 1 
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+LOADED2: 118 1 132 0 118 1 14 0  3 10 0 83 0 116 0 111  0 99 0 107 0 34 0 3  64 0 66 0 101 0 32 0  116 0 104 0 101 0 32 0  108 0 97 0 115 0 116 0  32 0 111 0 110 0 101 0  32 0 115 0 116 0 97 0  110 0 100 0 105 0 110 0  103 0 32 0 116 0 111 0  32 0 119 0 105 0 110 0  46 0 11 0 2 5 0 0  0 16 0 2 5 0 0 0  0 0 2 1 0 0 0 9  0 2 1 0 0 0 3 0  2 0 0 0 0 7 0 2  0 0 0 0 33 0 5 1  146 0 118 1 14 0 3 20  0 84 0 101 0 97 0 109  0 32 0 83 0 116 0 111  0 99 0 107 0 34 0 3  64 0 66 0 101 0 32 0  116 0 104 0 101 0 32 0  108 0 97 0 115 0 116 0  32 0 111 0 110 0 101 0  32 0 115 0 116 0 97 0  110 0 100 0 105 0 110 0  103 0 32 0 116 0 111 0  32 0 119 0 105 0 110 0  46 0 11 0 2 5 0 0  0 16 0 2 5 0 0 0  0 0 2 1 0 0 0 9  0 2 1 0 0 0 3 0  2 0 0 0 0 7 0 2  0 0 0 0 33 0 5 1  26 0 5 1 
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Loading custom gamemode: 2 / 284
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Loaded gamemode Stock
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Loading custom gamemode: 136 / 284
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Loaded gamemode Team Stock
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Done loading gamemodes
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Loaded profile: Athreos, God of Filth
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Loaded profile: Guest
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Loaded profile: Guest (Inverted)
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Loaded profile: Artic
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Main menu enabled: False
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 13723.
+Total: 9.190000 ms (FindLiveObjects: 0.389000 ms CreateObjectMapping: 0.221000 ms MarkObjects: 8.556000 ms  DeleteObjects: 0.024000 ms)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Set gamemode to Basic Timed Run
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Main menu enabled: True
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+hide slots for training!True
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Finished joining previous characters: should have joined 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+hide slots for training!True
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Main menu enabled: False
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Cancelable = True
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Main menu enabled: False
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Main menu enabled: True
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Go to submenu None
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Main menu enabled: False
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Cancelable = True
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Main menu enabled: False
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Setting level prefix to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 5.053000 ms
+Loaded into empty scene, ignoring
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+
+Unloading 956 unused Assets to reduce memory usage. Loaded Objects now: 8101.
+Total: 5.831000 ms (FindLiveObjects: 0.277000 ms CreateObjectMapping: 0.209000 ms MarkObjects: 4.782000 ms  DeleteObjects: 0.563000 ms)
+
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 8054.
+Total: 5.119000 ms (FindLiveObjects: 0.315000 ms CreateObjectMapping: 0.160000 ms MarkObjects: 4.602000 ms  DeleteObjects: 0.041000 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.384000 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 10430.
+Total: 6.369000 ms (FindLiveObjects: 0.387000 ms CreateObjectMapping: 0.206000 ms MarkObjects: 5.751000 ms  DeleteObjects: 0.023000 ms)
+
+DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
+ 
+(Filename:  Line: 374)
+
+requesting resize 1920 x 1080
+Using native desktop resolution 3200 x 1080
+Clamping fullscreen resolution to 1920 x 1080
+requesting fullscreen 1920 x 1080 at 0 Hz
+Desktop is 3200 x 1080 @ 60 Hz
+time: <timestamp time="1474146074545624" delay="0"/>
+
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Setting level prefix to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.350000 ms
+Loaded into empty scene, ignoring
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 8103.
+Total: 5.308000 ms (FindLiveObjects: 0.361000 ms CreateObjectMapping: 0.204000 ms MarkObjects: 4.670000 ms  DeleteObjects: 0.072000 ms)
+
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 8054.
+Total: 6.637000 ms (FindLiveObjects: 0.306000 ms CreateObjectMapping: 0.158000 ms MarkObjects: 6.062000 ms  DeleteObjects: 0.110000 ms)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.363000 ms
+Loading custom gamemodes
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Expecting 284 bytes, found 284
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+LOADED1: v 1 132 0 v 1 14 0 3 10 0 S 0 t 0 o 0 c 0 k 0 " 0 3 @ 0 B 0 e 0 32 0 t 0 h 0 e 0 32 0 l 0 a 0 s 0 t 0 32 0 o 0 n 0 e 0 32 0 s 0 t 0 a 0 n 0 d 0 i 0 n 0 g 0 32 0 t 0 o 0 32 0 w 0 i 0 n 0 . 0 11 0 2 5 0 0 0 16 0 2 5 0 0 0 0 0 2 1 0 0 0 9 0 2 1 0 0 0 3 0 2 0 0 0 0 7 0 2 0 0 0 0 ! 0 5 1 146 0 v 1 14 0 3 20 0 T 0 e 0 a 0 m 0 32 0 S 0 t 0 o 0 c 0 k 0 " 0 3 @ 0 B 0 e 0 32 0 t 0 h 0 e 0 32 0 l 0 a 0 s 0 t 0 32 0 o 0 n 0 e 0 32 0 s 0 t 0 a 0 n 0 d 0 i 0 n 0 g 0 32 0 t 0 o 0 32 0 w 0 i 0 n 0 . 0 11 0 2 5 0 0 0 16 0 2 5 0 0 0 0 0 2 1 0 0 0 9 0 2 1 0 0 0 3 0 2 0 0 0 0 7 0 2 0 0 0 0 ! 0 5 1 26 0 5 1 
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+LOADED2: 118 1 132 0 118 1 14 0  3 10 0 83 0 116 0 111  0 99 0 107 0 34 0 3  64 0 66 0 101 0 32 0  116 0 104 0 101 0 32 0  108 0 97 0 115 0 116 0  32 0 111 0 110 0 101 0  32 0 115 0 116 0 97 0  110 0 100 0 105 0 110 0  103 0 32 0 116 0 111 0  32 0 119 0 105 0 110 0  46 0 11 0 2 5 0 0  0 16 0 2 5 0 0 0  0 0 2 1 0 0 0 9  0 2 1 0 0 0 3 0  2 0 0 0 0 7 0 2  0 0 0 0 33 0 5 1  146 0 118 1 14 0 3 20  0 84 0 101 0 97 0 109  0 32 0 83 0 116 0 111  0 99 0 107 0 34 0 3  64 0 66 0 101 0 32 0  116 0 104 0 101 0 32 0  108 0 97 0 115 0 116 0  32 0 111 0 110 0 101 0  32 0 115 0 116 0 97 0  110 0 100 0 105 0 110 0  103 0 32 0 116 0 111 0  32 0 119 0 105 0 110 0  46 0 11 0 2 5 0 0  0 16 0 2 5 0 0 0  0 0 2 1 0 0 0 9  0 2 1 0 0 0 3 0  2 0 0 0 0 7 0 2  0 0 0 0 33 0 5 1  26 0 5 1 
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Loading custom gamemode: 2 / 284
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Loaded gamemode Stock
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Loading custom gamemode: 136 / 284
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Loaded gamemode Team Stock
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Done loading gamemodes
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Loaded profile: Athreos, God of Filth
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Loaded profile: Guest
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Loaded profile: Guest (Inverted)
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Loaded profile: Artic
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Main menu enabled: False
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 14210.
+Total: 10.177999 ms (FindLiveObjects: 0.468000 ms CreateObjectMapping: 0.241000 ms MarkObjects: 9.446000 ms  DeleteObjects: 0.023000 ms)
+
+Set gamemode to My First Deathmatch
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Main menu enabled: True
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Finished joining previous characters: should have joined 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Update Bot Slotting
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Adding bots: detected 0, try adding 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Slot 1 taken, isBot False
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+No profiles to dequeue
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Update Bot Slotting
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Adding bots: detected 0, try adding 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Slot 0 taken, isBot False
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+No profiles to dequeue
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+set LastJoinGranted to 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Update Bot Slotting
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Adding bots: detected 0, try adding 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Main menu enabled: False
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+pressed B to close
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Close menu GameSettings
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+cleanup
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Main menu enabled: True
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Start Game Countdown
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Main menu enabled: False
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+LoadLevel Museum
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Setting level prefix to 4
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 3.423000 ms
+Loaded into empty scene, ignoring
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+
+Unloading 964 unused Assets to reduce memory usage. Loaded Objects now: 7196.
+Total: 5.794000 ms (FindLiveObjects: 0.248000 ms CreateObjectMapping: 0.174000 ms MarkObjects: 4.839000 ms  DeleteObjects: 0.532000 ms)
+
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 7079.
+Total: 5.670000 ms (FindLiveObjects: 0.306000 ms CreateObjectMapping: 0.158000 ms MarkObjects: 5.159000 ms  DeleteObjects: 0.047000 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.682000 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 7104.
+Total: 5.645000 ms (FindLiveObjects: 0.148000 ms CreateObjectMapping: 0.175000 ms MarkObjects: 5.300000 ms  DeleteObjects: 0.022000 ms)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.971000 ms
+clear bombs
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Total sessions played: 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Update Bot Slotting
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Adding bots: detected 0, try adding 0
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Resetting old players
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Starting game Deathmatch on Museum for 2 characters
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 16951.
+Total: 11.555000 ms (FindLiveObjects: 0.711000 ms CreateObjectMapping: 0.306000 ms MarkObjects: 10.492000 ms  DeleteObjects: 0.045000 ms)
+
+Player 1 Layer is 9
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+SetLobbyCharacter: playerId=101, character=0, playerNumber(gen)=1, name=ARTIC
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Player 2 Layer is 10
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+SetLobbyCharacter: playerId=102, character=1, playerNumber(gen)=2, name=ATHREOS, GOD OF FILTH
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+DLC 'Golden Gun' not installed
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+DLC 'Humble Stick' not installed
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+DLC 'Golden Gun' not installed
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+DLC 'Humble Stick' not installed
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Check for null players: 
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Countdown finished, nullcheck time 0.01667786
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Emotes; things = ''
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Emotes; things = '[PS4]'
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+game end time is 64.32151
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Switching cameras
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Game Started
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Emotes; things = ''
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Emotes; things = '[PS4]'
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+False, False
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+False, False
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Got value 1.00 on unmapped axis 7
+Got value 0.00 on unmapped axis 7
+False, False
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+False, False
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Got value 1.00 on unmapped axis 7
+Got value 0.00 on unmapped axis 7
+False, False
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+False, False
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Got value 1.00 on unmapped axis 7
+Got value 0.00 on unmapped axis 7
+Got value 1.00 on unmapped axis 7
+Got value 0.00 on unmapped axis 7
+Cancelable = True
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Doing steam cleanup
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Steam controller shut down: True
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: c29deb40 -> priority: 1 
+Player was destroyed
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Player was destroyed
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+

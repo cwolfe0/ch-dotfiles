@@ -1,0 +1,2 @@
+body > div[style*="absolute"]:not([id]):not([class]) {display:none !important}
+#wh {margin-top:0 !important}

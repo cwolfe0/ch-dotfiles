@@ -1,0 +1,22 @@
+<unity_prefs version_major="1" version_minor="1">
+	<pref name="AddedDefaultCustomModes" type="int">1</pref>
+	<pref name="Announcer" type="int">1</pref>
+	<pref name="ColorblindMode" type="int">0</pref>
+	<pref name="ConventionMode" type="int">0</pref>
+	<pref name="DisableTextChat" type="int">0</pref>
+	<pref name="Fullscreen" type="int">1</pref>
+	<pref name="LastSplashMessage" type="int">-634793665</pref>
+	<pref name="MouseLookInversion" type="int">0</pref>
+	<pref name="PUNCloudBestRegion" type="string">RVU=</pref>
+	<pref name="RagdollCap" type="int">250</pref>
+	<pref name="ScreenShake" type="int">1</pref>
+	<pref name="Screenmanager Is Fullscreen mode" type="int">1</pref>
+	<pref name="Screenmanager Resolution Height" type="int">1080</pref>
+	<pref name="Screenmanager Resolution Width" type="int">1920</pref>
+	<pref name="SeenSplash" type="int">1</pref>
+	<pref name="ShowPlayerNames" type="int">0</pref>
+	<pref name="ShowTutorial_BotSettings" type="int">0</pref>
+	<pref name="Tutorial_OpenedBotSettings" type="int">1</pref>
+	<pref name="Tutorial_TimesEnteredLobby" type="int">4</pref>
+	<pref name="UnitySelectMonitor" type="int">-1</pref>
+</unity_prefs>

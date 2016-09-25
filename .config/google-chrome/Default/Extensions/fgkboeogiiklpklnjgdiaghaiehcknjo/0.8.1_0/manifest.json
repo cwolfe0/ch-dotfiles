@@ -1,0 +1,23 @@
+{
+   "background": {
+      "persistent": false,
+      "scripts": [ "manager.js" ]
+   },
+   "default_locale": "en",
+   "description": "__MSG_appDesc__",
+   "homepage_url": "https://bitbucket.org/lfk/downloads-router-chrome-extension",
+   "icons": {
+      "128": "data/icon128.png",
+      "16": "data/icon16.png",
+      "32": "data/icon32.png",
+      "48": "data/icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqKeOKrHUEe3PWSKde+9qF80rBi97yhFnxctNKr2v5CF3eqkfbbUHMRWygHjkMZwkcKCD+YZZg+MM8Xd9wr/f8pV1yONMOe89vtZFJCzlYehQeYU9qMD+Ao5D0SHzwy+k2m3zbNi8SqOfPmfH3muvnn/PLLepFAt5tTZc/yUAGI72FKItunp1jlZ7Co0WBUQMvp96HIqBVYXfo7OVSZH57lxiPfZJud3N9+I6KYbADLWwb7Ub2HNZc8G/Zcx7smi6Vm4UzsWdBH7OEfJmbEJgX36rCQCSoXBAS+uo+hi/DjigxNwZsmf4PHf8dBjhsXCqtlUwWipz2dtgH/XUAXvPMQIDAQAB",
+   "manifest_version": 2,
+   "name": "__MSG_appName__",
+   "options_page": "options.html",
+   "permissions": [ "downloads" ],
+   "short_name": "DLRouter",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.8.1"
+}

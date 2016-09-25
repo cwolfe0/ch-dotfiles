@@ -1,0 +1,9 @@
+2016/09/21-02:25:34.715 32313 Reusing MANIFEST /home/cory/.config/google-chrome/Default/IndexedDB/https_www.boundless.com_0.indexeddb.leveldb/MANIFEST-000001
+2016/09/21-02:26:08.094 32313 Current memtable full; waiting...
+2016/09/21-02:26:08.094 1510 Level-0 table #5: started
+2016/09/21-02:26:08.102 1510 Level-0 table #5: 418 bytes OK
+2016/09/21-02:26:08.111 1510 Delete type=0 #3
+2016/09/21-02:26:08.111 1510 Level-0 table #7: started
+2016/09/21-02:26:08.111 1510 Level-0 table #7: 0 bytes OK
+2016/09/21-02:26:08.118 1510 Delete type=0 #4
+2016/09/21-02:26:08.118 1510 Manual compaction at level-0 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)

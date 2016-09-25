@@ -1,0 +1,4 @@
+body > .row-fluid:first-child, #notificationBanner, #ux-banner, #h_popup {display:none !important}
+
+#megabladeIframe {top:0 !important}
+#BodyBackground {border-top:none !important}

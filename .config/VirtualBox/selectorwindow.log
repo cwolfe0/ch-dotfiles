@@ -1,0 +1,14 @@
+VirtualBox GUI VM Selector Window 5.1.2_OSE r108956 linux.amd64 (Aug 15 2016 10:42:41) release log
+00:00:00.274406 Log opened 2016-08-19T04:20:58.733249000Z
+00:00:00.274407 Build Type: release
+00:00:00.274408 OS Product: Linux
+00:00:00.274409 OS Release: 4.7.0-1-ARCH
+00:00:00.274409 OS Version: #1 SMP PREEMPT Mon Aug 8 22:05:58 CEST 2016
+00:00:00.274420 DMI Product Name: To Be Filled By O.E.M.
+00:00:00.274423 DMI Product Version: To Be Filled By O.E.M.
+00:00:00.274447 Host RAM: 7916MB total, 2428MB available
+00:00:00.274448 Executable: /usr/lib/virtualbox/VirtualBox
+00:00:00.274448 Process ID: 24199
+00:00:00.274449 Package type: LINUX_64BITS_GENERIC (OSE)
+00:00:00.293688 GUI: UIMediumEnumerator: Medium-enumeration started...
+00:00:00.391401 GUI: UIMediumEnumerator: Medium-enumeration finished!

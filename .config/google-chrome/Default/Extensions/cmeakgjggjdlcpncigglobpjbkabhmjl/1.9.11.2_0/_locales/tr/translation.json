@@ -1,0 +1,27 @@
+﻿{
+  "langcode": "tr",
+  "settings": {
+    "title": "Ayarlar",
+    "inventory": {
+      "buyset": "\"Satın Alma Ayarı\" tuşları",
+      "quicksell": "\"Hızlı Sat\" tuşu",
+      "quickselldif": "Hızlı Satış Fiyat Farkı",
+      "simpify": "Basitleştirmek UI"
+    },
+    "listingmarket": {
+      "quickbuy": "\"Hızlı Satın Al\" tuşları",
+      "no_listings": "Listelenen Adet"
+    },
+    "tradeoffer": {
+      "autocheckofferprice": "Teklif yapıldığında fiyatları otomatik yenile",
+      "offerdelay": "Teklif Fiyatı Kontrol Aralığı"
+    },
+    "general": {
+      "currency": "Para Cinsi",
+      "displaynof": "Bildirimleri Göster",
+      "language": "Dil",
+      "nofsound": "Bildirim Sesi"
+    },
+    "note": "Güncellemenin aktif olması için sayfayı yenilemeniz gerekmektedir."
+  }
+}

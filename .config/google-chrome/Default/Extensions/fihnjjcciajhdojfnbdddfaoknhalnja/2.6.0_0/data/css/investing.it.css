@@ -1,0 +1,3 @@
+#topAlertBarContainer, #sideNotificationZone, #consentWrapper {display:none !important}
+.topBar {top:0 !important}
+.wrapper {padding-top:51px !important}

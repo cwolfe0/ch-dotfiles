@@ -1,0 +1,3 @@
+.type-permanent {display:none !important}
+.type-permanent + .type-permanent, .type-permanent + #nav {top:0 !important}
+.type-permanent + #nav + div {padding-top:49px !important}

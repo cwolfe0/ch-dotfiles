@@ -1,0 +1,11 @@
+{
+   "appDesc": {
+      "message": "Organize your downloads automatically! Set custom download locations based on filetype, filename, or source domain."
+   },
+   "appName": {
+      "message": "Downloads Router"
+   },
+   "msg_saved": {
+      "message": "Settings saved!"
+   }
+}

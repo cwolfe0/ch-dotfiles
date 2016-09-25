@@ -1,0 +1,11 @@
+open_with rm
+
+search hibbeler
+search hibbe
+rename 2sisters01.wmv
+open_with 
+delete
+open_with vim
+rename Mods
+rename Matlab
+rename bin

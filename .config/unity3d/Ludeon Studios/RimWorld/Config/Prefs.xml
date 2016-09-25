@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PrefsData>
+  <volumeGame>0.2493703</volumeGame>
+  <volumeMusic>0</volumeMusic>
+  <adaptiveTrainingEnabled>True</adaptiveTrainingEnabled>
+  <preferredNames>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </preferredNames>
+  <resourceReadoutCategorized>False</resourceReadoutCategorized>
+  <runInBackground>False</runInBackground>
+  <customCursorEnabled>True</customCursorEnabled>
+  <edgeScreenScroll>False</edgeScreenScroll>
+  <temperatureMode>Celsius</temperatureMode>
+  <autosaveIntervalDays>1</autosaveIntervalDays>
+  <showRealtimeClock>False</showRealtimeClock>
+  <plantWindSway>True</plantWindSway>
+  <pauseOnLoad>False</pauseOnLoad>
+  <pauseOnUrgentLetter>False</pauseOnUrgentLetter>
+  <animalNameMode>TameNamed</animalNameMode>
+  <devMode>False</devMode>
+  <langFolderName>English</langFolderName>
+  <logVerbose>False</logVerbose>
+  <pauseOnError>False</pauseOnError>
+  <resetModsConfigOnCrash>True</resetModsConfigOnCrash>
+</PrefsData>

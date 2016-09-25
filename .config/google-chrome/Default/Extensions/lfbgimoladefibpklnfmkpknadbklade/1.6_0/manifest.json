@@ -1,0 +1,21 @@
+{
+   "app": {
+      "launch": {
+         "container": "tab",
+         "web_url": "https://webcamtoy.com/app/"
+      },
+      "urls": [ "https://webcamtoy.com/app/" ]
+   },
+   "description": "Take photos with your webcam using over 80 free fun effects. Save photos to your computer or post to Twitter, Tumblr and Facebook!",
+   "icons": {
+      "128": "icon-128.png",
+      "16": "icon-16.png",
+      "48": "icon-48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC6doEFBqEbZZWBnlpPbCTYNH3x1JV8CdsaDZee25GFYPP3VQwEWA++fSWF+uKlXILUIR80EgXl6Ekql8rSbfIPraxu7uDy731J076skIJJSdInaqO3Pxa5DbfZyd8Ii9xGsr1bAVDKQt5sT73MKVHrcJJZZF1sR7TqiRnZgBO3awIDAQAB",
+   "manifest_version": 2,
+   "name": "Webcam Toy",
+   "offline_enabled": true,
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.6"
+}

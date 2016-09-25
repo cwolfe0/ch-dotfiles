@@ -1,0 +1,1 @@
+#outer > div:not([id]):not([class]) {display:none !important}

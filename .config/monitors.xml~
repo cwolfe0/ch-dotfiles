@@ -1,0 +1,37 @@
+<monitors version="1">
+  <configuration>
+    <clone>no</clone>
+    <output name="DVI-D-0">
+      <vendor>ACR</vendor>
+      <product>G246HL</product>
+      <serial>LWAAA0018528</serial>
+      <width>1920</width>
+      <height>1080</height>
+      <rate>60</rate>
+      <x>1280</x>
+      <y>0</y>
+      <rotation>normal</rotation>
+      <reflect_x>no</reflect_x>
+      <reflect_y>no</reflect_y>
+      <primary>yes</primary>
+      <presentation>no</presentation>
+      <underscanning>no</underscanning>
+    </output>
+    <output name="DVI-I-0">
+      <vendor>DEL</vendor>
+      <product>DELL 1800FP</product>
+      <serial>7R4774170B8M</serial>
+      <width>1280</width>
+      <height>1024</height>
+      <rate>60.019741058349609</rate>
+      <x>0</x>
+      <y>0</y>
+      <rotation>normal</rotation>
+      <reflect_x>no</reflect_x>
+      <reflect_y>no</reflect_y>
+      <primary>no</primary>
+      <presentation>no</presentation>
+      <underscanning>no</underscanning>
+    </output>
+  </configuration>
+</monitors>

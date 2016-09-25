@@ -1,0 +1,50 @@
+﻿{
+  "about": {
+    "title": "O nás"
+  },
+  "bookmarks": {
+    "title": "Záložky"
+  },
+  "faq": {
+    "title": "FAQ"
+  },
+  "langcode": "cs",
+  "settings": {
+    "title": "Nastavení",
+    "inventory": {
+      "buyset": "\"Koupit set\" tlačítko",
+      "quicksell": "\"Rychle prodat\" tlačítko",
+      "quickselldif": "Rychle prodat dif",
+      "listdelay": "Onìskoøení medzi listingama",
+      "simpify": "Zjednodušit UI",
+      "tradableinfo": "Show summary of non tradable items"
+    },
+    "listingmarket": {
+      "quickbuy": "\"Rychle nakoupit\" tlačítko",
+      "no_listings": "Poèet listingù",
+      "no_history": "Velikost strany historie",
+      "totalrow": "Cena celkem",
+      "highlight": "Vyznaèit itemy s vysokou cenou"
+    },
+    "tradeoffer": {
+      "autocheckofferprice": "Automaticky získat cenu itemù pøi ponuce",
+      "autodecline": "Zamítnou nedostupné ponuky",
+      "offerdelay": "Zpoždìní medzi price checkem",
+      "custombuttons": "Vlastní tlačítka"
+    },
+    "friends": {
+      "ignoreinvites": "Ignorovat tyto pozvánky",
+      "blockinvites": "Zablokovat tyto žádosti"
+    },
+    "general": {
+      "displaynof": "Zobrazit notofikace",
+      "nofsound": "Zvukové upozornění",
+      "nofsound_vol": "Hlasitost zvuku",
+      "displayvector": "Zobrazit vektorovou cenu",
+      "showsteamrep": "Zobrazit STEAMREP",
+      "currency": "Měny",
+      "language": "Jazyk"
+    },
+    "note": "Pro uložení nastavení, prosím refrešnìte tuhle stránku"
+  }
+}

@@ -1,0 +1,17 @@
+{
+   "content_scripts": [ {
+      "js": [ "content.js" ],
+      "matches": [ "http://www.last.fm/*" ],
+      "run_at": "document_idle"
+   } ],
+   "description": "Get the Friends Who Listen widget on Last.fm back",
+   "icons": {
+      "128": "icon.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsVJXdA1uuLDYqkpfCrT4wHVYdQniuAj1iUMCx2cxT4ZXVLMmzbx5y9PtXwRrE1tc/wB4qxGp/U+Bnsh0MBbySe0k2Wuxa9H3JIFXnEwpAvcDbs0FuyeRDvhas7zHCDx+Ms6Q6FAW9tuNtVJIQqgDkxbourOd5K1dwy07I9sO1z6nkvn63BO+SUiAF9IU0AyqOCXP/7pmXhs94+ZTrBxNjmdK7h8W6Ju7CbibYJNpohblBlXIp6+w5NG47LdphjsvmdBIXZrdJ/zcTtHbtxyQgYf+FGUhxeGMxy7iwXCrkkjBgnNH/ErFuT7R4HUVw0CLuPlXW1ejvXxxF92dwwpS6wIDAQAB",
+   "manifest_version": 2,
+   "name": "Friends Who Listen",
+   "permissions": [ "http://www.last.fm/*" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.1.1"
+}

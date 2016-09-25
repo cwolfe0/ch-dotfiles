@@ -1,0 +1,329 @@
+Setting breakpad minidump AppID = 286160
+Steam_SetMinidumpSteamID:  Caching Steam ID:  76561198032779062 [API loaded no]
+*** Error in `/storage/SteamLibrary/steamapps/common/Tabletop Simulator/Tabletop Simulator.x86': corrupted double-linked list: 0x0a4e3e90 ***
+======= Backtrace: =========
+/usr/lib32/libc.so.6(+0x6815a)[0xf725615a]
+/usr/lib32/libc.so.6(+0x6ed07)[0xf725cd07]
+/usr/lib32/libc.so.6(+0x6fc72)[0xf725dc72]
+/storage/SteamLibrary/steamapps/common/Tabletop Simulator/Tabletop Simulator.x86[0x824afa1]
+/storage/SteamLibrary/steamapps/common/Tabletop Simulator/Tabletop Simulator.x86[0x8248f15]
+/storage/SteamLibrary/steamapps/common/Tabletop Simulator/Tabletop Simulator.x86(_ZdlPv+0x2a)[0x824913a]
+/home/cory/.local/share/Steam/ubuntu12_32/steam-runtime/i386/usr/lib/i386-linux-gnu/libstdc++.so.6(_ZNSs4_Rep10_M_destroyERKSaIcE+0x1b)[0xf74c654b]
+/storage/SteamLibrary/steamapps/common/Tabletop Simulator/Tabletop Simulator.x86[0x853989c]
+/storage/SteamLibrary/steamapps/common/Tabletop Simulator/Tabletop Simulator.x86[0x854222b]
+/storage/SteamLibrary/steamapps/common/Tabletop Simulator/Tabletop Simulator.x86[0x85220ee]
+/storage/SteamLibrary/steamapps/common/Tabletop Simulator/Tabletop Simulator.x86[0x83c76cc]
+/storage/SteamLibrary/steamapps/common/Tabletop Simulator/Tabletop Simulator.x86[0x808d522]
+/usr/lib32/libc.so.6(__libc_start_main+0xf6)[0xf7206196]
+/storage/SteamLibrary/steamapps/common/Tabletop Simulator/Tabletop Simulator.x86[0x80988e9]
+======= Memory map: ========
+00010000-016b2000 rwxp 00000000 00:00 0 
+08048000-0982c000 r-xp 00000000 08:11 2098496                            /storage/SteamLibrary/steamapps/common/Tabletop Simulator/Tabletop Simulator.x86
+0982c000-09839000 r-xp 017e3000 08:11 2098496                            /storage/SteamLibrary/steamapps/common/Tabletop Simulator/Tabletop Simulator.x86
+09839000-09875000 rwxp 017f0000 08:11 2098496                            /storage/SteamLibrary/steamapps/common/Tabletop Simulator/Tabletop Simulator.x86
+09875000-09939000 rwxp 00000000 00:00 0 
+0a306000-0c107000 rwxp 00000000 00:00 0                                  [heap]
+c7d00000-c7e00000 rwxp 00000000 00:00 0 
+d1000000-d11fd000 rwxp 00000000 00:00 0 
+d11fd000-d1200000 ---p 00000000 00:00 0 
+d1200000-d12fc000 rwxp 00000000 00:00 0 
+d12fc000-d1300000 ---p 00000000 00:00 0 
+d1500000-d1900000 rwxs a89dd000 00:06 14770                              /dev/nvidiactl
+d1d00000-d1dff000 rwxp 00000000 00:00 0 
+d1dff000-d1e00000 ---p 00000000 00:00 0 
+d1e00000-d1f00000 rwxp 00000000 00:00 0 
+d1f00000-d20e5000 rwxp 00000000 00:00 0 
+d20e5000-d2100000 ---p 00000000 00:00 0 
+d2100000-d21fd000 rwxp 00000000 00:00 0 
+d21fd000-d2200000 ---p 00000000 00:00 0 
+d2200000-d2400000 rwxp 00000000 00:00 0 
+d2400000-d2500000 rwxp 00000000 00:00 0 
+d2600000-d2800000 rwxp 00000000 00:00 0 
+d2800000-d28ff000 rwxp 00000000 00:00 0 
+d28ff000-d2900000 ---p 00000000 00:00 0 
+d2a00000-d2afe000 rwxp 00000000 00:00 0 
+d2afe000-d2b00000 ---p 00000000 00:00 0 
+d2b00000-d2c00000 rwxp 00000000 00:00 0 
+d2c00000-d2cfa000 rwxp 00000000 00:00 0 
+d2cfa000-d2d00000 ---p 00000000 00:00 0 
+d2d00000-d2dfd000 rwxp 00000000 00:00 0 
+d2dfd000-d2e00000 ---p 00000000 00:00 0 
+d2e00000-d2ede000 rwxp 00000000 00:00 0 
+d2ede000-d2f00000 ---p 00000000 00:00 0 
+d3700000-d37f2000 rwxp 00000000 00:00 0 
+d37f2000-d3800000 ---p 00000000 00:00 0 
+d3800000-d38c0000 rwxp 00000000 00:00 0 
+d38c0000-d3900000 ---p 00000000 00:00 0 
+d3900000-d39c3000 rwxp 00000000 00:00 0 
+d39c3000-d3a00000 ---p 00000000 00:00 0 
+d3f00000-d3feb000 rwxp 00000000 00:00 0 
+d3feb000-d4000000 ---p 00000000 00:00 0 
+d48a1000-d4ca1000 rwxs 1998fb000 00:06 14770                             /dev/nvidiactl
+d5748000-d587f000 r-xp 00000000 08:11 2622081                            /storage/SteamLibrary/steamapps/common/Tabletop Simulator/Tabletop Simulator_Data/Managed/System.Xml.dll
+d5900000-d59dd000 rwxp 00000000 00:00 0 
+d59dd000-d5a00000 ---p 00000000 00:00 0 
+d5a00000-d5aeb000 rwxp 00000000 00:00 0 
+d5aeb000-d5b00000 ---p 00000000 00:00 0 
+d5b00000-d5bfd000 rwxp 00000000 00:00 0 
+d5bfd000-d5c00000 ---p 00000000 00:00 0 
+d5c74000-d6075000 rwxp 00000000 00:00 0 
+d6249000-d6649000 rwxs 16fada000 00:06 14770                             /dev/nvidiactl
+d6649000-d6a49000 rwxs 17077a000 00:06 14770                             /dev/nvidiactl
+d6f00000-d6f60000 rwxp 00000000 00:00 0 
+d6f60000-d7000000 ---p 00000000 00:00 0 
+d904d000-d904e000 ---p 00000000 00:00 0 
+d904e000-d984e000 rwxp 00000000 00:00 0 
+db16d000-db17d000 r-xp 00000000 08:23 13248557                           /usr/lib32/libnss_myhostname.so.2
+db17d000-db17e000 ---p 00010000 08:23 13248557                           /usr/lib32/libnss_myhostname.so.2
+db17e000-db17f000 r-xp 00010000 08:23 13248557                           /usr/lib32/libnss_myhostname.so.2
+db17f000-db180000 rwxp 00011000 08:23 13248557                           /usr/lib32/libnss_myhostname.so.2
+db4f7000-db57a000 r-xp 00000000 08:11 2622002                            /storage/SteamLibrary/steamapps/common/Tabletop Simulator/Tabletop Simulator_Data/Plugins/x86/libSteamworksNative.so
+db57a000-db57b000 r-xp 00082000 08:11 2622002                            /storage/SteamLibrary/steamapps/common/Tabletop Simulator/Tabletop Simulator_Data/Plugins/x86/libSteamworksNative.so
+db57b000-db57c000 rwxp 00083000 08:11 2622002                            /storage/SteamLibrary/steamapps/common/Tabletop Simulator/Tabletop Simulator_Data/Plugins/x86/libSteamworksNative.so
+dbf00000-dc100000 rwxp 00000000 00:00 0 
+dc100000-dc1ff000 rwxp 00000000 00:00 0 
+dc1ff000-dc200000 ---p 00000000 00:00 0 
+dc2ff000-dc400000 rwxp 00000000 00:00 0 
+dc5fb000-dc7fb000 rwxs 85cd4000 00:06 14770                              /dev/nvidiactl
+dcfe4000-dd1e4000 r-xp 00000000 08:11 2622034                            /storage/SteamLibrary/steamapps/common/Tabletop Simulator/Tabletop Simulator_Data/Plugins/x86/libTTSMasterNativePlugin.so
+dd1e4000-dd1e5000 ---p 00200000 08:11 2622034                            /storage/SteamLibrary/steamapps/common/Tabletop Simulator/Tabletop Simulator_Data/Plugins/x86/libTTSMasterNativePlugin.so
+dd1e5000-dd1ea000 r-xp 00200000 08:11 2622034                            /storage/SteamLibrary/steamapps/common/Tabletop Simulator/Tabletop Simulator_Data/Plugins/x86/libTTSMasterNativePlugin.so
+dd1ea000-dd1ec000 rwxp 00205000 08:11 2622034                            /storage/SteamLibrary/steamapps/common/Tabletop Simulator/Tabletop Simulator_Data/Plugins/x86/libTTSMasterNativePlugin.so
+dd1ec000-dd1ee000 rwxp 00000000 00:00 0 
+dd8ef000-dd8f0000 ---p 00000000 00:00 0 
+dd8f0000-de0f0000 rwxp 00000000 00:00 0 
+de0f0000-de0f1000 ---p 00000000 00:00 0 
+de0f1000-de8f1000 rwxp 00000000 00:00 0 
+de901000-de949000 r-xp 00000000 08:11 2622018                            /storage/SteamLibrary/steamapps/common/Tabletop Simulator/Tabletop Simulator_Data/Managed/Mono.Security.dll
+dea4c000-dea5c000 rwxp 00000000 00:00 0 
+dea6c000-dea8b000 r-xp 00000000 08:11 2622019                            /storage/SteamLibrary/steamapps/common/Tabletop Simulator/Tabletop Simulator_Data/Managed/System.Configuration.dll
+deaab000-deab9000 r-xp 00000000 08:11 2098497                            /storage/SteamLibrary/steamapps/common/Tabletop Simulator/libsteam_api.so
+deab9000-deaba000 rwxp 0000e000 08:11 2098497                            /storage/SteamLibrary/steamapps/common/Tabletop Simulator/libsteam_api.so
+deaba000-deabb000 rwxp 00000000 00:00 0 
+deb11000-dec11000 rwxs aa99b000 00:06 14770                              /dev/nvidiactl
+def37000-df137000 rwxs 170481000 00:06 14770                             /dev/nvidiactl
+df137000-df200000 rwxp 00000000 00:00 0 
+df200000-df2ff000 rwxp 00000000 00:00 0 
+df2ff000-df300000 ---p 00000000 00:00 0 
+df34a000-df4e4000 r-xp 00000000 08:11 2622029                            /storage/SteamLibrary/steamapps/common/Tabletop Simulator/Tabletop Simulator_Data/Managed/System.dll
+df8fa000-df96e000 rwxp 00000000 00:00 0 
+e4b6e000-e4b97000 r-xp 00000000 08:23 10618950                           /home/cory/.local/share/Steam/ubuntu12_32/steam-runtime/i386/usr/lib/i386-linux-gnu/libvorbis.so.0.4.5
+e4b97000-e4b98000 r-xp 00028000 08:23 10618950                           /home/cory/.local/share/Steam/ubuntu12_32/steam-runtime/i386/usr/lib/i386-linux-gnu/libvorbis.so.0.4.5
+e4b98000-e4b99000 rwxp 00029000 08:23 10618950                           /home/cory/.local/share/Steam/ubuntu12_32/steam-runtime/i386/usr/lib/i386-linux-gnu/libvorbis.so.0.4.5
+e4b99000-e4cff000 r-xp 00000000 08:23 10618847                           /home/cory/.local/share/Steam/ubuntu12_32/steam-runtime/i386/usr/lib/i386-linux-gnu/libvorbisenc.so.2.0.8
+e4cff000-e4d10000 r-xp 00165000 08:23 10618847                           /home/cory/.local/share/Steam/ubuntu12_32/steam-runtime/i386/usr/lib/i386-linux-gnu/libvorbisenc.so.2.0.8
+e4d10000-e4d11000 rwxp 00176000 08:23 10618847                           /home/cory/.local/share/Steam/ubuntu12_32/steam-runtime/i386/usr/lib/i386-linux-gnu/libvorbisenc.so.2.0.8
+e4d11000-e4d5d000 r-xp 00000000 08:23 10618825                           /home/cory/.local/share/Steam/ubuntu12_32/steam-runtime/i386/usr/lib/i386-linux-gnu/libFLAC.so.8.2.0
+e4d5d000-e4d5e000 r-xp 0004b000 08:23 10618825                           /home/cory/.local/share/Steam/ubuntu12_32/steam-runtime/i386/usr/lib/i386-linux-gnu/libFLAC.so.8.2.0
+e4d5e000-e4d5f000 rwxp 0004c000 08:23 10618825                           /home/cory/.local/share/Steam/ubuntu12_32/steam-runtime/i386/usr/lib/i386-linux-gnu/libFLAC.so.8.2.0
+e4d5f000-e4d75000 r-xp 00000000 08:23 13248205                           /usr/lib32/libnsl-2.24.so
+e4d75000-e4d76000 ---p 00016000 08:23 13248205                           /usr/lib32/libnsl-2.24.so
+e4d76000-e4d77000 r-xp 00016000 08:23 13248205                           /usr/lib32/libnsl-2.24.so
+e4d77000-e4d78000 rwxp 00017000 08:23 13248205                           /usr/lib32/libnsl-2.24.so
+e4d78000-e4d7a000 rwxp 00000000 00:00 0 
+e4d7a000-e4de6000 r-xp 00000000 08:23 10618927                           /home/cory/.local/share/Steam/ubuntu12_32/steam-runtime/i386/usr/lib/i386-linux-gnu/libsndfile.so.1.0.25
+e4de6000-e4de7000 r-xp 0006c000 08:23 10618927                           /home/cory/.local/share/Steam/ubuntu12_32/steam-runtime/i386/usr/lib/i386-linux-gnu/libsndfile.so.1.0.25
+e4de7000-e4de8000 rwxp 0006d000 08:23 10618927                           /home/cory/.local/share/Steam/ubuntu12_32/steam-runtime/i386/usr/lib/i386-linux-gnu/libsndfile.so.1.0.25
+e4de8000-e4dec000 rwxp 00000000 00:00 0 
+eee00000-eeeb6000 rwxp 00000000 00:00 0 
+eeeb6000-eef00000 ---p 00000000 00:00 0 
+eef00000-ef000000 rwxp 00000000 00:00 0 
+ef000000-ef052000 rwxp 00000000 00:00 0 
+ef052000-ef100000 ---p 00000000 00:00 0 
+ef14b000-ef14e000 r-xp 00000000 08:23 13248457                           /usr/lib32/gconv/UTF-16.so
+ef14e000-ef14f000 r-xp 00002000 08:23 13248457                           /usr/lib32/gconv/UTF-16.so
+ef14f000-ef150000 rwxp 00003000 08:23 13248457                           /usr/lib32/gconv/UTF-16.so
+ef150000-ef197000 r-xp 00000000 08:23 10748351                           /home/cory/.local/share/Steam/ubuntu12_32/steam-runtime/i386/lib/i386-linux-gnu/libdbus-1.so.3.5.8
+ef197000-ef198000 ---p 00047000 08:23 10748351                           /home/cory/.local/share/Steam/ubuntu12_32/steam-runtime/i386/lib/i386-linux-gnu/libdbus-1.so.3.5.8
+ef198000-ef199000 r-xp 00047000 08:23 10748351                           /home/cory/.local/share/Steam/ubuntu12_32/steam-runtime/i386/lib/i386-linux-gnu/libdbus-1.so.3.5.8
+ef199000-ef19a000 rwxp 00048000 08:23 10748351                           /home/cory/.local/share/Steam/ubuntu12_32/steam-runtime/i386/lib/i386-linux-gnu/libdbus-1.so.3.5.8
+ef19a000-ef1fd000 r-xp 00000000 08:23 10618938                           /home/cory/.local/share/Steam/ubuntu12_32/steam-runtime/i386/usr/lib/i386-linux-gnu/libpulsecommon-1.1.so
+ef1fd000-ef1fe000 r-xp 00062000 08:23 10618938                           /home/cory/.local/share/Steam/ubuntu12_32/steam-runtime/i386/usr/lib/i386-linux-gnu/libpulsecommon-1.1.so
+ef1fe000-ef1ff000 rwxp 00063000 08:23 10618938                           /home/cory/.local/share/Steam/ubuntu12_32/steam-runtime/i386/usr/lib/i386-linux-gnu/libpulsecommon-1.1.so
+efa00000-efafc000 rwxp 00000000 00:00 0 
+efafc000-efb00000 ---p 00000000 00:00 0 
+efb0d000-efb13000 r-xp 00000000 08:23 10618757                           /home/cory/.local/share/Steam/ubuntu12_32/steam-runtime/i386/usr/lib/i386-linux-gnu/libogg.so.0.7.1
+efb13000-efb14000 r-xp 00005000 08:23 10618757                           /home/cory/.local/share/Steam/ubuntu12_32/steam-runtime/i386/usr/lib/i386-linux-gnu/libogg.so.0.7.1
+efb14000-efb15000 rwxp 00006000 08:23 10618757                           /home/cory/.local/share/Steam/ubuntu12_32/steam-runtime/i386/usr/lib/i386-linux-gnu/libogg.so.0.7.1
+efb15000-efb1d000 r-xp 00000000 08:23 10748389                           /home/cory/.local/share/Steam/ubuntu12_32/steam-runtime/i386/lib/i386-linux-gnu/libwrap.so.0.7.6
+efb1d000-efb1e000 r-xp 00007000 08:23 10748389                           /home/cory/.local/share/Steam/ubuntu12_32/steam-runtime/i386/lib/i386-linux-gnu/libwrap.so.0.7.6
+efb1e000-efb1f000 rwxp 00008000 08:23 10748389                           /home/cory/.local/share/Steam/ubuntu12_32/steam-runtime/i386/lib/i386-linux-gnu/libwrap.so.0.7.6
+efb1f000-efb26000 r-xp 00000000 08:23 10619164                           /home/cory/.local/share/Steam/ubuntu12_32/steam-runtime/i386/usr/lib/i386-linux-gnu/libjson.so.0.0.1
+efb26000-efb27000 r-xp 00006000 08:23 10619164                           /home/cory/.local/share/Steam/ubuntu12_32/steam-runtime/i386/usr/lib/i386-linux-gnu/libjson.so.0.0.1
+efb27000-efb28000 rwxp 00007000 08:23 10619164                           /home/cory/.local/share/Steam/ubuntu12_32/steam-runtime/i386/usr/lib/i386-linux-gnu/libjson.so.0.0.1
+efb28000-efb74000 r-xp 00000000 08:23 10619172                           /home/cory/.local/share/Steam/ubuntu12_32/steam-runtime/i386/usr/lib/i386-linux-gnu/libpulse.so.0.13.5
+efb74000-efb75000 r-xp 0004b000 08:23 10619172                           /home/cory/.local/share/Steam/ubuntu12_32/steam-runtime/i386/usr/lib/i386-linux-gnu/libpulse.so.0.13.5
+efb75000-efb76000 rwxp 0004c000 08:23 10619172                           /home/cory/.local/share/Steam/ubuntu12_32/steam-runtime/i386/usr/lib/i386-linux-gnu/libpulse.so.0.13.5
+f0c78000-f0c8b000 rwxs b44e2000 00:06 14770                              /dev/nvidiactl
+f0c8b000-f0cab000 rwxs e8420000 00:06 14771                              /dev/nvidia0
+f0cab000-f0ceb000 rwxs 990e9000 00:06 14770                              /dev/nvidiactl
+f0ceb000-f0d0b000 rwxs 990e0000 00:06 14770                              /dev/nvidiactl
+f0d0b000-f0d4b000 rwxs 9052b000 00:06 14770                              /dev/nvidiactl
+f0d4b000-f0e00000 rwxp 00000000 00:00 0 
+f0e00000-f0eff000 rwxp 00000000 00:00 0 
+f0eff000-f0f00000 ---p 00000000 00:00 0 
+f0f00000-f0f05000 r-xp 00000000 08:23 10619277                           /home/cory/.local/share/Steam/ubuntu12_32/steam-runtime/i386/usr/lib/i386-linux-gnu/libasyncns.so.0.3.1
+f0f05000-f0f06000 r-xp 00004000 08:23 10619277                           /home/cory/.local/share/Steam/ubuntu12_32/steam-runtime/i386/usr/lib/i386-linux-gnu/libasyncns.so.0.3.1
+f0f06000-f0f07000 rwxp 00005000 08:23 10619277                           /home/cory/.local/share/Steam/ubuntu12_32/steam-runtime/i386/usr/lib/i386-linux-gnu/libasyncns.so.0.3.1
+f0f27000-f0f28000 ---p 00000000 00:00 0 
+f0f28000-f1728000 rwxp 00000000 00:00 0 
+f1728000-f17a8000 rwxs 199a18000 00:06 14770                             /dev/nvidiactl
+f1828000-f18a8000 rwxs 18fb77000 00:06 14770                             /dev/nvidiactl
+f18a8000-f19a8000 rwxs 18fa5f000 00:06 14770                             /dev/nvidiactl
+f19a8000-f19c8000 rwxs e83e0000 00:06 14771                              /dev/nvidia0
+f19c8000-f1a08000 rwxs 1b9609000 00:06 14770                             /dev/nvidiactl
+f1a08000-f1a48000 rwxs 1e266b000 00:06 14770                             /dev/nvidiactl
+f1a48000-f243b000 rwxp 00000000 00:00 0 
+f243b000-f253f000 rwxs d2f86000 00:06 14770                              /dev/nvidiactl
+f253f000-f3cd4000 r-xp 00000000 08:23 13248924                           /usr/lib32/libnvidia-glcore.so.370.28
+f3cd4000-f3cf4000 rwxp 01795000 08:23 13248924                           /usr/lib32/libnvidia-glcore.so.370.28
+f3cf4000-f4328000 r-xp 017b5000 08:23 13248924                           /usr/lib32/libnvidia-glcore.so.370.28
+f4328000-f43d8000 rwxp 01de9000 08:23 13248924                           /usr/lib32/libnvidia-glcore.so.370.28
+f43d8000-f43eb000 rwxp 00000000 00:00 0 
+f43eb000-f44ac000 r-xp 00000000 08:23 13248939                           /usr/lib32/libGLX_nvidia.so.370.28
+f44ac000-f44cc000 rwxp 000c1000 08:23 13248939                           /usr/lib32/libGLX_nvidia.so.370.28
+f44cc000-f44f7000 r-xp 000e1000 08:23 13248939                           /usr/lib32/libGLX_nvidia.so.370.28
+f44f7000-f44fc000 rwxp 0010c000 08:23 13248939                           /usr/lib32/libGLX_nvidia.so.370.28
+f44fc000-f4500000 rwxp 00000000 00:00 0 
+f4500000-f4561000 rwxp 00000000 00:00 0 
+f4561000-f4600000 ---p 00000000 00:00 0 
+f4603000-f4606000 r-xp 00000000 08:23 10619182                           /home/cory/.local/share/Steam/ubuntu12_32/steam-runtime/i386/usr/lib/i386-linux-gnu/libpulse-simple.so.0.0.3
+f4606000-f4607000 r-xp 00002000 08:23 10619182                           /home/cory/.local/share/Steam/ubuntu12_32/steam-runtime/i386/usr/lib/i386-linux-gnu/libpulse-simple.so.0.0.3
+f4607000-f4608000 rwxp 00003000 08:23 10619182                           /home/cory/.local/share/Steam/ubuntu12_32/steam-runtime/i386/usr/lib/i386-linux-gnu/libpulse-simple.so.0.0.3
+f4608000-f4609000 rwxs 90517000 00:06 14770                              /dev/nvidiactl
+f4609000-f460a000 rwxs efde6000 00:06 14771                              /dev/nvidia0
+f460a000-f460b000 rwxs efde6000 00:06 14771                              /dev/nvidia0
+f460b000-f460d000 rwxs 00000000 00:23 567812                             /tmp/.glzteGGy (deleted)
+f460d000-f462d000 rwxs 1aa13a000 00:06 14770                             /dev/nvidiactl
+f464d000-f468e000 rwxp 00000000 00:00 0 
+f468e000-f46a2000 r-xp 00000000 08:23 13248206                           /usr/lib32/libresolv-2.24.so
+f46a2000-f46a3000 ---p 00014000 08:23 13248206                           /usr/lib32/libresolv-2.24.so
+f46a3000-f46a4000 r-xp 00014000 08:23 13248206                           /usr/lib32/libresolv-2.24.so
+f46a4000-f46a5000 rwxp 00015000 08:23 13248206                           /usr/lib32/libresolv-2.24.so
+f46a5000-f46a7000 rwxp 00000000 00:00 0 
+f46a7000-f46c6000 r-xp 00000000 08:23 13248556                           /usr/lib32/libudev.so.1.6.5
+f46c6000-f46c7000 r-xp 0001e000 08:23 13248556                           /usr/lib32/libudev.so.1.6.5
+f46c7000-f46c8000 rwxp 0001f000 08:23 13248556                           /usr/lib32/libudev.so.1.6.5
+f46c8000-f46c9000 rwxs b39ff000 00:06 14770                              /dev/nvidiactl
+f46c9000-f46dc000 rwxs 1d4947000 00:06 14770                             /dev/nvidiactl
+f46dc000-f46ff000 rwxp 00000000 00:00 0 
+f46ff000-f4700000 ---p 00000000 00:00 0 
+f4700000-f4f00000 rwxp 00000000 00:00 0 
+f4f00000-f4f55000 rwxp 00000000 00:00 0 
+f4f55000-f5000000 ---p 00000000 00:00 0 
+f5000000-f5002000 r-xs 00000000 00:23 567812                             /tmp/.glzteGGy (deleted)
+f5002000-f5003000 rwxs 1d4946000 00:06 14770                             /dev/nvidiactl
+f5003000-f5007000 rwxs 16f86b000 00:06 14770                             /dev/nvidiactl
+f5007000-f5008000 rwxs efde6000 00:06 14771                              /dev/nvidia0
+f5008000-f500c000 r-xp 00000000 08:23 13383458                           /usr/lib32/tls/libnvidia-tls.so.370.28
+f500c000-f500d000 rwxp 00003000 08:23 13383458                           /usr/lib32/tls/libnvidia-tls.so.370.28
+f500d000-f5011000 r-xp 00000000 08:23 10748365                           /home/cory/.local/share/Steam/ubuntu12_32/steam-runtime/i386/lib/i386-linux-gnu/libcap.so.2.22
+f5011000-f5012000 r-xp 00003000 08:23 10748365                           /home/cory/.local/share/Steam/ubuntu12_32/steam-runtime/i386/lib/i386-linux-gnu/libcap.so.2.22
+f5012000-f5013000 rwxp 00004000 08:23 10748365                           /home/cory/.local/share/Steam/ubuntu12_32/steam-runtime/i386/lib/i386-linux-gnu/libcap.so.2.22
+f5013000-f5014000 ---p 00000000 00:00 0 
+f5014000-f5114000 rwxp 00000000 00:00 0 
+f5134000-f5135000 ---p 00000000 00:00 0 
+f5135000-f5145000 rwxp 00000000 00:00 0 
+f5145000-f54ca000 rwxs 00000000 00:13 568716                             /dev/shm/mono-shared-1001-shared_fileshare-pc-Linux-x86_64-36-12-0
+f54ca000-f54de000 rwxs 00000000 00:13 568715                             /dev/shm/mono-shared-1001-shared_data-pc-Linux-x86_64-312-12-0
+f54ee000-f5767000 r-xp 00000000 08:11 2622024                            /storage/SteamLibrary/steamapps/common/Tabletop Simulator/Tabletop Simulator_Data/Managed/mscorlib.dll
+f5777000-f5a6c000 r-xp 00000000 08:11 2622033                            /storage/SteamLibrary/steamapps/common/Tabletop Simulator/Tabletop Simulator_Data/Mono/x86/libmono.so
+f5a6c000-f5a6f000 r-xp 002f4000 08:11 2622033                            /storage/SteamLibrary/steamapps/common/Tabletop Simulator/Tabletop Simulator_Data/Mono/x86/libmono.so
+f5a6f000-f5a74000 rwxp 002f7000 08:11 2622033                            /storage/SteamLibrary/steamapps/common/Tabletop Simulator/Tabletop Simulator_Data/Mono/x86/libmono.so
+f5a74000-f5aa1000 rwxp 00000000 00:00 0 
+f5b51000-f5b56000 r-xp 00000000 08:23 13248198                           /usr/lib32/libnss_dns-2.24.so
+f5b56000-f5b57000 r-xp 00004000 08:23 13248198                           /usr/lib32/libnss_dns-2.24.so
+f5b57000-f5b58000 rwxp 00005000 08:23 13248198                           /usr/lib32/libnss_dns-2.24.so
+f5b58000-f5b63000 r-xp 00000000 08:23 13248199                           /usr/lib32/libnss_files-2.24.so
+f5b63000-f5b64000 r-xp 0000a000 08:23 13248199                           /usr/lib32/libnss_files-2.24.so
+f5b64000-f5b65000 rwxp 0000b000 08:23 13248199                           /usr/lib32/libnss_files-2.24.so
+f5b65000-f5b6b000 rwxp 00000000 00:00 0 
+f5c03000-f5c23000 rwxs 031f6000 00:13 566149                             /dev/shm/#566149 (deleted)
+f5c23000-f5d24000 rwxp 00000000 00:00 0 
+f5d24000-f6d25000 rwxs 00000000 00:13 567589                             /dev/shm/cory-Shm_bb88fd18
+f6d25000-f6dc9000 rwxp 00000000 00:00 0 
+f6dc9000-f6eca000 rwxs 00000000 00:13 567588                             /dev/shm/cory-Shm_9781f3b8
+f6eca000-f6f4b000 rwxs 00000000 00:13 567587                             /dev/shm/cory-Shm_53ccbb1f
+f6f4b000-f6fcb000 rwxs 00000000 00:13 17704                              /dev/shm/cory-ValveIPCSharedObjects5
+f6fcb000-f70ce000 rwxp 00000000 00:00 0 
+f70ce000-f70d3000 r-xp 00000000 08:23 10618936                           /home/cory/.local/share/Steam/ubuntu12_32/steam-runtime/i386/usr/lib/i386-linux-gnu/libXdmcp.so.6.0.0
+f70d3000-f70d4000 r-xp 00004000 08:23 10618936                           /home/cory/.local/share/Steam/ubuntu12_32/steam-runtime/i386/usr/lib/i386-linux-gnu/libXdmcp.so.6.0.0
+f70d4000-f70d5000 rwxp 00005000 08:23 10618936                           /home/cory/.local/share/Steam/ubuntu12_32/steam-runtime/i386/usr/lib/i386-linux-gnu/libXdmcp.so.6.0.0
+f70d5000-f70d7000 r-xp 00000000 08:23 10619116                           /home/cory/.local/share/Steam/ubuntu12_32/steam-runtime/i386/usr/lib/i386-linux-gnu/libXau.so.6.0.0
+f70d7000-f70d8000 r-xp 00001000 08:23 10619116                           /home/cory/.local/share/Steam/ubuntu12_32/steam-runtime/i386/usr/lib/i386-linux-gnu/libXau.so.6.0.0
+f70d8000-f70d9000 rwxp 00002000 08:23 10619116                           /home/cory/.local/share/Steam/ubuntu12_32/steam-runtime/i386/usr/lib/i386-linux-gnu/libXau.so.6.0.0
+f70d9000-f70dd000 r-xp 00000000 08:23 10618877                           /home/cory/.local/share/Steam/ubuntu12_32/steam-runtime/i386/usr/lib/i386-linux-gnu/libXfixes.so.3.1.0
+f70dd000-f70de000 r-xp 00004000 08:23 10618877                           /home/cory/.local/share/Steam/ubuntu12_32/steam-runtime/i386/usr/lib/i386-linux-gnu/libXfixes.so.3.1.0
+f70de000-f70df000 rwxp 00005000 08:23 10618877                           /home/cory/.local/share/Steam/ubuntu12_32/steam-runtime/i386/usr/lib/i386-linux-gnu/libXfixes.so.3.1.0
+f70df000-f70e7000 r-xp 00000000 08:23 10618973                           /home/cory/.local/share/Steam/ubuntu12_32/steam-runtime/i386/usr/lib/i386-linux-gnu/libXrender.so.1.3.0
+f70e7000-f70e8000 r-xp 00007000 08:23 10618973                           /home/cory/.local/share/Steam/ubuntu12_32/steam-runtime/i386/usr/lib/i386-linux-gnu/libXrender.so.1.3.0
+f70e8000-f70e9000 rwxp 00008000 08:23 10618973                           /home/cory/.local/share/Steam/ubuntu12_32/steam-runtime/i386/usr/lib/i386-linux-gnu/libXrender.so.1.3.0
+f70e9000-f70eb000 rwxp 00000000 00:00 0 
+f70eb000-f710b000 r-xp 00000000 08:23 10619259                           /home/cory/.local/share/Steam/ubuntu12_32/steam-runtime/i386/usr/lib/i386-linux-gnu/libxcb.so.1.1.0
+f710b000-f710c000 r-xp 0001f000 08:23 10619259                           /home/cory/.local/share/Steam/ubuntu12_32/steam-runtime/i386/usr/lib/i386-linux-gnu/libxcb.so.1.1.0
+f710c000-f710d000 rwxp 00020000 08:23 10619259                           /home/cory/.local/share/Steam/ubuntu12_32/steam-runtime/i386/usr/lib/i386-linux-gnu/libxcb.so.1.1.0
+f710d000-f71a1000 r-xp 00000000 08:23 13248908                           /usr/lib32/libGLdispatch.so.0.0.0
+f71a1000-f71a9000 r-xp 00093000 08:23 13248908                           /usr/lib32/libGLdispatch.so.0.0.0
+f71a9000-f71aa000 rwxp 0009b000 08:23 13248908                           /usr/lib32/libGLdispatch.so.0.0.0
+f71aa000-f71ba000 rwxp 00000000 00:00 0 
+f71ba000-f71ca000 r-xp 00000000 08:23 10618870                           /home/cory/.local/share/Steam/ubuntu12_32/steam-runtime/i386/usr/lib/i386-linux-gnu/libXext.so.6.4.0
+f71ca000-f71cb000 r-xp 0000f000 08:23 10618870                           /home/cory/.local/share/Steam/ubuntu12_32/steam-runtime/i386/usr/lib/i386-linux-gnu/libXext.so.6.4.0
+f71cb000-f71cc000 rwxp 00010000 08:23 10618870                           /home/cory/.local/share/Steam/ubuntu12_32/steam-runtime/i386/usr/lib/i386-linux-gnu/libXext.so.6.4.0
+f71cc000-f71dc000 r-xp 00000000 08:23 13248906                           /usr/lib32/libGLX.so.0.0.0
+f71dc000-f71dd000 r-xp 0000f000 08:23 13248906                           /usr/lib32/libGLX.so.0.0.0
+f71dd000-f71de000 rwxp 00010000 08:23 13248906                           /usr/lib32/libGLX.so.0.0.0
+f71de000-f71ee000 rwxp 00000000 00:00 0 
+f71ee000-f73a1000 r-xp 00000000 08:23 13248157                           /usr/lib32/libc-2.24.so
+f73a1000-f73a3000 r-xp 001b2000 08:23 13248157                           /usr/lib32/libc-2.24.so
+f73a3000-f73a4000 rwxp 001b4000 08:23 13248157                           /usr/lib32/libc-2.24.so
+f73a4000-f73a7000 rwxp 00000000 00:00 0 
+f73a7000-f73c2000 r-xp 00000000 08:23 10748392                           /home/cory/.local/share/Steam/ubuntu12_32/steam-runtime/i386/lib/i386-linux-gnu/libgcc_s.so.1
+f73c2000-f73c3000 r-xp 0001a000 08:23 10748392                           /home/cory/.local/share/Steam/ubuntu12_32/steam-runtime/i386/lib/i386-linux-gnu/libgcc_s.so.1
+f73c3000-f73c4000 rwxp 0001b000 08:23 10748392                           /home/cory/.local/share/Steam/ubuntu12_32/steam-runtime/i386/lib/i386-linux-gnu/libgcc_s.so.1
+f73c4000-f7417000 r-xp 00000000 08:23 13248204                           /usr/lib32/libm-2.24.so
+f7417000-f7418000 r-xp 00052000 08:23 13248204                           /usr/lib32/libm-2.24.so
+f7418000-f7419000 rwxp 00053000 08:23 13248204                           /usr/lib32/libm-2.24.so
+f7419000-f74f6000 r-xp 00000000 08:23 10618954                           /home/cory/.local/share/Steam/ubuntu12_32/steam-runtime/i386/usr/lib/i386-linux-gnu/libstdc++.so.6.0.19
+f74f6000-f74fa000 r-xp 000dc000 08:23 10618954                           /home/cory/.local/share/Steam/ubuntu12_32/steam-runtime/i386/usr/lib/i386-linux-gnu/libstdc++.so.6.0.19
+f74fa000-f74fb000 rwxp 000e0000 08:23 10618954                           /home/cory/.local/share/Steam/ubuntu12_32/steam-runtime/i386/usr/lib/i386-linux-gnu/libstdc++.so.6.0.19
+f74fb000-f7502000 rwxp 00000000 00:00 0 
+f7502000-f7509000 r-xp 00000000 08:23 10619273                           /home/cory/.local/share/Steam/ubuntu12_32/steam-runtime/i386/usr/lib/i386-linux-gnu/libXrandr.so.2.2.0
+f7509000-f750a000 r-xp 00006000 08:23 10619273                           /home/cory/.local/share/Steam/ubuntu12_32/steam-runtime/i386/usr/lib/i386-linux-gnu/libXrandr.so.2.2.0
+f750a000-f750b000 rwxp 00007000 08:23 10619273                           /home/cory/.local/share/Steam/ubuntu12_32/steam-runtime/i386/usr/lib/i386-linux-gnu/libXrandr.so.2.2.0
+f750b000-f7514000 r-xp 00000000 08:23 10618972                           /home/cory/.local/share/Steam/ubuntu12_32/steam-runtime/i386/usr/lib/i386-linux-gnu/libXcursor.so.1.0.2
+f7514000-f7515000 r-xp 00008000 08:23 10618972                           /home/cory/.local/share/Steam/ubuntu12_32/steam-runtime/i386/usr/lib/i386-linux-gnu/libXcursor.so.1.0.2
+f7515000-f7516000 rwxp 00009000 08:23 10618972                           /home/cory/.local/share/Steam/ubuntu12_32/steam-runtime/i386/usr/lib/i386-linux-gnu/libXcursor.so.1.0.2
+f7516000-f7518000 rwxp 00000000 00:00 0 
+f7518000-f7648000 r-xp 00000000 08:23 10618966                           /home/cory/.local/share/Steam/ubuntu12_32/steam-runtime/i386/usr/lib/i386-linux-gnu/libX11.so.6.3.0
+f7648000-f7649000 r-xp 00130000 08:23 10618966                           /home/cory/.local/share/Steam/ubuntu12_32/steam-runtime/i386/usr/lib/i386-linux-gnu/libX11.so.6.3.0
+f7649000-f764b000 rwxp 00131000 08:23 10618966                           /home/cory/.local/share/Steam/ubuntu12_32/steam-runtime/i386/usr/lib/i386-linux-gnu/libX11.so.6.3.0
+f764b000-f764c000 rwxp 00000000 00:00 0 
+f764c000-f76bc000 r-xp 00000000 08:23 13375740                           /usr/lib32/nvidia/libGL.so.1.0.0
+f76bc000-f76bd000 r-xp 0006f000 08:23 13375740                           /usr/lib32/nvidia/libGL.so.1.0.0
+f76bd000-f76be000 rwxp 00070000 08:23 13375740                           /usr/lib32/nvidia/libGL.so.1.0.0
+f76be000-f76c5000 r-xp 00000000 08:23 13248207                           /usr/lib32/librt-2.24.so
+f76c5000-f76c6000 r-xp 00006000 08:23 13248207                           /usr/lib32/librt-2.24.so
+f76c6000-f76c7000 rwxp 00007000 08:23 13248207                           /usr/lib32/librt-2.24.so
+f76c7000-f76e0000 r-xp 00000000 08:23 13248139                           /usr/lib32/libpthread-2.24.so
+f76e0000-f76e1000 r-xp 00018000 08:23 13248139                           /usr/lib32/libpthread-2.24.so
+f76e1000-f76e2000 rwxp 00019000 08:23 13248139                           /usr/lib32/libpthread-2.24.so
+f76e2000-f76e4000 rwxp 00000000 00:00 0 
+f76e4000-f76e7000 r-xp 00000000 08:23 13248203                           /usr/lib32/libdl-2.24.so
+f76e7000-f76e8000 r-xp 00002000 08:23 13248203                           /usr/lib32/libdl-2.24.so
+f76e8000-f76e9000 rwxp 00003000 08:23 13248203                           /usr/lib32/libdl-2.24.so
+f76e9000-f76ea000 rwxs efde6000 00:06 14771                              /dev/nvidia0
+f76ea000-f76eb000 rwxs 18f912000 00:06 14770                             /dev/nvidiactl
+f76eb000-f76ec000 rwxs f2060000 00:06 14771                              /dev/nvidia0
+f76ec000-f76ed000 rwxs 00000000 00:13 568714                             /dev/shm/mono.21705
+f76ee000-f76ef000 rwxp 00000000 00:00 0 
+f76ef000-f7720000 rwxs 00000000 00:13 567590                             /dev/shm/cory-Shm_ac7402be
+f7720000-f7753000 r-xp 00000000 08:23 8527058                            /home/cory/.local/share/Steam/ubuntu12_32/gameoverlayrenderer.so
+f7753000-f7754000 r-xp 00033000 08:23 8527058                            /home/cory/.local/share/Steam/ubuntu12_32/gameoverlayrenderer.so
+f7754000-f7755000 rwxp 00034000 08:23 8527058                            /home/cory/.local/share/Steam/ubuntu12_32/gameoverlayrenderer.so
+f7755000-f7758000 rwxp 00000000 00:00 0 
+f7758000-f775a000 r--p 00000000 00:00 0                                  [vvar]
+f775a000-f775c000 r-xp 00000000 00:00 0                                  [vdso]
+f775c000-f777e000 r-xp 00000000 08:23 13248156                           /usr/lib32/ld-2.24.so
+f777e000-f777f000 r-xp 00021000 08:23 13248156                           /usr/lib32/ld-2.24.so
+f777f000-f7780000 rwxp 00022000 08:23 13248156                           /usr/lib32/ld-2.24.so
+ffd3f000-ffd60000 rwxp 00000000 00:00 0                                  [stack]

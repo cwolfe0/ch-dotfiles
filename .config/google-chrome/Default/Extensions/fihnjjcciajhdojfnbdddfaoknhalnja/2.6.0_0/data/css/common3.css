@@ -1,0 +1,19 @@
+body[style*="margin-top"] {margin-top:0 !important}
+
+.overlay, .box_overlay,
+#fancybox-wrap, #fancybox-overlay, #fancybox-loading, #fancybox-tmp, .fancybox-wrap, .fancybox-overlay,
+#colorbox, #cboxOverlay,
+#cbox_cc_Overlay, #colorboxCC,
+#cookiequestion_big,
+#ccm,
+#lbmodal-overlay, #lbmodal,
+#st_popup, #st_overlay,
+#emb-cp-overlay, #emb-cp-dialog,
+.lb-overlay, .lb-wrapper,
+#_iCD,
+.ui-widget, .ui-widget-overlay,
+#msgLayer,
+.reveal-modal, .reveal-modal-bg,
+#welcomebar-wrapper
+
+{display:none !important}

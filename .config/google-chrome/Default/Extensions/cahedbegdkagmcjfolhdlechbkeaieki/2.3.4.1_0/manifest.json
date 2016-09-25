@@ -1,0 +1,47 @@
+{
+   "background": {
+      "page": "background.html"
+   },
+   "browser_action": {
+      "default_icon": {
+         "19": "icons/icon19.png",
+         "38": "icons/icon38.png"
+      },
+      "default_popup": "popup/popup.html",
+      "default_title": "Chromoji"
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "css": [ "emoji.css" ],
+      "js": [ "chardict.js", "emoji.js" ],
+      "matches": [ "\u003Call_urls>" ],
+      "run_at": "document_start"
+   }, {
+      "all_frames": true,
+      "js": [ "emoji_insert.js" ],
+      "matches": [ "\u003Call_urls>" ],
+      "run_at": "document_end"
+   }, {
+      "all_frames": true,
+      "exclude_globs": [  ],
+      "js": [ "support/ext.js", "support/support.js" ],
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_start"
+   } ],
+   "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+   "default_locale": "en_GB",
+   "description": "__MSG_desc__",
+   "icons": {
+      "128": "icons/icon128.png",
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDwXAE6xhmLE4bgByC7IXImq/FEjFVDldE7t5tw+SDjBacVlzFIWXK9BLWK5qn4UAQsmpC1WVsS6TIU/DfEoVxy0cCrmi1pVgfRyMJjFcR+Z20dolasA2P+3LhFrcmhwFBr8nTwTHAw1nQQvsMZhMijRi5mgA9Cb9Fv053mwkNRjwIDAQAB",
+   "manifest_version": 2,
+   "name": "__MSG_extName__",
+   "options_page": "options/options.html",
+   "permissions": [ "http://*/", "https://*/", "clipboardWrite", "storage" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.3.4.1",
+   "web_accessible_resources": [ "images/apple/*.png", "images/google/*.png", "font/Symbola.ttf", "font/EmojiSymbols-Regular.woff" ]
+}

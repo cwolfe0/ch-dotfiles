@@ -1,0 +1,39 @@
+2016/09/24-14:08:08.166 5600 Reusing MANIFEST /home/cory/.config/google-chrome/Default/Extension State/MANIFEST-000001
+2016/09/24-14:08:08.166 5600 Recovering log #478
+2016/09/24-14:08:08.170 5600 Reusing old log /home/cory/.config/google-chrome/Default/Extension State/000478.log 
+2016/09/24-18:18:26.446 6877 Level-0 table #482: started
+2016/09/24-18:18:26.466 6877 Level-0 table #482: 1767787 bytes OK
+2016/09/24-18:18:26.476 6877 Delete type=0 #478
+2016/09/24-18:18:26.476 6877 Compacting 4@0 + 1@1 files
+2016/09/24-18:18:26.500 6877 Generated table #483@0: 14 keys, 8471 bytes
+2016/09/24-18:18:26.500 6877 Compacted 4@0 + 1@1 files => 8471 bytes
+2016/09/24-18:18:26.509 6877 compacted to: files[ 0 1 1 0 0 0 0 ]
+2016/09/24-18:18:26.509 6877 Delete type=2 #479
+2016/09/24-18:18:26.509 6877 Delete type=2 #475
+2016/09/24-18:18:26.510 6877 Delete type=2 #473
+2016/09/24-18:18:26.510 6877 Delete type=2 #482
+2016/09/24-18:18:26.510 6877 Delete type=2 #477
+2016/09/24-19:35:12.144 6877 Level-0 table #485: started
+2016/09/24-19:35:12.166 6877 Level-0 table #485: 1923038 bytes OK
+2016/09/24-19:35:12.183 6877 Delete type=0 #481
+2016/09/24-21:04:53.978 6877 Level-0 table #487: started
+2016/09/24-21:04:54.001 6877 Level-0 table #487: 1870452 bytes OK
+2016/09/24-21:04:54.010 6877 Delete type=0 #484
+2016/09/24-22:57:02.624 6877 Level-0 table #489: started
+2016/09/24-22:57:02.645 6877 Level-0 table #489: 1927414 bytes OK
+2016/09/24-22:57:02.657 6877 Delete type=0 #486
+2016/09/25-03:21:37.795 6877 Level-0 table #491: started
+2016/09/25-03:21:37.814 6877 Level-0 table #491: 1725283 bytes OK
+2016/09/25-03:21:37.826 6877 Delete type=0 #488
+2016/09/25-03:21:37.827 6877 Compacting 4@0 + 1@1 files
+2016/09/25-03:21:37.855 6877 Generated table #492@0: 14 keys, 8476 bytes
+2016/09/25-03:21:37.855 6877 Compacted 4@0 + 1@1 files => 8476 bytes
+2016/09/25-03:21:37.863 6877 compacted to: files[ 0 1 1 0 0 0 0 ]
+2016/09/25-03:21:37.863 6877 Delete type=2 #485
+2016/09/25-03:21:37.864 6877 Delete type=2 #483
+2016/09/25-03:21:37.864 6877 Delete type=2 #491
+2016/09/25-03:21:37.864 6877 Delete type=2 #489
+2016/09/25-03:21:37.864 6877 Delete type=2 #487
+2016/09/25-06:38:37.852 6877 Level-0 table #494: started
+2016/09/25-06:38:37.874 6877 Level-0 table #494: 1779573 bytes OK
+2016/09/25-06:38:37.882 6877 Delete type=0 #490

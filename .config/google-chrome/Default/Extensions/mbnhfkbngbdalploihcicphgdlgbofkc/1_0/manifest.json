@@ -1,0 +1,39 @@
+{
+   "description": "Arc-Darker theme for Chrome/Chromium",
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAs5TYA1kcvjhUtZ/P+7HlttYmVsQffazZnsWr59UUTFOYMCX8pM7ejAI0qmHZe3J8BLDCZYi8ooeNRMD+2QDvybmXsjWGRi26tavPV40/WhPUmf7tZnfP0wz28VXIpQ/BW64lsavrd5u+udfo7cl4590QZfl8lh96Cz3NY4EOc8drmi6xxfHc85Pd2lqHuX0dHE00UGCJmsvjQ49ot9GXVY0ZWiGolT0vla+inmaX6kpahaDJSB4C6mNeKPFYuWbmXwhO2zb9CZRLd1RErdVBlcdgCcoJkjUy+srI5L2hPvpkNFKTBUsLEFjtT7Uz6D3Xf8R+ECQjud/cV5TV+3ShZwIDAQAB",
+   "manifest_version": 2,
+   "name": "Arc Darker",
+   "theme": {
+      "colors": {
+         "bookmark_text": [ 35, 35, 35 ],
+         "button_background": [ 0, 0, 0, 0 ],
+         "frame": [ 235, 235, 237 ],
+         "frame_inactive": [ 235, 235, 237 ],
+         "frame_incognito": [ 235, 235, 237 ],
+         "frame_incognito_inactive": [ 235, 235, 237 ],
+         "ntp_background": [ 255, 255, 255 ],
+         "ntp_text": [ 0, 0, 0 ],
+         "tab_background_text": [ 100, 100, 100 ],
+         "tab_text": [ 20, 20, 20 ],
+         "toolbar": [ 223, 223, 223 ]
+      },
+      "images": {
+         "theme_frame": "images/theme_frame.png",
+         "theme_frame_inactive": "images/theme_frame.png",
+         "theme_toolbar": "images/theme_toolbar.png"
+      },
+      "properties": {
+         "ntp_background_alignment": "bottom",
+         "ntp_background_repeat": "no-repeat"
+      },
+      "tints": {
+         "background_tab": [ -1, 0.5, 0.85 ],
+         "buttons": [ -1, -1, -1 ],
+         "frame": [ -1, -1, -1 ],
+         "frame_inactive": [ -1, -1, -1 ],
+         "frame_incognito": [ -1, 0.2, 0.35 ],
+         "frame_incognito_inactive": [ -1, 0.3, 0.6 ]
+      }
+   },
+   "version": "1"
+}

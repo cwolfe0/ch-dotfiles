@@ -1,0 +1,1 @@
+body > .view > .view > .view > .view + .view[style*="height: 59px"] {display:none !important}

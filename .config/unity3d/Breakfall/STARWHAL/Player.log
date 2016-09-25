@@ -1,0 +1,253 @@
+pid 27549 != 27539, skipping destruction (fork without exec?)
+ERROR: ld.so: object '/home/cory/.local/share/Steam/ubuntu12_32/gameoverlayrenderer.so' from LD_PRELOAD cannot be preloaded (wrong ELF class: ELFCLASS32): ignored.
+Setting breakpad minidump AppID = 263020
+Steam_SetMinidumpSteamID:  Caching Steam ID:  76561198032779062 [API loaded no]
+pid 27586 != 27539, skipping destruction (fork without exec?)
+process_set_termination_details: error looking up process handle 0x903
+tensions: GL_AMD_multi_draw_indirect GL_AMD_seamless_cubemap_per_texture GL_ARB_arrays_of_arrays GL_ARB_base_instance GL_ARB_bindless_texture GL_ARB_blend_func_extended GL_ARB_buffer_storage GL_ARB_clear_buffer_object GL_ARB_clear_texture GL_ARB_clip_control GL_ARB_color_buffer_float GL_ARB_compatibility GL_ARB_compressed_texture_pixel_storage GL_ARB_conservative_depth GL_ARB_compute_shader GL_ARB_compute_variable_group_size GL_ARB_conditional_render_inverted GL_ARB_copy_buffer GL_ARB_copy_image GL_ARB_cull_distance GL_ARB_debug_output GL_ARB_depth_buffer_float GL_ARB_depth_clamp GL_ARB_depth_texture GL_ARB_derivative_control GL_ARB_direct_state_access GL_ARB_draw_buffers GL_ARB_draw_buffers_blend GL_ARB_draw_indirect GL_ARB_draw_elements_base_vertex GL_ARB_draw_instanced GL_ARB_enhanced_layouts GL_ARB_ES2_compatibility GL_ARB_ES3_compatibility GL_ARB_ES3_1_compatibility GL_ARB_ES3_2_compatibility GL_ARB_explicit_attrib_location GL_ARB_explicit_uniform_location GL_ARB_fragment_coord_conventions GL_ARB_fragment_layer_viewport GL_ARB_fragment_program GL_ARB_fragment_program_shadow GL_ARB_fragment_shader GL_ARB_framebuffer_no_attachments GL_ARB_framebuffer_object GL_ARB_framebuffer_sRGB GL_ARB_geometry_shader4 GL_ARB_get_program_binary GL_ARB_get_texture_sub_image GL_ARB_gl_spirv GL_ARB_gpu_shader5 GL_ARB_gpu_shader_fp64 GL_ARB_gpu_shader_int64 GL_ARB_half_float_pixel GL_ARB_half_float_vertex GL_ARB_imaging GL_ARB_indirect_parameters GL_ARB_instanced_arrays GL_ARB_internalformat_query GL_ARB_internalformat_query2 GL_ARB_invalidate_subdata GL_ARB_map_buffer_alignment GL_ARB_map_buffer_range GL_ARB_multi_bind GL_ARB_multi_draw_indirect GL_ARB_multisample GL_ARB_multitexture GL_ARB_occlusion_query GL_ARB_occlusion_query2 GL_ARB_parallel_shader_compile GL_ARB_pipeline_statistics_query GL_ARB_pixel_buffer_object GL_ARB_point_parameters GL_ARB_point_sprite GL_ARB_program_interface_query GL_ARB_provoking_vertex GL_ARB_query_buffer_object GL_ARB_robust_buffer_access_behavior GL_ARB_robustness GL_ARB_sample_shading GL_ARB_sampler_objects GL_ARB_seamless_cube_map GL_ARB_seamless_cubemap_per_texture GL_ARB_separate_shader_objects GL_ARB_shader_atomic_counter_ops GL_ARB_shader_atomic_counters GL_ARB_shader_ballot GL_ARB_shader_bit_encoding GL_ARB_shader_clock GL_ARB_shader_draw_parameters GL_ARB_shader_group_vote GL_ARB_shader_image_load_store GL_ARB_shader_image_size GL_ARB_shader_objects GL_ARB_shader_precision GL_ARB_shader_storage_buffer_object GL_ARB_shader_subroutine GL_ARB_shader_texture_image_samples GL_ARB_shader_texture_lod GL_ARB_shading_language_100 GL_ARB_shading_language_420pack GL_ARB_shading_language_include GL_ARB_shading_language_packing GL_ARB_shadow GL_ARB_sparse_buffer GL_ARB_sparse_texture GL_ARB_stencil_texturing GL_ARB_sync GL_ARB_tessellation_shader GL_ARB_texture_barrier GL_ARB_texture_border_clamp GL_ARB_texture_buffer_object GL_ARB_texture_buffer_object_rgb32 GL_ARB_texture_buffer_range GL_ARB_texture_compression GL_ARB_texture_compression_bptc GL_ARB_texture_compression_rgtc GL_ARB_texture_cube_map GL_ARB_texture_cube_map_array GL_ARB_texture_env_add GL_ARB_texture_env_combine GL_ARB_texture_env_crossbar GL_ARB_texture_env_dot3 GL_ARB_texture_float GL_ARB_texture_gather GL_ARB_texture_mirror_clamp_to_edge GL_ARB_texture_mirrored_repeat GL_ARB_texture_multisample GL_ARB_texture_non_power_of_two GL_ARB_texture_query_levels GL_ARB_texture_query_lod GL_ARB_texture_rectangle GL_ARB_texture_rg GL_ARB_texture_rgb10_a2ui GL_ARB_texture_stencil8 GL_ARB_texture_storage GL_ARB_texture_storage_multisample GL_ARB_texture_swizzle GL_ARB_texture_view GL_ARB_timer_query GL_ARB_transform_feedback2 GL_ARB_transform_feedback3 GL_ARB_transform_feedback_instanced GL_ARB_transform_feedback_overflow_query GL_ARB_transpose_matrix GL_ARB_uniform_buffer_object GL_ARB_vertex_array_bgra GL_ARB_vertex_array_object GL_ARB_vertex_attrib_64bit GL_ARB_vertex_attrib_binding GL_ARB_vertex_buffer_object GL_ARB_vertex_program GL_ARB_vertex_shader GL_ARB_vertex_type_10f_11f_11f_rev GL_ARB_vertex_type_2_10_10_10_rev GL_ARB_viewport_array GL_ARB_window_pos GL_ATI_draw_buffers GL_ATI_texture_float GL_ATI_texture_mirror_once GL_S3_s3tc GL_EXT_texture_env_add GL_EXT_abgr GL_EXT_bgra GL_EXT_bindable_uniform GL_EXT_blend_color GL_EXT_blend_equation_separate GL_EXT_blend_func_separate GL_EXT_blend_minmax GL_EXT_blend_subtract GL_EXT_compiled_vertex_array GL_EXT_Cg_shader GL_EXT_depth_bounds_test GL_EXT_direct_state_access GL_EXT_draw_buffers2 GL_EXT_draw_instanced GL_EXT_draw_range_elements GL_EXT_fog_coord GL_EXT_framebuffer_blit GL_EXT_framebuffer_multisample GL_EXTX_framebuffer_mixed_formats GL_EXT_framebuffer_multisample_blit_scaled GL_EXT_framebuffer_object GL_EXT_framebuffer_sRGB GL_EXT_geometry_shader4 GL_EXT_gpu_program_parameters GL_EXT_gpu_shader4 GL_EXT_multi_draw_arrays GL_EXT_packed_depth_stencil GL_EXT_packed_float GL_EXT_packed_pixels GL_EXT_pixel_buffer_object GL_EXT_point_parameters GL_EXT_polygon_offset_clamp GL_EXT_provoking_vertex GL_EXT_rescale_normal GL_EXT_secondary_color GL_EXT_separate_shader_objects GL_EXT_separate_specular_color GL_EXT_shader_image_load_store GL_EXT_shader_integer_mix GL_EXT_shadow_funcs GL_EXT_stencil_two_side GL_EXT_stencil_wrap GL_EXT_texture3D GL_EXT_texture_array GL_EXT_texture_buffer_object GL_EXT_texture_compression_dxt1 GL_EXT_texture_compression_latc GL_EXT_texture_compression_rgtc GL_EXT_texture_compression_s3tc GL_EXT_texture_cube_map GL_EXT_texture_edge_clamp GL_EXT_texture_env_combine GL_EXT_texture_env_dot3 GL_EXT_texture_filter_anisotropic GL_EXT_texture_integer GL_EXT_texture_lod GL_EXT_texture_lod_bias GL_EXT_texture_mirror_clamp GL_EXT_texture_object GL_EXT_texture_shared_exponent GL_EXT_texture_sRGB GL_EXT_texture_sRGB_decode GL_EXT_texture_storage GL_EXT_texture_swizzle GL_EXT_timer_query GL_EXT_transform_feedback2 GL_EXT_vertex_array GL_EXT_vertex_array_bgra GL_EXT_vertex_attrib_64bit GL_EXT_window_rectangles GL_EXT_x11_sync_object GL_EXT_import_sync_object GL_NV_robustness_video_memory_purge GL_IBM_rasterpos_clip GL_IBM_texture_mirrored_repeat GL_KHR_context_flush_control GL_KHR_debug GL_KHR_no_error GL_KHR_robust_buffer_access_behavior GL_KHR_robustness GL_KTX_buffer_region GL_NV_alpha_to_coverage_dither_control GL_NV_bindless_multi_draw_indirect GL_NV_bindless_multi_draw_indirect_count GL_NV_bindless_texture GL_NV_blend_equation_advanced GL_NV_blend_square GL_NV_command_list GL_NV_compute_program5 GL_NV_conditional_render GL_NV_copy_depth_to_color GL_NV_copy_image GL_NV_depth_buffer_float GL_NV_depth_clamp GL_NV_draw_texture GL_NV_draw_vulkan_image GL_NV_ES1_1_compatibility GL_NV_ES3_1_compatibility GL_NV_explicit_multisample GL_NV_fence GL_NV_float_buffer GL_NV_fog_distance GL_NV_fragment_program GL_NV_fragment_program_option GL_NV_fragment_program2 GL_NV_framebuffer_multisample_coverage GL_NV_geometry_shader4 GL_NV_gpu_program4 GL_NV_internalformat_sample_query GL_NV_gpu_program4_1 GL_NV_gpu_program5 GL_NV_gpu_program5_mem_extended GL_NV_gpu_program_fp64 GL_NV_gpu_shader5 GL_NV_half_float GL_NV_light_max_exponent GL_NV_multisample_coverage GL_NV_multisample_filter_hint GL_NV_occlusion_query GL_NV_packed_depth_stencil GL_NV_parameter_buffer_object GL_NV_parameter_buffer_object2 GL_NV_path_rendering GL_NV_pixel_data_range GL_NV_point_sprite GL_NV_primitive_restart GL_NV_register_combiners GL_NV_register_combiners2 GL_NV_shader_atomic_counters GL_NV_shader_atomic_float GL_NV_shader_buffer_load GL_NV_shader_storage_buffer_object GL_NV_texgen_reflection GL_NV_texture_barrier GL_NV_texture_compression_vtc GL_NV_texture_env_combine4 GL_NV_texture_multisample GL_NV_texture_rectangle GL_NV_texture_shader GL_NV_texture_shader2 GL_NV_texture_shader3 GL_NV_transform_feedback GL_NV_transform_feedback2 GL_NV_uniform_buffer_unified_memory GL_NV_vdpau_interop GL_NV_vertex_array_range GL_NV_vertex_array_range2 GL_NV_vertex_attrib_integer_64bit GL_NV_vertex_buffer_unified_memory GL_NV_vertex_program GL_NV_vertex_program1_1 GL_NV_vertex_program2 GL_NV_vertex_program2_option GL_NV_vertex_program3 GL_NVX_conditional_render GL_NVX_gpu_memory_info GL_NVX_nvenc_interop GL_NV_shader_thread_group GL_NV_shader_thread_shuffle GL_KHR_blend_equation_advanced GL_SGIS_generate_mipmap GL_SGIS_texture_lod GL_SGIX_depth_texture GL_SGIX_shadow GL_SUN_slice_accum 
+GLX Extensions: GLX_EXT_visual_info GLX_EXT_visual_rating GLX_EXT_import_context GLX_SGIX_fbconfig GLX_SGIX_pbuffer GLX_SGI_video_sync GLX_SGI_swap_control GLX_EXT_swap_control GLX_EXT_swap_control_tear GLX_EXT_texture_from_pixmap GLX_EXT_buffer_age GLX_ARB_create_context GLX_ARB_create_context_profile GLX_EXT_create_context_es_profile GLX_EXT_create_context_es2_profile GLX_ARB_create_context_robustness GLX_NV_delay_before_swap GLX_EXT_stereo_tree GLX_ARB_context_flush_control GLX_NV_robustness_video_memory_purge GLX_ARB_multisample GLX_NV_float_buffer GLX_ARB_fbconfig_float GLX_EXT_framebuffer_sRGB GLX_NV_multisample_coverage GLX_NV_copy_image GLX_ARB_get_proc_address 
+Setting maxVSyncInterval to 4
+Total system RAM: 7916 MiB
+Initialize engine version: 4.3.4f1 (e444f76e01cd)
+Total system RAM: 7916 MiB
+AudioManager: Using ALSA: default
+Begin MonoManager ReloadAssembly
+Platform assembly: /storage/SteamLibrary/steamapps/common/Starwhal/Starwhal_Data/Managed/UnityEngine.dll (this message is harmless)
+Loading /storage/SteamLibrary/steamapps/common/Starwhal/Starwhal_Data/Managed/UnityEngine.dll into Unity Child Domain
+Platform assembly: /storage/SteamLibrary/steamapps/common/Starwhal/Starwhal_Data/Managed/Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading /storage/SteamLibrary/steamapps/common/Starwhal/Starwhal_Data/Managed/Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: /storage/SteamLibrary/steamapps/common/Starwhal/Starwhal_Data/Managed/Assembly-CSharp.dll (this message is harmless)
+Loading /storage/SteamLibrary/steamapps/common/Starwhal/Starwhal_Data/Managed/Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: /storage/SteamLibrary/steamapps/common/Starwhal/Starwhal_Data/Managed/Assembly-UnityScript-firstpass.dll (this message is harmless)
+Loading /storage/SteamLibrary/steamapps/common/Starwhal/Starwhal_Data/Managed/Assembly-UnityScript-firstpass.dll into Unity Child Domain
+Platform assembly: /storage/SteamLibrary/steamapps/common/Starwhal/Starwhal_Data/Managed/ConsoleUtilsImport.dll (this message is harmless)
+Loading /storage/SteamLibrary/steamapps/common/Starwhal/Starwhal_Data/Managed/ConsoleUtilsImport.dll into Unity Child Domain
+Platform assembly: /storage/SteamLibrary/steamapps/common/Starwhal/Starwhal_Data/Managed/DataPlatformImport.dll (this message is harmless)
+Loading /storage/SteamLibrary/steamapps/common/Starwhal/Starwhal_Data/Managed/DataPlatformImport.dll into Unity Child Domain
+Platform assembly: /storage/SteamLibrary/steamapps/common/Starwhal/Starwhal_Data/Managed/SteamworksManaged.dll (this message is harmless)
+Loading /storage/SteamLibrary/steamapps/common/Starwhal/Starwhal_Data/Managed/SteamworksManaged.dll into Unity Child Domain
+Platform assembly: /storage/SteamLibrary/steamapps/common/Starwhal/Starwhal_Data/Managed/StorageImport.dll (this message is harmless)
+Loading /storage/SteamLibrary/steamapps/common/Starwhal/Starwhal_Data/Managed/StorageImport.dll into Unity Child Domain
+Platform assembly: /storage/SteamLibrary/steamapps/common/Starwhal/Starwhal_Data/Managed/TextSystemsImport.dll (this message is harmless)
+Loading /storage/SteamLibrary/steamapps/common/Starwhal/Starwhal_Data/Managed/TextSystemsImport.dll into Unity Child Domain
+Platform assembly: /storage/SteamLibrary/steamapps/common/Starwhal/Starwhal_Data/Managed/UnityEtx.dll (this message is harmless)
+Loading /storage/SteamLibrary/steamapps/common/Starwhal/Starwhal_Data/Managed/UnityEtx.dll into Unity Child Domain
+Platform assembly: /storage/SteamLibrary/steamapps/common/Starwhal/Starwhal_Data/Managed/UnityPluginLogImport.dll (this message is harmless)
+Loading /storage/SteamLibrary/steamapps/common/Starwhal/Starwhal_Data/Managed/UnityPluginLogImport.dll into Unity Child Domain
+Platform assembly: /storage/SteamLibrary/steamapps/common/Starwhal/Starwhal_Data/Managed/UsersImport.dll (this message is harmless)
+Loading /storage/SteamLibrary/steamapps/common/Starwhal/Starwhal_Data/Managed/UsersImport.dll into Unity Child Domain
+Platform assembly: /storage/SteamLibrary/steamapps/common/Starwhal/Starwhal_Data/Managed/XboxOneCommonImport.dll (this message is harmless)
+Loading /storage/SteamLibrary/steamapps/common/Starwhal/Starwhal_Data/Managed/XboxOneCommonImport.dll into Unity Child Domain
+Platform assembly: /storage/SteamLibrary/steamapps/common/Starwhal/Starwhal_Data/Managed/Parse.Unity.dll (this message is harmless)
+Loading /storage/SteamLibrary/steamapps/common/Starwhal/Starwhal_Data/Managed/Parse.Unity.dll into Unity Child Domain
+Platform assembly: /storage/SteamLibrary/steamapps/common/Starwhal/Starwhal_Data/Managed/SonyNP.dll (this message is harmless)
+Loading /storage/SteamLibrary/steamapps/common/Starwhal/Starwhal_Data/Managed/SonyNP.dll into Unity Child Domain
+Platform assembly: /storage/SteamLibrary/steamapps/common/Starwhal/Starwhal_Data/Managed/SonyPS4SavedGames.dll (this message is harmless)
+Loading /storage/SteamLibrary/steamapps/common/Starwhal/Starwhal_Data/Managed/SonyPS4SavedGames.dll into Unity Child Domain
+- Completed reload, in  0.030 seconds
+Compositing window manager detected - disabling vsync for performance
+Default vsync count 0
+requesting resize -1 x -1
+Using native desktop resolution 3200 x 1080
+requesting fullscreen 3200 x 1080 at 0 Hz
+Desktop is 3200 x 1080 @ 60 Hz
+/dev/input/js0: driver version: 2.1.0 (20100)
+/dev/input/js0: fd 77, buttons 14, axes 18, name Sony Computer Entertainment Wireless Controller
+/dev/input/js0: axis  0: raw      0, mapped 0.000000
+/dev/input/js0: axis  1: raw      0, mapped 0.000000
+/dev/input/js0: axis  2: raw      0, mapped 0.000000
+/dev/input/js0: axis  3: raw -32767, mapped 0.000000
+/dev/input/js0: axis  4: raw -32767, mapped 0.000000
+/dev/input/js0: axis  5: raw      0, mapped 0.000000
+/dev/input/js0: axis  6: raw      0, mapped 0.000000
+/dev/input/js0: axis  7: raw      0, mapped 0.000000
+/dev/input/js0: axis  8: raw      0, mapped 0.000000
+/dev/input/js0: axis  9: raw      0, mapped 0.000000
+/dev/input/js0: axis 10: raw      0, mapped 0.000000
+/dev/input/js0: axis 11: raw      0, mapped 0.000000
+/dev/input/js0: axis 12: raw  32767, mapped 0.000000
+/dev/input/js0: axis 13: raw  -4426, mapped 0.000000
+/dev/input/js0: axis 14: raw      0, mapped 0.000000
+/dev/input/js0: axis 15: raw -32767, mapped 0.000000
+/dev/input/js0: axis 16: raw  13288, mapped 0.000000
+/dev/input/js0: axis 17: raw -32767, mapped 0.000000
+/dev/input/js1: driver version: 2.1.0 (20100)
+/dev/input/js1: fd 78, buttons 11, axes 8, name Microsoft X-Box One pad (Firmware 2015)
+/dev/input/js1: axis  0: raw    634, mapped 0.000000
+/dev/input/js1: axis  1: raw   -164, mapped 0.000000
+/dev/input/js1: axis  2: raw -32767, mapped 0.000000
+/dev/input/js1: axis  3: raw   -600, mapped 0.000000
+/dev/input/js1: axis  4: raw  -1750, mapped 0.000000
+/dev/input/js1: axis  5: raw -32767, mapped 0.000000
+/dev/input/js1: axis  6: raw      0, mapped 0.000000
+/dev/input/js1: axis  7: raw      0, mapped 0.000000
+Platform assembly: /storage/SteamLibrary/steamapps/common/Starwhal/Starwhal_Data/Managed/System.dll (this message is harmless)
+Platform assembly: /storage/SteamLibrary/steamapps/common/Starwhal/Starwhal_Data/Managed/System.Core.dll (this message is harmless)
+Changing real window size to 931 x 1005
+Event Type Ignored: MapNotify
+Event Type Ignored: VisibilityNotify
+Event Type Ignored: EnterNotify
+Changing real window size to 931 x 1005
+Event Type Ignored: FocusIn
+Changing real window size to 1920 x 1080
+Setting up downscaled viewport at 931 x 1005
+Event Type Ignored: EnterNotify
+Changing real window size to 1920 x 1080
+Changing real window size to 1920 x 1080
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1699)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1699)
+
+UnloadTime: 3.106000 ms
+Fallback handler could not load library /storage/SteamLibrary/steamapps/common/Starwhal/Starwhal_Data/Mono/x86/SteamworksNative
+Fallback handler could not load library /storage/SteamLibrary/steamapps/common/Starwhal/Starwhal_Data/Mono/x86/SteamworksNative
+Fallback handler could not load library /storage/SteamLibrary/steamapps/common/Starwhal/Starwhal_Data/Mono/x86/SteamworksNative
+Fallback handler could not load library /storage/SteamLibrary/steamapps/common/Starwhal/Starwhal_Data/Mono/x86/SteamworksNative
+Fallback handler could not load library /storage/SteamLibrary/steamapps/common/Starwhal/Starwhal_Data/Mono/x86/SteamworksNative
+Fallback handler could not load library /storage/SteamLibrary/steamapps/common/Starwhal/Starwhal_Data/Mono/x86/SteamworksNative
+Fallback handler could not load library /storage/SteamLibrary/steamapps/common/Starwhal/Starwhal_Data/Mono/x86/SteamworksNative
+Fallback handler could not load library /storage/SteamLibrary/steamapps/common/Starwhal/Starwhal_Data/Mono/x86/SteamworksNative
+Fallback handler could not load library /storage/SteamLibrary/steamapps/common/Starwhal/Starwhal_Data/Mono/x86/SteamworksNative
+Fallback handler could not load library /storage/SteamLibrary/steamapps/common/Starwhal/Starwhal_Data/Mono/x86/SteamworksNative
+Fallback handler could not load library /storage/SteamLibrary/steamapps/common/Starwhal/Starwhal_Data/Mono/x86/SteamworksNative
+Fallback handler could not load library /storage/SteamLibrary/steamapps/common/Starwhal/Starwhal_Data/Mono/x86/SteamworksNative
+Fallback handler could not load library /storage/SteamLibrary/steamapps/common/Starwhal/Starwhal_Data/Mono/x86/SteamworksNative
+Platform assembly: /storage/SteamLibrary/steamapps/common/Starwhal/Starwhal_Data/Managed/System.Xml.dll (this message is harmless)
+Fallback handler could not load library /storage/SteamLibrary/steamapps/common/Starwhal/Starwhal_Data/Mono/x86/SteamworksNative
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 21482.
+Total: 12.142000 ms (FindLiveObjects: 0.597000 ms CreateObjectMapping: 0.091000 ms MarkObjects: 11.362000 ms  DeleteObjects: 0.050000 ms)
+
+Destroy wii u match camera
+ 
+(Filename: /BuildAgent/work/d3d49558e4d408f4/artifacts/LinuxStandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+Fallback handler could not load library /storage/SteamLibrary/steamapps/common/Starwhal/Starwhal_Data/Mono/x86/SteamworksNative
+CallbackStructSizeMismatchException: Mismatch of structure size for struct GameConnectedChatJoin. Ours is: 16, should be: 24. Please report this as it is not an usage error.
+  at ManagedSteam.Error.ThrowError (ErrorCodes code, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at ManagedSteam.NativeHelpers.ConvertStruct[GameConnectedChatJoin] (IntPtr dataPointer, Int32 dataSize) [0x00000] in <filename unknown>:0 
+  at ManagedSteam.CallbackStructures.GameConnectedChatJoin.Create (IntPtr data, Int32 dataSize) [0x00000] in <filename unknown>:0 
+  at ManagedSteam.Implementations.Friends.<.ctor>b__9 (IntPtr data, Int32 size) [0x00000] in <filename unknown>:0 
+  at ManagedSteam.Steam.NativeCallbacks (Int32 id, IntPtr dataPointer, Int32 dataSize) [0x00000] in <filename unknown>:0 
+ 
+(Filename: /BuildAgent/work/d3d49558e4d408f4/artifacts/LinuxStandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+setting save system
+ 
+(Filename: /BuildAgent/work/d3d49558e4d408f4/artifacts/LinuxStandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+setting save system callbacks
+ 
+(Filename: /BuildAgent/work/d3d49558e4d408f4/artifacts/LinuxStandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+There was no state named (Bootstate). Make sure it was added to the collection and named properly
+ 
+(Filename: /BuildAgent/work/d3d49558e4d408f4/artifacts/LinuxStandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+*UserSaving* - starting Load - force reset:False
+ 
+(Filename: /BuildAgent/work/d3d49558e4d408f4/artifacts/LinuxStandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+*UserSaving* - starting ShowSavingIcon
+ 
+(Filename: /BuildAgent/work/d3d49558e4d408f4/artifacts/LinuxStandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+*UserSaving* - starting _CurrentSavingSystem_OnLoaded
+ 
+(Filename: /BuildAgent/work/d3d49558e4d408f4/artifacts/LinuxStandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+*UserSaving* - starting HideSavingIcon
+ 
+(Filename: /BuildAgent/work/d3d49558e4d408f4/artifacts/LinuxStandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+_OnSaveLoaded != nullTrue
+ 
+(Filename: /BuildAgent/work/d3d49558e4d408f4/artifacts/LinuxStandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+in Bootstate on Game Save loaded
+ 
+(Filename: /BuildAgent/work/d3d49558e4d408f4/artifacts/LinuxStandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+allowing screen effects from bootstate: True
+ 
+(Filename: /BuildAgent/work/d3d49558e4d408f4/artifacts/LinuxStandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+Fallback handler could not load library /storage/SteamLibrary/steamapps/common/Starwhal/Starwhal_Data/Mono/x86/SteamworksNative
+Initializing stat achievements.
+ 
+(Filename: /BuildAgent/work/d3d49558e4d408f4/artifacts/LinuxStandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+Fallback handler could not load library /storage/SteamLibrary/steamapps/common/Starwhal/Starwhal_Data/Mono/x86/SteamworksNative
+Platform assembly: /storage/SteamLibrary/steamapps/common/Starwhal/Starwhal_Data/Managed/Boo.Lang.dll (this message is harmless)
+ManagedException: No callback handler for event 2! Please report this as it is not an usage error.
+  at ManagedSteam.Steam.NativeCallbacks (Int32 id, IntPtr dataPointer, Int32 dataSize) [0x00000] in <filename unknown>:0 
+ 
+(Filename: /BuildAgent/work/d3d49558e4d408f4/artifacts/LinuxStandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+Fallback handler could not load library /storage/SteamLibrary/steamapps/common/Starwhal/Starwhal_Data/Mono/x86/SteamworksNative
+Fallback handler could not load library /storage/SteamLibrary/steamapps/common/Starwhal/Starwhal_Data/Mono/x86/SteamworksNative
+ManagedException: No callback handler for event 3! Please report this as it is not an usage error.
+  at ManagedSteam.Steam.NativeCallbacks (Int32 id, IntPtr dataPointer, Int32 dataSize) [0x00000] in <filename unknown>:0 
+ 
+(Filename: /BuildAgent/work/d3d49558e4d408f4/artifacts/LinuxStandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+ManagedException: No callback handler for event 3! Please report this as it is not an usage error.
+  at ManagedSteam.Steam.NativeCallbacks (Int32 id, IntPtr dataPointer, Int32 dataSize) [0x00000] in <filename unknown>:0 
+ 
+(Filename: /BuildAgent/work/d3d49558e4d408f4/artifacts/LinuxStandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+ManagedException: No callback handler for event 3! Please report this as it is not an usage error.
+  at ManagedSteam.Steam.NativeCallbacks (Int32 id, IntPtr dataPointer, Int32 dataSize) [0x00000] in <filename unknown>:0 
+ 
+(Filename: /BuildAgent/work/d3d49558e4d408f4/artifacts/LinuxStandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+Initializing plugin for xbox user profile picture
+ 
+(Filename: /BuildAgent/work/d3d49558e4d408f4/artifacts/LinuxStandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+Destroy wii u match camera
+ 
+(Filename: /BuildAgent/work/d3d49558e4d408f4/artifacts/LinuxStandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+1920 x 1080
+ 
+(Filename: /BuildAgent/work/d3d49558e4d408f4/artifacts/LinuxStandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+requesting resize 1920 x 1080
+requesting fullscreen 1920 x 1080 at 0 Hz
+Desktop is 3200 x 1080 @ 60 Hz
+*UserSaving* - starting Save
+ 
+(Filename: /BuildAgent/work/d3d49558e4d408f4/artifacts/LinuxStandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+*UserSaving* - starting ShowSavingIcon
+ 
+(Filename: /BuildAgent/work/d3d49558e4d408f4/artifacts/LinuxStandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+*UserSaving* - Firing UserSaving._CurrentSavingSystem_Onsaved()
+ 
+(Filename: /BuildAgent/work/d3d49558e4d408f4/artifacts/LinuxStandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+*UserSaving* - starting HideSavingIcon
+ 
+(Filename: /BuildAgent/work/d3d49558e4d408f4/artifacts/LinuxStandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+ManagedException: No callback handler for event 3! Please report this as it is not an usage error.
+  at ManagedSteam.Steam.NativeCallbacks (Int32 id, IntPtr dataPointer, Int32 dataSize) [0x00000] in <filename unknown>:0 
+ 
+(Filename: /BuildAgent/work/d3d49558e4d408f4/artifacts/LinuxStandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+/dev/input/js1: read: No such device
+ManagedException: No callback handler for event 3! Please report this as it is not an usage error.
+  at ManagedSteam.Steam.NativeCallbacks (Int32 id, IntPtr dataPointer, Int32 dataSize) [0x00000] in <filename unknown>:0 
+ 
+(Filename: /BuildAgent/work/d3d49558e4d408f4/artifacts/LinuxStandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+Event Type Ignored: EnterNotify
+Fallback handler could not load library /storage/SteamLibrary/steamapps/common/Starwhal/Starwhal_Data/Mono/x86/SteamworksNative
+Fallback handler could not load library /storage/SteamLibrary/steamapps/common/Starwhal/Starwhal_Data/Mono/x86/SteamworksNative

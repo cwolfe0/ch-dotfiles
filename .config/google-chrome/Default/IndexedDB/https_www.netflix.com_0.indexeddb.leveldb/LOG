@@ -1,0 +1,16 @@
+2016/09/24-14:27:35.118 5605 Reusing MANIFEST /home/cory/.config/google-chrome/Default/IndexedDB/https_www.netflix.com_0.indexeddb.leveldb/MANIFEST-000001
+2016/09/24-14:27:35.119 5605 Recovering log #9
+2016/09/24-14:27:35.140 5605 Reusing old log /home/cory/.config/google-chrome/Default/IndexedDB/https_www.netflix.com_0.indexeddb.leveldb/000009.log 
+2016/09/24-14:33:28.075 6450 Level-0 table #13: started
+2016/09/24-14:33:28.095 6450 Level-0 table #13: 1379963 bytes OK
+2016/09/24-14:33:28.106 6450 Delete type=0 #9
+2016/09/24-16:10:04.123 6450 Compacting 2@0 + 1@1 files
+2016/09/24-16:10:04.147 6450 Generated table #14@0: 11 keys, 6775 bytes
+2016/09/24-16:10:04.147 6450 Compacted 2@0 + 1@1 files => 6775 bytes
+2016/09/24-16:10:04.171 6450 compacted to: files[ 0 1 1 0 0 0 0 ]
+2016/09/24-16:10:04.171 6450 Delete type=2 #13
+2016/09/24-16:10:04.172 6450 Delete type=2 #10
+2016/09/24-16:10:04.172 6450 Delete type=2 #7
+2016/09/24-16:32:37.647 6450 Level-0 table #16: started
+2016/09/24-16:32:37.677 6450 Level-0 table #16: 1566441 bytes OK
+2016/09/24-16:32:37.687 6450 Delete type=0 #12

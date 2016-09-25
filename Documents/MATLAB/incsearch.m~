@@ -1,0 +1,10 @@
+function [nb,xb] = incsearch(func,xmin,max,ns)
+
+x = linspace(xmin,xmax,ns);
+f = func(x);
+
+nb = 0;xb=[];
+for i = 1:ns-1
+    if sign(f(i)) ~= sign(f(i+1))
+        nb = nb+1;
+        xb(nb,:) = [

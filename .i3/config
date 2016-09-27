@@ -180,10 +180,10 @@ bindsym Mod1+Shift+0 move container to workspace 10
 #
 # Take a screenshot upon pressing $mod+x (select an area)
 bindsym --release Mod1+x exec --no-startup-id import /tmp/latest-screenshot.png
-bindsym Mod4+l exec ~/lock.sh
+bindsym Mod4+l exec ~/i3lock-fancy-multimonitor/./lock
 workspace 4 output DVI-D-0
 exec --no-startup-id i3-msg 'workspace 4;exec steam'
-
+exec --no-startup-id i3-mst 'workspace 1;exec firefox'
 # Multimedia Keys
 # increase volume
 bindsym XF86AudioRaiseVolume exec amixer -q set Master 5%+ unmute
@@ -212,7 +212,7 @@ bindsym Mod1+g exec "imgur-screenshot -o false"
 #workspace 2
 exec /home/cory/.fehbg
 exec mpdscribble
-exec compton --vsync opengl -b -i 0
+exec compton --vsync opengl-mswc -b -i 0
 smart_borders on
 smart_gaps on
 gaps inner 10
@@ -256,7 +256,7 @@ bindsym Mod1+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-   status_command i3blocks
+   status_command i3blocks -c /etc/i3blocks.conf
    position top
    tray_output DVI-D-0
 	}

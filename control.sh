@@ -1,0 +1,14 @@
+xboxdrv \
+	   --evdev /dev/input/by-id/usb-Sony_Computer_Entertainment_Wireless_Controller-event-joystick \
+	      --evdev-absmap ABS_X=x1,ABS_Y=y1                 \
+	         --evdev-absmap ABS_Z=x2,ABS_RZ=y2                \
+		    --evdev-absmap ABS_HAT0X=dpad_x,ABS_HAT0Y=dpad_y \
+		       --evdev-keymap BTN_A=x,BTN_B=a                   \
+		          --evdev-keymap BTN_C=b,BTN_X=y                   \
+			     --evdev-keymap BTN_Y=lb,BTN_Z=rb                 \
+			        --evdev-keymap BTN_TL=lt,BTN_TR=rt               \
+				   --evdev-keymap BTN_SELECT=tl,BTN_START=tr        \
+				      --evdev-keymap BTN_TL2=back,BTN_TR2=start        \
+				         --evdev-keymap BTN_MODE=guide                    \
+					    --axismap -y1=y1,-y2=y2                          \
+					       --mimic-xpad                                     \

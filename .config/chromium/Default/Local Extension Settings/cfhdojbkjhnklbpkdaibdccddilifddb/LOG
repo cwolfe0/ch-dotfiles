@@ -1,0 +1,23 @@
+2016/09/29-19:37:12.910 5699 Reusing MANIFEST /home/cory/.config/chromium/Default/Local Extension Settings/cfhdojbkjhnklbpkdaibdccddilifddb/MANIFEST-000001
+2016/09/29-19:37:12.910 5699 Recovering log #14
+2016/09/29-19:37:12.970 5699 Level-0 table #18: started
+2016/09/29-19:37:13.026 5699 Level-0 table #18: 1786384 bytes OK
+2016/09/29-19:37:13.033 5699 Delete type=0 #14
+2016/09/29-19:38:13.437 7300 Level-0 table #21: started
+2016/09/29-19:38:13.469 7300 Level-0 table #21: 1786712 bytes OK
+2016/09/29-19:38:13.479 7300 Delete type=0 #19
+2016/09/29-19:38:15.080 7300 Level-0 table #23: started
+2016/09/29-19:38:15.109 7300 Level-0 table #23: 1786722 bytes OK
+2016/09/29-19:38:15.117 7300 Delete type=0 #20
+2016/09/29-19:38:15.667 7300 Level-0 table #25: started
+2016/09/29-19:38:15.698 7300 Level-0 table #25: 1786858 bytes OK
+2016/09/29-19:38:15.706 7300 Delete type=0 #22
+2016/09/29-19:38:15.706 7300 Compacting 4@0 + 1@1 files
+2016/09/29-19:38:15.761 7300 Generated table #26@0: 3 keys, 1787119 bytes
+2016/09/29-19:38:15.761 7300 Compacted 4@0 + 1@1 files => 1787119 bytes
+2016/09/29-19:38:15.768 7300 compacted to: files[ 0 1 1 0 0 0 0 ]
+2016/09/29-19:38:15.768 7300 Delete type=2 #25
+2016/09/29-19:38:15.769 7300 Delete type=2 #21
+2016/09/29-19:38:15.769 7300 Delete type=2 #16
+2016/09/29-19:38:15.769 7300 Delete type=2 #23
+2016/09/29-19:38:15.769 7300 Delete type=2 #18

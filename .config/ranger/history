@@ -3,9 +3,19 @@ open_with rm
 search hibbeler
 search hibbe
 rename 2sisters01.wmv
-open_with 
-delete
 open_with vim
 rename Mods
 rename Matlab
 rename bin
+rename 1235 - Fire Emblem (U)(Venom).zip
+rename images
+rename 112f015Samplefinal.pdf
+rename xmage
+cp
+open_with 
+open_with unrar
+search mp4
+search 
+mpv --ao=alsa
+search thermo
+delete

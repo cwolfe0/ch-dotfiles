@@ -1,0 +1,28 @@
+2016/09/27-19:04:17.486 10174 Reusing MANIFEST /home/cory/.config/chromium/Default/Local Extension Settings/cfhdojbkjhnklbpkdaibdccddilifddb/MANIFEST-000001
+2016/09/27-19:05:17.507 10657 Level-0 table #5: started
+2016/09/27-19:05:17.545 10657 Level-0 table #5: 2674393 bytes OK
+2016/09/27-19:05:17.553 10657 Delete type=0 #3
+2016/09/27-19:05:18.024 10657 Level-0 table #7: started
+2016/09/27-19:05:18.052 10657 Level-0 table #7: 1786509 bytes OK
+2016/09/27-19:05:18.062 10657 Delete type=0 #4
+2016/09/27-20:05:17.508 10657 Level-0 table #9: started
+2016/09/27-20:05:17.537 10657 Level-0 table #9: 1786621 bytes OK
+2016/09/27-20:05:17.547 10657 Delete type=0 #6
+2016/09/27-20:05:18.498 10657 Level-0 table #11: started
+2016/09/27-20:05:18.523 10657 Level-0 table #11: 1786622 bytes OK
+2016/09/27-20:05:18.532 10657 Delete type=0 #8
+2016/09/27-21:05:17.508 10657 Level-0 table #13: started
+2016/09/27-21:05:17.540 10657 Level-0 table #13: 1786384 bytes OK
+2016/09/27-21:05:17.550 10657 Delete type=0 #10
+2016/09/27-21:05:18.513 10657 Level-0 table #15: started
+2016/09/27-21:05:18.540 10657 Level-0 table #15: 1786623 bytes OK
+2016/09/27-21:05:18.548 10657 Delete type=0 #12
+2016/09/27-21:05:18.548 10657 Compacting 4@0 + 1@1 files
+2016/09/27-21:05:18.603 10657 Generated table #16@0: 2 keys, 1786623 bytes
+2016/09/27-21:05:18.603 10657 Compacted 4@0 + 1@1 files => 1786623 bytes
+2016/09/27-21:05:18.609 10657 compacted to: files[ 0 1 1 0 0 0 0 ]
+2016/09/27-21:05:18.609 10657 Delete type=2 #15
+2016/09/27-21:05:18.609 10657 Delete type=2 #7
+2016/09/27-21:05:18.609 10657 Delete type=2 #11
+2016/09/27-21:05:18.609 10657 Delete type=2 #9
+2016/09/27-21:05:18.610 10657 Delete type=2 #13

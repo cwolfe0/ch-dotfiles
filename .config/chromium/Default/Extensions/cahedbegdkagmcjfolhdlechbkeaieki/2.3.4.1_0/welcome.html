@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Chromoji Welcome | Chromoji</title>
+<style>
+  * { margin:0; padding:0; }
+  body { 
+    font-family: Helvetica, Arial, sans-serif;
+    padding:30px;
+    font-size:20px;
+    line-height:150%;
+    width: 800px; 
+    margin: 0 auto;
+  }
+  h1 {
+    margin:0 0 40px;
+    font-size:40px;
+
+    background: url(icons/logo.png) no-repeat top left;
+    width: 552px;
+    height: 145px;
+    text-indent: -9999px;
+    background-size: 100%;
+  }
+  p {
+    padding:0 0 20px;
+  }
+  h2 {
+    margin:35px 0 10px;
+  }
+  ul {
+    margin-left:22px;
+  }
+  #emoji-test {
+    margin-bottom:20px;
+  }
+  a {
+    color: #c31000;
+  }
+  #info {
+  	color:#999;
+  	margin-top:30px;
+  	font-size:80%;
+  }
+  
+
+
+  input {
+    width:200px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    padding: 2px 5px;
+  }
+
+  small {
+    color: #999;
+    margin-top: 5px;
+  }
+
+  .button {
+    background: #ececec;
+    padding: 3px 5px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+  }
+
+  .steps {
+    margin-top:25px
+  }
+  .steps div {
+    margin: 5px 0;
+  }
+
+  .steps {
+    margin-bottom: 20px;
+  }
+
+  .special {
+    position:relative; top:-0.1em
+  }
+
+
+@media (max-width: 1366px) {
+  body { zoom:0.8; }
+  h1   { zoom:0.8; }
+}
+@media (min-width: 1367px) {
+  body { zoom:0.9;}
+}
+@media (min-width: 1601px) {
+  body { zoom:1; }
+}
+@media (min-width: 1921px) {
+  body { zoom:1.15; }
+}
+
+</style>  
+<link rel="stylesheet" type="text/css" href="emoji.css">  
+</head>
+<body>
+  <h1>Chromoji - Emoji for Google Chrome™</h1>
+  
+  <div style="font-size:30px;">Hey! You've just gained access to all the awesome <i>emojis</i> around the web.</div>
+  
+  <h2>How does it work<span class="special">❓</span></h2>
+  <div>This extension let's you view emojis posted on websites, forums, chat boxes and more.</div>
+  <div id="emoji-test">If you can see these, you're good to go: 😄😃😀😊☺️😉😍😘😚😗😙😜😝😛😳😁😔😘</div>
+
+  <!--
+  <p>To <b>copy<i>&amp;</i>paste</b> emojis use the toolbar button in the top right corner of your browser. 🚀</p>
+  -->
+
+  <h2>Insert your emojis<span class="special">❗</span></h2>
+  <div>A toolbar button was added to your browser so you can access emojis anywhere you go.</div>
+
+  <div class="steps">
+    <div>An example to <b>copy<i>&amp;</i>paste</b> emojis:</div>
+    <div><b>1)</b> <input placeholder=" Click on this text box" /> *</div>
+    <div><b>2)</b> Click the toolbar button <span class="button">🚀</span> in the top right corner of your browser</div>
+    <div><b>3)</b> Click an emoji inside the new box that opened</div>
+    <small>* If you don't have any text box selected, the emoji will be copied to your clipboard</small>
+  </div>
+
+
+  <!--
+  <h2>Coming soon 🕗 </h2>
+  <div>
+    Currently this extension doesn't give you an interface to copy<i>&amp;</i>paste emojis from.<br>
+    In the meantime you can use sites like <a href="http://getemoji.com/">getemoji.com</a> to select and copy your emojis.<br>
+  </div>
+  -->
+  
+  <h2>There's more<span class="special">❗</span></h2>
+  <ul id="footer">
+  	<li>If you <i>feel awesome</i>, <a href="https://chrome.google.com/webstore/detail/chromoji-emoji-for-google/cahedbegdkagmcjfolhdlechbkeaieki/reviews">say thanks in a review</a></li>
+    <li>For the <i>adventurous</i>, there's an <a href="./options/options.html">options page</a></li>
+    <li>You can also report <a href="https://chrome.google.com/webstore/support/cahedbegdkagmcjfolhdlechbkeaieki#bug">bugs</a> and ask <a href="https://chrome.google.com/webstore/support/cahedbegdkagmcjfolhdlechbkeaieki#question">questions</a></li>
+  </ul>
+
+  <div style="margin-top:25px">To see more emojis in action, check out these websites:
+    <ul> 
+      <li><a href="http://en.wikipedia.org/wiki/Emoji#Regional_Indicator_Symbols" target="_blank">Emoji on Wikipedia</a></li>
+      <li><a href="https://twitter.com/search?q=emoji%20%23emoji&src=typd&f=realtime" target="_blank">Emoji search on Twitter</a></li>
+    </ul>    
+  </div>
+  
+
+  <div id="info">If this page keeps opening up, it's a bug. Contact me at <i>locomojis@gmail.com</i></div>
+  
+  <script src="chardict.js"></script>
+  <script src="emoji.js"></script>
+  <script src="emoji_insert.js"></script>
+  <script src="googleAnalytics.js"></script>
+  <script src="googleAnalyticsMaster.js"></script>
+</body>
+</html>

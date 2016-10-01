@@ -1,0 +1,257 @@
+20m0(Build:2)
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+/build/libreoffice-fresh/src/libreoffice-5.2.1.2/sfx2/source/doc/docfile.cxx:2487: 
+/build/libreoffice-fresh/src/libreoffice-5.2.1.2/sfx2/source/doc/docfile.cxx:2487: 
+/build/libreoffice-fresh/src/libreoffice-5.2.1.2/sfx2/source/doc/docfile.cxx:2487: 
+/build/libreoffice-fresh/src/libreoffice-5.2.1.2/sfx2/source/doc/docfile.cxx:2487: 
+/build/libreoffice-fresh/src/libreoffice-5.2.1.2/sfx2/source/doc/docfile.cxx:2487: 
+/build/libreoffice-fresh/src/libreoffice-5.2.1.2/sfx2/source/doc/docfile.cxx:2487: 
+/build/libreoffice-fresh/src/libreoffice-5.2.1.2/sfx2/source/doc/docfile.cxx:2487: 
+/build/libreoffice-fresh/src/libreoffice-5.2.1.2/sfx2/source/doc/docfile.cxx:2487: 
+/build/libreoffice-fresh/src/libreoffice-5.2.1.2/sfx2/source/doc/docfile.cxx:2487: 
+
+Rethrow
+
+Rethrow
+
+Rethrow
+Element does not exist and cannot be created: "Object 1"
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+
+Rethrow
+/build/libreoffice-fresh/src/libreoffice-5.2.1.2/sfx2/source/doc/objstor.cxx:1106: Begin
+/build/libreoffice-fresh/src/libreoffice-5.2.1.2/sfx2/source/doc/objstor.cxx:1307: SaveAs/Export
+/build/libreoffice-fresh/src/libreoffice-5.2.1.2/sfx2/source/doc/objstor.cxx:1323: Locking
+/build/libreoffice-fresh/src/libreoffice-5.2.1.2/sfx2/source/doc/objstor.cxx:1376: Storing in own format.
+/build/libreoffice-fresh/src/libreoffice-5.2.1.2/sfx2/source/doc/objstor.cxx:1425: Save as own format.
+/build/libreoffice-fresh/src/libreoffice-5.2.1.2/sfx2/source/doc/objstor.cxx:418: 
+/build/libreoffice-fresh/src/libreoffice-5.2.1.2/sfx2/source/doc/objmisc.cxx:250: Resetting Error.
+/build/libreoffice-fresh/src/libreoffice-5.2.1.2/sfx2/source/doc/objstor.cxx:1442: Thumbnail creation.
+/build/libreoffice-fresh/src/libreoffice-5.2.1.2/sfx2/source/doc/objstor.cxx:1456: Preserve versions.
+/build/libreoffice-fresh/src/libreoffice-5.2.1.2/sfx2/source/doc/objstor.cxx:1650: Medium commit.
+/build/libreoffice-fresh/src/libreoffice-5.2.1.2/sfx2/source/doc/objstor.cxx:1661: Storing is successful.
+/build/libreoffice-fresh/src/libreoffice-5.2.1.2/sfx2/source/doc/sfxbasemodel.cxx:3080: Storing succeeded!
+
+Rethrow
+
+Rethrow
+/build/libreoffice-fresh/src/libreoffice-5.2.1.2/sfx2/source/doc/docfile.cxx:2487: 
+/build/libreoffice-fresh/src/libreoffice-5.2.1.2/sfx2/source/doc/docfile.cxx:2487: 
+/build/libreoffice-fresh/src/libreoffice-5.2.1.2/sfx2/source/doc/docfile.cxx:2487: 
+
+Rethrow
+
+Rethrow
+
+Rethrow
+/build/libreoffice-fresh/src/libreoffice-5.2.1.2/sfx2/source/doc/objstor.cxx:1106: Begin
+/build/libreoffice-fresh/src/libreoffice-5.2.1.2/sfx2/source/doc/objstor.cxx:1307: SaveAs/Export
+/build/libreoffice-fresh/src/libreoffice-5.2.1.2/sfx2/source/doc/objstor.cxx:1323: Locking
+/build/libreoffice-fresh/src/libreoffice-5.2.1.2/sfx2/source/doc/objstor.cxx:1376: Storing in own format.
+/build/libreoffice-fresh/src/libreoffice-5.2.1.2/sfx2/source/doc/objstor.cxx:1425: Save as own format.
+/build/libreoffice-fresh/src/libreoffice-5.2.1.2/sfx2/source/doc/objstor.cxx:1442: Thumbnail creation.
+/build/libreoffice-fresh/src/libreoffice-5.2.1.2/sfx2/source/doc/objstor.cxx:1456: Preserve versions.
+/build/libreoffice-fresh/src/libreoffice-5.2.1.2/sfx2/source/doc/objstor.cxx:1650: Medium commit.
+/build/libreoffice-fresh/src/libreoffice-5.2.1.2/sfx2/source/doc/objstor.cxx:1661: Storing is successful.
+/build/libreoffice-fresh/src/libreoffice-5.2.1.2/sfx2/source/doc/sfxbasemodel.cxx:3080: Storing succeeded!
+/build/libreoffice-fresh/src/libreoffice-5.2.1.2/sfx2/source/doc/sfxbasemodel.cxx:1628: storeAsURL
+/build/libreoffice-fresh/src/libreoffice-5.2.1.2/sfx2/source/doc/objstor.cxx:2648: 
+/build/libreoffice-fresh/src/libreoffice-5.2.1.2/sfx2/source/doc/objmisc.cxx:250: Resetting Error.
+/build/libreoffice-fresh/src/libreoffice-5.2.1.2/sfx2/source/doc/sfxbasemodel.cxx:3099: Storing failed!

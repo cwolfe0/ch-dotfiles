@@ -2,6 +2,10 @@
 	<pref name="Screenmanager Is Fullscreen mode" type="int">1</pref>
 	<pref name="Screenmanager Resolution Height" type="int">1080</pref>
 	<pref name="Screenmanager Resolution Width" type="int">1920</pref>
-	<pref name="UnitySelectMonitor" type="int">-1</pref>
+	<pref name="UnitySelectMonitor" type="int">1</pref>
 	<pref name="saveslot" type="int">0</pref>
+	<pref name="unity.cloud_userid" type="string">MTg1MmM1YTU5NjIyODQ0MTRhYzFhMDNlZjkyNjFiNDQ=</pref>
+	<pref name="unity.player_session_background_time" type="string">MTQ3NTM1NTE4OTg0MQ==</pref>
+	<pref name="unity.player_session_elapsed_time" type="string">NjgyNTMz</pref>
+	<pref name="unity.player_sessionid" type="string">MTAzODM3MzQ3NzIyODgwOTAw</pref>
 </unity_prefs>

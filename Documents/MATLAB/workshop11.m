@@ -1,3 +1,5 @@
+%Cory Wolfe
+
 f = @(x) cos(3*x)/(x+1);
 I_exact = 0.085473789; 
 I1 = trap(f,0,pi,1) % Trap n = 1

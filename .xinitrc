@@ -49,8 +49,7 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
 fi
 # MPD daemon start (if no other user instance exists)
 [ ! -s ~/.config/mpd/pid ] && mpd && mpdscribble
-#twm &
-#xclock -geometry 50x50-1+1 &
-#exec nvidia-settings --load-config-only
-exec i3 
+# Start feh for desktop image
 sh ~/.fehbg
+# start i3-gaps WM
+exec i3 

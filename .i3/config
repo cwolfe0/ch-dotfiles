@@ -24,6 +24,12 @@ font pango:Fira Mono 8
 # X core fonts rendering does not support right-to-left and this being a bitmap
 # font, it doesn’t scale on retina/hidpi displays.
 
+#
+# Auto-lock on auto-login, not sure if this will work properly
+#
+
+exec ~/i3lock-fancy-multimonitor/./lock
+
 # use these keys for focus, movement, and resize directions when reaching for
 # the arrows is not convenient
 set $up l

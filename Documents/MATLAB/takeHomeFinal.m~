@@ -14,7 +14,7 @@ T = A\b;
 T = [T;400]
 
 %ii.
-xb = 0:.25:5;
+xb = 0:.25:5
 Ab = eye(20,20);
 Ab = Ab.*2.02135;
 Ab(1,2) = -2;
@@ -23,12 +23,27 @@ for i=2:1:19
     Ab(i,i-1) = -1;
     Ab(i,i+1) = -1;
 end
+Ab
 bb = 4.9956*ones(1,20);
 bb(1,20) = bb(1,20)+400;
-Tb = Ab\bb';
+Tb = A\b;
 Tb =[Tb;400] 
+
 %%b.
+
+    % THIS IS WRONG, REMOVE IT AND ITS PLOT - THIS IS FOR TESTING ONLY
+%  [t,y] = ode45(@dydxn,[0,5],[160,0]);
+%  Tb1 = y(length(y));
+%  [t,y] = ode45(@dydxn,[0,5],[60,0]);
+%  Tb2 = y(length(y));
+%  Tsw1 = 160+((60-160)/(Tb2-Tb1))*(400-Tb1)
+ 
 ts1 = fzero(@res,160);
 [xv,yv]=ode45(@dydxn,[0,5],[ts1,0]);
-plot(x,T','o',xb,Tb','o',xv,yv(:,1))
-legend('Linearized, dx = 1','Linearized, dx = .25','Nonlinear Shooting','Location','Best')
+hold
+plot(x,T','o')
+hold
+plot(xb,Tb','o')
+plot(xv,yv(:,1))
+hold
+%legend('Linearized, dx = 1','Linearized, dx = .25','Nonlinear Shooting')

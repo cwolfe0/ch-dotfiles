@@ -1,0 +1,447 @@
+Log: Log file open, 11/28/16 20:35:36
+Init: Memory Profiling : Disabled
+Init: WinSock: version 1.1 (2.2), MaxSocks=128, MaxUdp=1024
+Log:  ... running in INSTALLED mode
+Init: Version: 7258
+Init: Epic Internal: 0
+Init: Compiled (32-bit): Oct 14 2015 15:31:40
+Init: Changelist: 641002
+Init: Command line: 
+Init: Base directory: C:\Program Files\Steam\steamapps\common\Red Orchestra 2\Binaries\Win32\
+[0000.09] Init: Computer: pc
+[0000.09] Init: User: cory
+[0000.09] Init: CPU Page size=4096, Processors=4
+[0000.09] Init: High frequency timer resolution =10.000000 MHz
+[0000.09] Init: Memory total: Physical=7.7GB Pagefile=8.7GB Virtual=4.0GB
+[0000.25] Log: STEAMWORKS initialized 1
+[0000.27] Init: WinSock: I am pc (146.229.242.192:0)
+[0000.27] Init: Presizing for 0 objects not considered by GC, pre-allocating 0 bytes.
+[0000.27] Init: Object subsystem initialized
+[0000.31] DevDataBase: Connection to "Provider=sqloledb;Data Source=production-db;Initial Catalog=EngineTaskPerf;Trusted_Connection=Yes;Connection Timeout=2" or "10.1.20.20" failed
+[0010.94] Warning: Warning, Failed to load 'Texture2D EngineMaterials.RandomMirrorDisc': Failed to find object 'Texture2D EngineMaterials.RandomMirrorDisc'
+[0012.58] DevMemory: Virtual  memory allocation size: 210.92 MByte (221163520 Bytes)
+[0034.73] Warning: InsertScene: Duplicate scene tag (ROUIScene_MainMenu) detected: NewScene 'ROUISceneMainMenu ROGameMenus.MainMenu.ROUIScene_MainMenu' ExistingScene 'ROUISceneMainMenu Transient.ROUIScene_MainMenu_0'
+[0035.14] Warning: InsertScene: Duplicate scene tag (ROUIScene_MainMenu) detected: NewScene 'ROUISceneMainMenu ROGameMenus.MainMenu.ROUIScene_MainMenu' ExistingScene 'ROUISceneMainMenu Transient.ROUIScene_MainMenu_0'
+[0035.14] Warning: InsertScene: Duplicate scene tag (ROUIScene_MainMenu) detected: NewScene 'ROUISceneMainMenu ROGameMenus.MainMenu.ROUIScene_MainMenu' ExistingScene 'ROUISceneMainMenu Transient.ROUIScene_MainMenu_0'
+[0035.73] Warning: InsertScene: Duplicate scene tag (ROUIScene_MainMenu) detected: NewScene 'ROUISceneMainMenu ROGameMenus.MainMenu.ROUIScene_MainMenu' ExistingScene 'ROUISceneMainMenu Transient.ROUIScene_MainMenu_0'
+[0035.90] Warning: InsertScene: Duplicate scene tag (ROUIScene_MainMenu) detected: NewScene 'ROUISceneMainMenu ROGameMenus.MainMenu.ROUIScene_MainMenu' ExistingScene 'ROUISceneMainMenu Transient.ROUIScene_MainMenu_0'
+[0036.46] Warning: InsertScene: Duplicate scene tag (ROUIScene_MainMenu) detected: NewScene 'ROUISceneMainMenu ROGameMenus.MainMenu.ROUIScene_MainMenu' ExistingScene 'ROUISceneMainMenu Transient.ROUIScene_MainMenu_0'
+[0036.46] Warning: InsertScene: Duplicate scene tag (ROUIScene_MainMenu) detected: NewScene 'ROUISceneMainMenu ROGameMenus.MainMenu.ROUIScene_MainMenu' ExistingScene 'ROUISceneMainMenu Transient.ROUIScene_MainMenu_0'
+[0036.46] Warning: InsertScene: Duplicate scene tag (ROUIScene_MainMenu) detected: NewScene 'ROUISceneMainMenu ROGameMenus.MainMenu.ROUIScene_MainMenu' ExistingScene 'ROUISceneMainMenu Transient.ROUIScene_MainMenu_0'
+[0036.49] Warning: InsertScene: Duplicate scene tag (ROUIScene_MainMenu) detected: NewScene 'ROUISceneMainMenu ROGameMenus.MainMenu.ROUIScene_MainMenu' ExistingScene 'ROUISceneMainMenu Transient.ROUIScene_MainMenu_0'
+[0036.49] Warning: InsertScene: Duplicate scene tag (ROUIScene_MainMenu) detected: NewScene 'ROUISceneMainMenu ROGameMenus.MainMenu.ROUIScene_MainMenu' ExistingScene 'ROUISceneMainMenu Transient.ROUIScene_MainMenu_0'
+[0036.49] Warning: InsertScene: Duplicate scene tag (ROUIScene_MainMenu) detected: NewScene 'ROUISceneMainMenu ROGameMenus.MainMenu.ROUIScene_MainMenu' ExistingScene 'ROUISceneMainMenu Transient.ROUIScene_MainMenu_0'
+[0036.49] Warning: InsertScene: Duplicate scene tag (ROUIScene_MainMenu) detected: NewScene 'ROUISceneMainMenu ROGameMenus.MainMenu.ROUIScene_MainMenu' ExistingScene 'ROUISceneMainMenu Transient.ROUIScene_MainMenu_0'
+[0036.50] Warning: InsertScene: Duplicate scene tag (ROUIScene_MainMenu) detected: NewScene 'ROUISceneMainMenu ROGameMenus.MainMenu.ROUIScene_MainMenu' ExistingScene 'ROUISceneMainMenu Transient.ROUIScene_MainMenu_0'
+[0036.50] Warning: InsertScene: Duplicate scene tag (ROUIScene_MainMenu) detected: NewScene 'ROUISceneMainMenu ROGameMenus.MainMenu.ROUIScene_MainMenu' ExistingScene 'ROUISceneMainMenu Transient.ROUIScene_MainMenu_0'
+[0036.50] Warning: InsertScene: Duplicate scene tag (ROUIScene_MainMenu) detected: NewScene 'ROUISceneMainMenu ROGameMenus.MainMenu.ROUIScene_MainMenu' ExistingScene 'ROUISceneMainMenu Transient.ROUIScene_MainMenu_0'
+[0036.50] Warning: InsertScene: Duplicate scene tag (ROUIScene_MainMenu) detected: NewScene 'ROUISceneMainMenu ROGameMenus.MainMenu.ROUIScene_MainMenu' ExistingScene 'ROUISceneMainMenu Transient.ROUIScene_MainMenu_0'
+[0036.55] Warning: InsertScene: Duplicate scene tag (ROUIScene_MainMenu) detected: NewScene 'ROUISceneMainMenu ROGameMenus.MainMenu.ROUIScene_MainMenu' ExistingScene 'ROUISceneMainMenu Transient.ROUIScene_MainMenu_0'
+[0060.53] SteamInfo: ROServerBrowser-Server responded
+[0060.54] SteamInfo: ROServerBrowser-Server responded
+[0060.55] SteamInfo: ROServerBrowser-Server responded
+[0060.56] SteamInfo: ROServerBrowser-Server responded
+[0060.57] SteamInfo: ROServerBrowser-Server responded
+[0060.57] SteamInfo: ROServerBrowser-Server responded
+[0060.58] SteamInfo: ROServerBrowser-Server responded
+[0060.58] SteamInfo: ROServerBrowser-Server responded
+[0060.61] SteamInfo: ROServerBrowser-Server responded
+[0060.62] SteamInfo: ROServerBrowser-Server responded
+[0060.63] SteamInfo: ROServerBrowser-Server responded
+[0060.63] SteamInfo: ROServerBrowser-Server responded
+[0060.64] SteamInfo: ROServerBrowser-Server responded
+[0060.65] SteamInfo: ROServerBrowser-Server responded
+[0060.65] SteamInfo: ROServerBrowser-Server responded
+[0060.66] SteamInfo: ROServerBrowser-Server responded
+[0060.67] SteamInfo: ROServerBrowser-Server responded
+[0060.68] SteamInfo: ROServerBrowser-Server responded
+[0060.68] SteamInfo: ROServerBrowser-Server responded
+[0060.69] SteamInfo: ROServerBrowser-Server responded
+[0060.70] SteamInfo: ROServerBrowser-Server responded
+[0060.70] SteamInfo: ROServerBrowser-Server responded
+[0060.71] SteamInfo: ROServerBrowser-Server responded
+[0060.71] SteamInfo: ROServerBrowser-Server responded
+[0060.72] SteamInfo: ROServerBrowser-Server responded
+[0060.73] SteamInfo: ROServerBrowser-Server responded
+[0060.73] SteamInfo: ROServerBrowser-Server responded
+[0060.74] SteamInfo: ROServerBrowser-Server responded
+[0060.75] SteamInfo: ROServerBrowser-Server responded
+[0060.75] SteamInfo: ROServerBrowser-Server responded
+[0060.77] SteamInfo: ROServerBrowser-Server responded
+[0060.78] SteamInfo: ROServerBrowser-Server responded
+[0060.78] SteamInfo: ROServerBrowser-Server responded
+[0060.79] SteamInfo: ROServerBrowser-Server responded
+[0060.80] SteamInfo: ROServerBrowser-Server responded
+[0060.82] SteamInfo: ROServerBrowser-Server responded
+[0060.86] SteamInfo: ROServerBrowser-Server responded
+[0060.86] SteamInfo: ROServerBrowser-Server responded
+[0060.87] SteamInfo: ROServerBrowser-Server responded
+[0060.88] SteamInfo: ROServerBrowser-Server responded
+[0060.89] SteamInfo: ROServerBrowser-Server responded
+[0060.89] SteamInfo: ROServerBrowser-Server responded
+[0060.91] SteamInfo: ROServerBrowser-Server responded
+[0060.92] SteamInfo: ROServerBrowser-Server responded
+[0060.92] SteamInfo: ROServerBrowser-Server responded
+[0060.93] SteamInfo: ROServerBrowser-Server responded
+[0060.94] SteamInfo: ROServerBrowser-Server responded
+[0060.94] SteamInfo: ROServerBrowser-Server responded
+[0060.94] SteamInfo: ROServerBrowser-Server responded
+[0060.95] SteamInfo: ROServerBrowser-Server responded
+[0060.96] SteamInfo: ROServerBrowser-Server responded
+[0060.96] SteamInfo: ROServerBrowser-Server responded
+[0060.97] SteamInfo: ROServerBrowser-Server responded
+[0060.97] SteamInfo: ROServerBrowser-Server responded
+[0060.98] SteamInfo: ROServerBrowser-Server responded
+[0060.99] SteamInfo: ROServerBrowser-Server responded
+[0060.99] SteamInfo: ROServerBrowser-Server responded
+[0061.00] SteamInfo: ROServerBrowser-Server responded
+[0061.01] SteamInfo: ROServerBrowser-Server responded
+[0061.01] SteamInfo: ROServerBrowser-Server responded
+[0061.03] SteamInfo: ROServerBrowser-Server responded
+[0061.04] SteamInfo: ROServerBrowser-Server responded
+[0061.05] SteamInfo: ROServerBrowser-Server responded
+[0061.06] SteamInfo: ROServerBrowser-Server responded
+[0061.06] SteamInfo: ROServerBrowser-Server responded
+[0061.07] SteamInfo: ROServerBrowser-Server responded
+[0061.08] SteamInfo: ROServerBrowser-Server responded
+[0061.09] SteamInfo: ROServerBrowser-Server responded
+[0061.14] SteamInfo: ROServerBrowser-Server responded
+[0061.19] SteamInfo: ROServerBrowser-Server responded
+[0061.22] SteamInfo: ROServerBrowser-Server responded
+[0061.23] SteamInfo: ROServerBrowser-Server responded
+[0061.24] SteamInfo: ROServerBrowser-Server responded
+[0061.25] SteamInfo: ROServerBrowser-Server responded
+[0061.26] SteamInfo: ROServerBrowser-Server responded
+[0061.26] SteamInfo: ROServerBrowser-Server responded
+[0061.26] SteamInfo: ROServerBrowser-Server responded
+[0061.27] SteamInfo: ROServerBrowser-Server responded
+[0061.28] SteamInfo: ROServerBrowser-Server responded
+[0061.29] SteamInfo: ROServerBrowser-Server responded
+[0061.29] SteamInfo: ROServerBrowser-Server responded
+[0061.30] SteamInfo: ROServerBrowser-Server responded
+[0061.31] SteamInfo: ROServerBrowser-Server responded
+[0061.32] SteamInfo: ROServerBrowser-Server responded
+[0061.32] SteamInfo: ROServerBrowser-Server responded
+[0061.33] SteamInfo: ROServerBrowser-Server responded
+[0061.34] SteamInfo: ROServerBrowser-Server responded
+[0061.35] SteamInfo: ROServerBrowser-Server responded
+[0061.35] SteamInfo: ROServerBrowser-Server responded
+[0061.36] SteamInfo: ROServerBrowser-Server responded
+[0061.38] SteamInfo: ROServerBrowser-Server responded
+[0061.39] SteamInfo: ROServerBrowser-Server responded
+[0061.40] SteamInfo: ROServerBrowser-Server responded
+[0061.40] SteamInfo: ROServerBrowser-Server responded
+[0061.41] SteamInfo: ROServerBrowser-Server responded
+[0061.42] SteamInfo: ROServerBrowser-Server responded
+[0061.43] SteamInfo: ROServerBrowser-Server responded
+[0061.43] SteamInfo: ROServerBrowser-Server responded
+[0061.43] SteamInfo: ROServerBrowser-Server responded
+[0061.44] SteamInfo: ROServerBrowser-Server responded
+[0061.44] SteamInfo: ROServerBrowser-Server responded
+[0061.44] SteamInfo: ROServerBrowser-Server responded
+[0061.45] SteamInfo: ROServerBrowser-Server responded
+[0061.45] SteamInfo: ROServerBrowser-Server responded
+[0061.46] SteamInfo: ROServerBrowser-Server responded
+[0061.47] SteamInfo: ROServerBrowser-Server responded
+[0061.47] SteamInfo: ROServerBrowser-Server responded
+[0061.47] SteamInfo: ROServerBrowser-Server responded
+[0061.48] SteamInfo: ROServerBrowser-Server responded
+[0061.49] SteamInfo: ROServerBrowser-Server responded
+[0061.50] SteamInfo: ROServerBrowser-Server responded
+[0061.51] SteamInfo: ROServerBrowser-Server responded
+[0061.51] SteamInfo: ROServerBrowser-Server responded
+[0061.52] SteamInfo: ROServerBrowser-Server responded
+[0061.52] SteamInfo: ROServerBrowser-Server responded
+[0061.54] SteamInfo: ROServerBrowser-Server responded
+[0061.66] SteamInfo: ROServerBrowser-Server responded
+[0061.66] SteamInfo: ROServerBrowser-Server responded
+[0061.66] SteamInfo: ROServerBrowser-Server responded
+[0061.69] SteamInfo: ROServerBrowser-Server responded
+[0061.69] SteamInfo: ROServerBrowser-Server responded
+[0061.70] SteamInfo: ROServerBrowser-Server responded
+[0061.70] SteamInfo: ROServerBrowser-Server responded
+[0061.70] SteamInfo: ROServerBrowser-Server responded
+[0061.70] SteamInfo: ROServerBrowser-Server responded
+[0061.71] SteamInfo: ROServerBrowser-Server responded
+[0061.71] SteamInfo: ROServerBrowser-Server responded
+[0061.71] SteamInfo: ROServerBrowser-Server responded
+[0061.71] SteamInfo: ROServerBrowser-Server responded
+[0061.71] SteamInfo: ROServerBrowser-Server responded
+[0061.73] SteamInfo: ROServerBrowser-Server responded
+[0061.73] SteamInfo: ROServerBrowser-Server responded
+[0061.73] SteamInfo: ROServerBrowser-Server responded
+[0061.73] SteamInfo: ROServerBrowser-Server responded
+[0061.73] SteamInfo: ROServerBrowser-Server responded
+[0061.73] SteamInfo: ROServerBrowser-Server responded
+[0061.73] SteamInfo: ROServerBrowser-Server responded
+[0061.73] SteamInfo: ROServerBrowser-Server responded
+[0061.73] SteamInfo: ROServerBrowser-Server responded
+[0061.74] SteamInfo: ROServerBrowser-Server responded
+[0061.74] SteamInfo: ROServerBrowser-Server responded
+[0061.74] SteamInfo: ROServerBrowser-Server responded
+[0061.74] SteamInfo: ROServerBrowser-Server responded
+[0061.76] SteamInfo: ROServerBrowser-Server responded
+[0061.76] SteamInfo: ROServerBrowser-Server responded
+[0061.76] SteamInfo: ROServerBrowser-Server responded
+[0061.76] SteamInfo: ROServerBrowser-Server responded
+[0061.78] SteamInfo: ROServerBrowser-Server responded
+[0061.78] SteamInfo: ROServerBrowser-Server responded
+[0061.78] SteamInfo: ROServerBrowser-Server responded
+[0061.78] SteamInfo: ROServerBrowser-Server responded
+[0061.79] SteamInfo: ROServerBrowser-Server responded
+[0061.79] SteamInfo: ROServerBrowser-Server responded
+[0061.79] SteamInfo: ROServerBrowser-Server responded
+[0061.80] SteamInfo: ROServerBrowser-Server responded
+[0061.83] SteamInfo: ROServerBrowser-Server responded
+[0061.84] SteamInfo: ROServerBrowser-Server responded
+[0061.84] SteamInfo: ROServerBrowser-Server responded
+[0061.86] SteamInfo: ROServerBrowser-Server responded
+[0061.86] SteamInfo: ROServerBrowser-Server responded
+[0061.87] SteamInfo: ROServerBrowser-Server responded
+[0061.88] SteamInfo: ROServerBrowser-Server responded
+[0061.92] SteamInfo: ROServerBrowser-Server responded
+[0061.92] SteamInfo: ROServerBrowser-Server responded
+[0061.94] SteamInfo: ROServerBrowser-Server responded
+[0061.94] SteamInfo: ROServerBrowser-Server responded
+[0061.94] SteamInfo: ROServerBrowser-Server responded
+[0061.97] SteamInfo: ROServerBrowser-Server responded
+[0061.97] SteamInfo: ROServerBrowser-Server responded
+[0061.99] SteamInfo: ROServerBrowser-Server responded
+[0061.99] SteamInfo: ROServerBrowser-Server responded
+[0061.99] SteamInfo: ROServerBrowser-Server responded
+[0061.99] SteamInfo: ROServerBrowser-Server responded
+[0062.00] SteamInfo: ROServerBrowser-Server responded
+[0062.00] SteamInfo: ROServerBrowser-Server responded
+[0062.03] SteamInfo: ROServerBrowser-Server responded
+[0062.10] SteamInfo: ROServerBrowser-Server responded
+[0062.10] SteamInfo: ROServerBrowser-Server responded
+[0062.12] SteamInfo: ROServerBrowser-Server responded
+[0062.12] SteamInfo: ROServerBrowser-Server responded
+[0062.17] SteamInfo: ROServerBrowser-Server responded
+[0062.17] SteamInfo: ROServerBrowser-Server responded
+[0062.20] SteamInfo: ROServerBrowser-Server responded
+[0062.20] SteamInfo: ROServerBrowser-Server responded
+[0062.21] SteamInfo: ROServerBrowser-Server responded
+[0062.22] SteamInfo: ROServerBrowser-Server responded
+[0062.22] SteamInfo: ROServerBrowser-Server responded
+[0062.25] SteamInfo: ROServerBrowser-Server responded
+[0062.25] SteamInfo: ROServerBrowser-Server responded
+[0062.28] SteamInfo: ROServerBrowser-Server responded
+[0062.31] SteamInfo: ROServerBrowser-Server responded
+[0062.52] SteamInfo: ROServerBrowser-Server failed to respond ip- -1059120547
+[0063.59] SteamInfo: ROServerBrowser-Server failed to respond ip- 1607719281
+[0063.60] SteamInfo: ROServerBrowser-Server failed to respond ip- 1359010229
+[0063.67] SteamInfo: ROServerBrowser-Server failed to respond ip- 1504966554
+[0063.67] SteamInfo: ROServerBrowser-Server failed to respond ip- -1951963923
+[0092.63] SteamInfo: ROServerBrowser-Server responded
+[0092.64] SteamInfo: ROServerBrowser-Server responded
+[0092.65] SteamInfo: ROServerBrowser-Server responded
+[0092.66] SteamInfo: ROServerBrowser-Server responded
+[0092.66] SteamInfo: ROServerBrowser-Server responded
+[0092.67] SteamInfo: ROServerBrowser-Server responded
+[0092.68] SteamInfo: ROServerBrowser-Server responded
+[0092.68] SteamInfo: ROServerBrowser-Server responded
+[0092.70] SteamInfo: ROServerBrowser-Server responded
+[0092.71] SteamInfo: ROServerBrowser-Server responded
+[0092.72] SteamInfo: ROServerBrowser-Server responded
+[0092.72] SteamInfo: ROServerBrowser-Server responded
+[0092.73] SteamInfo: ROServerBrowser-Server responded
+[0092.74] SteamInfo: ROServerBrowser-Server responded
+[0092.75] SteamInfo: ROServerBrowser-Server responded
+[0092.75] SteamInfo: ROServerBrowser-Server responded
+[0092.76] SteamInfo: ROServerBrowser-Server responded
+[0092.77] SteamInfo: ROServerBrowser-Server responded
+[0092.77] SteamInfo: ROServerBrowser-Server responded
+[0092.80] SteamInfo: ROServerBrowser-Server responded
+[0092.81] SteamInfo: ROServerBrowser-Server responded
+[0092.81] SteamInfo: ROServerBrowser-Server responded
+[0092.83] SteamInfo: ROServerBrowser-Server responded
+[0092.83] SteamInfo: ROServerBrowser-Server responded
+[0092.84] SteamInfo: ROServerBrowser-Server responded
+[0092.85] SteamInfo: ROServerBrowser-Server responded
+[0092.86] SteamInfo: ROServerBrowser-Server responded
+[0092.87] SteamInfo: ROServerBrowser-Server responded
+[0092.88] SteamInfo: ROServerBrowser-Server responded
+[0092.89] SteamInfo: ROServerBrowser-Server responded
+[0092.90] SteamInfo: ROServerBrowser-Server responded
+[0092.91] SteamInfo: ROServerBrowser-Server responded
+[0092.92] SteamInfo: ROServerBrowser-Server responded
+[0092.92] SteamInfo: ROServerBrowser-Server responded
+[0092.93] SteamInfo: ROServerBrowser-Server responded
+[0092.94] SteamInfo: ROServerBrowser-Server responded
+[0092.94] SteamInfo: ROServerBrowser-Server responded
+[0092.96] SteamInfo: ROServerBrowser-Server responded
+[0092.97] SteamInfo: ROServerBrowser-Server responded
+[0092.98] SteamInfo: ROServerBrowser-Server responded
+[0092.99] SteamInfo: ROServerBrowser-Server responded
+[0093.00] SteamInfo: ROServerBrowser-Server responded
+[0093.00] SteamInfo: ROServerBrowser-Server responded
+[0093.01] SteamInfo: ROServerBrowser-Server responded
+[0093.02] SteamInfo: ROServerBrowser-Server responded
+[0093.02] SteamInfo: ROServerBrowser-Server responded
+[0093.03] SteamInfo: ROServerBrowser-Server responded
+[0093.03] SteamInfo: ROServerBrowser-Server responded
+[0093.04] SteamInfo: ROServerBrowser-Server responded
+[0093.05] SteamInfo: ROServerBrowser-Server responded
+[0093.06] SteamInfo: ROServerBrowser-Server responded
+[0093.11] SteamInfo: ROServerBrowser-Server responded
+[0093.12] SteamInfo: ROServerBrowser-Server responded
+[0093.14] SteamInfo: ROServerBrowser-Server responded
+[0093.14] SteamInfo: ROServerBrowser-Server responded
+[0093.17] SteamInfo: ROServerBrowser-Server responded
+[0093.18] SteamInfo: ROServerBrowser-Server responded
+[0093.19] SteamInfo: ROServerBrowser-Server responded
+[0093.20] SteamInfo: ROServerBrowser-Server responded
+[0093.20] SteamInfo: ROServerBrowser-Server responded
+[0093.21] SteamInfo: ROServerBrowser-Server responded
+[0093.22] SteamInfo: ROServerBrowser-Server responded
+[0093.23] SteamInfo: ROServerBrowser-Server responded
+[0093.25] SteamInfo: ROServerBrowser-Server responded
+[0093.25] SteamInfo: ROServerBrowser-Server responded
+[0093.26] SteamInfo: ROServerBrowser-Server responded
+[0093.27] SteamInfo: ROServerBrowser-Server responded
+[0093.28] SteamInfo: ROServerBrowser-Server responded
+[0093.28] SteamInfo: ROServerBrowser-Server responded
+[0093.29] SteamInfo: ROServerBrowser-Server responded
+[0093.30] SteamInfo: ROServerBrowser-Server responded
+[0093.30] SteamInfo: ROServerBrowser-Server responded
+[0093.30] SteamInfo: ROServerBrowser-Server responded
+[0093.31] SteamInfo: ROServerBrowser-Server responded
+[0093.34] SteamInfo: ROServerBrowser-Server responded
+[0093.35] SteamInfo: ROServerBrowser-Server responded
+[0093.36] SteamInfo: ROServerBrowser-Server responded
+[0093.36] SteamInfo: ROServerBrowser-Server responded
+[0093.37] SteamInfo: ROServerBrowser-Server responded
+[0093.38] SteamInfo: ROServerBrowser-Server responded
+[0093.38] SteamInfo: ROServerBrowser-Server responded
+[0093.39] SteamInfo: ROServerBrowser-Server responded
+[0093.40] SteamInfo: ROServerBrowser-Server responded
+[0093.41] SteamInfo: ROServerBrowser-Server responded
+[0093.41] SteamInfo: ROServerBrowser-Server responded
+[0093.42] SteamInfo: ROServerBrowser-Server responded
+[0093.43] SteamInfo: ROServerBrowser-Server responded
+[0093.44] SteamInfo: ROServerBrowser-Server responded
+[0093.45] SteamInfo: ROServerBrowser-Server responded
+[0093.46] SteamInfo: ROServerBrowser-Server responded
+[0093.47] SteamInfo: ROServerBrowser-Server responded
+[0093.47] SteamInfo: ROServerBrowser-Server responded
+[0093.47] SteamInfo: ROServerBrowser-Server responded
+[0093.48] SteamInfo: ROServerBrowser-Server responded
+[0093.48] SteamInfo: ROServerBrowser-Server responded
+[0093.48] SteamInfo: ROServerBrowser-Server responded
+[0093.49] SteamInfo: ROServerBrowser-Server responded
+[0093.49] SteamInfo: ROServerBrowser-Server responded
+[0093.50] SteamInfo: ROServerBrowser-Server responded
+[0093.51] SteamInfo: ROServerBrowser-Server responded
+[0093.51] SteamInfo: ROServerBrowser-Server responded
+[0093.53] SteamInfo: ROServerBrowser-Server responded
+[0093.54] SteamInfo: ROServerBrowser-Server responded
+[0093.54] SteamInfo: ROServerBrowser-Server responded
+[0093.55] SteamInfo: ROServerBrowser-Server responded
+[0093.56] SteamInfo: ROServerBrowser-Server responded
+[0093.56] SteamInfo: ROServerBrowser-Server responded
+[0093.58] SteamInfo: ROServerBrowser-Server responded
+[0093.59] SteamInfo: ROServerBrowser-Server responded
+[0093.60] SteamInfo: ROServerBrowser-Server responded
+[0093.61] SteamInfo: ROServerBrowser-Server responded
+[0093.61] SteamInfo: ROServerBrowser-Server responded
+[0093.61] SteamInfo: ROServerBrowser-Server responded
+[0093.62] SteamInfo: ROServerBrowser-Server responded
+[0093.64] SteamInfo: ROServerBrowser-Server responded
+[0093.64] SteamInfo: ROServerBrowser-Server responded
+[0093.64] SteamInfo: ROServerBrowser-Server responded
+[0093.66] SteamInfo: ROServerBrowser-Server responded
+[0093.68] SteamInfo: ROServerBrowser-Server responded
+[0093.70] SteamInfo: ROServerBrowser-Server responded
+[0093.72] SteamInfo: ROServerBrowser-Server responded
+[0093.73] SteamInfo: ROServerBrowser-Server responded
+[0093.73] SteamInfo: ROServerBrowser-Server responded
+[0093.75] SteamInfo: ROServerBrowser-Server responded
+[0093.75] SteamInfo: ROServerBrowser-Server responded
+[0093.76] SteamInfo: ROServerBrowser-Server responded
+[0093.77] SteamInfo: ROServerBrowser-Server responded
+[0093.78] SteamInfo: ROServerBrowser-Server responded
+[0093.78] SteamInfo: ROServerBrowser-Server responded
+[0093.78] SteamInfo: ROServerBrowser-Server responded
+[0093.78] SteamInfo: ROServerBrowser-Server responded
+[0093.79] SteamInfo: ROServerBrowser-Server responded
+[0093.80] SteamInfo: ROServerBrowser-Server responded
+[0093.81] SteamInfo: ROServerBrowser-Server responded
+[0093.83] SteamInfo: ROServerBrowser-Server responded
+[0093.84] SteamInfo: ROServerBrowser-Server responded
+[0093.84] SteamInfo: ROServerBrowser-Server responded
+[0093.85] SteamInfo: ROServerBrowser-Server responded
+[0093.86] SteamInfo: ROServerBrowser-Server responded
+[0093.87] SteamInfo: ROServerBrowser-Server responded
+[0093.87] SteamInfo: ROServerBrowser-Server responded
+[0093.88] SteamInfo: ROServerBrowser-Server responded
+[0093.88] SteamInfo: ROServerBrowser-Server responded
+[0093.88] SteamInfo: ROServerBrowser-Server responded
+[0093.88] SteamInfo: ROServerBrowser-Server responded
+[0093.89] SteamInfo: ROServerBrowser-Server responded
+[0093.89] SteamInfo: ROServerBrowser-Server responded
+[0093.89] SteamInfo: ROServerBrowser-Server responded
+[0093.89] SteamInfo: ROServerBrowser-Server responded
+[0093.90] SteamInfo: ROServerBrowser-Server responded
+[0093.93] SteamInfo: ROServerBrowser-Server responded
+[0093.93] SteamInfo: ROServerBrowser-Server responded
+[0093.93] SteamInfo: ROServerBrowser-Server responded
+[0093.94] SteamInfo: ROServerBrowser-Server responded
+[0093.94] SteamInfo: ROServerBrowser-Server responded
+[0093.95] SteamInfo: ROServerBrowser-Server responded
+[0093.95] SteamInfo: ROServerBrowser-Server responded
+[0093.96] SteamInfo: ROServerBrowser-Server responded
+[0093.96] SteamInfo: ROServerBrowser-Server responded
+[0094.01] SteamInfo: ROServerBrowser-Server responded
+[0094.07] SteamInfo: ROServerBrowser-Server responded
+[0094.08] SteamInfo: ROServerBrowser-Server responded
+[0094.10] SteamInfo: ROServerBrowser-Server responded
+[0094.11] SteamInfo: ROServerBrowser-Server responded
+[0094.13] SteamInfo: ROServerBrowser-Server responded
+[0094.16] SteamInfo: ROServerBrowser-Server responded
+[0094.17] SteamInfo: ROServerBrowser-Server responded
+[0094.18] SteamInfo: ROServerBrowser-Server responded
+[0094.19] SteamInfo: ROServerBrowser-Server responded
+[0094.19] SteamInfo: ROServerBrowser-Server responded
+[0094.21] SteamInfo: ROServerBrowser-Server responded
+[0094.21] SteamInfo: ROServerBrowser-Server responded
+[0094.22] SteamInfo: ROServerBrowser-Server responded
+[0094.22] SteamInfo: ROServerBrowser-Server responded
+[0094.23] SteamInfo: ROServerBrowser-Server responded
+[0094.23] SteamInfo: ROServerBrowser-Server responded
+[0094.24] SteamInfo: ROServerBrowser-Server responded
+[0094.25] SteamInfo: ROServerBrowser-Server responded
+[0094.27] SteamInfo: ROServerBrowser-Server responded
+[0094.28] SteamInfo: ROServerBrowser-Server responded
+[0094.31] SteamInfo: ROServerBrowser-Server responded
+[0094.31] SteamInfo: ROServerBrowser-Server responded
+[0094.32] SteamInfo: ROServerBrowser-Server responded
+[0094.32] SteamInfo: ROServerBrowser-Server responded
+[0094.34] SteamInfo: ROServerBrowser-Server responded
+[0094.35] SteamInfo: ROServerBrowser-Server responded
+[0094.36] SteamInfo: ROServerBrowser-Server responded
+[0094.38] SteamInfo: ROServerBrowser-Server responded
+[0094.39] SteamInfo: ROServerBrowser-Server responded
+[0094.41] SteamInfo: ROServerBrowser-Server responded
+[0094.42] SteamInfo: ROServerBrowser-Server responded
+[0094.48] SteamInfo: ROServerBrowser-Server responded
+[0094.61] SteamInfo: ROServerBrowser-Server failed to respond ip- -1059120547
+[0095.58] SteamInfo: ROServerBrowser-Server failed to respond ip- 1359010229
+[0095.58] SteamInfo: ROServerBrowser-Server failed to respond ip- 1607719281
+[0095.92] SteamInfo: ROServerBrowser-Server failed to respond ip- 1504966554
+[0095.92] SteamInfo: ROServerBrowser-Server failed to respond ip- -1951963923
+[0109.36] Warning: InsertScene: Duplicate scene tag (ROUIScene_ConnectingAndDownloading) detected: NewScene 'ROUISceneConnecting ROGameMenus.MainMenu.ROUIScene_ConnectingAndDownloading' ExistingScene 'ROUISceneConnecting Transient.ROUIScene_ConnectingAndDownloading_0'
+[0116.41] DevMemory: Virtual  memory allocation size: 212.56 MByte (222887936 Bytes)
+[0151.09] Warning: InsertScene: Duplicate scene tag (ROUIScene_ConnectingAndDownloading) detected: NewScene 'ROUISceneConnecting ROGameMenus.MainMenu.ROUIScene_ConnectingAndDownloading' ExistingScene 'ROUISceneConnecting Transient.ROUIScene_ConnectingAndDownloading_1'
+[0151.09] NetComeGo: Close TcpNetDriver_0 TcpipConnection_0 66.150.214.58:7777 11/28/16 20:38:07
+[0151.09] Exit: TcpNetDriver_0 shut down
+[0199.84] DevMemory: Virtual  memory allocation size: 242.14 MByte (253906944 Bytes)
+[0248.15] Exit: Preparing to exit.
+[0249.00] NetComeGo: Close TcpNetDriver_1 TcpipConnection_1 66.150.214.58:7777 11/28/16 20:39:45
+[0249.10] Exit: Game engine shut down
+[0249.13] Exit: Windows client shut down
+[0249.14] Exit: XAudio2 Device shut down.
+[0249.65] Exit: TcpNetDriver_1 shut down
+[0249.95] Exit: Object subsystem successfully closed.
+[0250.10] DevDataBase: Spent 0.000037 seconds communicating with "Provider=sqloledb;Data Source=production-db;Initial Catalog=EngineTaskPerf;Trusted_Connection=Yes;Connection Timeout=2" or "10.1.20.20"
+[0250.10] Exit: Exiting.

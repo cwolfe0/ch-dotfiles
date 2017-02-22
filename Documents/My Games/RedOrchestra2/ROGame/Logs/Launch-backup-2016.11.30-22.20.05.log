@@ -1,0 +1,572 @@
+Log: Log file open, 11/30/16 21:39:47
+Init: Memory Profiling : Disabled
+Init: WinSock: version 1.1 (2.2), MaxSocks=128, MaxUdp=1024
+Log:  ... running in INSTALLED mode
+Init: Version: 7258
+Init: Epic Internal: 0
+Init: Compiled (32-bit): Oct 14 2015 15:31:40
+Init: Changelist: 641002
+Init: Command line: -csmt activated
+Init: Base directory: C:\Program Files\Steam\steamapps\common\Red Orchestra 2\Binaries\Win32\
+[0000.08] Init: Computer: pc
+[0000.08] Init: User: cory
+[0000.08] Init: CPU Page size=4096, Processors=4
+[0000.08] Init: High frequency timer resolution =10.000000 MHz
+[0000.08] Init: Memory total: Physical=7.7GB Pagefile=8.7GB Virtual=4.0GB
+[0000.21] Log: STEAMWORKS initialized 1
+[0000.23] Init: WinSock: I am pc (146.229.241.49:0)
+[0000.23] Init: Presizing for 0 objects not considered by GC, pre-allocating 0 bytes.
+[0000.23] Init: Object subsystem initialized
+[0000.25] DevDataBase: Connection to "Provider=sqloledb;Data Source=production-db;Initial Catalog=EngineTaskPerf;Trusted_Connection=Yes;Connection Timeout=2" or "10.1.20.20" failed
+[0011.31] Warning: Warning, Failed to load 'Texture2D EngineMaterials.RandomMirrorDisc': Failed to find object 'Texture2D EngineMaterials.RandomMirrorDisc'
+[0013.16] DevMemory: Virtual  memory allocation size: 210.80 MByte (221044736 Bytes)
+[0022.33] SteamInfo: ROServerBrowser-Server responded
+[0022.34] SteamInfo: ROServerBrowser-Server responded
+[0022.35] SteamInfo: ROServerBrowser-Server responded
+[0022.35] SteamInfo: ROServerBrowser-Server responded
+[0022.36] SteamInfo: ROServerBrowser-Server responded
+[0022.37] SteamInfo: ROServerBrowser-Server responded
+[0022.37] SteamInfo: ROServerBrowser-Server responded
+[0022.38] SteamInfo: ROServerBrowser-Server responded
+[0022.41] SteamInfo: ROServerBrowser-Server responded
+[0022.42] SteamInfo: ROServerBrowser-Server responded
+[0022.43] SteamInfo: ROServerBrowser-Server responded
+[0022.44] SteamInfo: ROServerBrowser-Server responded
+[0022.45] SteamInfo: ROServerBrowser-Server responded
+[0022.45] SteamInfo: ROServerBrowser-Server responded
+[0022.46] SteamInfo: ROServerBrowser-Server responded
+[0022.47] SteamInfo: ROServerBrowser-Server responded
+[0022.48] SteamInfo: ROServerBrowser-Server responded
+[0022.48] SteamInfo: ROServerBrowser-Server responded
+[0022.51] SteamInfo: ROServerBrowser-Server responded
+[0022.55] SteamInfo: ROServerBrowser-Server responded
+[0022.56] SteamInfo: ROServerBrowser-Server responded
+[0022.57] SteamInfo: ROServerBrowser-Server responded
+[0022.58] SteamInfo: ROServerBrowser-Server responded
+[0022.60] SteamInfo: ROServerBrowser-Server responded
+[0022.61] SteamInfo: ROServerBrowser-Server responded
+[0022.62] SteamInfo: ROServerBrowser-Server responded
+[0022.62] SteamInfo: ROServerBrowser-Server responded
+[0022.63] SteamInfo: ROServerBrowser-Server responded
+[0022.64] SteamInfo: ROServerBrowser-Server responded
+[0022.65] SteamInfo: ROServerBrowser-Server responded
+[0022.66] SteamInfo: ROServerBrowser-Server responded
+[0022.68] SteamInfo: ROServerBrowser-Server responded
+[0022.69] SteamInfo: ROServerBrowser-Server responded
+[0022.70] SteamInfo: ROServerBrowser-Server responded
+[0022.70] SteamInfo: ROServerBrowser-Server responded
+[0022.71] SteamInfo: ROServerBrowser-Server responded
+[0022.71] SteamInfo: ROServerBrowser-Server responded
+[0022.72] SteamInfo: ROServerBrowser-Server responded
+[0022.73] SteamInfo: ROServerBrowser-Server responded
+[0022.74] SteamInfo: ROServerBrowser-Server responded
+[0022.76] SteamInfo: ROServerBrowser-Server responded
+[0022.78] SteamInfo: ROServerBrowser-Server responded
+[0022.78] SteamInfo: ROServerBrowser-Server responded
+[0022.80] SteamInfo: ROServerBrowser-Server responded
+[0022.85] SteamInfo: ROServerBrowser-Server responded
+[0022.86] SteamInfo: ROServerBrowser-Server responded
+[0022.88] SteamInfo: ROServerBrowser-Server responded
+[0022.89] SteamInfo: ROServerBrowser-Server responded
+[0022.90] SteamInfo: ROServerBrowser-Server responded
+[0022.91] SteamInfo: ROServerBrowser-Server responded
+[0022.92] SteamInfo: ROServerBrowser-Server responded
+[0022.95] SteamInfo: ROServerBrowser-Server responded
+[0022.96] SteamInfo: ROServerBrowser-Server responded
+[0022.97] SteamInfo: ROServerBrowser-Server responded
+[0022.98] SteamInfo: ROServerBrowser-Server responded
+[0022.99] SteamInfo: ROServerBrowser-Server responded
+[0023.00] SteamInfo: ROServerBrowser-Server responded
+[0023.01] SteamInfo: ROServerBrowser-Server responded
+[0023.01] SteamInfo: ROServerBrowser-Server responded
+[0023.02] SteamInfo: ROServerBrowser-Server responded
+[0023.03] SteamInfo: ROServerBrowser-Server responded
+[0023.04] SteamInfo: ROServerBrowser-Server responded
+[0023.05] SteamInfo: ROServerBrowser-Server responded
+[0023.06] SteamInfo: ROServerBrowser-Server responded
+[0023.07] SteamInfo: ROServerBrowser-Server responded
+[0023.08] SteamInfo: ROServerBrowser-Server responded
+[0023.10] SteamInfo: ROServerBrowser-Server responded
+[0023.11] SteamInfo: ROServerBrowser-Server responded
+[0023.12] SteamInfo: ROServerBrowser-Server responded
+[0023.12] SteamInfo: ROServerBrowser-Server responded
+[0023.13] SteamInfo: ROServerBrowser-Server responded
+[0023.13] SteamInfo: ROServerBrowser-Server responded
+[0023.23] SteamInfo: ROServerBrowser-Server responded
+[0023.26] SteamInfo: ROServerBrowser-Server responded
+[0023.27] SteamInfo: ROServerBrowser-Server responded
+[0023.28] SteamInfo: ROServerBrowser-Server responded
+[0023.28] SteamInfo: ROServerBrowser-Server responded
+[0023.29] SteamInfo: ROServerBrowser-Server responded
+[0023.30] SteamInfo: ROServerBrowser-Server responded
+[0023.30] SteamInfo: ROServerBrowser-Server responded
+[0023.31] SteamInfo: ROServerBrowser-Server responded
+[0023.33] SteamInfo: ROServerBrowser-Server responded
+[0023.33] SteamInfo: ROServerBrowser-Server responded
+[0023.34] SteamInfo: ROServerBrowser-Server responded
+[0023.35] SteamInfo: ROServerBrowser-Server responded
+[0023.36] SteamInfo: ROServerBrowser-Server responded
+[0023.37] SteamInfo: ROServerBrowser-Server responded
+[0023.38] SteamInfo: ROServerBrowser-Server responded
+[0023.38] SteamInfo: ROServerBrowser-Server responded
+[0023.39] SteamInfo: ROServerBrowser-Server responded
+[0023.40] SteamInfo: ROServerBrowser-Server responded
+[0023.41] SteamInfo: ROServerBrowser-Server responded
+[0023.42] SteamInfo: ROServerBrowser-Server responded
+[0023.43] SteamInfo: ROServerBrowser-Server responded
+[0023.44] SteamInfo: ROServerBrowser-Server responded
+[0023.45] SteamInfo: ROServerBrowser-Server responded
+[0023.46] SteamInfo: ROServerBrowser-Server responded
+[0023.47] SteamInfo: ROServerBrowser-Server responded
+[0023.48] SteamInfo: ROServerBrowser-Server responded
+[0023.49] SteamInfo: ROServerBrowser-Server responded
+[0023.50] SteamInfo: ROServerBrowser-Server responded
+[0023.51] SteamInfo: ROServerBrowser-Server responded
+[0023.51] SteamInfo: ROServerBrowser-Server responded
+[0023.51] SteamInfo: ROServerBrowser-Server responded
+[0023.71] SteamInfo: ROServerBrowser-Server responded
+[0026.47] Warning: InsertScene: Duplicate scene tag (ROUIScene_ConnectingAndDownloading) detected: NewScene 'ROUISceneConnecting ROGameMenus.MainMenu.ROUIScene_ConnectingAndDownloading' ExistingScene 'ROUISceneConnecting Transient.ROUIScene_ConnectingAndDownloading_0'
+[0027.55] DevMemory: Virtual  memory allocation size: 202.34 MByte (212172800 Bytes)
+[0039.70] Warning: Failed to find function StandToProneComplete for timer in actor RSAxisPawnIJALevel2Rifleman_0
+[0062.78] Warning: Failed to find function StandToProneComplete for timer in actor RSAlliedPawnUSMCLevel1AutomaticRifleman_4
+[0065.85] Warning: ParticleSystemComponent_81 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0066.60] Warning: ParticleSystemComponent_83 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0109.87] Warning: Failed to find function PhysicsTimeout for timer in actor RODroppedPickup_21
+[0112.64] Warning: ParticleSystemComponent_182 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0146.85] Warning: Failed to find function StandToProneComplete for timer in actor RSAlliedPawnUSMCLevel1Flamethrower_7
+[0150.35] Warning: ParticleSystemComponent_264 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0157.29] Warning: Failed to find function CrouchToProneComplete for timer in actor RSAlliedPawnUSMCLevel2Rifleman_3
+[0177.31] Warning: ParticleSystemComponent_302 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0179.82] Warning: ParticleSystemComponent_277 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0185.64] Warning: ParticleSystemComponent_273 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0188.74] Warning: ParticleSystemComponent_326 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0208.94] Warning: ParticleSystemComponent_373 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0211.89] Warning: ParticleSystemComponent_375 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0217.82] Warning: ParticleSystemComponent_370 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0218.63] Warning: ROParticleSystemComponent_316 (template: None) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0218.63] Warning: ROParticleSystemComponent_316 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0237.31] Warning: ParticleSystemComponent_370 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0238.35] Warning: ParticleSystemComponent_411 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0246.53] Warning: ParticleSystemComponent_425 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0251.18] Warning: ParticleSystemComponent_395 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0256.29] Warning: ParticleSystemComponent_413 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0289.73] Warning: ParticleSystemComponent_518 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0312.06] Warning: Failed to find function StandToProneComplete for timer in actor RSAxisPawnIJALevel4LightMortar_1
+[0316.21] Error: AKActorFromStatic::MakeDynamic: Invalid or Missing BodyInstance in CollisionComponent for: StaticMeshComponent_85  Mesh: S_Bottle_02
+[0329.37] Warning: ROParticleSystemComponent_480 (template: None) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0329.37] Warning: ROParticleSystemComponent_480 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0329.46] Warning: ParticleSystemComponent_548 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0337.06] Warning: ParticleSystemComponent_570 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0351.67] Warning: ParticleSystemComponent_595 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0363.55] Warning: ParticleSystemComponent_602 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0401.04] Warning: ParticleSystemComponent_726 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0401.09] Warning: Failed to find function StandToProneComplete for timer in actor RSAlliedPawnUSMCLevel1SquadLeader_15
+[0429.41] Warning: ParticleSystemComponent_602 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0430.60] Warning: ParticleSystemComponent_769 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0432.45] Warning: ParticleSystemComponent_769 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0432.94] Warning: ParticleSystemComponent_725 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0437.48] Warning: ParticleSystemComponent_769 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0440.51] Warning: ParticleSystemComponent_769 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0476.06] Warning: ParticleSystemComponent_848 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0483.51] Warning: ParticleSystemComponent_882 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0487.97] Warning: ParticleSystemComponent_822 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0499.14] Warning: Failed to find notify Prone_TO_Stand_rifle on RSAxisPawnIJALevel2SquadLeader_8
+[0509.23] Error: AKActorFromStatic::MakeDynamic: Invalid or Missing BodyInstance in CollisionComponent for: StaticMeshComponent_85  Mesh: S_Bottle_02
+[0518.65] Warning: ParticleSystemComponent_864 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0520.99] Warning: ParticleSystemComponent_909 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0527.99] Warning: ParticleSystemComponent_928 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0531.76] Warning: ParticleSystemComponent_940 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0542.36] Warning: Failed to find notify Prone_TO_Stand_rifle on RSAlliedPawnUSMCLevel1AutomaticRifleman_43
+[0546.53] Warning: Failed to find function StandToProneComplete for timer in actor RSAlliedPawnUSMCLevel2Rifleman_22
+[0553.48] Warning: Failed to find function PhysicsTimeout for timer in actor RODroppedPickup_228
+[0553.99] Warning: Failed to find function PhysicsTimeout for timer in actor RODroppedPickup_230
+[0553.99] Warning: Failed to find function PhysicsTimeout for timer in actor RODroppedPickup_231
+[0560.95] Warning: ParticleSystemComponent_919 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0583.64] Warning: Failed to find function StandToProneComplete for timer in actor RSAlliedPawnUSMCLevel2Sniper_18
+[0628.52] Warning: ParticleSystemComponent_1101 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0630.71] Warning: ParticleSystemComponent_1104 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0645.42] Warning: Failed to find function PhysicsTimeout for timer in actor RODroppedPickup_311
+[0645.59] Warning: Failed to find function PhysicsTimeout for timer in actor RODroppedPickup_312
+[0654.36] Warning: ParticleSystemComponent_1105 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0655.82] Warning: ParticleSystemComponent_1146 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0656.30] Warning: ParticleSystemComponent_1132 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0657.28] Warning: ParticleSystemComponent_1140 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0658.06] Warning: ParticleSystemComponent_1132 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0665.20] Warning: ParticleSystemComponent_1106 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0667.26] Warning: ParticleSystemComponent_1105 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0667.52] Warning: ParticleSystemComponent_1137 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0675.18] Warning: ParticleSystemComponent_1167 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0675.20] Warning: ParticleSystemComponent_1174 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0675.80] Warning: ParticleSystemComponent_1185 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0678.58] Warning: Failed to find function StandToProneComplete for timer in actor RSAlliedPawnUSMCLevel6SquadLeader_23
+[0681.95] Warning: ParticleSystemComponent_1137 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0695.71] Warning: ParticleSystemComponent_1174 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0702.24] Warning: ParticleSystemComponent_1212 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0703.28] Warning: ParticleSystemComponent_1225 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0705.61] Warning: ParticleSystemComponent_1235 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0714.96] Warning: Failed to find function StandToProneComplete for timer in actor RSAxisPawnIJALevel2Rifleman_22
+[0718.59] Warning: ParticleSystemComponent_1252 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0763.09] Warning: Failed to find function StandToProneComplete for timer in actor RSAlliedPawnUSMCLevel4Rifleman_46
+[0764.22] Warning: ParticleSystemComponent_1353 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0772.45] Warning: Failed to find function StandToProneComplete for timer in actor RSAxisPawnIJALevel1Rifleman_115
+[0776.14] Warning: ParticleSystemComponent_1323 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0778.62] Warning: ParticleSystemComponent_1335 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0780.42] Warning: ParticleSystemComponent_1323 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0787.16] Warning: ParticleSystemComponent_1367 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0787.47] Warning: ParticleSystemComponent_1335 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0788.87] Warning: ParticleSystemComponent_1367 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0790.91] Warning: ParticleSystemComponent_1394 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0797.76] Warning: ParticleSystemComponent_1335 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0799.97] Warning: ParticleSystemComponent_1335 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0802.47] Warning: ParticleSystemComponent_1335 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0803.50] Warning: ParticleSystemComponent_1405 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0805.60] Warning: ParticleSystemComponent_1405 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0806.30] Warning: ROParticleSystemComponent_1192 (template: None) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0806.30] Warning: ROParticleSystemComponent_1192 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0808.48] Warning: ParticleSystemComponent_1405 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0809.73] Warning: ROParticleSystemComponent_1192 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0885.68] Warning: InsertScene: Duplicate scene tag (ROUIScene_ConnectingAndDownloading) detected: NewScene 'ROUISceneConnecting ROGameMenus.MainMenu.ROUIScene_ConnectingAndDownloading' ExistingScene 'ROUISceneConnecting Transient.ROUIScene_ConnectingAndDownloading_1'
+[0885.68] NetComeGo: Close TcpNetDriver_0 TcpipConnection_0 109.70.149.165:7817 11/30/16 21:54:33
+[0885.68] Exit: TcpNetDriver_0 shut down
+[0899.09] DevMemory: Virtual  memory allocation size: 269.44 MByte (282525696 Bytes)
+[0989.38] Warning: ParticleSystemComponent_1450 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0991.25] Warning: ParticleSystemComponent_1468 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0991.68] Warning: ParticleSystemComponent_1418 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[0996.97] Warning: ParticleSystemComponent_1468 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1001.71] Warning: ParticleSystemComponent_1473 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1019.65] Warning: ParticleSystemComponent_1498 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1020.50] Warning: ParticleSystemComponent_1484 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1022.76] Warning: ParticleSystemComponent_1480 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1023.34] Warning: ParticleSystemComponent_1484 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1027.33] Warning: ParticleSystemComponent_1418 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1031.84] Warning: ParticleSystemComponent_1559 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1033.96] Warning: ParticleSystemComponent_1565 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1039.89] Warning: ParticleSystemComponent_1554 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1050.85] Warning: ParticleSystemComponent_1583 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1074.10] Warning: ParticleSystemComponent_1639 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1074.29] Warning: ParticleSystemComponent_1630 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1074.29] Warning: ParticleSystemComponent_1644 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1084.72] Warning: ParticleSystemComponent_1630 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1093.56] Warning: ParticleSystemComponent_1681 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1094.73] Warning: ParticleSystemComponent_1720 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1102.04] Warning: ParticleSystemComponent_1674 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1113.15] Warning: ParticleSystemComponent_1760 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1117.14] Warning: ParticleSystemComponent_1762 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1132.03] Warning: ParticleSystemComponent_1755 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1134.65] Warning: Failed to find notify Prone_TO_Stand_rifle on RSAxisPawnSNLFLevel2SquadLeader_13
+[1145.96] Warning: ParticleSystemComponent_1755 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1160.97] Warning: Failed to find notify Prone_TO_Stand_rifle on RSAlliedPawnUSMCLevel1Sniper_10
+[1173.17] Warning: ParticleSystemComponent_1833 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1175.73] Warning: ParticleSystemComponent_1833 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1177.51] Warning: ParticleSystemComponent_1833 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1177.80] Warning: ParticleSystemComponent_1851 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1179.55] Warning: ParticleSystemComponent_1833 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1190.72] Warning: ParticleSystemComponent_1876 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1195.65] Warning: ParticleSystemComponent_1826 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1201.99] Warning: ParticleSystemComponent_1875 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1209.97] Warning: ParticleSystemComponent_1912 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1212.13] Warning: ROParticleSystemComponent_1630 (template: None) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1212.13] Warning: ROParticleSystemComponent_1630 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1215.84] Warning: ParticleSystemComponent_1875 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1223.46] Warning: ParticleSystemComponent_1906 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1224.64] Warning: ParticleSystemComponent_1953 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1224.86] Warning: ParticleSystemComponent_1916 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1231.63] Warning: ParticleSystemComponent_1875 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1235.60] Warning: ParticleSystemComponent_1875 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1239.22] Warning: ParticleSystemComponent_1993 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1240.59] Warning: ParticleSystemComponent_1875 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1242.69] Warning: ParticleSystemComponent_1993 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1243.02] Warning: ParticleSystemComponent_1962 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1244.80] Warning: ParticleSystemComponent_1875 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1245.76] Warning: ParticleSystemComponent_1998 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1245.80] Warning: ParticleSystemComponent_1948 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1248.95] Warning: ParticleSystemComponent_1916 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1248.98] Warning: ParticleSystemComponent_1948 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1248.98] Warning: ParticleSystemComponent_1963 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1261.09] Warning: Failed to find function StandToProneComplete for timer in actor RSAxisPawnSNLFLevel1Rifleman_84
+[1278.16] Warning: ParticleSystemComponent_2018 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1279.26] Warning: ParticleSystemComponent_2039 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1281.47] Warning: ParticleSystemComponent_2047 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1281.52] Warning: ParticleSystemComponent_2039 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1282.55] Warning: ParticleSystemComponent_2009 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1286.03] Warning: ROParticleSystemComponent_1726 (template: None) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1286.03] Warning: ROParticleSystemComponent_1726 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1288.48] Warning: ParticleSystemComponent_2005 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1289.86] Warning: ParticleSystemComponent_2047 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1290.07] Warning: ROParticleSystemComponent_1726 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1294.83] Warning: ParticleSystemComponent_2018 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1306.39] Warning: ROParticleSystemComponent_1726 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1308.51] Warning: ROParticleSystemComponent_1726 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1322.21] Warning: ROParticleSystemComponent_1726 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1323.31] Warning: ParticleSystemComponent_2088 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1324.32] Warning: ParticleSystemComponent_2144 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1325.21] Warning: ParticleSystemComponent_2009 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1325.86] Warning: ParticleSystemComponent_2088 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1327.06] Warning: ParticleSystemComponent_2005 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1327.68] Warning: ParticleSystemComponent_2074 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1334.24] Warning: ParticleSystemComponent_2009 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1335.71] Warning: ROParticleSystemComponent_1726 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1337.48] Error: AKActorFromStatic::MakeDynamic: Invalid or Missing BodyInstance in CollisionComponent for: StaticMeshComponent_64  Mesh: Tincan_2
+[1337.48] Error: AKActorFromStatic::MakeDynamic: Invalid or Missing BodyInstance in CollisionComponent for: StaticMeshComponent_63  Mesh: Tincan_2
+[1337.48] Error: AKActorFromStatic::MakeDynamic: Invalid or Missing BodyInstance in CollisionComponent for: StaticMeshComponent_60  Mesh: Tincan_2
+[1337.54] Warning: ParticleSystemComponent_2009 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1347.06] Warning: ROParticleSystemComponent_1726 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1349.04] Warning: ParticleSystemComponent_2185 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1353.26] Warning: ROParticleSystemComponent_1726 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1354.85] Warning: ParticleSystemComponent_2175 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1356.85] Warning: ROParticleSystemComponent_1726 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1358.13] Warning: ParticleSystemComponent_2185 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1360.18] Warning: ParticleSystemComponent_2185 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1360.42] Warning: ParticleSystemComponent_2097 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1360.62] Warning: ROParticleSystemComponent_1726 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1362.15] Warning: ParticleSystemComponent_2185 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1366.53] Warning: ParticleSystemComponent_2215 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1368.63] Warning: ParticleSystemComponent_2188 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1369.80] Warning: ParticleSystemComponent_2009 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1371.73] Warning: ROParticleSystemComponent_1726 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1374.24] Warning: ParticleSystemComponent_2215 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1391.21] Warning: ParticleSystemComponent_2258 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1392.14] Warning: ParticleSystemComponent_2261 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1398.43] Warning: ParticleSystemComponent_2261 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1403.76] Warning: ParticleSystemComponent_2261 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1405.73] Warning: ParticleSystemComponent_2261 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1412.39] Warning: ParticleSystemComponent_2273 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1427.71] Warning: ParticleSystemComponent_2307 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1427.99] Warning: ParticleSystemComponent_2326 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1433.13] Warning: ParticleSystemComponent_2326 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1434.27] Warning: ParticleSystemComponent_2340 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1446.67] Warning: ParticleSystemComponent_2336 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1447.33] Warning: ParticleSystemComponent_2362 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1449.45] Warning: ParticleSystemComponent_2362 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1464.54] Warning: ParticleSystemComponent_2410 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1467.71] Warning: ParticleSystemComponent_2403 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1468.02] Warning: ParticleSystemComponent_2417 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1469.67] Warning: ParticleSystemComponent_2417 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1470.58] Warning: ParticleSystemComponent_2410 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1470.94] Warning: ParticleSystemComponent_2403 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1471.30] Warning: ROParticleSystemComponent_1996 (template: None) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1471.30] Warning: ROParticleSystemComponent_1996 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1472.76] Warning: ROParticleSystemComponent_1996 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1473.91] Warning: ROParticleSystemComponent_1996 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1474.47] Warning: ParticleSystemComponent_2403 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1474.88] Warning: ParticleSystemComponent_2383 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1477.12] Warning: ParticleSystemComponent_2403 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1478.40] Warning: ParticleSystemComponent_2413 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1502.46] Warning: ParticleSystemComponent_2446 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1506.12] Warning: ParticleSystemComponent_2446 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1509.45] Warning: ParticleSystemComponent_2486 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1511.19] Warning: ParticleSystemComponent_2498 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1514.11] Warning: ParticleSystemComponent_2498 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1516.86] Warning: ParticleSystemComponent_2498 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1518.83] Warning: ParticleSystemComponent_2446 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1521.54] Warning: ParticleSystemComponent_2486 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1522.91] Warning: ParticleSystemComponent_2519 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1524.99] Warning: ParticleSystemComponent_2520 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1526.73] Warning: ParticleSystemComponent_2524 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1527.52] Warning: ParticleSystemComponent_2520 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1528.62] Warning: ParticleSystemComponent_2528 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1529.28] Warning: ParticleSystemComponent_2529 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1530.92] Warning: ParticleSystemComponent_2533 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1531.24] Warning: ParticleSystemComponent_2518 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1542.55] Warning: ParticleSystemComponent_2529 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1543.34] Warning: ParticleSystemComponent_2533 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1543.65] Warning: ParticleSystemComponent_2550 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1545.64] Warning: ParticleSystemComponent_2533 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1548.21] Warning: ParticleSystemComponent_2533 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1555.26] Warning: ParticleSystemComponent_2554 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1555.57] Warning: ParticleSystemComponent_2524 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1556.96] Warning: ParticleSystemComponent_2551 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1558.72] Warning: ParticleSystemComponent_2560 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1560.86] Warning: ParticleSystemComponent_2560 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1563.64] Warning: ParticleSystemComponent_2551 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1576.31] Warning: ParticleSystemComponent_2590 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1583.10] Warning: ParticleSystemComponent_2590 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1584.86] Warning: ParticleSystemComponent_2584 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1588.85] Warning: ParticleSystemComponent_2590 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1591.26] Warning: ParticleSystemComponent_2524 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1592.35] Warning: ParticleSystemComponent_2616 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1594.56] Warning: ROParticleSystemComponent_2150 (template: None) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1594.56] Warning: ROParticleSystemComponent_2150 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1594.60] Warning: ParticleSystemComponent_2584 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1596.71] Warning: ROParticleSystemComponent_2150 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1604.86] Warning: ParticleSystemComponent_2645 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1609.13] Warning: ROParticleSystemComponent_2150 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1611.27] Warning: ROParticleSystemComponent_2150 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1615.14] Warning: ROParticleSystemComponent_2150 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1622.87] Warning: ROParticleSystemComponent_2150 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1625.07] Warning: ROParticleSystemComponent_2150 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1627.52] Warning: ROParticleSystemComponent_2150 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1630.08] Warning: ParticleSystemComponent_2590 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1631.15] Warning: ROParticleSystemComponent_2150 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1637.37] Warning: ParticleSystemComponent_2651 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1638.54] Warning: ROParticleSystemComponent_2150 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1641.50] Warning: ParticleSystemComponent_2651 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1654.39] Warning: ROParticleSystemComponent_2150 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1659.07] Warning: ROParticleSystemComponent_2150 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1669.60] Warning: ParticleSystemComponent_2555 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1671.86] Warning: ParticleSystemComponent_2722 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1677.04] Warning: ParticleSystemComponent_2734 (template: FX_RS_Explosions.Satchel.FX_RS_Fuse) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1680.65] Warning: ParticleSystemComponent_2717 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1681.12] Warning: ParticleSystemComponent_2555 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1682.69] Warning: ParticleSystemComponent_2742 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1685.78] Warning: ParticleSystemComponent_2727 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1703.27] Warning: ParticleSystemComponent_2800 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1703.40] Warning: ParticleSystemComponent_2796 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1717.93] Warning: ParticleSystemComponent_2828 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1725.13] Warning: ParticleSystemComponent_2839 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1727.06] Warning: ROParticleSystemComponent_2335 (template: None) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1727.06] Warning: ROParticleSystemComponent_2335 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1731.21] Warning: ParticleSystemComponent_2838 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1782.24] Warning: ParticleSystemComponent_2907 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1784.24] Warning: ParticleSystemComponent_2907 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1786.57] Warning: ParticleSystemComponent_2907 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1789.86] Warning: ParticleSystemComponent_2890 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1796.69] Warning: ParticleSystemComponent_2912 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1797.89] Warning: ParticleSystemComponent_2890 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1804.38] Warning: Failed to find notify Prone_TO_Stand_rifle on RSAxisPawnSNLFLevel1MachineGunner_11
+[1815.64] Warning: ParticleSystemComponent_2872 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1817.98] Warning: ParticleSystemComponent_2872 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1820.86] Warning: Failed to find notify Prone_TO_Stand_rifle on RSAxisPawnSNLFLevel1MachineGunner_11
+[1832.44] Warning: ParticleSystemComponent_2985 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1871.02] Warning: ParticleSystemComponent_3016 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1872.48] Warning: ParticleSystemComponent_3020 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1878.55] Warning: ParticleSystemComponent_3016 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1885.41] Warning: ROPawn::FitCollision() failed to find a good spot for RSAlliedPawnUSMCLevel4Engineer_24
+[1886.00] Warning: ParticleSystemComponent_3025 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1887.75] Warning: ParticleSystemComponent_3020 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1889.93] Warning: ParticleSystemComponent_3068 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1897.45] Warning: ParticleSystemComponent_3089 (template: FX_RS_Explosions.Satchel.FX_RS_Fuse) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[1977.39] Warning: InsertScene: Duplicate scene tag (ROUIScene_ConnectingAndDownloading) detected: NewScene 'ROUISceneConnecting ROGameMenus.MainMenu.ROUIScene_ConnectingAndDownloading' ExistingScene 'ROUISceneConnecting Transient.ROUIScene_ConnectingAndDownloading_2'
+[1977.39] NetComeGo: Close TcpNetDriver_1 TcpipConnection_1 109.70.149.165:7817 11/30/16 22:12:44
+[1977.39] Exit: TcpNetDriver_1 shut down
+[1987.79] DevMemory: Virtual  memory allocation size: 276.08 MByte (289492992 Bytes)
+[2059.74] Warning: ParticleSystemComponent_3163 (template: FX_RS_Explosions.Satchel.FX_RS_Fuse) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2068.68] Warning: ParticleSystemComponent_3109 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2068.99] Warning: ParticleSystemComponent_3152 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2069.32] Warning: ParticleSystemComponent_3118 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type99) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2099.25] Warning: ParticleSystemComponent_3256 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2099.27] Warning: ParticleSystemComponent_3232 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2100.15] Warning: ParticleSystemComponent_3243 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2106.82] Warning: ParticleSystemComponent_3300 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2109.28] Warning: ParticleSystemComponent_3265 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type99) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2109.80] Warning: ParticleSystemComponent_3237 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2112.11] Warning: ParticleSystemComponent_3265 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type99) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2117.95] Warning: ParticleSystemComponent_3321 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2118.13] Warning: ParticleSystemComponent_3311 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2120.20] Warning: ParticleSystemComponent_3311 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2121.10] Warning: ParticleSystemComponent_3321 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2123.71] Warning: ParticleSystemComponent_3316 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2126.12] Warning: ParticleSystemComponent_3316 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2128.06] Warning: ParticleSystemComponent_3237 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2129.60] Warning: ParticleSystemComponent_3316 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2130.00] Warning: ParticleSystemComponent_3290 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2131.80] Warning: ParticleSystemComponent_3334 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2136.77] Warning: ParticleSystemComponent_3361 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2139.35] Warning: ParticleSystemComponent_3368 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2139.80] Warning: ParticleSystemComponent_3372 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2142.73] Warning: ParticleSystemComponent_3372 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2144.72] Warning: ParticleSystemComponent_3384 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2145.87] Warning: Failed to find function PhysicsTimeout for timer in actor RODroppedPickup_691
+[2147.92] Warning: ParticleSystemComponent_3384 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2152.01] Warning: ParticleSystemComponent_3372 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2162.88] Warning: ParticleSystemComponent_3407 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2163.23] Warning: ParticleSystemComponent_3398 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2165.73] Warning: ParticleSystemComponent_3416 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2165.95] Warning: ParticleSystemComponent_3430 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2168.65] Warning: ParticleSystemComponent_3396 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2169.44] Warning: ParticleSystemComponent_3430 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2170.30] Warning: ParticleSystemComponent_3452 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2171.02] Warning: ParticleSystemComponent_3396 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2174.84] Warning: ParticleSystemComponent_3396 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2180.58] Warning: ParticleSystemComponent_3464 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2182.31] Warning: ParticleSystemComponent_3414 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type99) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2182.64] Warning: ParticleSystemComponent_3372 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2183.88] Warning: ParticleSystemComponent_3464 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2186.07] Warning: ParticleSystemComponent_3414 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type99) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2191.11] Warning: ParticleSystemComponent_3480 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2192.97] Warning: ParticleSystemComponent_3412 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2197.05] Warning: ParticleSystemComponent_3412 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2197.74] Warning: ParticleSystemComponent_3372 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2197.95] Warning: ParticleSystemComponent_3485 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2198.56] Warning: ParticleSystemComponent_3480 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2198.64] Warning: ParticleSystemComponent_3470 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2201.41] Warning: ParticleSystemComponent_3480 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2204.71] Warning: ParticleSystemComponent_3481 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type99) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2206.86] Warning: ParticleSystemComponent_3481 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type99) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2208.77] Warning: ROParticleSystemComponent_2846 (template: None) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2208.77] Warning: ROParticleSystemComponent_2846 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2209.86] Warning: ParticleSystemComponent_3372 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2212.81] Warning: ParticleSystemComponent_3372 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2213.36] Warning: ParticleSystemComponent_3507 (template: FX_RS_Explosions.Satchel.FX_RS_Fuse) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2215.10] Warning: ParticleSystemComponent_3372 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2215.99] Warning: ParticleSystemComponent_3480 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2216.62] Warning: ParticleSystemComponent_3497 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2218.38] Warning: ROParticleSystemComponent_2846 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2218.98] Warning: ParticleSystemComponent_3372 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2219.87] Warning: ROParticleSystemComponent_2846 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2222.11] Warning: ROParticleSystemComponent_2846 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2222.38] Warning: ParticleSystemComponent_3497 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2223.08] Warning: ParticleSystemComponent_3512 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type99) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2225.15] Warning: ParticleSystemComponent_3497 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2236.20] Warning: ParticleSystemComponent_3414 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type99) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2238.99] Warning: ParticleSystemComponent_3470 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2241.29] Warning: ParticleSystemComponent_3497 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2247.15] Warning: ROParticleSystemComponent_2846 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2256.55] Warning: ParticleSystemComponent_3414 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type99) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2261.45] Warning: ParticleSystemComponent_3372 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2263.57] Warning: ParticleSystemComponent_3372 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2265.92] Warning: Failed to find function StandToProneComplete for timer in actor RSAxisPawnIJALevel2SquadLeader_9
+[2266.56] Warning: ParticleSystemComponent_3580 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2267.14] Warning: ROParticleSystemComponent_2846 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2267.44] Warning: ParticleSystemComponent_3578 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2268.38] Warning: ROParticleSystemComponent_2846 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2269.58] Warning: ROParticleSystemComponent_2846 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2274.64] Warning: ParticleSystemComponent_3600 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2279.29] Warning: ParticleSystemComponent_3623 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2279.39] Warning: ParticleSystemComponent_3604 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2279.60] Warning: ParticleSystemComponent_3624 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2280.97] Warning: ParticleSystemComponent_3611 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2281.42] Warning: ParticleSystemComponent_3610 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2281.84] Warning: ParticleSystemComponent_3604 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2283.78] Warning: ParticleSystemComponent_3625 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2285.38] Warning: ParticleSystemComponent_3642 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2287.43] Warning: ParticleSystemComponent_3603 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2289.95] Warning: ParticleSystemComponent_3602 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2290.55] Warning: ParticleSystemComponent_3600 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2291.69] Warning: ParticleSystemComponent_3612 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2301.55] Warning: ParticleSystemComponent_3664 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2302.24] Warning: ParticleSystemComponent_3677 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2305.04] Warning: Failed to find function StandToProneComplete for timer in actor RSAlliedPawnUSMCLevel4Engineer_9
+[2306.65] Warning: ParticleSystemComponent_3665 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2306.65] Warning: ParticleSystemComponent_3696 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2307.46] Warning: ParticleSystemComponent_3706 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2308.69] Warning: ParticleSystemComponent_3703 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2312.17] Warning: ParticleSystemComponent_3712 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2325.95] Warning: ParticleSystemComponent_3735 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2328.54] Warning: ParticleSystemComponent_3729 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2332.24] Warning: ParticleSystemComponent_3718 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2338.84] Warning: ParticleSystemComponent_3722 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2343.96] Warning: ParticleSystemComponent_3691 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2347.99] Warning: ParticleSystemComponent_3691 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2348.23] Warning: ParticleSystemComponent_3756 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type99) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2348.49] Warning: ParticleSystemComponent_3717 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2354.64] Warning: ParticleSystemComponent_3781 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_USA_SpringfieldM1903A1) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2361.53] Warning: ParticleSystemComponent_3691 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2370.13] Warning: ParticleSystemComponent_3774 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type99) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2371.24] Warning: ParticleSystemComponent_3792 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2371.69] Warning: ParticleSystemComponent_3774 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type99) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2372.80] Warning: ParticleSystemComponent_3791 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2377.09] Warning: ParticleSystemComponent_3792 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2378.19] Warning: ParticleSystemComponent_3797 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2385.23] Warning: ParticleSystemComponent_3691 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2385.72] Warning: ParticleSystemComponent_3740 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2389.60] Warning: ParticleSystemComponent_3791 (template: FX_RS_WEP_Gun.ShellEjects.FX_Wep_A_ShellEject_PhysX_JAP_Type38) needs update but can't be because it's in TG_DuringAsnycWork and indirectly attached!
+[2393.84] Exit: Preparing to exit.
+[2394.62] NetComeGo: Close TcpNetDriver_2 TcpipConnection_2 109.70.149.165:7817 11/30/16 22:19:42
+[2394.71] Exit: Game engine shut down
+[2394.72] Exit: Windows client shut down
+[2394.74] Exit: XAudio2 Device shut down.
+[2395.05] Exit: TcpNetDriver_2 shut down
+[2395.27] Exit: Object subsystem successfully closed.
+[2395.34] DevDataBase: Spent 0.000032 seconds communicating with "Provider=sqloledb;Data Source=production-db;Initial Catalog=EngineTaskPerf;Trusted_Connection=Yes;Connection Timeout=2" or "10.1.20.20"
+[2395.34] Exit: Exiting.

@@ -1,0 +1,29 @@
+Log: Log file open, 12/01/16 01:05:20
+Init: Memory Profiling : Disabled
+Init: WinSock: version 1.1 (2.2), MaxSocks=128, MaxUdp=1024
+Log:  ... running in INSTALLED mode
+Init: Version: 7258
+Init: Epic Internal: 0
+Init: Compiled (32-bit): Oct 14 2015 15:31:40
+Init: Changelist: 641002
+Init: Command line: -csmt activated
+Init: Base directory: C:\Program Files\Steam\steamapps\common\Red Orchestra 2\Binaries\Win32\
+[0000.08] Init: Computer: pc
+[0000.08] Init: User: cory
+[0000.08] Init: CPU Page size=4096, Processors=4
+[0000.08] Init: High frequency timer resolution =10.000000 MHz
+[0000.08] Init: Memory total: Physical=7.7GB Pagefile=8.7GB Virtual=4.0GB
+[0000.43] Log: STEAMWORKS initialized 1
+[0000.45] Init: WinSock: I am pc (146.229.241.49:0)
+[0000.45] Init: Presizing for 0 objects not considered by GC, pre-allocating 0 bytes.
+[0000.45] Init: Object subsystem initialized
+[0000.49] DevDataBase: Connection to "Provider=sqloledb;Data Source=production-db;Initial Catalog=EngineTaskPerf;Trusted_Connection=Yes;Connection Timeout=2" or "10.1.20.20" failed
+[0012.49] Warning: Warning, Failed to load 'Texture2D EngineMaterials.RandomMirrorDisc': Failed to find object 'Texture2D EngineMaterials.RandomMirrorDisc'
+[0014.31] DevMemory: Virtual  memory allocation size: 211.12 MByte (221376512 Bytes)
+[0029.96] Exit: Preparing to exit.
+[0030.55] Exit: Game engine shut down
+[0030.57] Exit: Windows client shut down
+[0030.57] Exit: XAudio2 Device shut down.
+[0030.65] Exit: Object subsystem successfully closed.
+[0030.70] DevDataBase: Spent 0.000033 seconds communicating with "Provider=sqloledb;Data Source=production-db;Initial Catalog=EngineTaskPerf;Trusted_Connection=Yes;Connection Timeout=2" or "10.1.20.20"
+[0030.70] Exit: Exiting.

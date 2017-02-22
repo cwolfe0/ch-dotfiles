@@ -8520,3 +8520,297 @@ Sep 27 00:19 : pulse_output: "pulseaudio" [pulse] failed to play: suspended
 Sep 27 00:19 : pulse_output: "pulseaudio" [pulse] failed to play: suspended
 Sep 27 00:19 : pulse_output: "pulseaudio" [pulse] failed to play: suspended
 Sep 27 00:20 : pulse_output: "pulseaudio" [pulse] failed to play: suspended
+Feb 22 07:20 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 22 07:20 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 22 07:20 : exception: Failed to decode /sync/Music/Converted/Chon/Chon - Grow (2015) [FLAC]/03 - Fall.flac
+Feb 22 07:20 : exception: nested: Failed to open /sync/Music/Converted/Chon/Chon - Grow (2015) [FLAC]/03 - Fall.flac: No such file or directory
+Feb 22 07:20 : player: played "Chon/Chon - Grow (2015) [FLAC]/03 - Fall.flac"
+Feb 22 07:20 : client: [0] opened from [::1]:42472
+Feb 22 07:20 : client: [0] closed
+Feb 22 07:21 : client: [1] opened from 127.0.0.1:33914
+Feb 22 07:21 : exception: Failed to decode /sync/Music/Converted/Ascii Witchcraft - Antischism [12''] (2014)/A1 - Voices.flac
+Feb 22 07:21 : exception: nested: Failed to open /sync/Music/Converted/Ascii Witchcraft - Antischism [12''] (2014)/A1 - Voices.flac: No such file or directory
+Feb 22 07:21 : player: played "Ascii Witchcraft - Antischism [12''] (2014)/A1 - Voices.flac"
+Feb 22 07:21 : exception: Failed to decode /sync/Music/Converted/Ascii Witchcraft - Antischism [12''] (2014)/A2 - Dead Band Groupie.flac
+Feb 22 07:21 : exception: nested: Failed to open /sync/Music/Converted/Ascii Witchcraft - Antischism [12''] (2014)/A2 - Dead Band Groupie.flac: No such file or directory
+Feb 22 07:21 : player: played "Ascii Witchcraft - Antischism [12''] (2014)/A2 - Dead Band Groupie.flac"
+Feb 22 07:21 : exception: Failed to decode /sync/Music/Converted/Ascii Witchcraft - Antischism [12''] (2014)/A3 - In The Silence.flac
+Feb 22 07:21 : exception: nested: Failed to open /sync/Music/Converted/Ascii Witchcraft - Antischism [12''] (2014)/A3 - In The Silence.flac: No such file or directory
+Feb 22 07:21 : player: played "Ascii Witchcraft - Antischism [12''] (2014)/A3 - In The Silence.flac"
+Feb 22 07:21 : exception: Failed to decode /sync/Music/Converted/Ascii Witchcraft - Antischism [12''] (2014)/B1 - Longing.flac
+Feb 22 07:21 : exception: nested: Failed to open /sync/Music/Converted/Ascii Witchcraft - Antischism [12''] (2014)/B1 - Longing.flac: No such file or directory
+Feb 22 07:21 : player: played "Ascii Witchcraft - Antischism [12''] (2014)/B1 - Longing.flac"
+Feb 22 07:21 : exception: Failed to decode /sync/Music/Converted/Ascii Witchcraft - Antischism [12''] (2014)/B2 - Hybridism.flac
+Feb 22 07:21 : exception: nested: Failed to open /sync/Music/Converted/Ascii Witchcraft - Antischism [12''] (2014)/B2 - Hybridism.flac: No such file or directory
+Feb 22 07:21 : player: played "Ascii Witchcraft - Antischism [12''] (2014)/B2 - Hybridism.flac"
+Feb 22 07:21 : exception: Failed to decode /sync/Music/Converted/Ascii Witchcraft - Antischism [12''] (2014)/B3 - Effective Frequencies.flac
+Feb 22 07:21 : exception: nested: Failed to open /sync/Music/Converted/Ascii Witchcraft - Antischism [12''] (2014)/B3 - Effective Frequencies.flac: No such file or directory
+Feb 22 07:21 : player: played "Ascii Witchcraft - Antischism [12''] (2014)/B3 - Effective Frequencies.flac"
+Feb 22 07:21 : exception: Failed to decode /sync/Music/Converted/Sabbath/Black Sabbath - Seventh Star/(01) [Black Sabbath] In For The Kill.flac
+Feb 22 07:21 : exception: nested: Failed to open /sync/Music/Converted/Sabbath/Black Sabbath - Seventh Star/(01) [Black Sabbath] In For The Kill.flac: No such file or directory
+Feb 22 07:21 : player: played "Sabbath/Black Sabbath - Seventh Star/(01) [Black Sabbath] In For The Kill.flac"
+Feb 22 07:21 : exception: Failed to decode /sync/Music/Converted/Sabbath/Black Sabbath - Seventh Star/(02) [Black Sabbath] No Stranger To Love.flac
+Feb 22 07:21 : exception: nested: Failed to open /sync/Music/Converted/Sabbath/Black Sabbath - Seventh Star/(02) [Black Sabbath] No Stranger To Love.flac: No such file or directory
+Feb 22 07:21 : player: played "Sabbath/Black Sabbath - Seventh Star/(02) [Black Sabbath] No Stranger To Love.flac"
+Feb 22 07:21 : exception: Failed to decode /sync/Music/Converted/Sabbath/Black Sabbath - Seventh Star/(03) [Black Sabbath] Turn To Stone.flac
+Feb 22 07:21 : exception: nested: Failed to open /sync/Music/Converted/Sabbath/Black Sabbath - Seventh Star/(03) [Black Sabbath] Turn To Stone.flac: No such file or directory
+Feb 22 07:21 : player: played "Sabbath/Black Sabbath - Seventh Star/(03) [Black Sabbath] Turn To Stone.flac"
+Feb 22 07:21 : exception: Failed to decode /sync/Music/Converted/Sabbath/Black Sabbath - Seventh Star/(04) [Black Sabbath] Sphinx.flac
+Feb 22 07:21 : exception: nested: Failed to open /sync/Music/Converted/Sabbath/Black Sabbath - Seventh Star/(04) [Black Sabbath] Sphinx.flac: No such file or directory
+Feb 22 07:21 : player: played "Sabbath/Black Sabbath - Seventh Star/(04) [Black Sabbath] Sphinx.flac"
+Feb 22 07:21 : exception: Failed to decode /sync/Music/Converted/Sabbath/Black Sabbath - Seventh Star/(05) [Black Sabbath] Seventh Star.flac
+Feb 22 07:21 : exception: nested: Failed to open /sync/Music/Converted/Sabbath/Black Sabbath - Seventh Star/(05) [Black Sabbath] Seventh Star.flac: No such file or directory
+Feb 22 07:21 : player: played "Sabbath/Black Sabbath - Seventh Star/(05) [Black Sabbath] Seventh Star.flac"
+Feb 22 07:21 : exception: Failed to decode /sync/Music/Converted/Sabbath/Black Sabbath - Seventh Star/(06) [Black Sabbath] Danger Zone.flac
+Feb 22 07:21 : exception: nested: Failed to open /sync/Music/Converted/Sabbath/Black Sabbath - Seventh Star/(06) [Black Sabbath] Danger Zone.flac: No such file or directory
+Feb 22 07:21 : player: played "Sabbath/Black Sabbath - Seventh Star/(06) [Black Sabbath] Danger Zone.flac"
+Feb 22 07:21 : exception: Failed to decode /sync/Music/Converted/Sabbath/Black Sabbath - Seventh Star/(07) [Black Sabbath] Heart Like A Wheel.flac
+Feb 22 07:21 : exception: nested: Failed to open /sync/Music/Converted/Sabbath/Black Sabbath - Seventh Star/(07) [Black Sabbath] Heart Like A Wheel.flac: No such file or directory
+Feb 22 07:21 : player: played "Sabbath/Black Sabbath - Seventh Star/(07) [Black Sabbath] Heart Like A Wheel.flac"
+Feb 22 07:21 : exception: Failed to decode /sync/Music/Converted/Sabbath/Black Sabbath - Seventh Star/(08) [Black Sabbath] Angry Heart.flac
+Feb 22 07:21 : exception: nested: Failed to open /sync/Music/Converted/Sabbath/Black Sabbath - Seventh Star/(08) [Black Sabbath] Angry Heart.flac: No such file or directory
+Feb 22 07:21 : player: played "Sabbath/Black Sabbath - Seventh Star/(08) [Black Sabbath] Angry Heart.flac"
+Feb 22 07:21 : exception: Failed to decode /sync/Music/Converted/Sabbath/Black Sabbath - Seventh Star/(09) [Black Sabbath] In Memory.flac
+Feb 22 07:21 : exception: nested: Failed to open /sync/Music/Converted/Sabbath/Black Sabbath - Seventh Star/(09) [Black Sabbath] In Memory.flac: No such file or directory
+Feb 22 07:21 : player: played "Sabbath/Black Sabbath - Seventh Star/(09) [Black Sabbath] In Memory.flac"
+Feb 22 07:21 : exception: Not playing
+Feb 22 07:21 : exception: Not playing
+Feb 22 07:22 : client: [2] opened from [::1]:42482
+Feb 22 07:22 : client: [2] closed
+Feb 22 07:22 : client: [1] closed
+Feb 22 07:22 : client: [3] opened from 127.0.0.1:33922
+Feb 22 07:22 : client: [4] opened from [::1]:42486
+Feb 22 07:22 : client: [4] closed
+Feb 22 07:23 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 22 07:23 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 22 07:23 : client: [0] opened from 127.0.0.1:33932
+Feb 22 07:23 : client: [0] closed
+Feb 22 07:24 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 22 07:24 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 22 07:24 : client: [0] opened from [::1]:42498
+Feb 22 07:24 : client: [0] closed
+Feb 22 07:24 : client: [1] opened from 127.0.0.1:33938
+Feb 22 07:24 : client: [2] opened from [::1]:42502
+Feb 22 07:24 : client: [2] closed
+Feb 22 07:24 : exception: Failed to decode /sync/Music/Converted/Sabbath/Black Sabbath - Seventh Star/(05) [Black Sabbath] Seventh Star.flac
+Feb 22 07:24 : exception: nested: Failed to open /sync/Music/Converted/Sabbath/Black Sabbath - Seventh Star/(05) [Black Sabbath] Seventh Star.flac: No such file or directory
+Feb 22 07:24 : player: played "Sabbath/Black Sabbath - Seventh Star/(05) [Black Sabbath] Seventh Star.flac"
+Feb 22 07:24 : exception: Failed to decode /sync/Music/Converted/Sabbath/Black Sabbath - Seventh Star/(06) [Black Sabbath] Danger Zone.flac
+Feb 22 07:24 : exception: nested: Failed to open /sync/Music/Converted/Sabbath/Black Sabbath - Seventh Star/(06) [Black Sabbath] Danger Zone.flac: No such file or directory
+Feb 22 07:24 : player: played "Sabbath/Black Sabbath - Seventh Star/(06) [Black Sabbath] Danger Zone.flac"
+Feb 22 07:24 : exception: Failed to decode /sync/Music/Converted/Sabbath/Black Sabbath - Seventh Star/(07) [Black Sabbath] Heart Like A Wheel.flac
+Feb 22 07:24 : exception: nested: Failed to open /sync/Music/Converted/Sabbath/Black Sabbath - Seventh Star/(07) [Black Sabbath] Heart Like A Wheel.flac: No such file or directory
+Feb 22 07:24 : player: played "Sabbath/Black Sabbath - Seventh Star/(07) [Black Sabbath] Heart Like A Wheel.flac"
+Feb 22 07:24 : exception: Failed to decode /sync/Music/Converted/Sabbath/Black Sabbath - Seventh Star/(08) [Black Sabbath] Angry Heart.flac
+Feb 22 07:24 : exception: nested: Failed to open /sync/Music/Converted/Sabbath/Black Sabbath - Seventh Star/(08) [Black Sabbath] Angry Heart.flac: No such file or directory
+Feb 22 07:24 : player: played "Sabbath/Black Sabbath - Seventh Star/(08) [Black Sabbath] Angry Heart.flac"
+Feb 22 07:24 : exception: Failed to decode /sync/Music/Converted/Sabbath/Black Sabbath - Seventh Star/(09) [Black Sabbath] In Memory.flac
+Feb 22 07:24 : exception: nested: Failed to open /sync/Music/Converted/Sabbath/Black Sabbath - Seventh Star/(09) [Black Sabbath] In Memory.flac: No such file or directory
+Feb 22 07:24 : player: played "Sabbath/Black Sabbath - Seventh Star/(09) [Black Sabbath] In Memory.flac"
+Feb 22 07:24 : exception: Failed to decode /sync/Music/Converted/Adrian Belew/Adrian Belew - Side One [2004]/01 - Ampersand.flac
+Feb 22 07:24 : exception: nested: Failed to open /sync/Music/Converted/Adrian Belew/Adrian Belew - Side One [2004]/01 - Ampersand.flac: No such file or directory
+Feb 22 07:24 : player: played "Adrian Belew/Adrian Belew - Side One [2004]/01 - Ampersand.flac"
+Feb 22 07:24 : exception: Failed to decode /sync/Music/Converted/Adrian Belew/Adrian Belew - Side One [2004]/02 - Writing on the Wall.flac
+Feb 22 07:24 : exception: nested: Failed to open /sync/Music/Converted/Adrian Belew/Adrian Belew - Side One [2004]/02 - Writing on the Wall.flac: No such file or directory
+Feb 22 07:24 : player: played "Adrian Belew/Adrian Belew - Side One [2004]/02 - Writing on the Wall.flac"
+Feb 22 07:24 : exception: Failed to decode /sync/Music/Converted/Adrian Belew/Adrian Belew - Side One [2004]/03 - Matchless Man.flac
+Feb 22 07:24 : exception: nested: Failed to open /sync/Music/Converted/Adrian Belew/Adrian Belew - Side One [2004]/03 - Matchless Man.flac: No such file or directory
+Feb 22 07:24 : player: played "Adrian Belew/Adrian Belew - Side One [2004]/03 - Matchless Man.flac"
+Feb 22 07:24 : exception: Failed to decode /sync/Music/Converted/Adrian Belew/Adrian Belew - Side One [2004]/04 - Madness.flac
+Feb 22 07:24 : exception: nested: Failed to open /sync/Music/Converted/Adrian Belew/Adrian Belew - Side One [2004]/04 - Madness.flac: No such file or directory
+Feb 22 07:24 : player: played "Adrian Belew/Adrian Belew - Side One [2004]/04 - Madness.flac"
+Feb 22 07:24 : exception: Failed to decode /sync/Music/Converted/Adrian Belew/Adrian Belew - Side One [2004]/05 - Walk Around the World.flac
+Feb 22 07:24 : exception: nested: Failed to open /sync/Music/Converted/Adrian Belew/Adrian Belew - Side One [2004]/05 - Walk Around the World.flac: No such file or directory
+Feb 22 07:24 : player: played "Adrian Belew/Adrian Belew - Side One [2004]/05 - Walk Around the World.flac"
+Feb 22 07:24 : exception: Failed to decode /sync/Music/Converted/Adrian Belew/Adrian Belew - Side One [2004]/06 - Beat Box Guitar.flac
+Feb 22 07:24 : exception: nested: Failed to open /sync/Music/Converted/Adrian Belew/Adrian Belew - Side One [2004]/06 - Beat Box Guitar.flac: No such file or directory
+Feb 22 07:24 : player: played "Adrian Belew/Adrian Belew - Side One [2004]/06 - Beat Box Guitar.flac"
+Feb 22 07:24 : exception: Failed to decode /sync/Music/Converted/Adrian Belew/Adrian Belew - Side One [2004]/07 - Under the Radar.flac
+Feb 22 07:24 : exception: nested: Failed to open /sync/Music/Converted/Adrian Belew/Adrian Belew - Side One [2004]/07 - Under the Radar.flac: No such file or directory
+Feb 22 07:24 : player: played "Adrian Belew/Adrian Belew - Side One [2004]/07 - Under the Radar.flac"
+Feb 22 07:24 : exception: Failed to decode /sync/Music/Converted/Adrian Belew/Adrian Belew - Side One [2004]/08 - Elephants.flac
+Feb 22 07:24 : exception: nested: Failed to open /sync/Music/Converted/Adrian Belew/Adrian Belew - Side One [2004]/08 - Elephants.flac: No such file or directory
+Feb 22 07:24 : player: played "Adrian Belew/Adrian Belew - Side One [2004]/08 - Elephants.flac"
+Feb 22 07:24 : exception: Failed to decode /sync/Music/Converted/Adrian Belew/Adrian Belew - Side One [2004]/09 - Pause.flac
+Feb 22 07:24 : exception: nested: Failed to open /sync/Music/Converted/Adrian Belew/Adrian Belew - Side One [2004]/09 - Pause.flac: No such file or directory
+Feb 22 07:24 : player: played "Adrian Belew/Adrian Belew - Side One [2004]/09 - Pause.flac"
+Feb 22 07:24 : client: [3] opened from [::1]:42504
+Feb 22 07:24 : client: [3] closed
+Feb 22 07:31 : client: [1] closed
+Feb 22 07:31 : client: [4] opened from [::1]:42510
+Feb 22 07:31 : client: [4] closed
+Feb 22 07:31 : client: [5] opened from 127.0.0.1:33950
+Feb 22 07:31 : exception: Failed to decode /sync/Music/Converted/Adrian Belew/Adrian Belew - Side One [2004]/01 - Ampersand.flac
+Feb 22 07:31 : exception: nested: Failed to open /sync/Music/Converted/Adrian Belew/Adrian Belew - Side One [2004]/01 - Ampersand.flac: No such file or directory
+Feb 22 07:31 : player: played "Adrian Belew/Adrian Belew - Side One [2004]/01 - Ampersand.flac"
+Feb 22 07:31 : exception: Failed to decode /sync/Music/Converted/Adrian Belew/Adrian Belew - Side One [2004]/02 - Writing on the Wall.flac
+Feb 22 07:31 : exception: nested: Failed to open /sync/Music/Converted/Adrian Belew/Adrian Belew - Side One [2004]/02 - Writing on the Wall.flac: No such file or directory
+Feb 22 07:31 : player: played "Adrian Belew/Adrian Belew - Side One [2004]/02 - Writing on the Wall.flac"
+Feb 22 07:31 : exception: Failed to decode /sync/Music/Converted/Adrian Belew/Adrian Belew - Side One [2004]/03 - Matchless Man.flac
+Feb 22 07:31 : exception: nested: Failed to open /sync/Music/Converted/Adrian Belew/Adrian Belew - Side One [2004]/03 - Matchless Man.flac: No such file or directory
+Feb 22 07:31 : player: played "Adrian Belew/Adrian Belew - Side One [2004]/03 - Matchless Man.flac"
+Feb 22 07:31 : exception: Failed to decode /sync/Music/Converted/Adrian Belew/Adrian Belew - Side One [2004]/04 - Madness.flac
+Feb 22 07:31 : exception: nested: Failed to open /sync/Music/Converted/Adrian Belew/Adrian Belew - Side One [2004]/04 - Madness.flac: No such file or directory
+Feb 22 07:31 : player: played "Adrian Belew/Adrian Belew - Side One [2004]/04 - Madness.flac"
+Feb 22 07:31 : exception: Failed to decode /sync/Music/Converted/Adrian Belew/Adrian Belew - Side One [2004]/05 - Walk Around the World.flac
+Feb 22 07:31 : exception: nested: Failed to open /sync/Music/Converted/Adrian Belew/Adrian Belew - Side One [2004]/05 - Walk Around the World.flac: No such file or directory
+Feb 22 07:31 : player: played "Adrian Belew/Adrian Belew - Side One [2004]/05 - Walk Around the World.flac"
+Feb 22 07:31 : exception: Failed to decode /sync/Music/Converted/Adrian Belew/Adrian Belew - Side One [2004]/06 - Beat Box Guitar.flac
+Feb 22 07:31 : exception: nested: Failed to open /sync/Music/Converted/Adrian Belew/Adrian Belew - Side One [2004]/06 - Beat Box Guitar.flac: No such file or directory
+Feb 22 07:31 : player: played "Adrian Belew/Adrian Belew - Side One [2004]/06 - Beat Box Guitar.flac"
+Feb 22 07:31 : exception: Failed to decode /sync/Music/Converted/Adrian Belew/Adrian Belew - Side One [2004]/07 - Under the Radar.flac
+Feb 22 07:31 : exception: nested: Failed to open /sync/Music/Converted/Adrian Belew/Adrian Belew - Side One [2004]/07 - Under the Radar.flac: No such file or directory
+Feb 22 07:31 : player: played "Adrian Belew/Adrian Belew - Side One [2004]/07 - Under the Radar.flac"
+Feb 22 07:31 : exception: Failed to decode /sync/Music/Converted/Adrian Belew/Adrian Belew - Side One [2004]/08 - Elephants.flac
+Feb 22 07:31 : exception: nested: Failed to open /sync/Music/Converted/Adrian Belew/Adrian Belew - Side One [2004]/08 - Elephants.flac: No such file or directory
+Feb 22 07:31 : player: played "Adrian Belew/Adrian Belew - Side One [2004]/08 - Elephants.flac"
+Feb 22 07:31 : exception: Failed to decode /sync/Music/Converted/Adrian Belew/Adrian Belew - Side One [2004]/09 - Pause.flac
+Feb 22 07:31 : exception: nested: Failed to open /sync/Music/Converted/Adrian Belew/Adrian Belew - Side One [2004]/09 - Pause.flac: No such file or directory
+Feb 22 07:31 : player: played "Adrian Belew/Adrian Belew - Side One [2004]/09 - Pause.flac"
+Feb 22 07:31 : exception: Failed to decode /sync/Music/Converted/Adrian Belew - Side Two [2005]/01 Dead Dog On Asphalt.flac
+Feb 22 07:31 : exception: nested: Failed to open /sync/Music/Converted/Adrian Belew - Side Two [2005]/01 Dead Dog On Asphalt.flac: No such file or directory
+Feb 22 07:31 : player: played "Adrian Belew - Side Two [2005]/01 Dead Dog On Asphalt.flac"
+Feb 22 07:31 : exception: Failed to decode /sync/Music/Converted/Adrian Belew - Side Two [2005]/02 I Wish I Knew.flac
+Feb 22 07:31 : exception: nested: Failed to open /sync/Music/Converted/Adrian Belew - Side Two [2005]/02 I Wish I Knew.flac: No such file or directory
+Feb 22 07:31 : player: played "Adrian Belew - Side Two [2005]/02 I Wish I Knew.flac"
+Feb 22 07:31 : exception: Failed to decode /sync/Music/Converted/Adrian Belew - Side Two [2005]/03 Face To Face.flac
+Feb 22 07:31 : exception: nested: Failed to open /sync/Music/Converted/Adrian Belew - Side Two [2005]/03 Face To Face.flac: No such file or directory
+Feb 22 07:31 : player: played "Adrian Belew - Side Two [2005]/03 Face To Face.flac"
+Feb 22 07:31 : exception: Failed to decode /sync/Music/Converted/Adrian Belew - Side Two [2005]/04 Asleep.flac
+Feb 22 07:31 : exception: nested: Failed to open /sync/Music/Converted/Adrian Belew - Side Two [2005]/04 Asleep.flac: No such file or directory
+Feb 22 07:31 : player: played "Adrian Belew - Side Two [2005]/04 Asleep.flac"
+Feb 22 07:31 : exception: Failed to decode /sync/Music/Converted/Adrian Belew - Side Two [2005]/05 Sex Nerve.flac
+Feb 22 07:31 : exception: nested: Failed to open /sync/Music/Converted/Adrian Belew - Side Two [2005]/05 Sex Nerve.flac: No such file or directory
+Feb 22 07:31 : player: played "Adrian Belew - Side Two [2005]/05 Sex Nerve.flac"
+Feb 22 07:31 : exception: Failed to decode /sync/Music/Converted/Adrian Belew - Side Two [2005]/06 Then What.flac
+Feb 22 07:31 : exception: nested: Failed to open /sync/Music/Converted/Adrian Belew - Side Two [2005]/06 Then What.flac: No such file or directory
+Feb 22 07:31 : player: played "Adrian Belew - Side Two [2005]/06 Then What.flac"
+Feb 22 07:31 : exception: Failed to decode /sync/Music/Converted/Adrian Belew - Side Two [2005]/07 Quicksand.flac
+Feb 22 07:31 : exception: nested: Failed to open /sync/Music/Converted/Adrian Belew - Side Two [2005]/07 Quicksand.flac: No such file or directory
+Feb 22 07:31 : player: played "Adrian Belew - Side Two [2005]/07 Quicksand.flac"
+Feb 22 07:31 : exception: Failed to decode /sync/Music/Converted/Adrian Belew - Side Two [2005]/08 I Know Now.flac
+Feb 22 07:31 : exception: nested: Failed to open /sync/Music/Converted/Adrian Belew - Side Two [2005]/08 I Know Now.flac: No such file or directory
+Feb 22 07:31 : player: played "Adrian Belew - Side Two [2005]/08 I Know Now.flac"
+Feb 22 07:31 : exception: Failed to decode /sync/Music/Converted/Adrian Belew - Side Two [2005]/09 Happiness.flac
+Feb 22 07:31 : exception: nested: Failed to open /sync/Music/Converted/Adrian Belew - Side Two [2005]/09 Happiness.flac: No such file or directory
+Feb 22 07:31 : player: played "Adrian Belew - Side Two [2005]/09 Happiness.flac"
+Feb 22 07:31 : exception: Failed to decode /sync/Music/Converted/Adrian Belew - Side Two [2005]/10 Sunlight.flac
+Feb 22 07:31 : exception: nested: Failed to open /sync/Music/Converted/Adrian Belew - Side Two [2005]/10 Sunlight.flac: No such file or directory
+Feb 22 07:31 : player: played "Adrian Belew - Side Two [2005]/10 Sunlight.flac"
+Feb 22 07:31 : client: [5] closed
+Feb 22 07:31 : client: [6] opened from [::1]:42514
+Feb 22 07:31 : client: [6] closed
+Feb 22 07:32 : client: [7] opened from 127.0.0.1:33956
+Feb 22 07:32 : client: [7] closed
+Feb 22 07:32 : client: [8] opened from [::1]:42522
+Feb 22 07:32 : client: [8] closed
+Feb 22 07:32 : client: [9] opened from 127.0.0.1:33962
+Feb 22 07:32 : exception: Failed to decode /sync/Music/Converted/Adrian Belew/Adrian Belew - Side One [2004]/01 - Ampersand.flac
+Feb 22 07:32 : exception: nested: Failed to open /sync/Music/Converted/Adrian Belew/Adrian Belew - Side One [2004]/01 - Ampersand.flac: No such file or directory
+Feb 22 07:32 : player: played "Adrian Belew/Adrian Belew - Side One [2004]/01 - Ampersand.flac"
+Feb 22 07:32 : exception: Failed to decode /sync/Music/Converted/Adrian Belew/Adrian Belew - Side One [2004]/02 - Writing on the Wall.flac
+Feb 22 07:32 : exception: nested: Failed to open /sync/Music/Converted/Adrian Belew/Adrian Belew - Side One [2004]/02 - Writing on the Wall.flac: No such file or directory
+Feb 22 07:32 : player: played "Adrian Belew/Adrian Belew - Side One [2004]/02 - Writing on the Wall.flac"
+Feb 22 07:32 : exception: Failed to decode /sync/Music/Converted/Adrian Belew/Adrian Belew - Side One [2004]/03 - Matchless Man.flac
+Feb 22 07:32 : exception: nested: Failed to open /sync/Music/Converted/Adrian Belew/Adrian Belew - Side One [2004]/03 - Matchless Man.flac: No such file or directory
+Feb 22 07:32 : player: played "Adrian Belew/Adrian Belew - Side One [2004]/03 - Matchless Man.flac"
+Feb 22 07:32 : exception: Failed to decode /sync/Music/Converted/Adrian Belew/Adrian Belew - Side One [2004]/04 - Madness.flac
+Feb 22 07:32 : exception: nested: Failed to open /sync/Music/Converted/Adrian Belew/Adrian Belew - Side One [2004]/04 - Madness.flac: No such file or directory
+Feb 22 07:32 : player: played "Adrian Belew/Adrian Belew - Side One [2004]/04 - Madness.flac"
+Feb 22 07:32 : exception: Failed to decode /sync/Music/Converted/Adrian Belew/Adrian Belew - Side One [2004]/05 - Walk Around the World.flac
+Feb 22 07:32 : exception: nested: Failed to open /sync/Music/Converted/Adrian Belew/Adrian Belew - Side One [2004]/05 - Walk Around the World.flac: No such file or directory
+Feb 22 07:32 : player: played "Adrian Belew/Adrian Belew - Side One [2004]/05 - Walk Around the World.flac"
+Feb 22 07:32 : exception: Failed to decode /sync/Music/Converted/Adrian Belew/Adrian Belew - Side One [2004]/06 - Beat Box Guitar.flac
+Feb 22 07:32 : exception: nested: Failed to open /sync/Music/Converted/Adrian Belew/Adrian Belew - Side One [2004]/06 - Beat Box Guitar.flac: No such file or directory
+Feb 22 07:32 : player: played "Adrian Belew/Adrian Belew - Side One [2004]/06 - Beat Box Guitar.flac"
+Feb 22 07:32 : exception: Failed to decode /sync/Music/Converted/Adrian Belew/Adrian Belew - Side One [2004]/07 - Under the Radar.flac
+Feb 22 07:32 : exception: nested: Failed to open /sync/Music/Converted/Adrian Belew/Adrian Belew - Side One [2004]/07 - Under the Radar.flac: No such file or directory
+Feb 22 07:32 : player: played "Adrian Belew/Adrian Belew - Side One [2004]/07 - Under the Radar.flac"
+Feb 22 07:32 : exception: Failed to decode /sync/Music/Converted/Adrian Belew/Adrian Belew - Side One [2004]/08 - Elephants.flac
+Feb 22 07:32 : exception: nested: Failed to open /sync/Music/Converted/Adrian Belew/Adrian Belew - Side One [2004]/08 - Elephants.flac: No such file or directory
+Feb 22 07:32 : player: played "Adrian Belew/Adrian Belew - Side One [2004]/08 - Elephants.flac"
+Feb 22 07:32 : exception: Failed to decode /sync/Music/Converted/Adrian Belew/Adrian Belew - Side One [2004]/09 - Pause.flac
+Feb 22 07:32 : exception: nested: Failed to open /sync/Music/Converted/Adrian Belew/Adrian Belew - Side One [2004]/09 - Pause.flac: No such file or directory
+Feb 22 07:32 : player: played "Adrian Belew/Adrian Belew - Side One [2004]/09 - Pause.flac"
+Feb 22 07:32 : exception: Failed to open /home/cory/.mpd/playlists: Not a directory
+Feb 22 07:32 : exception: Failed to open /home/cory/.mpd/playlists: Not a directory
+Feb 22 07:32 : exception: Failed to open /home/cory/.mpd/playlists: Not a directory
+Feb 22 07:33 : exception: Failed to open /home/cory/.mpd/playlists: Not a directory
+Feb 22 07:33 : exception: Failed to open /home/cory/.mpd/playlists: Not a directory
+Feb 22 07:33 : exception: Failed to open /home/cory/.mpd/playlists: Not a directory
+Feb 22 07:33 : exception: Failed to open /home/cory/.mpd/playlists: Not a directory
+Feb 22 07:33 : client: [9] closed
+Feb 22 07:33 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 22 07:33 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 22 07:36 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 22 07:36 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 22 07:36 : client: [0] opened from [::1]:42536
+Feb 22 07:36 : client: [0] closed
+Feb 22 07:36 : client: [1] opened from 127.0.0.1:33976
+Feb 22 07:36 : exception: Failed to decode /sync/Music/Converted/Adrian Belew/Adrian Belew - Side One [2004]/01 - Ampersand.flac
+Feb 22 07:36 : exception: nested: Failed to open /sync/Music/Converted/Adrian Belew/Adrian Belew - Side One [2004]/01 - Ampersand.flac: No such file or directory
+Feb 22 07:36 : player: played "Adrian Belew/Adrian Belew - Side One [2004]/01 - Ampersand.flac"
+Feb 22 07:36 : exception: Failed to decode /sync/Music/Converted/Adrian Belew/Adrian Belew - Side One [2004]/02 - Writing on the Wall.flac
+Feb 22 07:36 : exception: nested: Failed to open /sync/Music/Converted/Adrian Belew/Adrian Belew - Side One [2004]/02 - Writing on the Wall.flac: No such file or directory
+Feb 22 07:36 : player: played "Adrian Belew/Adrian Belew - Side One [2004]/02 - Writing on the Wall.flac"
+Feb 22 07:36 : exception: Failed to decode /sync/Music/Converted/Adrian Belew/Adrian Belew - Side One [2004]/03 - Matchless Man.flac
+Feb 22 07:36 : exception: nested: Failed to open /sync/Music/Converted/Adrian Belew/Adrian Belew - Side One [2004]/03 - Matchless Man.flac: No such file or directory
+Feb 22 07:36 : player: played "Adrian Belew/Adrian Belew - Side One [2004]/03 - Matchless Man.flac"
+Feb 22 07:36 : exception: Failed to decode /sync/Music/Converted/Adrian Belew/Adrian Belew - Side One [2004]/04 - Madness.flac
+Feb 22 07:36 : exception: nested: Failed to open /sync/Music/Converted/Adrian Belew/Adrian Belew - Side One [2004]/04 - Madness.flac: No such file or directory
+Feb 22 07:36 : player: played "Adrian Belew/Adrian Belew - Side One [2004]/04 - Madness.flac"
+Feb 22 07:36 : exception: Failed to decode /sync/Music/Converted/Adrian Belew/Adrian Belew - Side One [2004]/05 - Walk Around the World.flac
+Feb 22 07:36 : exception: nested: Failed to open /sync/Music/Converted/Adrian Belew/Adrian Belew - Side One [2004]/05 - Walk Around the World.flac: No such file or directory
+Feb 22 07:36 : player: played "Adrian Belew/Adrian Belew - Side One [2004]/05 - Walk Around the World.flac"
+Feb 22 07:36 : exception: Failed to decode /sync/Music/Converted/Adrian Belew/Adrian Belew - Side One [2004]/06 - Beat Box Guitar.flac
+Feb 22 07:36 : exception: nested: Failed to open /sync/Music/Converted/Adrian Belew/Adrian Belew - Side One [2004]/06 - Beat Box Guitar.flac: No such file or directory
+Feb 22 07:36 : player: played "Adrian Belew/Adrian Belew - Side One [2004]/06 - Beat Box Guitar.flac"
+Feb 22 07:36 : exception: Failed to decode /sync/Music/Converted/Adrian Belew/Adrian Belew - Side One [2004]/07 - Under the Radar.flac
+Feb 22 07:36 : exception: nested: Failed to open /sync/Music/Converted/Adrian Belew/Adrian Belew - Side One [2004]/07 - Under the Radar.flac: No such file or directory
+Feb 22 07:36 : player: played "Adrian Belew/Adrian Belew - Side One [2004]/07 - Under the Radar.flac"
+Feb 22 07:36 : exception: Failed to decode /sync/Music/Converted/Adrian Belew/Adrian Belew - Side One [2004]/08 - Elephants.flac
+Feb 22 07:36 : exception: nested: Failed to open /sync/Music/Converted/Adrian Belew/Adrian Belew - Side One [2004]/08 - Elephants.flac: No such file or directory
+Feb 22 07:36 : player: played "Adrian Belew/Adrian Belew - Side One [2004]/08 - Elephants.flac"
+Feb 22 07:36 : exception: Failed to decode /sync/Music/Converted/Adrian Belew/Adrian Belew - Side One [2004]/09 - Pause.flac
+Feb 22 07:36 : exception: nested: Failed to open /sync/Music/Converted/Adrian Belew/Adrian Belew - Side One [2004]/09 - Pause.flac: No such file or directory
+Feb 22 07:36 : player: played "Adrian Belew/Adrian Belew - Side One [2004]/09 - Pause.flac"
+Feb 22 07:36 : exception: Failed to decode /sync/Music/Converted/Adrian Belew - Side Two [2005]/01 Dead Dog On Asphalt.flac
+Feb 22 07:36 : exception: nested: Failed to open /sync/Music/Converted/Adrian Belew - Side Two [2005]/01 Dead Dog On Asphalt.flac: No such file or directory
+Feb 22 07:36 : player: played "Adrian Belew - Side Two [2005]/01 Dead Dog On Asphalt.flac"
+Feb 22 07:36 : exception: Failed to decode /sync/Music/Converted/Adrian Belew - Side Two [2005]/02 I Wish I Knew.flac
+Feb 22 07:36 : exception: nested: Failed to open /sync/Music/Converted/Adrian Belew - Side Two [2005]/02 I Wish I Knew.flac: No such file or directory
+Feb 22 07:36 : player: played "Adrian Belew - Side Two [2005]/02 I Wish I Knew.flac"
+Feb 22 07:36 : exception: Failed to decode /sync/Music/Converted/Adrian Belew - Side Two [2005]/03 Face To Face.flac
+Feb 22 07:36 : exception: nested: Failed to open /sync/Music/Converted/Adrian Belew - Side Two [2005]/03 Face To Face.flac: No such file or directory
+Feb 22 07:36 : player: played "Adrian Belew - Side Two [2005]/03 Face To Face.flac"
+Feb 22 07:36 : exception: Failed to decode /sync/Music/Converted/Adrian Belew - Side Two [2005]/04 Asleep.flac
+Feb 22 07:36 : exception: nested: Failed to open /sync/Music/Converted/Adrian Belew - Side Two [2005]/04 Asleep.flac: No such file or directory
+Feb 22 07:36 : player: played "Adrian Belew - Side Two [2005]/04 Asleep.flac"
+Feb 22 07:36 : exception: Failed to decode /sync/Music/Converted/Adrian Belew - Side Two [2005]/05 Sex Nerve.flac
+Feb 22 07:36 : exception: nested: Failed to open /sync/Music/Converted/Adrian Belew - Side Two [2005]/05 Sex Nerve.flac: No such file or directory
+Feb 22 07:36 : player: played "Adrian Belew - Side Two [2005]/05 Sex Nerve.flac"
+Feb 22 07:36 : exception: Failed to decode /sync/Music/Converted/Adrian Belew - Side Two [2005]/06 Then What.flac
+Feb 22 07:36 : exception: nested: Failed to open /sync/Music/Converted/Adrian Belew - Side Two [2005]/06 Then What.flac: No such file or directory
+Feb 22 07:36 : player: played "Adrian Belew - Side Two [2005]/06 Then What.flac"
+Feb 22 07:36 : exception: Failed to decode /sync/Music/Converted/Adrian Belew - Side Two [2005]/07 Quicksand.flac
+Feb 22 07:36 : exception: nested: Failed to open /sync/Music/Converted/Adrian Belew - Side Two [2005]/07 Quicksand.flac: No such file or directory
+Feb 22 07:36 : player: played "Adrian Belew - Side Two [2005]/07 Quicksand.flac"
+Feb 22 07:36 : exception: Failed to decode /sync/Music/Converted/Adrian Belew - Side Two [2005]/08 I Know Now.flac
+Feb 22 07:36 : exception: nested: Failed to open /sync/Music/Converted/Adrian Belew - Side Two [2005]/08 I Know Now.flac: No such file or directory
+Feb 22 07:36 : player: played "Adrian Belew - Side Two [2005]/08 I Know Now.flac"
+Feb 22 07:36 : exception: Failed to decode /sync/Music/Converted/Adrian Belew - Side Two [2005]/09 Happiness.flac
+Feb 22 07:36 : exception: nested: Failed to open /sync/Music/Converted/Adrian Belew - Side Two [2005]/09 Happiness.flac: No such file or directory
+Feb 22 07:36 : player: played "Adrian Belew - Side Two [2005]/09 Happiness.flac"
+Feb 22 07:36 : exception: Failed to decode /sync/Music/Converted/Adrian Belew - Side Two [2005]/10 Sunlight.flac
+Feb 22 07:36 : exception: nested: Failed to open /sync/Music/Converted/Adrian Belew - Side Two [2005]/10 Sunlight.flac: No such file or directory
+Feb 22 07:36 : player: played "Adrian Belew - Side Two [2005]/10 Sunlight.flac"
+Feb 22 07:37 : exception: Failed to access /sync/Music/Converted: No such file or directory
+Feb 22 07:37 : exception: Failed to access /sync/Music/Converted: No such file or directory
+Feb 22 07:37 : exception: Failed to open /home/cory/.mpd/playlists: Not a directory
+Feb 22 07:37 : exception: Failed to open /home/cory/.mpd/playlists: Not a directory
+Feb 22 07:37 : exception: Failed to open /home/cory/.mpd/playlists: Not a directory
+Feb 22 07:37 : client: [1] closed
+Feb 22 07:41 : client: [2] opened from [::1]:42544
+Feb 22 07:41 : client: [2] closed
+Feb 22 08:09 : avahi: Client Disconnected, will reconnect shortly
+Feb 22 08:09 : avahi: Could not reconnect: An unexpected D-Bus error occurred

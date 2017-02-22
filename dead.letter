@@ -1,0 +1,13 @@
+Date: Wed, 22 Feb 2017 06:39:59 +0000
+To: cory
+User-Agent: mail v14.8.16
+
+Subject: editor saved ``battery''
+You were editing the file "battery"
+at <Wed Feb 22 06:39> on the machine ``chbook''
+when the editor was killed.
+
+You can retrieve most of your changes to this file
+using the "recover" command of the editor.
+An easy way to do this is to give the command "vi -r battery".
+This method also works using "ex" and "edit".

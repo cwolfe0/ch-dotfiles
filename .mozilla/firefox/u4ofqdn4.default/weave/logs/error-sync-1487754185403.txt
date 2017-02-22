@@ -1,0 +1,93 @@
+1487754181223	Sync.Service	INFO	Loading Weave 1.53.0
+1487754181228	Sync.Engine.Clients	DEBUG	Engine initialized
+1487754181230	Sync.Engine.Clients	DEBUG	Resetting clients last sync time
+1487754181245	Sync.Engine.Bookmarks	DEBUG	Engine initialized
+1487754181251	Sync.Engine.Forms	DEBUG	Engine initialized
+1487754181258	Sync.Engine.History	DEBUG	Engine initialized
+1487754181265	Sync.Engine.Passwords	DEBUG	Engine initialized
+1487754181269	Sync.Engine.Prefs	DEBUG	Engine initialized
+1487754181274	Sync.Engine.Tabs	DEBUG	Engine initialized
+1487754181275	Sync.Engine.Tabs	DEBUG	Resetting tabs last sync time
+1487754181283	Sync.Engine.Addons	DEBUG	Engine initialized
+1487754181285	Sync.Service	INFO	Mozilla/5.0 (X11; Linux x86_64; rv:51.0) Gecko/20100101 Firefox/51.0
+1487754181287	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1487754181289	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1487754181289	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1487754181289	Sync.AddonsReconciler	INFO	Registering as Add-on Manager listener.
+1487754181289	Sync.AddonsReconciler	DEBUG	Adding change listener.
+1487754181290	Sync.Tracker.History	INFO	Adding Places observer.
+1487754181338	browserwindow.syncui	DEBUG	observed: weave:service:ready
+1487754181340	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1487754181343	browserwindow.syncui	DEBUG	_loginFailed has sync state=success.login
+1487754181346	browserwindow.syncui	DEBUG	_loginFailed has sync state=success.login
+1487754181347	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1487754181347	FirefoxAccounts	DEBUG	getOAuthToken enter
+1487754181349	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1487754181350	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1487754181350	Services.Common.RESTRequest	TRACE	HTTP Header authorization: ***** (suppressed)
+1487754181350	Services.Common.RESTRequest	TRACE	HTTP Header accept: application/json
+1487754181355	Services.Common.RESTRequest	TRACE	onStartRequest: GET https://profile.accounts.firefox.com/v1/profile
+1487754181356	Services.Common.RESTRequest	TRACE	Channel for GET https://profile.accounts.firefox.com/v1/profile returned status code 2152398878
+1487754181356	Services.Common.RESTRequest	DEBUG	GET https://profile.accounts.firefox.com/v1/profile failed: 2152398878 - NS_ERROR_UNKNOWN_HOST
+1487754181356	FirefoxAccounts	ERROR	Could not retrieve profile data: {"name":"FxAccountsProfileClientError","code":null,"errno":998,"error":"NETWORK_ERROR","message":"[Exception... \"NS_ERROR_UNKNOWN_HOST\"  nsresult: \"0x804b001e (NS_ERROR_UNKNOWN_HOST)\"  location: \"JS frame :: resource://services-common/rest.js :: onStopRequest :: line 483\"  data: no]"}
+1487754181359	FirefoxAccounts	ERROR	FxA rejecting with error NETWORK_ERROR, details: {"name":"FxAccountsProfileClientError","code":null,"errno":998,"error":"NETWORK_ERROR","message":"[Exception... \"NS_ERROR_UNKNOWN_HOST\"  nsresult: \"0x804b001e (NS_ERROR_UNKNOWN_HOST)\"  location: \"JS frame :: resource://services-common/rest.js :: onStopRequest :: line 483\"  data: no]"}
+1487754181765	Sync.Engine.Greasemonkey	DEBUG	Engine initialized
+1487754185341	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1487754185342	Sync.Service	DEBUG	User-Agent: Firefox/51.0.1 (Linux x86_64) FxSync/1.53.0.20170126200443.desktop
+1487754185342	Sync.Service	INFO	Starting sync at 2017-02-22 09:03:05
+1487754185343	Sync.Service	DEBUG	In sync: should login.
+1487754185343	browserwindow.syncui	DEBUG	observed: weave:service:login:start
+1487754185344	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1487754185344	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1487754185344	Sync.Service	INFO	Logging in the user.
+1487754185347	Sync.BrowserIDManager	INFO	Waiting for user to be verified.
+1487754185348	FirefoxAccounts	DEBUG	already verified
+1487754185348	browserwindow.syncui	DEBUG	_loginFailed has sync state=success.login
+1487754185349	Sync.BrowserIDManager	INFO	Starting fetch for key bundle.
+1487754185350	FirefoxAccounts	DEBUG	already verified
+1487754185351	Sync.BrowserIDManager	INFO	Getting an assertion from: https://token.services.mozilla.com/1.0/sync/1.5
+1487754185351	FirefoxAccounts	DEBUG	enter getAssertion()
+1487754185364	browserwindow.syncui	DEBUG	_loginFailed has sync state=success.login
+1487754185366	FirefoxAccounts	DEBUG	got keyPair
+1487754185366	FirefoxAccounts	DEBUG	getCertificateSigned: true true
+1487754185371	Services.Common.RESTRequest	TRACE	local time, offset: 1487754185371, 0
+1487754185373	Services.Common.RESTRequest	TRACE	hawk auth header: Hawk id="e8f376fb84e631b97249b1840d363001bb8725849fe2bfc368de378ea3acb3f7", ts="1487754185", nonce="a5DoIL+9h3o=", hash="++pBtQ3L07XVufPwqhobqK7J84APqIhZGaLQbM/yV4E=", mac="Ccp2QZvwksrqeVf1eFnZpnPHNc5Z5n/SUtjS1g2Mf7E="
+1487754185374	Services.Common.RESTRequest	DEBUG	POST request to https://api.accounts.firefox.com/v1/certificate/sign
+1487754185374	Services.Common.RESTRequest	TRACE	HTTP Header authorization: ***** (suppressed)
+1487754185374	Services.Common.RESTRequest	TRACE	HTTP Header content-type: application/json
+1487754185374	Services.Common.RESTRequest	TRACE	HTTP Header accept-language: en-US, en
+1487754185374	Services.Common.RESTRequest	DEBUG	POST Length: 888
+1487754185374	Services.Common.RESTRequest	TRACE	POST Body: {"publicKey":{"algorithm":"DS","y":"C131B898578B628F1EC5CE080512C1CF7037DB93859F80DF73E2D66DE67052B96039A7D7BF0CCD1353302B5C0F6EF508FE7454CDB1CCED2327E2BA0158528AA03FF2467425313654BC4366E438A996138BAB2B2CF925F2BD17904A925361579EFD3E971C5D91FBBFAC228D6961C5E91D17ED30589EADFBB785B882962FEA5FA2","p":"FF600483DB6ABFC5B45EAB78594B3533D550D9F1BF2A992A7A8DAA6DC34F8045AD4E6E0C429D334EEEAAEFD7E23D4810BE00E4CC1492CBA325BA81FF2D5A5B305A8D17EB3BF4A06A349D392E00D329744A5179380344E82A18C47933438F891E22AEEF812D69C8F75E326CB70EA000C3F776DFDBD604638C2EF717FC26D02E17","q":"E21E04F911D1ED7991008ECAAB3BF775984309C3","g":"C52A4A0FF3B7E61FDF1867CE84138369A6154F4AFA92966E3C827E25CFA6CF508B90E5DE419E1337E07A2E9E2A3CD5DEA704D175F8EBF6AF397D69E110B96AFB17C7A03259329E4829B0D03BBC7896B15B4ADE53E130858CC34D96269AA89041F409136C7242A38895C9D5BCCAD4F389AF1D7A4BD1398BD072DFFA896233397A"},"duration":21600000}
+1487754185380	Services.Common.RESTRequest	TRACE	onStartRequest: POST https://api.accounts.firefox.com/v1/certificate/sign
+1487754185380	Services.Common.RESTRequest	TRACE	Channel for POST https://api.accounts.firefox.com/v1/certificate/sign returned status code 2152398878
+1487754185380	Services.Common.RESTRequest	DEBUG	POST https://api.accounts.firefox.com/v1/certificate/sign failed: 2152398878 - NS_ERROR_UNKNOWN_HOST
+1487754185381	Hawk	WARN	hawk request error: [Exception... "NS_ERROR_UNKNOWN_HOST"  nsresult: "0x804b001e (NS_ERROR_UNKNOWN_HOST)"  location: "JS frame :: resource://services-common/rest.js :: onStopRequest :: line 483"  data: no] Stack trace: onStopRequest()@resource://services-common/rest.js:483 < waitForSyncCallback()@resource://services-common/async.js:98 < makeSpinningCallback/callback.wait()@resource://services-common/async.js:152 < onNotify()@resource://gre/modules/services-sync/service.js:992 < WrappedNotify()@resource://services-sync/util.js:166 < WrappedLock()@resource://services-sync/util.js:121 < WrappedCatch()@resource://services-sync/util.js:95 < login()@resource://gre/modules/services-sync/service.js:1014 < sync/<()@resource://gre/modules/services-sync/service.js:1301 < WrappedCatch()@resource://services-sync/util.js:95 < sync()@resource://gre/modules/services-sync/service.js:1297
+1487754185382	Hawk	DEBUG	(Response) /certificate/sign: code: null - Status text: null
+1487754185383	FirefoxAccounts	ERROR	error POSTing /certificate/sign: {"error":{},"errorString":"[Exception... \"NS_ERROR_UNKNOWN_HOST\"  nsresult: \"0x804b001e (NS_ERROR_UNKNOWN_HOST)\"  location: \"JS frame :: resource://services-common/rest.js :: onStopRequest :: line 483\"  data: no]","message":null,"code":null,"errno":null}
+1487754185384	FirefoxAccounts	ERROR	HAWK.signCertificate error: {"error":{},"errorString":"[Exception... \"NS_ERROR_UNKNOWN_HOST\"  nsresult: \"0x804b001e (NS_ERROR_UNKNOWN_HOST)\"  location: \"JS frame :: resource://services-common/rest.js :: onStopRequest :: line 483\"  data: no]","message":null,"code":null,"errno":null}
+1487754185385	Sync.BrowserIDManager	ERROR	Non-authentication error in _fetchTokenForUser: {"error":{},"errorString":"[Exception... \"NS_ERROR_UNKNOWN_HOST\"  nsresult: \"0x804b001e (NS_ERROR_UNKNOWN_HOST)\"  location: \"JS frame :: resource://services-common/rest.js :: onStopRequest :: line 483\"  data: no]","message":null,"code":null,"errno":null}
+1487754185385	Sync.Status	DEBUG	Status.login: success.login => error.login.reason.network
+1487754185385	Sync.Status	DEBUG	Status.service: success.status_ok => error.login.failed
+1487754185385	Sync.BrowserIDManager	ERROR	Background fetch for key bundle failed: {"error":{},"errorString":"[Exception... \"NS_ERROR_UNKNOWN_HOST\"  nsresult: \"0x804b001e (NS_ERROR_UNKNOWN_HOST)\"  location: \"JS frame :: resource://services-common/rest.js :: onStopRequest :: line 483\"  data: no]","message":null,"code":null,"errno":null}
+1487754185386	Sync.BrowserIDManager	ERROR	Could not authenticate: {"error":{},"errorString":"[Exception... \"NS_ERROR_UNKNOWN_HOST\"  nsresult: \"0x804b001e (NS_ERROR_UNKNOWN_HOST)\"  location: \"JS frame :: resource://services-common/rest.js :: onStopRequest :: line 483\"  data: no]","message":null,"code":null,"errno":null}
+1487754185386	browserwindow.syncui	DEBUG	observed: weave:service:login:error
+1487754185386	browserwindow.syncui	DEBUG	onLoginError: login=error.login.reason.network, sync=success.sync
+1487754185387	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1487754185388	Sync.SyncScheduler	DEBUG	Next sync in 90000 ms.
+1487754185388	Sync.ErrorHandler	ERROR	Sync encountered a login error
+1487754185389	Sync.Service	DEBUG	Exception: {"error":{},"errorString":"[Exception... \"NS_ERROR_UNKNOWN_HOST\"  nsresult: \"0x804b001e (NS_ERROR_UNKNOWN_HOST)\"  location: \"JS frame :: resource://services-common/rest.js :: onStopRequest :: line 483\"  data: no]","message":null,"code":null,"errno":null}
+1487754185389	Sync.Service	DEBUG	Not syncing: login returned false.
+1487754185395	browserwindow.syncui	DEBUG	_loginFailed has sync state=error.login.reason.network
+1487754185397	browserwindow.syncui	DEBUG	_loginFailed has sync state=error.login.reason.network
+1487754185400	Sync.ErrorHandler	DEBUG	Addons installed: 11
+1487754185400	Sync.ErrorHandler	DEBUG	 - Bandcamp Volume, version 1.2.2, id @bandcamp-volume
+1487754185400	Sync.ErrorHandler	DEBUG	 - YouTube Plus, version 1.7.8, id particle@particlecore.github.io
+1487754185400	Sync.ErrorHandler	DEBUG	 - Imagus, version 0.9.8.48, id {00000f2a-7cde-4f20-83ed-434fcb420d71}
+1487754185401	Sync.ErrorHandler	DEBUG	 - uBlock Origin, version 1.11.0, id uBlock0@raymondhill.net
+1487754185401	Sync.ErrorHandler	DEBUG	 - DownThemAll!, version 3.0.8, id {DDC359D1-844A-42a7-9AA1-88A850A938A8}
+1487754185401	Sync.ErrorHandler	DEBUG	 - Pushbullet, version 335, id jid1-BYcQOfYfmBMd9A@jetpack
+1487754185402	Sync.ErrorHandler	DEBUG	 - Reddit Enhancement Suite, version 5.4.3, id jid1-xUfzOsOFlzSOXg@jetpack
+1487754185402	Sync.ErrorHandler	DEBUG	 - Greasemonkey, version 3.9, id {e4a8a97b-f2ed-450b-b12d-ee082ba24781}
+1487754185402	Sync.ErrorHandler	DEBUG	 - Amazon Smile Redirect, version 0.1.1.1-signed.1-signed, id jid1-VgrLFatWWJY3DA@jetpack
+1487754185402	Sync.ErrorHandler	DEBUG	 - Friends Who Listen, version 1.1.2, id @friends-who-listen
+1487754185403	Sync.ErrorHandler	DEBUG	 - Reddit on Youtube, version 1.0.1.1-signed, id 15f28b3a-c42b-463c-907a-e69d0eb2988a@jetpack

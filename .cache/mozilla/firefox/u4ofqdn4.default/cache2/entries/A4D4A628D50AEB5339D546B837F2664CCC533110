@@ -1,0 +1,291 @@
+/**
+ * This module manages a linking between an element that, when hovered over,
+ * causes a YUI panel to appear next to it.  This is used as a kind of
+ * tooltip or "more information" popup.  The element to hover over is called
+ * the "trigger" element.
+ *
+ * The widget requires existing HTML to exist in a particular format:
+ *
+ * <div id="more-info-course-id" style="display: inline">
+ *     <span class="trigger">Hover here for more info</span>
+ *     <div class="popup-content" style="display: none">
+ *         <div class="yui3-widget-bd">
+ *             <p>More info</p>
+ *         </div>
+ *     </div>
+ * </div>
+ *
+ * And the script to activate it might look like this:
+ * 
+ * popup = new Mx.MoreInfoPopup({
+ *     contentBox: '#more-info-course-id',
+ *     activate: 'hover',
+ *     popdownTimeout: popdown_timeout
+ * });
+ * popup.render();
+ *
+ * The main widget element contentBox should be a div with some id.  The
+ * trigger element must be a child with the class "trigger".
+ * The div with class "popup-content" becomes the HTML source for a YUI
+ * Popup (follow its patterns).  On render, the popup-content element will
+ * be removed from the contentBox element and appended to the body of the
+ * document to make it easier to position.  It's position when shown will
+ * be just to the right of the trigger element (using a Panel alignment of
+ * "TR", "TL" if you are familiar with the config for Panel).  The id of
+ * the root panel element will be the id of this widget + '-panel' for
+ * targeting by css.  In the above example, it would be
+ * 'more-info-course-id-panel'.
+ *
+ * If the config option 'activate' is 'click', then the popup will be
+ * toggle between visible and invisible with click events on the trigger.
+ *
+ * If the config option 'activate' is 'hover', then the popup will show
+ * when the trigger element receives a mouseover, and hide on mouseout after
+ * a configurable timeout (popdownTimeout), default 500 ms.  If the
+ * panel is moused over while it is still visible, the panel will stay
+ * showing until the next mouseout followed by the same popdown timeout.
+ *
+ * CONFIGURATIONS
+ * left: aligns panel to the left of the element (boolean, optional)
+ * belowLeft: aligns panel below and to the left of the element (boolean, optional)
+ * pclass: an additional class name to be given to the generated popup panel
+ * id: an externally specified identifier
+ * width: integer specifying the pixel width of the panel (optional, defaults to 300)
+ * leftfix: Fixes the issue where Panel pre-renders left-context items to the right,
+ *   forcing horizontal scrollbars (boolean, optional)
+ * zIndex: sets z-index for the popup (numeric, optional) 
+ *      If zIndex is not provided the old behavior (highest zIndex at render time +1) is used.
+ *
+ */
+
+Mx.yui.inst().add('Mx.MoreInfoPopup', function(Y) {
+
+    function MoreInfoPopup(config) {
+        MoreInfoPopup.superclass.constructor.apply(this, arguments);
+
+        // Prevent the created boundingBox (default block) from forcing the whole content from being block.
+        // The contentBox can be block if it wants to be, which wouldn't be affected by this style.
+        this.get('boundingBox').setStyle('display', 'inline');
+
+        config.popupContentNode.setStyle('display', 'none');
+        this.set('popupContentNode', config.popupContentNode);
+
+        this.set('triggerNode', config.triggerNode);
+        this.set('popdownTimeout', config.popdownTimeout || 500);
+        this.set('left', config.left);
+        this.set('leftfix', config.leftfix);
+        this.set('width', config.width ? (config.width + 'px') : '300px');
+        this.set('belowLeft', config.belowLeft);
+        this.set('pclass', config.pclass);
+        this.set('id', config.id || (MoreInfoPopup.NAME + (MoreInfoPopup.COUNT++)));
+        this.set('zIndex', Mx.Util.isNumber(config.zIndex) ? parseInt(config.zIndex) : 10);
+
+        // Default activation method is 'click'
+        var activate = config.activate != 'hover' ? 'click' : 'hover';
+        this.set('activate', activate);
+		
+		MoreInfoPopup.ALL[this.get('id')] = this;
+    }
+
+    MoreInfoPopup.NAME = 'mx-moreinfopopup';
+
+	// Management of all popups
+	MoreInfoPopup.ALL = {};
+	MoreInfoPopup.COUNT = 0; // for auto-id only, not a current count
+	MoreInfoPopup.GET = function (id) {
+		return MoreInfoPopup.ALL[id];
+	};
+
+    MoreInfoPopup.ATTRS = {
+        triggerNode: {
+            readOnly: true,
+            writeOnce: true
+        }
+        ,
+        popupContentNode: {
+            readOnly: true,
+            writeOnce: true
+        }
+        ,
+        popupPanel: {
+            readOnly: true,
+            writeOnce: true
+        }
+        ,
+        popdownTimeout: {
+            readOnly: true,
+            writeOnce: true
+            // TODO (test): validator: function(v) { Y.Lang.isNumber(v); }
+        }
+        ,
+        id: {
+            readOnly: true,
+            writeOnce: true
+        }
+        ,
+        activate: {
+            readOnly: true,
+            writeOnce: true
+        }
+        ,
+        pclass: {
+            readOnly: true,
+            writeOnce: true
+        }
+    };
+
+    MoreInfoPopup.HTML_PARSER = {
+        triggerNode: '.trigger',
+        popupContentNode: '.popup-content'
+    };
+
+    Y.extend(MoreInfoPopup, Y.Widget, {
+        initializer: function(config) {
+        }
+        ,
+
+        renderUI: function() {
+            // Move the content node from inside the widget to
+            // document.body so that it can position and float well
+            var popupContentNode = this.get('popupContentNode');
+            popupContentNode.get('parentNode').removeChild(popupContentNode);
+            Y.one(document.body).appendChild(popupContentNode);
+            var triggerNode = this.get('triggerNode');
+            var alignPoints = [Y.WidgetPositionAlign.TL, Y.WidgetPositionAlign.TR];
+            if (this.get('left')) {
+                alignPoints = [Y.WidgetPositionAlign.TR, Y.WidgetPositionAlign.TL];
+            }
+            else if (this.get('belowLeft')){
+                alignPoints = [Y.WidgetPositionAlign.TR, Y.WidgetPositionAlign.BR];
+            }
+            var panel = new Y.Panel({
+                id          : this.get('contentBox').getAttribute('id') + '-panel', // force the panel to have an id related to the widget container's id
+                srcNode     : popupContentNode,
+                width       : this.get('width'),
+                zIndex      : this.get('zIndex'),
+                modal       : false, // modal behavior
+                render      : true,
+                visible     : false, // make visible explicitly with .show()
+                constrain   : true,
+                hideOn      : [ {eventName: 'clickoutside'} ]
+            });
+            if (this.get('leftfix')) {
+                panel.centered(); // In cases where invisible panel would force horizontal scrollbar
+                panel.on('render', function () {
+                    this.align(triggerNode, alignPoints);
+                });
+            }
+            else {
+                panel.align(triggerNode, alignPoints);
+            }
+            var infoPanel = this; // make 'this' available to callbacks that have a different 'this'
+            var panelSelector = '#' + panel.get('id');
+            Y.on('contentready', function() {
+                // Distinguish the panel as one created by this widget by adding a class
+                Y.one(panelSelector).addClass('yui-mx-moreinfopopup-panel');
+                // Give the panel an additional identifying class, if configured
+                if (infoPanel.get('pclass')) Y.one(panelSelector).addClass(infoPanel.get('pclass'));
+            }, panelSelector);
+
+            popupContentNode.setStyle('display', '');
+
+            // Attribute for external access to the panel
+            this.set('popupPanel', panel);
+        }
+        ,
+        bindUI: function() {
+            // Make 'this' available to callbacks that have a different 'this'
+            var mip = this;
+
+            if (this.get('activate') == 'click') {
+                this.get('triggerNode').on('click', function(e) {
+                    if (mip.get('popupPanel').get('visible')) {
+                        mip.hidePopup();
+                    }
+                    else {
+                        Mx.getOverlayManager().hideAll();
+                        mip.showPopup();
+                    }
+                });
+            }
+            else {
+                this.get('triggerNode').on('mouseover', function(e) {
+                    if (mip.popdownTimer) {
+                        mip.popdownTimer.cancel();
+                        mip.popdownTimer = null;
+                    }
+                    Mx.getOverlayManager().hideAll();
+                    mip.showPopup();
+                });
+
+                this.get('triggerNode').on('mouseout', function(e) {
+                    mip.popdownTimer = Y.later(mip.get('popdownTimeout'), null, function() {
+                        mip.hidePopup();
+                        mip.popdownTimer = null;
+                    });
+                });
+
+                this.get('popupContentNode').on('mouseover', function(e) {
+                    if (mip.popdownTimer) {
+                        mip.popdownTimer.cancel();
+                        mip.popdownTimer = null;
+                    }
+                });
+
+                this.get('popupContentNode').on('mouseout', function(e) {
+                    mip.popdownTimer = Y.later(mip.get('popdownTimeout'), null, function() {
+                        mip.hidePopup();
+                        mip.popdownTimer = null;
+                    });
+                });
+            }
+        }
+        ,
+
+        render: function() {
+            MoreInfoPopup.superclass.render.apply(this, arguments);
+        }
+        ,
+
+        destroy: function() {
+            MoreInfoPopup.superclass.destroy.apply(this, arguments);
+            this.get('popupPanel').destroy();
+        }
+        ,
+
+        showPopup: function() {
+            this.get('popupPanel').show();
+        }
+        ,
+
+        hidePopup: function() {
+            this.get('popupPanel').hide();
+        }
+
+    });
+
+// This could be needed if we want the widget to generate, for example,
+// 'onpopup' and 'onpopdown' events.
+//    Y.augment(MoreInfoPopup, Y.Event.Target);
+
+    Mx.MoreInfoPopup = MoreInfoPopup;
+
+});
+8&¬Ðç¢      X­q‚X­q‚=wr?X³¿   o    :https://session.masteringengineering.com/assets/ui/js/module/MoreInfoPopup/Mx.MoreInfoPopup.build1701051538.js necko:classified 1 strongly-framed 1 security-info FnhllAKWRHGAlo+ESXykKAAAAAAAAAAAwAAAAAAAAEaphjojH6pBabDSgSnsfLHeAAQAAgAAAAAAAAAAAAAAAAAAAAAB4vFIJp5wRkeyPxAQ9RJGKPqbqVvKO0mKuIl8ec8o/uhmCjImkVxP+7sgiYWmMt8FvcOXmlQiTNWFiWlrbpbqgwAAAAAAAA3nMIIN4zCCDMugAwIBAgIQK6lFdLvDbujzVgmtjxn3TDANBgkqhkiG9w0BAQsFADCBljELMAkGA1UEBhMCR0IxGzAZBgNVBAgTEkdyZWF0ZXIgTWFuY2hlc3RlcjEQMA4GA1UEBxMHU2FsZm9yZDEaMBgGA1UEChMRQ09NT0RPIENBIExpbWl0ZWQxPDA6BgNVBAMTM0NPTU9ETyBSU0EgT3JnYW5pemF0aW9uIFZhbGlkYXRpb24gU2VjdXJlIFNlcnZlciBDQTAeFw0xNjA5MDgwMDAwMDBaFw0xODA5MDgyMzU5NTlaMIHlMQswCQYDVQQGEwJHQjERMA8GA1UEERMIV0MyUiAwUkwxDzANBgNVBAgTBkxvbmRvbjEPMA0GA1UEBxMGTG9uZG9uMRIwEAYDVQQJEwk4MCBTdHJhbmQxFDASBgNVBAoTC1BlYXJzb24gUExDMRcwFQYDVQQLEw5FbnRlcnByaXNlIFNTTDEgMB4GA1UECxMXSG9zdGVkIGJ5IFBlYXJzb24sIEluYy4xGTAXBgNVBAsTEE11bHRpLURvbWFpbiBTU0wxITAfBgNVBAMTGG1hc3RlcmluZy5wZWFyc29uY21nLmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBANHGZaUS+dVKdyqj6bLiruLcZv07DaggTLkGJ+WQv5gDY33lPvZ5hSqPUGOJg3kFs1UNoUbUo6u27CBCAl+I5PA9lR3jv3aIKoo5nF26Ot6JHFnb0LzCIBPs+gV5A8GpGcrK0M7Rn6k/3mDBbhvLWrBWW/SfQEWILldwHM2E9hrwmVPu+P6WHC2rUJRgEz2KgXL2/5I68q1z/tolxV84ejZprgREJ2Ydx/uuFTQBg+rcWKhF0wfMD048qHUfaSCtiv0P/uuh1mW5Of/EylZtZhqiVAUP+jqPFnW8BtaK1HmQ+0TP2tsUHziBZEt2OAQF1Acmuzs3qHm22sXqxUTep0MCAwEAAaOCCdowggnWMB8GA1UdIwQYMBaAFJrzK9rPrU+2L7sqSEgqErcbQsEkMB0GA1UdDgQWBBSVlTKQJ3kv33EEDBSi5V9K3ZOiMDAOBgNVHQ8BAf8EBAMCBaAwDAYDVR0TAQH/BAIwADAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwUAYDVR0gBEkwRzA7BgwrBgEEAbIxAQIBAwQwKzApBggrBgEFBQcCARYdaHR0cHM6Ly9zZWN1cmUuY29tb2RvLmNvbS9DUFMwCAYGZ4EMAQICMFoGA1UdHwRTMFEwT6BNoEuGSWh0dHA6Ly9jcmwuY29tb2RvY2EuY29tL0NPTU9ET1JTQU9yZ2FuaXphdGlvblZhbGlkYXRpb25TZWN1cmVTZXJ2ZXJDQS5jcmwwgYsGCCsGAQUFBwEBBH8wfTBVBggrBgEFBQcwAoZJaHR0cDovL2NydC5jb21vZG9jYS5jb20vQ09NT0RPUlNBT3JnYW5pemF0aW9uVmFsaWRhdGlvblNlY3VyZVNlcnZlckNBLmNydDAkBggrBgEFBQcwAYYYaHR0cDovL29jc3AuY29tb2RvY2EuY29tMIIIGQYDVR0RBIIIEDCCCAyCGG1hc3RlcmluZy5wZWFyc29uY21nLmNvbYIcYWlzLm1hc3RlcmluZy5wZWFyc29uY21nLmNvbYIcYXBpLm1hc3RlcmluZy5wZWFyc29uY21nLmNvbYIdYXV0aC5tYXN0ZXJpbmcucGVhcnNvbmNtZy5jb22CH2F1dGhvci5tYXN0ZXJpbmcucGVhcnNvbmNtZy5jb22CI2NvbnRlbnRhcHAubWFzdGVyaW5nLnBlYXJzb25jbWcuY29tgidjb250ZW50c2VydmljZS5tYXN0ZXJpbmcucGVhcnNvbmNtZy5jb22CH2dpbW1pZS5tYXN0ZXJpbmcucGVhcnNvbmNtZy5jb22CIWl0ZW1lZGl0Lm1hc3RlcmluZy5wZWFyc29uY21nLmNvbYISbWFzdGVyaW5nYWFuZHAuY29tghJtYXN0ZXJpbmdhc3Ryby5jb22CFm1hc3RlcmluZ2FzdHJvbm9teS5jb22CEG1hc3RlcmluZ2Jpby5jb22CFG1hc3RlcmluZ2Jpb2xvZ3kuY29tghZtYXN0ZXJpbmdjaGVtaXN0cnkuY29tghttYXN0ZXJpbmdjb2xsZWdlcGh5c2ljcy5jb22CGG1hc3RlcmluZ2VuZ2luZWVyaW5nLmNvbYIhbWFzdGVyaW5nZW52aXJvbm1lbnRhbHNjaWVuY2UuY29tghRtYXN0ZXJpbmdnZW5jaGVtLmNvbYIVbWFzdGVyaW5nZ2VuZXRpY3MuY29tghZtYXN0ZXJpbmdnZW9ncmFwaHkuY29tghRtYXN0ZXJpbmdnZW9sb2d5LmNvbYIfbWFzdGVyaW5naGVhbHRoYW5kbnV0cml0aW9uLmNvbYIYbWFzdGVyaW5nbWV0ZW9yb2xvZ3kuY29tghltYXN0ZXJpbmdtaWNyb2Jpb2xvZ3kuY29tgh5tYXN0ZXJpbmdudXRyaXRpb24ucGVhcnNvbi5jb22CGW1hc3RlcmluZ29jZWFub2dyYXBoeS5jb22CFG1hc3RlcmluZ3BoeXNpY3MuY29tgiBteGVhbW9uLm1hc3RlcmluZy5wZWFyc29uY21nLmNvbYIgbXhsY21vbi5tYXN0ZXJpbmcucGVhcnNvbmNtZy5jb22CJnJlZGlyZWN0LnByb2QubWFzdGVyaW5nLnBlYXJzb25jbWcuY29tghpzZXNzaW9uLm1hc3RlcmluZ2FhbmRwLmNvbYIac2Vzc2lvbi5tYXN0ZXJpbmdhc3Ryby5jb22CHnNlc3Npb24ubWFzdGVyaW5nYXN0cm9ub215LmNvbYIYc2Vzc2lvbi5tYXN0ZXJpbmdiaW8uY29tghxzZXNzaW9uLm1hc3RlcmluZ2Jpb2xvZ3kuY29tgh5zZXNzaW9uLm1hc3RlcmluZ2NoZW1pc3RyeS5jb22CI3Nlc3Npb24ubWFzdGVyaW5nY29sbGVnZXBoeXNpY3MuY29tgiBzZXNzaW9uLm1hc3RlcmluZ2VuZ2luZWVyaW5nLmNvbYIpc2Vzc2lvbi5tYXN0ZXJpbmdlbnZpcm9ubWVudGFsc2NpZW5jZS5jb22CHHNlc3Npb24ubWFzdGVyaW5nZ2VuY2hlbS5jb22CHXNlc3Npb24ubWFzdGVyaW5nZ2VuZXRpY3MuY29tgh5zZXNzaW9uLm1hc3RlcmluZ2dlb2dyYXBoeS5jb22CHHNlc3Npb24ubWFzdGVyaW5nZ2VvbG9neS5jb22CJ3Nlc3Npb24ubWFzdGVyaW5naGVhbHRoYW5kbnV0cml0aW9uLmNvbYIgc2Vzc2lvbi5tYXN0ZXJpbmdtZXRlb3JvbG9neS5jb22CIXNlc3Npb24ubWFzdGVyaW5nbWljcm9iaW9sb2d5LmNvbYImc2Vzc2lvbi5tYXN0ZXJpbmdudXRyaXRpb24ucGVhcnNvbi5jb22CIXNlc3Npb24ubWFzdGVyaW5nb2NlYW5vZ3JhcGh5LmNvbYIcc2Vzc2lvbi5tYXN0ZXJpbmdwaHlzaWNzLmNvbYIWd3d3Lm1hc3RlcmluZ2FhbmRwLmNvbYIWd3d3Lm1hc3RlcmluZ2FzdHJvLmNvbYIad3d3Lm1hc3RlcmluZ2FzdHJvbm9teS5jb22CFHd3dy5tYXN0ZXJpbmdiaW8uY29tghh3d3cubWFzdGVyaW5nYmlvbG9neS5jb22CGnd3dy5tYXN0ZXJpbmdjaGVtaXN0cnkuY29tgh93d3cubWFzdGVyaW5nY29sbGVnZXBoeXNpY3MuY29tghx3d3cubWFzdGVyaW5nZW5naW5lZXJpbmcuY29tgiV3d3cubWFzdGVyaW5nZW52aXJvbm1lbnRhbHNjaWVuY2UuY29tghh3d3cubWFzdGVyaW5nZ2VuY2hlbS5jb22CGXd3dy5tYXN0ZXJpbmdnZW5ldGljcy5jb22CGnd3dy5tYXN0ZXJpbmdnZW9ncmFwaHkuY29tghh3d3cubWFzdGVyaW5nZ2VvbG9neS5jb22CI3d3dy5tYXN0ZXJpbmdoZWFsdGhhbmRudXRyaXRpb24uY29tghx3d3cubWFzdGVyaW5nbWV0ZW9yb2xvZ3kuY29tgh13d3cubWFzdGVyaW5nbWljcm9iaW9sb2d5LmNvbYIid3d3Lm1hc3RlcmluZ251dHJpdGlvbi5wZWFyc29uLmNvbYIdd3d3Lm1hc3RlcmluZ29jZWFub2dyYXBoeS5jb22CGHd3dy5tYXN0ZXJpbmdwaHlzaWNzLmNvbTANBgkqhkiG9w0BAQsFAAOCAQEABHKDE+n4VU4Ltrb9uL5aLCwBOqbMMpSUZXZup2+jViZqukfanoapjDeB6oKVEjVl3jYmRaxRIZBIbC91vskQAirK9YWqNEGk5FLtLeYwrc38/w2NkSn8I/ML3xpP6/GbgH2T6IpSPr67LE5mJqgz+RaBOnt/O0FVsHUsqBr4lxsuYDNuQXEAP4yRuxXD4hZ7On13YnnowfcAja/3YmvmxIKMZDwlwl2Elmi6VMFG6L4MryCIPydeFZDnPwgjyXsBTeXd+D9xG6IVMcNKHCm2G3rUwqUd0v6NA6zeuOseHG4P13NZF3+QT1VJo1Ow/oSOrqrNgv9V2ftCQfVEZ+fUsQAvAAMAAAAAAQEAAA== request-method GET response-head HTTP/1.1 200 OK
+Date: Wed, 22 Feb 2017 11:09:12 GMT
+Server: Apache
+Last-Modified: Thu, 05 Jan 2017 15:38:14 GMT
+Etag: "44b1ab2-288a-5455ab08560ad"
+Accept-Ranges: bytes
+Content-Length: 10378
+Content-Type: application/javascript
+ original-response-headers Date: Wed, 22 Feb 2017 11:09:12 GMT
+Server: Apache
+Last-Modified: Thu, 05 Jan 2017 15:38:14 GMT
+Etag: "44b1ab2-288a-5455ab08560ad"
+Accept-Ranges: bytes
+Content-Length: 10378
+Keep-Alive: timeout=1, max=47
+Connection: Keep-Alive
+Content-Type: application/javascript
+ uncompressed-len 0   (Š

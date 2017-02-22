@@ -1,0 +1,92 @@
+[   559.334] 
+X.Org X Server 1.19.1
+Release Date: 2017-01-11
+[   559.338] X Protocol Version 11, Revision 0
+[   559.340] Build Operating System: Linux 4.8.14-1-ARCH x86_64 
+[   559.341] Current Operating System: Linux chbook 4.9.11-1-ARCH #1 SMP PREEMPT Sun Feb 19 13:45:52 UTC 2017 x86_64
+[   559.341] Kernel command line: BOOT_IMAGE=/boot/vmlinuz-linux root=UUID=8fbe79ba-2882-4f0b-9459-34922354bd26 rw quiet
+[   559.344] Build Date: 14 February 2017  03:36:07AM
+[   559.345]  
+[   559.346] Current version of pixman: 0.34.0
+[   559.349] 	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+[   559.349] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[   559.355] (==) Log file: "/home/cory/.local/share/xorg/Xorg.0.log", Time: Wed Feb 22 11:39:10 2017
+[   559.356] (==) Using config file: "/etc/X11/xorg.conf"
+[   559.358] (==) Using config directory: "/etc/X11/xorg.conf.d"
+[   559.359] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+[   559.359] (==) ServerLayout "X.org Configured"
+[   559.359] (**) |-->Screen "Screen0" (0)
+[   559.359] (**) |   |-->Monitor "Monitor0"
+[   559.359] (**) |   |-->Device "Card0"
+[   559.359] (**) |-->Input Device "Mouse0"
+[   559.359] (**) |-->Input Device "Keyboard0"
+[   559.359] (==) Automatically adding devices
+[   559.359] (==) Automatically enabling devices
+[   559.359] (==) Automatically adding GPU devices
+[   559.359] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[   559.359] (WW) The directory "/usr/share/fonts/Type1/" does not exist.
+[   559.359] 	Entry deleted from font path.
+[   559.359] (WW) The directory "/usr/share/fonts/Type1/" does not exist.
+[   559.359] 	Entry deleted from font path.
+[   559.359] (**) FontPath set to:
+	/usr/share/fonts/misc/,
+	/usr/share/fonts/TTF/,
+	/usr/share/fonts/OTF/,
+	/usr/share/fonts/100dpi/,
+	/usr/share/fonts/75dpi/,
+	/usr/share/fonts/misc/,
+	/usr/share/fonts/TTF/,
+	/usr/share/fonts/OTF/,
+	/usr/share/fonts/100dpi/,
+	/usr/share/fonts/75dpi/
+[   559.359] (**) ModulePath set to "/usr/lib/xorg/modules"
+[   559.359] (WW) Hotplugging is on, devices using drivers 'kbd', 'mouse' or 'vmmouse' will be disabled.
+[   559.359] (WW) Disabling Mouse0
+[   559.359] (WW) Disabling Keyboard0
+[   559.359] (II) Loader magic: 0x822d60
+[   559.359] (II) Module ABI versions:
+[   559.359] 	X.Org ANSI C Emulation: 0.4
+[   559.359] 	X.Org Video Driver: 23.0
+[   559.359] 	X.Org XInput driver : 24.1
+[   559.359] 	X.Org Server Extension : 10.0
+[   559.361] (II) systemd-logind: took control of session /org/freedesktop/login1/session/c1
+[   559.362] (II) xfree86: Adding drm device (/dev/dri/card0)
+[   559.362] (II) systemd-logind: got fd for /dev/dri/card0 226:0 fd 11 paused 0
+[   559.363] (--) PCI:*(0:0:2:0) 8086:1616:8086:1616 rev 9, Mem @ 0xe0000000/16777216, 0xd0000000/268435456, I/O @ 0x00001800/64, BIOS @ 0x????????/131072
+[   559.363] (WW) Open ACPI failed (/var/run/acpid.socket) (No such file or directory)
+[   559.363] (II) "glx" will be loaded. This was enabled by default and also specified in the config file.
+[   559.363] (II) LoadModule: "glx"
+[   559.363] (II) Loading /usr/lib/xorg/modules/extensions/libglx.so
+[   559.364] (II) Module glx: vendor="X.Org Foundation"
+[   559.364] 	compiled for 1.19.1, module version = 1.0.0
+[   559.364] 	ABI class: X.Org Server Extension, version 10.0
+[   559.364] (II) LoadModule: "intel"
+[   559.364] (II) Loading /usr/lib/xorg/modules/drivers/intel_drv.so
+[   559.364] (II) Module intel: vendor="X.Org Foundation"
+[   559.364] 	compiled for 1.19.1, module version = 2.99.917
+[   559.364] 	Module class: X.Org Video Driver
+[   559.364] 	ABI class: X.Org Video Driver, version 23.0
+[   559.364] (II) intel: Driver for Intel(R) Integrated Graphics Chipsets:
+	i810, i810-dc100, i810e, i815, i830M, 845G, 854, 852GM/855GM, 865G,
+	915G, E7221 (i915), 915GM, 945G, 945GM, 945GME, Pineview GM,
+	Pineview G, 965G, G35, 965Q, 946GZ, 965GM, 965GME/GLE, G33, Q35, Q33,
+	GM45, 4 Series, G45/G43, Q45/Q43, G41, B43
+[   559.365] (II) intel: Driver for Intel(R) HD Graphics
+[   559.365] (II) intel: Driver for Intel(R) Iris(TM) Graphics
+[   559.365] (II) intel: Driver for Intel(R) Iris(TM) Pro Graphics
+[   559.365] (EE) 
+Fatal server error:
+[   559.365] (EE) parse_vt_settings: Cannot open /dev/tty0 (Permission denied)
+[   559.365] (EE) 
+[   559.365] (EE) 
+Please consult the The X.Org Foundation support 
+	 at http://wiki.x.org
+ for help. 
+[   559.365] (EE) Please also check the log file at "/home/cory/.local/share/xorg/Xorg.0.log" for additional information.
+[   559.365] (EE) 
+[   559.365] (WW) xf86CloseConsole: KDSETMODE failed: Bad file descriptor
+[   559.365] (WW) xf86CloseConsole: VT_GETMODE failed: Bad file descriptor
+[   559.417] (EE) Server terminated with error (1). Closing log file.

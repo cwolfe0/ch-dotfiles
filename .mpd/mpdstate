@@ -1,10 +1,9 @@
 sw_volume: 68
 audio_device_state:1:alsa_output
-audio_device_state:1:my_fifo
+audio_device_state:0:my_fifo
 audio_device_state:1:pulseaudio
-state: play
-current: 43
-time: 40.634000
+state: stop
+current: 0
 random: 0
 repeat: 0
 single: 0
@@ -13,17 +12,21 @@ crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:test/01 - Twin Peaks Theme.flac
-1:test/02 - Laura Palmer's Theme.flac
-2:test/03 - Audrey's Dance.flac
-3:test/04 - The Nightingale.flac
-4:test/05 - Freshly Squeezed.flac
-5:test/06 - The Bookhouse Boys.flac
-6:test/07 - Into The Night.flac
-7:test/08 - Night Life In Twin Peaks.flac
-8:test/09 - Dance Of The Dream Man.flac
-9:test/10 - Love Theme From ''Twin Peaks''.flac
-10:test/11 - Falling.flac
+song_begin: http://146.229.245.135:8000
+mtime: 0
+song_end
+1:Adrian Belew/Adrian Belew - Side One [2004]/01 - Ampersand.flac
+2:Adrian Belew/Adrian Belew - Side One [2004]/02 - Writing on the Wall.flac
+3:Adrian Belew/Adrian Belew - Side One [2004]/03 - Matchless Man.flac
+4:Adrian Belew/Adrian Belew - Side One [2004]/04 - Madness.flac
+5:Adrian Belew/Adrian Belew - Side One [2004]/05 - Walk Around the World.flac
+6:Adrian Belew/Adrian Belew - Side One [2004]/06 - Beat Box Guitar.flac
+7:Adrian Belew/Adrian Belew - Side One [2004]/07 - Under the Radar.flac
+8:Adrian Belew/Adrian Belew - Side One [2004]/08 - Elephants.flac
+9:Adrian Belew/Adrian Belew - Side One [2004]/09 - Pause.flac
+song_begin: http://146.229.245.135:8000
+mtime: 0
+song_end
 11:Adrian Belew/Adrian Belew - Side One [2004]/01 - Ampersand.flac
 12:Adrian Belew/Adrian Belew - Side One [2004]/02 - Writing on the Wall.flac
 13:Adrian Belew/Adrian Belew - Side One [2004]/03 - Matchless Man.flac
@@ -33,37 +36,14 @@ playlist_begin
 17:Adrian Belew/Adrian Belew - Side One [2004]/07 - Under the Radar.flac
 18:Adrian Belew/Adrian Belew - Side One [2004]/08 - Elephants.flac
 19:Adrian Belew/Adrian Belew - Side One [2004]/09 - Pause.flac
-20:War - 1992 - The World Is a Ghetto [FLAC]/01 - The Cisco Kid.flac
-21:War - 1992 - The World Is a Ghetto [FLAC]/02 - Where Was You At.flac
-22:War - 1992 - The World Is a Ghetto [FLAC]/03 - City, Country, City.flac
-23:War - 1992 - The World Is a Ghetto [FLAC]/04 - Four Cornered Room.flac
-24:War - 1992 - The World Is a Ghetto [FLAC]/05 - The World Is a Ghetto.flac
-25:War - 1992 - The World Is a Ghetto [FLAC]/06 - Beetles in the Bog.flac
-26:Clipping - Splendor & Misery (2016) [FLAC]/01 - Long Way Away (intro).flac
-27:Clipping - Splendor & Misery (2016) [FLAC]/02 - The Breach.flac
-28:Clipping - Splendor & Misery (2016) [FLAC]/03 - All Black.flac
-29:Clipping - Splendor & Misery (2016) [FLAC]/04 - Interlude 01 (freestyle).flac
-30:Clipping - Splendor & Misery (2016) [FLAC]/05 - Wake Up.flac
-31:Clipping - Splendor & Misery (2016) [FLAC]/06 - Long Way Away.flac
-32:Clipping - Splendor & Misery (2016) [FLAC]/07 - Interlude 02 (numbers).flac
-33:Clipping - Splendor & Misery (2016) [FLAC]/08 - True Believer.flac
-34:Clipping - Splendor & Misery (2016) [FLAC]/09 - Long Way Away (instrumental).flac
-35:Clipping - Splendor & Misery (2016) [FLAC]/10 - Air 'Em Out.flac
-36:Clipping - Splendor & Misery (2016) [FLAC]/11 - Interlude 03 (freestyle).flac
-37:Clipping - Splendor & Misery (2016) [FLAC]/12 - Break the Glass.flac
-38:Clipping - Splendor & Misery (2016) [FLAC]/13 - Story.flac
-39:Clipping - Splendor & Misery (2016) [FLAC]/14 - Baby Don't Sleep.flac
-40:Clipping - Splendor & Misery (2016) [FLAC]/15 - A Better Place.flac
-41:Chon/Chon - Grow (2015) [FLAC]/01 - Drift.flac
-42:Chon/Chon - Grow (2015) [FLAC]/02 - Story.flac
-43:Chon/Chon - Grow (2015) [FLAC]/03 - Fall.flac
-44:Chon/Chon - Grow (2015) [FLAC]/04 - Book.flac
-45:Chon/Chon - Grow (2015) [FLAC]/05 - Can't Wait.flac
-46:Chon/Chon - Grow (2015) [FLAC]/06 - Suda.flac
-47:Chon/Chon - Grow (2015) [FLAC]/07 - Knot.flac
-48:Chon/Chon - Grow (2015) [FLAC]/08 - Moon.flac
-49:Chon/Chon - Grow (2015) [FLAC]/09 - Splash.flac
-50:Chon/Chon - Grow (2015) [FLAC]/10 - Perfect Pillow.flac
-51:Chon/Chon - Grow (2015) [FLAC]/11 - Echo.flac
-52:Chon/Chon - Grow (2015) [FLAC]/12 - But.flac
+20:Adrian Belew - Side Two [2005]/01 Dead Dog On Asphalt.flac
+21:Adrian Belew - Side Two [2005]/02 I Wish I Knew.flac
+22:Adrian Belew - Side Two [2005]/03 Face To Face.flac
+23:Adrian Belew - Side Two [2005]/04 Asleep.flac
+24:Adrian Belew - Side Two [2005]/05 Sex Nerve.flac
+25:Adrian Belew - Side Two [2005]/06 Then What.flac
+26:Adrian Belew - Side Two [2005]/07 Quicksand.flac
+27:Adrian Belew - Side Two [2005]/08 I Know Now.flac
+28:Adrian Belew - Side Two [2005]/09 Happiness.flac
+29:Adrian Belew - Side Two [2005]/10 Sunlight.flac
 playlist_end

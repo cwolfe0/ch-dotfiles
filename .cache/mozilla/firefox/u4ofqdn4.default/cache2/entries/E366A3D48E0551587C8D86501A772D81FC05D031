@@ -1,0 +1,199 @@
+Mx.y.add('Mx.Ajax', function(Y) {
+
+    if (Mx.Ajax) {
+        return;
+    }
+
+    Mx.Ajax = function () {
+
+        var handleRequest = function (config) {
+
+            var ioResponse = null; // Provide a var to return responses for sync io
+
+            // Event handlers can be either a single callback function, or an array with elements of the form:
+            // { status: 400, header: 'MyHeader', regex : /FindMe/, handler : function (resp, args) { alert('FindMe found in MyHeader with status 400') } },
+            // in which status, header, and regex are all optional.  If an array is used, all elements are processed in array order, and executed
+            // depending on whether the various matching conditions are met.
+            var onStart = config.onStart || null;
+            var onComplete = config.onComplete || null;
+            var onSuccess = config.onSuccess || null;
+            var onFailure = config.onFailure || null;
+            var onEnd = config.onEnd || null;
+
+            function handleEventMatchingArray(array, resp, args) {
+                for (var i=0; i<array.length; i++) {
+                    var obj = array[i];
+                    if (obj.handler) {
+                        if ((obj.status && obj.status == resp.status) || !obj.status) {
+                            if (obj.regex) {
+                                var matchText = obj.header ? resp.getResponseHeader(obj.header) : resp.responseText;
+                                if (obj.regex.test(matchText)) {
+                                    obj.handler(resp, args);
+                                }
+                            }
+                            else {
+                                obj.handler(resp, args);
+                            }
+                        }
+                    }
+                }
+            }
+
+            // Pass either data or ioArgs only!
+            var data = Mx.Util.isString(config.data) ? config.data : null;
+            var ioArgs = Mx.Util.isObject(config.ioArgs) ? config.ioArgs : null;
+
+            // Other config options
+            var form = Mx.Util.isObject(config.form) ? config.form : null;
+            var method = Mx.Util.isString(config.method) ? config.method : 'POST';
+            var headers = Mx.Util.isObject(config.headers) ? config.headers : null;
+            var sync = Mx.Util.isBoolean(config.sync) ? config.sync : false;
+            var requestURI = Mx.Util.isString(config.requestURI) ? config.requestURI : MxConf.requestURI;
+            var args = config.args ? config.args : null;
+            var timeout = Mx.Util.isNumber(config.timeout) ? config.timeout : null;
+            var debug = Mx.Util.isBoolean(config.debug) ? config.debug : false;
+
+            // Success and Failure events are not processed and fired when using form.upload because the
+            // iframe transport does not provide access to the HTTP status and response headers.  So must
+            // define a function to handle the response data, and subscribe to events 'io:start' and/or 'io:complete'.
+            Mx.Util.isFunction(config.ioStartHandler) && Y.on('io:start', config.ioStartHandler, Y, []);
+            Mx.Util.isFunction(config.ioCompleteHandler) && Y.on('io:complete', config.ioCompleteHandler, Y, []);
+
+            function errorLogAndThrow (err) {
+                // setting stupid browsers
+                window.console = window.console || {};
+                var message = err.message || 'Anonymous Error';
+                console.error = console.error || MxConf.ieAlertOnError && function (e) { alert(e); };
+
+                // this will only print an un-winded stack in IE, otherwise
+                // full stack trace as long as err is Error object
+                var stack = printStackTrace({e: err, guess: true}).join('\n');
+                if (Mx.Util.isFunction(console.error)) { console.error(message + '\n' + stack); }
+                throw err;
+            }
+
+            //var io_start = false, io_complete = false, io_success = false, io_failure = false, io_end = false;
+            var io_config = {
+                method: method,
+                sync: sync,
+                data: data ? data : Mx.Util.Uri.buildQueryString(ioArgs),
+                on: {
+                    start: function(tid, args) {
+                        //io_start = true;
+                        debug && Y.log('IO transaction ' + tid + ' [' + method + ' ' + requestURI + '] START');
+                        onStart && Mx.Util.isFunction(onStart) && onStart(args);
+                    },
+                    complete: function(tid, resp, args) {
+                        //io_complete = true;
+                        debug && Y.log('IO transaction ' + tid + ' [' + method + ' ' + requestURI + '] COMPLETE - response=' + resp.status + ' ' + resp.statusText);
+                         try {
+                            if (onComplete) {
+                                if (Mx.Util.isFunction(onComplete)) {
+                                    onComplete(resp, args);
+                                }
+                                else if (Mx.Util.isArray(onComplete)) {
+                                    handleEventMatchingArray(onComplete, resp, args);
+                                }
+                            }
+                        } catch (e) {
+                            errorLogAndThrow(e);
+                        }
+                    },
+                    success: function(tid, resp, args) {
+                        //io_success = true;
+                        debug && Y.log('IO transaction ' + tid + ' [' + method + ' ' + requestURI + '] SUCCESS - response=' + resp.status + ' ' + resp.statusText);
+                        try {
+                            if (onSuccess) {
+                                if (Mx.Util.isFunction(onSuccess)) {
+                                    onSuccess(resp, args);
+                                }
+                                else if (Mx.Util.isArray(onSuccess)) {
+                                    handleEventMatchingArray(onSuccess, resp, args);
+                                }
+                            }
+                        } catch (e) {
+                            errorLogAndThrow(e);
+                        }
+                    },
+                    failure: function(tid, resp, args) {
+                        //io_failure = true;
+                        debug && Y.log('IO transaction ' + tid + ' [' + method + ' ' + requestURI + '] FAILURE - response=' + resp.status + ' ' + resp.statusText);
+                        if (onFailure) {
+                            if (Mx.Util.isFunction(onFailure)) {
+                                onFailure(resp, args);
+                            }
+                            else if (Mx.Util.isArray(onFailure)) {
+                                handleEventMatchingArray(onFailure, resp, args);
+                            }
+                        }
+                    },
+                    end: function(tid, args) {
+                        //io_end = true;
+                        debug && Y.log('IO transaction ' + tid + ' [' + method + ' ' + requestURI + '] END');
+                        try {
+                            onEnd && Mx.Util.isFunction(onEnd) && onEnd(args);
+                        } catch (e) {
+                            errorLogAndThrow(e);
+                        }
+                    }
+                },
+                form: form,
+                arguments: args,
+                timeout: timeout
+            };
+
+            Y.log('Sending: ' + io_config.data);
+            ioResponse = Y.io(requestURI, io_config);
+
+            if (ioResponse && !ioResponse.status) return null; // This was an async call: the response contents are meaningless (literally: { id: 0 } )
+            return ioResponse;
+        };
+
+        var handleResponse = function (config) {
+            var response = config.response;
+            var handler = Mx.Util.isFunction(config.handler) ? config.handler : null;
+            var errorMsg = config.errorMsg || 'There was an error handling data from the server. Please refresh the page and try again.';
+            var noShowErrorModal = Mx.Util.isBoolean(config.noShowErrorModal) ? config.noShowErrorModal : false;
+            var responseFailureHandler = Mx.Util.isFunction(config.responseFailureHandler) ? config.responseFailureHandler : null;
+            var responseObj;
+            try {
+                responseObj = Y.JSON.parse(response.responseText);
+            }
+            catch (e) {
+                Y.log('There was an error parsing JSON data from the server: ' + e.message);
+                Y.log('DATA: ' + response.responseText);
+                if (! noShowErrorModal) {
+                    Mx.Ui.showErrorModal('Validation Error', errorMsg);
+                }
+                responseFailureHandler && responseFailureHandler();
+                return;
+            }
+            handler && handler(responseObj);
+        };
+
+        return {
+            handleRequest : handleRequest,
+            handleResponse : handleResponse
+        }
+
+    }();
+
+});
+r¨_¤ø      X­q‚X­q‚=wr?X³¿   ]    :https://session.masteringengineering.com/assets/ui/js/module/Ajax/Mx.Ajax.build1701051538.js necko:classified 1 strongly-framed 1 security-info FnhllAKWRHGAlo+ESXykKAAAAAAAAAAAwAAAAAAAAEaphjojH6pBabDSgSnsfLHeAAQAAgAAAAAAAAAAAAAAAAAAAAAB4vFIJp5wRkeyPxAQ9RJGKPqbqVvKO0mKuIl8ec8o/uhmCjImkVxP+7sgiYWmMt8FvcOXmlQiTNWFiWlrbpbqgwAAAAAAAA3nMIIN4zCCDMugAwIBAgIQK6lFdLvDbujzVgmtjxn3TDANBgkqhkiG9w0BAQsFADCBljELMAkGA1UEBhMCR0IxGzAZBgNVBAgTEkdyZWF0ZXIgTWFuY2hlc3RlcjEQMA4GA1UEBxMHU2FsZm9yZDEaMBgGA1UEChMRQ09NT0RPIENBIExpbWl0ZWQxPDA6BgNVBAMTM0NPTU9ETyBSU0EgT3JnYW5pemF0aW9uIFZhbGlkYXRpb24gU2VjdXJlIFNlcnZlciBDQTAeFw0xNjA5MDgwMDAwMDBaFw0xODA5MDgyMzU5NTlaMIHlMQswCQYDVQQGEwJHQjERMA8GA1UEERMIV0MyUiAwUkwxDzANBgNVBAgTBkxvbmRvbjEPMA0GA1UEBxMGTG9uZG9uMRIwEAYDVQQJEwk4MCBTdHJhbmQxFDASBgNVBAoTC1BlYXJzb24gUExDMRcwFQYDVQQLEw5FbnRlcnByaXNlIFNTTDEgMB4GA1UECxMXSG9zdGVkIGJ5IFBlYXJzb24sIEluYy4xGTAXBgNVBAsTEE11bHRpLURvbWFpbiBTU0wxITAfBgNVBAMTGG1hc3RlcmluZy5wZWFyc29uY21nLmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBANHGZaUS+dVKdyqj6bLiruLcZv07DaggTLkGJ+WQv5gDY33lPvZ5hSqPUGOJg3kFs1UNoUbUo6u27CBCAl+I5PA9lR3jv3aIKoo5nF26Ot6JHFnb0LzCIBPs+gV5A8GpGcrK0M7Rn6k/3mDBbhvLWrBWW/SfQEWILldwHM2E9hrwmVPu+P6WHC2rUJRgEz2KgXL2/5I68q1z/tolxV84ejZprgREJ2Ydx/uuFTQBg+rcWKhF0wfMD048qHUfaSCtiv0P/uuh1mW5Of/EylZtZhqiVAUP+jqPFnW8BtaK1HmQ+0TP2tsUHziBZEt2OAQF1Acmuzs3qHm22sXqxUTep0MCAwEAAaOCCdowggnWMB8GA1UdIwQYMBaAFJrzK9rPrU+2L7sqSEgqErcbQsEkMB0GA1UdDgQWBBSVlTKQJ3kv33EEDBSi5V9K3ZOiMDAOBgNVHQ8BAf8EBAMCBaAwDAYDVR0TAQH/BAIwADAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwUAYDVR0gBEkwRzA7BgwrBgEEAbIxAQIBAwQwKzApBggrBgEFBQcCARYdaHR0cHM6Ly9zZWN1cmUuY29tb2RvLmNvbS9DUFMwCAYGZ4EMAQICMFoGA1UdHwRTMFEwT6BNoEuGSWh0dHA6Ly9jcmwuY29tb2RvY2EuY29tL0NPTU9ET1JTQU9yZ2FuaXphdGlvblZhbGlkYXRpb25TZWN1cmVTZXJ2ZXJDQS5jcmwwgYsGCCsGAQUFBwEBBH8wfTBVBggrBgEFBQcwAoZJaHR0cDovL2NydC5jb21vZG9jYS5jb20vQ09NT0RPUlNBT3JnYW5pemF0aW9uVmFsaWRhdGlvblNlY3VyZVNlcnZlckNBLmNydDAkBggrBgEFBQcwAYYYaHR0cDovL29jc3AuY29tb2RvY2EuY29tMIIIGQYDVR0RBIIIEDCCCAyCGG1hc3RlcmluZy5wZWFyc29uY21nLmNvbYIcYWlzLm1hc3RlcmluZy5wZWFyc29uY21nLmNvbYIcYXBpLm1hc3RlcmluZy5wZWFyc29uY21nLmNvbYIdYXV0aC5tYXN0ZXJpbmcucGVhcnNvbmNtZy5jb22CH2F1dGhvci5tYXN0ZXJpbmcucGVhcnNvbmNtZy5jb22CI2NvbnRlbnRhcHAubWFzdGVyaW5nLnBlYXJzb25jbWcuY29tgidjb250ZW50c2VydmljZS5tYXN0ZXJpbmcucGVhcnNvbmNtZy5jb22CH2dpbW1pZS5tYXN0ZXJpbmcucGVhcnNvbmNtZy5jb22CIWl0ZW1lZGl0Lm1hc3RlcmluZy5wZWFyc29uY21nLmNvbYISbWFzdGVyaW5nYWFuZHAuY29tghJtYXN0ZXJpbmdhc3Ryby5jb22CFm1hc3RlcmluZ2FzdHJvbm9teS5jb22CEG1hc3RlcmluZ2Jpby5jb22CFG1hc3RlcmluZ2Jpb2xvZ3kuY29tghZtYXN0ZXJpbmdjaGVtaXN0cnkuY29tghttYXN0ZXJpbmdjb2xsZWdlcGh5c2ljcy5jb22CGG1hc3RlcmluZ2VuZ2luZWVyaW5nLmNvbYIhbWFzdGVyaW5nZW52aXJvbm1lbnRhbHNjaWVuY2UuY29tghRtYXN0ZXJpbmdnZW5jaGVtLmNvbYIVbWFzdGVyaW5nZ2VuZXRpY3MuY29tghZtYXN0ZXJpbmdnZW9ncmFwaHkuY29tghRtYXN0ZXJpbmdnZW9sb2d5LmNvbYIfbWFzdGVyaW5naGVhbHRoYW5kbnV0cml0aW9uLmNvbYIYbWFzdGVyaW5nbWV0ZW9yb2xvZ3kuY29tghltYXN0ZXJpbmdtaWNyb2Jpb2xvZ3kuY29tgh5tYXN0ZXJpbmdudXRyaXRpb24ucGVhcnNvbi5jb22CGW1hc3RlcmluZ29jZWFub2dyYXBoeS5jb22CFG1hc3RlcmluZ3BoeXNpY3MuY29tgiBteGVhbW9uLm1hc3RlcmluZy5wZWFyc29uY21nLmNvbYIgbXhsY21vbi5tYXN0ZXJpbmcucGVhcnNvbmNtZy5jb22CJnJlZGlyZWN0LnByb2QubWFzdGVyaW5nLnBlYXJzb25jbWcuY29tghpzZXNzaW9uLm1hc3RlcmluZ2FhbmRwLmNvbYIac2Vzc2lvbi5tYXN0ZXJpbmdhc3Ryby5jb22CHnNlc3Npb24ubWFzdGVyaW5nYXN0cm9ub215LmNvbYIYc2Vzc2lvbi5tYXN0ZXJpbmdiaW8uY29tghxzZXNzaW9uLm1hc3RlcmluZ2Jpb2xvZ3kuY29tgh5zZXNzaW9uLm1hc3RlcmluZ2NoZW1pc3RyeS5jb22CI3Nlc3Npb24ubWFzdGVyaW5nY29sbGVnZXBoeXNpY3MuY29tgiBzZXNzaW9uLm1hc3RlcmluZ2VuZ2luZWVyaW5nLmNvbYIpc2Vzc2lvbi5tYXN0ZXJpbmdlbnZpcm9ubWVudGFsc2NpZW5jZS5jb22CHHNlc3Npb24ubWFzdGVyaW5nZ2VuY2hlbS5jb22CHXNlc3Npb24ubWFzdGVyaW5nZ2VuZXRpY3MuY29tgh5zZXNzaW9uLm1hc3RlcmluZ2dlb2dyYXBoeS5jb22CHHNlc3Npb24ubWFzdGVyaW5nZ2VvbG9neS5jb22CJ3Nlc3Npb24ubWFzdGVyaW5naGVhbHRoYW5kbnV0cml0aW9uLmNvbYIgc2Vzc2lvbi5tYXN0ZXJpbmdtZXRlb3JvbG9neS5jb22CIXNlc3Npb24ubWFzdGVyaW5nbWljcm9iaW9sb2d5LmNvbYImc2Vzc2lvbi5tYXN0ZXJpbmdudXRyaXRpb24ucGVhcnNvbi5jb22CIXNlc3Npb24ubWFzdGVyaW5nb2NlYW5vZ3JhcGh5LmNvbYIcc2Vzc2lvbi5tYXN0ZXJpbmdwaHlzaWNzLmNvbYIWd3d3Lm1hc3RlcmluZ2FhbmRwLmNvbYIWd3d3Lm1hc3RlcmluZ2FzdHJvLmNvbYIad3d3Lm1hc3RlcmluZ2FzdHJvbm9teS5jb22CFHd3dy5tYXN0ZXJpbmdiaW8uY29tghh3d3cubWFzdGVyaW5nYmlvbG9neS5jb22CGnd3dy5tYXN0ZXJpbmdjaGVtaXN0cnkuY29tgh93d3cubWFzdGVyaW5nY29sbGVnZXBoeXNpY3MuY29tghx3d3cubWFzdGVyaW5nZW5naW5lZXJpbmcuY29tgiV3d3cubWFzdGVyaW5nZW52aXJvbm1lbnRhbHNjaWVuY2UuY29tghh3d3cubWFzdGVyaW5nZ2VuY2hlbS5jb22CGXd3dy5tYXN0ZXJpbmdnZW5ldGljcy5jb22CGnd3dy5tYXN0ZXJpbmdnZW9ncmFwaHkuY29tghh3d3cubWFzdGVyaW5nZ2VvbG9neS5jb22CI3d3dy5tYXN0ZXJpbmdoZWFsdGhhbmRudXRyaXRpb24uY29tghx3d3cubWFzdGVyaW5nbWV0ZW9yb2xvZ3kuY29tgh13d3cubWFzdGVyaW5nbWljcm9iaW9sb2d5LmNvbYIid3d3Lm1hc3RlcmluZ251dHJpdGlvbi5wZWFyc29uLmNvbYIdd3d3Lm1hc3RlcmluZ29jZWFub2dyYXBoeS5jb22CGHd3dy5tYXN0ZXJpbmdwaHlzaWNzLmNvbTANBgkqhkiG9w0BAQsFAAOCAQEABHKDE+n4VU4Ltrb9uL5aLCwBOqbMMpSUZXZup2+jViZqukfanoapjDeB6oKVEjVl3jYmRaxRIZBIbC91vskQAirK9YWqNEGk5FLtLeYwrc38/w2NkSn8I/ML3xpP6/GbgH2T6IpSPr67LE5mJqgz+RaBOnt/O0FVsHUsqBr4lxsuYDNuQXEAP4yRuxXD4hZ7On13YnnowfcAja/3YmvmxIKMZDwlwl2Elmi6VMFG6L4MryCIPydeFZDnPwgjyXsBTeXd+D9xG6IVMcNKHCm2G3rUwqUd0v6NA6zeuOseHG4P13NZF3+QT1VJo1Ow/oSOrqrNgv9V2ftCQfVEZ+fUsQAvAAMAAAAAAQEAAA== request-method GET response-head HTTP/1.1 200 OK
+Date: Wed, 22 Feb 2017 11:09:12 GMT
+Server: Apache
+Last-Modified: Thu, 05 Jan 2017 15:38:14 GMT
+Etag: "44b1aa9-23a0-5455ab08531d3"
+Accept-Ranges: bytes
+Content-Length: 9120
+Content-Type: application/javascript
+ original-response-headers Date: Wed, 22 Feb 2017 11:09:12 GMT
+Server: Apache
+Last-Modified: Thu, 05 Jan 2017 15:38:14 GMT
+Etag: "44b1aa9-23a0-5455ab08531d3"
+Accept-Ranges: bytes
+Content-Length: 9120
+Keep-Alive: timeout=1, max=49
+Connection: Keep-Alive
+Content-Type: application/javascript
+ uncompressed-len 0   # 

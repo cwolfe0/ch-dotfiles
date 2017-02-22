@@ -1,0 +1,434 @@
+// Domain Public by Eric Wendelin http://eriwen.com/ (2008)
+//                  Luke Smith http://lucassmith.name/ (2008)
+//                  Loic Dachary <loic@dachary.org> (2008)
+//                  Johan Euphrosine <proppy@aminche.com> (2008)
+//                  Oyvind Sean Kinsey http://kinsey.no/blog (2010)
+//                  Victor Homyakov <victor-homyakov@users.sourceforge.net> (2010)
+
+/**
+ * Main function giving a function stack trace with a forced or passed in Error
+ *
+ * @cfg {Error} e The error to create a stacktrace from (optional)
+ * @cfg {Boolean} guess If we should try to resolve the names of anonymous functions
+ * @return {Array} of Strings with functions, lines, files, and arguments where possible
+ */
+function printStackTrace(options) {
+    options = options || {guess: true};
+    var ex = options.e || null, guess = !!options.guess;
+    var p = new printStackTrace.implementation(), result = p.run(ex);
+    return (guess) ? p.guessAnonymousFunctions(result) : result;
+}
+
+printStackTrace.implementation = function() {
+};
+
+printStackTrace.implementation.prototype = {
+    /**
+     * @param {Error} ex The error to create a stacktrace from (optional)
+     * @param {String} mode Forced mode (optional, mostly for unit tests)
+     */
+    run: function(ex, mode) {
+        ex = ex || this.createException();
+        // examine exception properties w/o debugger
+        //for (var prop in ex) {alert("Ex['" + prop + "']=" + ex[prop]);}
+        mode = mode || this.mode(ex);
+        if (mode === 'other') {
+            return this.other(arguments.callee);
+        } else {
+            return this[mode](ex);
+        }
+    },
+
+    createException: function() {
+        try {
+            this.undef();
+        } catch (e) {
+            return e;
+        }
+    },
+
+    /**
+     * Mode could differ for different exception, e.g.
+     * exceptions in Chrome may or may not have arguments or stack.
+     *
+     * @return {String} mode of operation for the exception
+     */
+    mode: function(e) {
+        if (e['arguments'] && e.stack) {
+            return 'chrome';
+        } else if (typeof e.message === 'string' && typeof window !== 'undefined' && window.opera) {
+            // e.message.indexOf("Backtrace:") > -1 -> opera
+            // !e.stacktrace -> opera
+            if (!e.stacktrace) {
+                return 'opera9'; // use e.message
+            }
+            // 'opera#sourceloc' in e -> opera9, opera10a
+            if (e.message.indexOf('\n') > -1 && e.message.split('\n').length > e.stacktrace.split('\n').length) {
+                return 'opera9'; // use e.message
+            }
+            // e.stacktrace && !e.stack -> opera10a
+            if (!e.stack) {
+                return 'opera10a'; // use e.stacktrace
+            }
+            // e.stacktrace && e.stack -> opera10b
+            if (e.stacktrace.indexOf("called from line") < 0) {
+                return 'opera10b'; // use e.stacktrace, format differs from 'opera10a'
+            }
+            // e.stacktrace && e.stack -> opera11
+            return 'opera11'; // use e.stacktrace, format differs from 'opera10a', 'opera10b'
+        } else if (e.stack) {
+            return 'firefox';
+        }
+        return 'other';
+    },
+
+    /**
+     * Given a context, function name, and callback function, overwrite it so that it calls
+     * printStackTrace() first with a callback and then runs the rest of the body.
+     *
+     * @param {Object} context of execution (e.g. window)
+     * @param {String} functionName to instrument
+     * @param {Function} function to call with a stack trace on invocation
+     */
+    instrumentFunction: function(context, functionName, callback) {
+        context = context || window;
+        var original = context[functionName];
+        context[functionName] = function instrumented() {
+            callback.call(this, printStackTrace().slice(4));
+            return context[functionName]._instrumented.apply(this, arguments);
+        };
+        context[functionName]._instrumented = original;
+    },
+
+    /**
+     * Given a context and function name of a function that has been
+     * instrumented, revert the function to it's original (non-instrumented)
+     * state.
+     *
+     * @param {Object} context of execution (e.g. window)
+     * @param {String} functionName to de-instrument
+     */
+    deinstrumentFunction: function(context, functionName) {
+        if (context[functionName].constructor === Function &&
+                context[functionName]._instrumented &&
+                context[functionName]._instrumented.constructor === Function) {
+            context[functionName] = context[functionName]._instrumented;
+        }
+    },
+
+    /**
+     * Given an Error object, return a formatted Array based on Chrome's stack string.
+     *
+     * @param e - Error object to inspect
+     * @return Array<String> of function calls, files and line numbers
+     */
+    chrome: function(e) {
+        var stack = (e.stack + '\n').replace(/^\S[^\(]+?[\n$]/gm, '').
+          replace(/^\s+(at eval )?at\s+/gm, '').
+          replace(/^([^\(]+?)([\n$])/gm, '{anonymous}()@$1$2').
+          replace(/^Object.<anonymous>\s*\(([^\)]+)\)/gm, '{anonymous}()@$1').split('\n');
+        stack.pop();
+        return stack;
+    },
+
+    /**
+     * Given an Error object, return a formatted Array based on Firefox's stack string.
+     *
+     * @param e - Error object to inspect
+     * @return Array<String> of function calls, files and line numbers
+     */
+    firefox: function(e) {
+        return e.stack.replace(/(?:\n@:0)?\s+$/m, '').replace(/^\(/gm, '{anonymous}(').split('\n');
+    },
+
+    opera11: function(e) {
+        // "Error thrown at line 42, column 12 in <anonymous function>() in file://localhost/G:/js/stacktrace.js:\n"
+        // "Error thrown at line 42, column 12 in <anonymous function: createException>() in file://localhost/G:/js/stacktrace.js:\n"
+        // "called from line 7, column 4 in bar(n) in file://localhost/G:/js/test/functional/testcase1.html:\n"
+        // "called from line 15, column 3 in file://localhost/G:/js/test/functional/testcase1.html:\n"
+        var ANON = '{anonymous}', lineRE = /^.*line (\d+), column (\d+)(?: in (.+))? in (\S+):$/;
+        var lines = e.stacktrace.split('\n'), result = [];
+
+        for (var i = 0, len = lines.length; i < len; i += 2) {
+            var match = lineRE.exec(lines[i]);
+            if (match) {
+                var location = match[4] + ':' + match[1] + ':' + match[2];
+                var fnName = match[3] || "global code";
+                fnName = fnName.replace(/<anonymous function: (\S+)>/, "$1").replace(/<anonymous function>/, ANON);
+                result.push(fnName + '@' + location + ' -- ' + lines[i + 1].replace(/^\s+/, ''));
+            }
+        }
+
+        return result;
+    },
+
+    opera10b: function(e) {
+        // "<anonymous function: run>([arguments not available])@file://localhost/G:/js/stacktrace.js:27\n" +
+        // "printStackTrace([arguments not available])@file://localhost/G:/js/stacktrace.js:18\n" +
+        // "@file://localhost/G:/js/test/functional/testcase1.html:15"
+        var lineRE = /^(.*)@(.+):(\d+)$/;
+        var lines = e.stacktrace.split('\n'), result = [];
+
+        for (var i = 0, len = lines.length; i < len; i++) {
+            var match = lineRE.exec(lines[i]);
+            if (match) {
+                var fnName = match[1]? (match[1] + '()') : "global code";
+                result.push(fnName + '@' + match[2] + ':' + match[3]);
+            }
+        }
+
+        return result;
+    },
+
+    /**
+     * Given an Error object, return a formatted Array based on Opera 10's stacktrace string.
+     *
+     * @param e - Error object to inspect
+     * @return Array<String> of function calls, files and line numbers
+     */
+    opera10a: function(e) {
+        // "  Line 27 of linked script file://localhost/G:/js/stacktrace.js\n"
+        // "  Line 11 of inline#1 script in file://localhost/G:/js/test/functional/testcase1.html: In function foo\n"
+        var ANON = '{anonymous}', lineRE = /Line (\d+).*script (?:in )?(\S+)(?:: In function (\S+))?$/i;
+        var lines = e.stacktrace.split('\n'), result = [];
+
+        for (var i = 0, len = lines.length; i < len; i += 2) {
+            var match = lineRE.exec(lines[i]);
+            if (match) {
+                var fnName = match[3] || ANON;
+                result.push(fnName + '()@' + match[2] + ':' + match[1] + ' -- ' + lines[i + 1].replace(/^\s+/, ''));
+            }
+        }
+
+        return result;
+    },
+
+    // Opera 7.x-9.2x only!
+    opera9: function(e) {
+        // "  Line 43 of linked script file://localhost/G:/js/stacktrace.js\n"
+        // "  Line 7 of inline#1 script in file://localhost/G:/js/test/functional/testcase1.html\n"
+        var ANON = '{anonymous}', lineRE = /Line (\d+).*script (?:in )?(\S+)/i;
+        var lines = e.message.split('\n'), result = [];
+
+        for (var i = 2, len = lines.length; i < len; i += 2) {
+            var match = lineRE.exec(lines[i]);
+            if (match) {
+                result.push(ANON + '()@' + match[2] + ':' + match[1] + ' -- ' + lines[i + 1].replace(/^\s+/, ''));
+            }
+        }
+
+        return result;
+    },
+
+    // Safari, IE, and others
+    other: function(curr) {
+        var ANON = '{anonymous}', fnRE = /function\s*([\w\-$]+)?\s*\(/i, stack = [], fn, args, maxStackSize = 10;
+        while (curr && curr['arguments'] && stack.length < maxStackSize) {
+            fn = fnRE.test(curr.toString()) ? RegExp.$1 || ANON : ANON;
+            args = Array.prototype.slice.call(curr['arguments'] || []);
+            stack[stack.length] = fn + '(' + this.stringifyArguments(args) + ')';
+            curr = curr.caller;
+        }
+        return stack;
+    },
+
+    /**
+     * Given arguments array as a String, subsituting type names for non-string types.
+     *
+     * @param {Arguments} object
+     * @return {Array} of Strings with stringified arguments
+     */
+    stringifyArguments: function(args) {
+        var result = [];
+        var slice = Array.prototype.slice;
+        for (var i = 0; i < args.length; ++i) {
+            var arg = args[i];
+            if (arg === undefined) {
+                result[i] = 'undefined';
+            } else if (arg === null) {
+                result[i] = 'null';
+            } else if (arg.constructor) {
+                if (arg.constructor === Array) {
+                    if (arg.length < 3) {
+                        result[i] = '[' + this.stringifyArguments(arg) + ']';
+                    } else {
+                        result[i] = '[' + this.stringifyArguments(slice.call(arg, 0, 1)) + '...' + this.stringifyArguments(slice.call(arg, -1)) + ']';
+                    }
+                } else if (arg.constructor === Object) {
+                    result[i] = '#object';
+                } else if (arg.constructor === Function) {
+                    result[i] = '#function';
+                } else if (arg.constructor === String) {
+                    result[i] = '"' + arg + '"';
+                } else if (arg.constructor === Number) {
+                    result[i] = arg;
+                }
+            }
+        }
+        return result.join(',');
+    },
+
+    sourceCache: {},
+
+    /**
+     * @return the text from a given URL
+     */
+    ajax: function(url) {
+        var req = this.createXMLHTTPObject();
+        if (req) {
+            try {
+                req.open('GET', url, false);
+                //req.overrideMimeType('text/plain');
+                //req.overrideMimeType('text/javascript');
+                req.send(null);
+                //return req.status == 200 ? req.responseText : '';
+                return req.responseText;
+            } catch (e) {
+            }
+        }
+        return '';
+    },
+
+    /**
+     * Try XHR methods in order and store XHR factory.
+     *
+     * @return <Function> XHR function or equivalent
+     */
+    createXMLHTTPObject: function() {
+        var xmlhttp, XMLHttpFactories = [
+            function() {
+                return new XMLHttpRequest();
+            }, function() {
+                return new ActiveXObject('Msxml2.XMLHTTP');
+            }, function() {
+                return new ActiveXObject('Msxml3.XMLHTTP');
+            }, function() {
+                return new ActiveXObject('Microsoft.XMLHTTP');
+            }
+        ];
+        for (var i = 0; i < XMLHttpFactories.length; i++) {
+            try {
+                xmlhttp = XMLHttpFactories[i]();
+                // Use memoization to cache the factory
+                this.createXMLHTTPObject = XMLHttpFactories[i];
+                return xmlhttp;
+            } catch (e) {
+            }
+        }
+    },
+
+    /**
+     * Given a URL, check if it is in the same domain (so we can get the source
+     * via Ajax).
+     *
+     * @param url <String> source url
+     * @return False if we need a cross-domain request
+     */
+    isSameDomain: function(url) {
+        return typeof location !== "undefined" && url.indexOf(location.hostname) !== -1; // location may not be defined, e.g. when running from nodejs.
+    },
+
+    /**
+     * Get source code from given URL if in the same domain.
+     *
+     * @param url <String> JS source URL
+     * @return <Array> Array of source code lines
+     */
+    getSource: function(url) {
+        // TODO reuse source from script tags?
+        if (!(url in this.sourceCache)) {
+            this.sourceCache[url] = this.ajax(url).split('\n');
+        }
+        return this.sourceCache[url];
+    },
+
+    guessAnonymousFunctions: function(stack) {
+        for (var i = 0; i < stack.length; ++i) {
+            var reStack = /\{anonymous\}\(.*\)@(.*)/,
+                reRef = /^(.*?)(?::(\d+))(?::(\d+))?(?: -- .+)?$/,
+                frame = stack[i], ref = reStack.exec(frame);
+
+            if (ref) {
+                var m = reRef.exec(ref[1]);
+                if (m) { // If falsey, we did not get any file/line information
+                    var file = m[1], lineno = m[2], charno = m[3] || 0;
+                    if (file && this.isSameDomain(file) && lineno) {
+                        var functionName = this.guessAnonymousFunction(file, lineno, charno);
+                        stack[i] = frame.replace('{anonymous}', functionName);
+                    }
+                }
+            }
+        }
+        return stack;
+    },
+
+    guessAnonymousFunction: function(url, lineNo, charNo) {
+        var ret;
+        try {
+            ret = this.findFunctionName(this.getSource(url), lineNo);
+        } catch (e) {
+            ret = 'getSource failed with url: ' + url + ', exception: ' + e.toString();
+        }
+        return ret;
+    },
+
+    findFunctionName: function(source, lineNo) {
+        // FIXME findFunctionName fails for compressed source
+        // (more than one function on the same line)
+        // TODO use captured args
+        // function {name}({args}) m[1]=name m[2]=args
+        var reFunctionDeclaration = /function\s+([^(]*?)\s*\(([^)]*)\)/;
+        // {name} = function ({args}) TODO args capture
+        // /['"]?([0-9A-Za-z_]+)['"]?\s*[:=]\s*function(?:[^(]*)/
+        var reFunctionExpression = /['"]?([0-9A-Za-z_]+)['"]?\s*[:=]\s*function\b/;
+        // {name} = eval()
+        var reFunctionEvaluation = /['"]?([0-9A-Za-z_]+)['"]?\s*[:=]\s*(?:eval|new Function)\b/;
+        // Walk backwards in the source lines until we find
+        // the line which matches one of the patterns above
+        var code = "", line, maxLines = Math.min(lineNo, 20), m, commentPos;
+        for (var i = 0; i < maxLines; ++i) {
+            // lineNo is 1-based, source[] is 0-based
+            line = source[lineNo - i - 1];
+            commentPos = line.indexOf('//');
+            if (commentPos >= 0) {
+                line = line.substr(0, commentPos);
+            }
+            // TODO check other types of comments? Commented code may lead to false positive
+            if (line) {
+                code = line + code;
+                m = reFunctionExpression.exec(code);
+                if (m && m[1]) {
+                    return m[1];
+                }
+                m = reFunctionDeclaration.exec(code);
+                if (m && m[1]) {
+                    //return m[1] + "(" + (m[2] || "") + ")";
+                    return m[1];
+                }
+                m = reFunctionEvaluation.exec(code);
+                if (m && m[1]) {
+                    return m[1];
+                }
+            }
+        }
+        return '(?)';
+    }
+};
+yXœ¢¯g      X­q‚X­q‚=wr?X³¿   V    :https://session.masteringengineering.com/assets/ui/js/module/thirdparty/stacktrace.js necko:classified 1 strongly-framed 1 security-info FnhllAKWRHGAlo+ESXykKAAAAAAAAAAAwAAAAAAAAEaphjojH6pBabDSgSnsfLHeAAQAAgAAAAAAAAAAAAAAAAAAAAAB4vFIJp5wRkeyPxAQ9RJGKPqbqVvKO0mKuIl8ec8o/uhmCjImkVxP+7sgiYWmMt8FvcOXmlQiTNWFiWlrbpbqgwAAAAAAAA3nMIIN4zCCDMugAwIBAgIQK6lFdLvDbujzVgmtjxn3TDANBgkqhkiG9w0BAQsFADCBljELMAkGA1UEBhMCR0IxGzAZBgNVBAgTEkdyZWF0ZXIgTWFuY2hlc3RlcjEQMA4GA1UEBxMHU2FsZm9yZDEaMBgGA1UEChMRQ09NT0RPIENBIExpbWl0ZWQxPDA6BgNVBAMTM0NPTU9ETyBSU0EgT3JnYW5pemF0aW9uIFZhbGlkYXRpb24gU2VjdXJlIFNlcnZlciBDQTAeFw0xNjA5MDgwMDAwMDBaFw0xODA5MDgyMzU5NTlaMIHlMQswCQYDVQQGEwJHQjERMA8GA1UEERMIV0MyUiAwUkwxDzANBgNVBAgTBkxvbmRvbjEPMA0GA1UEBxMGTG9uZG9uMRIwEAYDVQQJEwk4MCBTdHJhbmQxFDASBgNVBAoTC1BlYXJzb24gUExDMRcwFQYDVQQLEw5FbnRlcnByaXNlIFNTTDEgMB4GA1UECxMXSG9zdGVkIGJ5IFBlYXJzb24sIEluYy4xGTAXBgNVBAsTEE11bHRpLURvbWFpbiBTU0wxITAfBgNVBAMTGG1hc3RlcmluZy5wZWFyc29uY21nLmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBANHGZaUS+dVKdyqj6bLiruLcZv07DaggTLkGJ+WQv5gDY33lPvZ5hSqPUGOJg3kFs1UNoUbUo6u27CBCAl+I5PA9lR3jv3aIKoo5nF26Ot6JHFnb0LzCIBPs+gV5A8GpGcrK0M7Rn6k/3mDBbhvLWrBWW/SfQEWILldwHM2E9hrwmVPu+P6WHC2rUJRgEz2KgXL2/5I68q1z/tolxV84ejZprgREJ2Ydx/uuFTQBg+rcWKhF0wfMD048qHUfaSCtiv0P/uuh1mW5Of/EylZtZhqiVAUP+jqPFnW8BtaK1HmQ+0TP2tsUHziBZEt2OAQF1Acmuzs3qHm22sXqxUTep0MCAwEAAaOCCdowggnWMB8GA1UdIwQYMBaAFJrzK9rPrU+2L7sqSEgqErcbQsEkMB0GA1UdDgQWBBSVlTKQJ3kv33EEDBSi5V9K3ZOiMDAOBgNVHQ8BAf8EBAMCBaAwDAYDVR0TAQH/BAIwADAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwUAYDVR0gBEkwRzA7BgwrBgEEAbIxAQIBAwQwKzApBggrBgEFBQcCARYdaHR0cHM6Ly9zZWN1cmUuY29tb2RvLmNvbS9DUFMwCAYGZ4EMAQICMFoGA1UdHwRTMFEwT6BNoEuGSWh0dHA6Ly9jcmwuY29tb2RvY2EuY29tL0NPTU9ET1JTQU9yZ2FuaXphdGlvblZhbGlkYXRpb25TZWN1cmVTZXJ2ZXJDQS5jcmwwgYsGCCsGAQUFBwEBBH8wfTBVBggrBgEFBQcwAoZJaHR0cDovL2NydC5jb21vZG9jYS5jb20vQ09NT0RPUlNBT3JnYW5pemF0aW9uVmFsaWRhdGlvblNlY3VyZVNlcnZlckNBLmNydDAkBggrBgEFBQcwAYYYaHR0cDovL29jc3AuY29tb2RvY2EuY29tMIIIGQYDVR0RBIIIEDCCCAyCGG1hc3RlcmluZy5wZWFyc29uY21nLmNvbYIcYWlzLm1hc3RlcmluZy5wZWFyc29uY21nLmNvbYIcYXBpLm1hc3RlcmluZy5wZWFyc29uY21nLmNvbYIdYXV0aC5tYXN0ZXJpbmcucGVhcnNvbmNtZy5jb22CH2F1dGhvci5tYXN0ZXJpbmcucGVhcnNvbmNtZy5jb22CI2NvbnRlbnRhcHAubWFzdGVyaW5nLnBlYXJzb25jbWcuY29tgidjb250ZW50c2VydmljZS5tYXN0ZXJpbmcucGVhcnNvbmNtZy5jb22CH2dpbW1pZS5tYXN0ZXJpbmcucGVhcnNvbmNtZy5jb22CIWl0ZW1lZGl0Lm1hc3RlcmluZy5wZWFyc29uY21nLmNvbYISbWFzdGVyaW5nYWFuZHAuY29tghJtYXN0ZXJpbmdhc3Ryby5jb22CFm1hc3RlcmluZ2FzdHJvbm9teS5jb22CEG1hc3RlcmluZ2Jpby5jb22CFG1hc3RlcmluZ2Jpb2xvZ3kuY29tghZtYXN0ZXJpbmdjaGVtaXN0cnkuY29tghttYXN0ZXJpbmdjb2xsZWdlcGh5c2ljcy5jb22CGG1hc3RlcmluZ2VuZ2luZWVyaW5nLmNvbYIhbWFzdGVyaW5nZW52aXJvbm1lbnRhbHNjaWVuY2UuY29tghRtYXN0ZXJpbmdnZW5jaGVtLmNvbYIVbWFzdGVyaW5nZ2VuZXRpY3MuY29tghZtYXN0ZXJpbmdnZW9ncmFwaHkuY29tghRtYXN0ZXJpbmdnZW9sb2d5LmNvbYIfbWFzdGVyaW5naGVhbHRoYW5kbnV0cml0aW9uLmNvbYIYbWFzdGVyaW5nbWV0ZW9yb2xvZ3kuY29tghltYXN0ZXJpbmdtaWNyb2Jpb2xvZ3kuY29tgh5tYXN0ZXJpbmdudXRyaXRpb24ucGVhcnNvbi5jb22CGW1hc3RlcmluZ29jZWFub2dyYXBoeS5jb22CFG1hc3RlcmluZ3BoeXNpY3MuY29tgiBteGVhbW9uLm1hc3RlcmluZy5wZWFyc29uY21nLmNvbYIgbXhsY21vbi5tYXN0ZXJpbmcucGVhcnNvbmNtZy5jb22CJnJlZGlyZWN0LnByb2QubWFzdGVyaW5nLnBlYXJzb25jbWcuY29tghpzZXNzaW9uLm1hc3RlcmluZ2FhbmRwLmNvbYIac2Vzc2lvbi5tYXN0ZXJpbmdhc3Ryby5jb22CHnNlc3Npb24ubWFzdGVyaW5nYXN0cm9ub215LmNvbYIYc2Vzc2lvbi5tYXN0ZXJpbmdiaW8uY29tghxzZXNzaW9uLm1hc3RlcmluZ2Jpb2xvZ3kuY29tgh5zZXNzaW9uLm1hc3RlcmluZ2NoZW1pc3RyeS5jb22CI3Nlc3Npb24ubWFzdGVyaW5nY29sbGVnZXBoeXNpY3MuY29tgiBzZXNzaW9uLm1hc3RlcmluZ2VuZ2luZWVyaW5nLmNvbYIpc2Vzc2lvbi5tYXN0ZXJpbmdlbnZpcm9ubWVudGFsc2NpZW5jZS5jb22CHHNlc3Npb24ubWFzdGVyaW5nZ2VuY2hlbS5jb22CHXNlc3Npb24ubWFzdGVyaW5nZ2VuZXRpY3MuY29tgh5zZXNzaW9uLm1hc3RlcmluZ2dlb2dyYXBoeS5jb22CHHNlc3Npb24ubWFzdGVyaW5nZ2VvbG9neS5jb22CJ3Nlc3Npb24ubWFzdGVyaW5naGVhbHRoYW5kbnV0cml0aW9uLmNvbYIgc2Vzc2lvbi5tYXN0ZXJpbmdtZXRlb3JvbG9neS5jb22CIXNlc3Npb24ubWFzdGVyaW5nbWljcm9iaW9sb2d5LmNvbYImc2Vzc2lvbi5tYXN0ZXJpbmdudXRyaXRpb24ucGVhcnNvbi5jb22CIXNlc3Npb24ubWFzdGVyaW5nb2NlYW5vZ3JhcGh5LmNvbYIcc2Vzc2lvbi5tYXN0ZXJpbmdwaHlzaWNzLmNvbYIWd3d3Lm1hc3RlcmluZ2FhbmRwLmNvbYIWd3d3Lm1hc3RlcmluZ2FzdHJvLmNvbYIad3d3Lm1hc3RlcmluZ2FzdHJvbm9teS5jb22CFHd3dy5tYXN0ZXJpbmdiaW8uY29tghh3d3cubWFzdGVyaW5nYmlvbG9neS5jb22CGnd3dy5tYXN0ZXJpbmdjaGVtaXN0cnkuY29tgh93d3cubWFzdGVyaW5nY29sbGVnZXBoeXNpY3MuY29tghx3d3cubWFzdGVyaW5nZW5naW5lZXJpbmcuY29tgiV3d3cubWFzdGVyaW5nZW52aXJvbm1lbnRhbHNjaWVuY2UuY29tghh3d3cubWFzdGVyaW5nZ2VuY2hlbS5jb22CGXd3dy5tYXN0ZXJpbmdnZW5ldGljcy5jb22CGnd3dy5tYXN0ZXJpbmdnZW9ncmFwaHkuY29tghh3d3cubWFzdGVyaW5nZ2VvbG9neS5jb22CI3d3dy5tYXN0ZXJpbmdoZWFsdGhhbmRudXRyaXRpb24uY29tghx3d3cubWFzdGVyaW5nbWV0ZW9yb2xvZ3kuY29tgh13d3cubWFzdGVyaW5nbWljcm9iaW9sb2d5LmNvbYIid3d3Lm1hc3RlcmluZ251dHJpdGlvbi5wZWFyc29uLmNvbYIdd3d3Lm1hc3RlcmluZ29jZWFub2dyYXBoeS5jb22CGHd3dy5tYXN0ZXJpbmdwaHlzaWNzLmNvbTANBgkqhkiG9w0BAQsFAAOCAQEABHKDE+n4VU4Ltrb9uL5aLCwBOqbMMpSUZXZup2+jViZqukfanoapjDeB6oKVEjVl3jYmRaxRIZBIbC91vskQAirK9YWqNEGk5FLtLeYwrc38/w2NkSn8I/ML3xpP6/GbgH2T6IpSPr67LE5mJqgz+RaBOnt/O0FVsHUsqBr4lxsuYDNuQXEAP4yRuxXD4hZ7On13YnnowfcAja/3YmvmxIKMZDwlwl2Elmi6VMFG6L4MryCIPydeFZDnPwgjyXsBTeXd+D9xG6IVMcNKHCm2G3rUwqUd0v6NA6zeuOseHG4P13NZF3+QT1VJo1Ow/oSOrqrNgv9V2ftCQfVEZ+fUsQAvAAMAAAAAAQEAAA== request-method GET response-head HTTP/1.1 200 OK
+Date: Wed, 22 Feb 2017 11:09:12 GMT
+Server: Apache
+Last-Modified: Thu, 05 Jan 2017 15:38:14 GMT
+Etag: "467d2e8-403c-5455ab0863783"
+Accept-Ranges: bytes
+Content-Length: 16444
+Content-Type: application/javascript
+ original-response-headers Date: Wed, 22 Feb 2017 11:09:12 GMT
+Server: Apache
+Last-Modified: Thu, 05 Jan 2017 15:38:14 GMT
+Etag: "467d2e8-403c-5455ab0863783"
+Accept-Ranges: bytes
+Content-Length: 16444
+Keep-Alive: timeout=1, max=49
+Connection: Keep-Alive
+Content-Type: application/javascript
+ uncompressed-len 0   @<

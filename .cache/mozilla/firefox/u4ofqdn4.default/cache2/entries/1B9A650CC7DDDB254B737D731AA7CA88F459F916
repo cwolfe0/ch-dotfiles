@@ -1,0 +1,2862 @@
+	/* ---------------------------------------------------------------------
+
+    Title:      Pearson MyLab/Mastering CSS file for all media
+    Filename:   master.css
+    Method:     <link>
+    Author:     R. Prokop | bobprokop@yahoo.com for Pearson Education
+    Updated:    June 2011
+    Notes:      ...	
+
+---------------------------------------------------------------------- */
+
+
+/*---------------------------------------------
+	Layout is based on a 12-column grid as
+	defined by Nathan Smith @ http://960.gs/
+	...
+	
+	- Outermost container ('.wrapper') = 960px
+	- Each column = 60px width; 10px margin l/r
+----------------------------------------------*/
+body{
+	font:normal 100%/1.125 Verdana, Arial, Helvetica, sans-serif;
+	color:#444;
+	background-color:#fbf5ea;
+	/*min-width:960px;*/
+	padding:0 0 1em 0;
+	margin:0;
+}
+a:link, a:visited{
+	color:#36c;
+	text-decoration:none;
+}
+a:hover, a:active, a:focus{
+	text-decoration:underline;
+}
+/*---------------------------------------------
+	Define button and .button
+----------------------------------------------*/
+button,
+input.button,
+a.button:link,
+a.button:visited{
+	font:normal 11px/20px Verdana, Arial, Helvetica, sans-serif;
+	height:20px;
+	padding:1px 6px;
+	text-align:center;
+	vertical-align:middle;
+	display:inline-block;
+	margin:0;
+	text-decoration:none;
+	
+	white-space:nowrap;
+	background-color:#eee;
+	color:#585858;
+	overflow:visible;
+	
+	border:1px solid #eee;
+	border-radius:3px;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+}
+button:focus,
+button:hover,
+a.button:hover,
+input.button:hover,
+a.button:focus,
+input.button:focus{
+	background-image:url(../images/global/glass.png);
+	background-repeat:repeat-x;
+	background-position:0 center;
+}
+/*	if line break needed for button label */
+.button-two-line{
+	height:24px;
+}
+button,
+input.button{
+	font:normal 1em/18px Verdana, Arial, Helvetica, sans-serif;
+	height:22px;
+	padding:0 3px;
+	display:inline-block;
+	cursor:pointer;
+	vertical-align:middle;
+}
+a.button-beige:link,
+a.button-beige:visited{
+	font:normal 14px/32px Verdana, Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	
+	color:#333!important;
+	/* must be set to !important
+	to nullify effect of alternate
+	(colors) stylesheets which have
+	to be served after this file. */
+	
+	padding:1px 15px;
+	height:32px;
+	text-align:center;
+	vertical-align:middle;
+	display:inline-block;
+	margin:0;
+	text-decoration:none;
+	background:url(../images/global/beige-button-glass.png) repeat-x 0 50% scroll #e3dbc1;
+	outline:none;
+	
+	text-shadow:1px 1px 1px rgba(255,255,255,.9);
+	-webkit-text-shadow:1px 1px 1px rgba(255,255,255,.9);
+	-moz-text-shadow:1px 1px 1px rgba(255,255,255,.9);
+	
+	box-shadow:inset 0 0 1px 1px rgba(251,245,234,1.0), 0 0 9px rgba(00,00,00,.9);
+	-webkit-box-shadow:inset 0 0 1px 1px rgba(251,245,234,1.0), 0 0 9px rgba(00,00,00,.9);
+	-moz-box-shadow:inset 0 0 1px 1px rgba(251,245,234,1.0), 0 0 9px rgba(00,00,00,.9);
+	
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	
+	-moz-transition:background-color 0.2s ease-out;
+	-o-transition:background-color0.2s ease-out;
+	-webkit-transition:background-color 0.2s ease-out;
+	-ms-transition:background-color 0.2s ease-out;
+	transition:background-color 0.2s ease-out; 
+}
+a.button-beige:hover,
+a.button-beige:focus{
+	text-shadow:1px 1px 1px rgba(255,255,255,.8);
+	-webkit-text-shadow:1px 1px 1px rgba(255,255,255,.8);
+	-moz-text-shadow:1px 1px 1px rgba(255,255,255,.8);
+	background-color:#d6ceb6;
+	color:#333;
+}
+a.button-beige:active{
+	padding:2px 14px 1px 16px;
+	text-shadow:-1px -1px -1px rgba(255,255,255,.9);
+	-webkit-text-shadow:-1px -1px -1px rgba(255,255,255,.9);
+	-moz-text-shadow:-1px -1px -1px rgba(255,255,255,.9);
+	
+	box-shadow:inset 0 0 1px 1px rgba(19,18,16,.3), 0 0 9px rgba(00,00,00,.5);
+	-webkit-box-shadow:inset 0 0 1px 1px rgba(19,18,16,.3), 0 0 9px rgba(00,00,00,.5);
+	-moz-box-shadow:inset 0 0 1px 1px rgba(19,18,16,.3), 0 0 9px rgba(00,00,00,.5);
+}
+.has-icon{
+	padding-right:7px;
+}
+.button-icon{
+	width:21px;
+	height:21px;
+	vertical-align:middle;
+	line-height:32px;
+	margin:0 0 0 4px;
+}
+/*---------------------------------------------
+	Snooth scroll-to-top (Back to top) links
+----------------------------------------------*/
+a.scroll-top:link,
+a.scroll-top:visited{
+	display:block;
+	text-align:right;
+	text-decoration:none;
+	color:#585858;
+	font-size:11px;
+	padding:4px;
+	margin:2.5em 0;
+	border-top:1px dotted #ccc;
+}
+a.scroll-top:hover,
+a.scroll-top:focus{
+	background-color:#f7f7f7;
+	border-top:1px solid #ccc;
+}
+a.scroll-top:active{
+}
+/*	other flavors of 'a' */
+a.zoom:link,
+a.zoom:visited{
+	display:block;
+}
+a.zoom:hover,
+a.zoom:active,
+a.zoom:focus{
+	text-decoration:none;
+}
+/*	Used on the home page slideshow */
+a.sidecar{
+	font-size:0.6875em;
+	margin-left:8px;
+	vertical-align:middle;
+}
+a.sidecar span{
+	font-size:1.2727272em;
+	font-weight:bold;
+}
+/*---------------------------------------------
+	Common typography
+----------------------------------------------*/
+h1, h2, h3, h4, h5, h6, h7{
+	font-weight:normal;
+	/*line-height:1.3em;*/
+}
+h1{
+	font-size:1.4375em; /*23px*/
+	word-spacing:-1px;
+	line-height:1.2;
+	margin-bottom:10px;
+}
+h2{
+	font-size:1.125em; /*18px*/
+	line-height:1.3;
+	margin-top:20px;
+	margin-bottom:1.125em;
+}
+h3{
+	font-size:.9em; /*16px*/
+	font-weight:bold;
+	margin-top:20px;
+	margin-bottom:10px;
+}
+h4{
+	font-size:0.8125em; /* 13px */
+	font-weight:bold;
+	margin-top:20px;
+	margin-bottom:6px;
+}
+h5{
+	font-size:0.625em; /*10px*/
+	text-transform:uppercase;
+	font-weight:bold;
+	line-height:1.3;
+}
+p{
+	font-size:0.75em; /*12px*/
+	line-height:1.35;
+	margin-bottom:10px;
+}
+ul, ol{
+	font-size:0.75em; /*12px*/
+}
+li{
+	line-height:1.5;
+}
+q:before,
+q:after{
+	content:"";
+}
+/*	flavors */
+p.size-down,
+.size-down{
+	font-size:0.6875em; /*11px*/
+}
+/*	scroll-to-top links nested inside headers */
+h4 > a.scroll-top:link,
+h4 > a.scroll-top:visited{
+	font-weight:normal;
+	color:#fff;
+	display:inline;
+	border:none;
+	padding:0;
+	margin:0;
+	float:right;
+}
+h4 > a.scroll-top:hover,
+h4 > a.scroll-top:active,
+h4 > a.scroll-top:focus{
+	color:#fff;
+	background-color:inherit;
+	border:none;
+	text-decoration:underline;
+}
+/*---------------------------------------------
+	The outermost container; the 12-col grid
+----------------------------------------------*/
+.grid{	
+	/*width:960px;*/
+	margin:0 auto;
+	padding:0 10px 2em 10px;
+	background:#fff;
+}
+/*	Different top padding for the grid
+	depending upon which level of site
+	hierarchy visitor is currently on
+*/
+body.home .grid{
+	padding-top:1.5em;
+}
+body.secondary .grid{
+	padding-top:12px;
+}
+/*---------------------------------------------
+	Individual columns within the grid (12)
+----------------------------------------------*/
+/*	1 column */
+.grid .col-1{
+	width:60px;
+	display:inline;
+	float:left;
+	margin-right:10px;
+	margin-left:10px;
+}
+/*	2 columns */
+.grid .col-2{
+	width:140px;
+	display:inline;
+	float:left;
+	margin-right:10px;
+	margin-left:10px;
+}
+/*	3 columns */
+.grid .col-3{
+	width:220px;
+	display:inline;
+	float:left;
+	margin-right:10px;
+	margin-left:10px;
+}
+/*	4 columns */
+.grid .col-4{
+	width:300px;
+	display:inline;
+	float:left;
+	margin-right:10px;
+	margin-left:10px;
+}
+/*	5 columns */
+.grid .col-5{
+	width:380px;
+	display:inline;
+	float:left;
+	margin-right:10px;
+	margin-left:10px;
+}
+/*	6 columns */
+.grid .col-6{
+	width:460px;
+	display:inline;
+	float:left;
+	margin-right:10px;
+	margin-left:10px;
+}
+/*	7 columns */
+.grid .col-7{
+	width:540px;
+	display:inline;
+	float:left;
+	margin-right:10px;
+	margin-left:10px;
+}
+/*	8 columns */
+.grid .col-8{
+	width:620px;
+	display:inline;
+	float:left;
+	margin-right:10px;
+	margin-left:10px;
+}
+/*	9 columns  */
+.grid .col-9{
+	width:700px;
+	display:inline;
+	float:left;
+	margin-right:10px;
+	margin-left:10px;
+}
+/*	10 columns */
+.grid .col-10{
+	width:780px;
+	display:inline;
+	float:left;
+	margin-right:10px;
+	margin-left:10px;
+}
+/*	11 columns */
+.grid .col-11{
+	width:860px;
+	display:inline;
+	float:left;
+	margin-right:10px;
+	margin-left:10px;
+}
+/*	12 columns */
+.grid .col-12{
+	width:940px;
+	display:inline;
+	float:left;
+	margin-right:10px;
+	margin-left:10px;
+}
+/*	minus 1 */
+.grid .minus-1{
+	width:219px;
+}
+/*---------------------------------------------
+	Specific Constructs
+	Let's interpret the 960 grid dimensions
+	but allow our markup to be more semantic
+	by minimizing the use of <div> tags
+	and "class" attributes
+----------------------------------------------*/
+/* (3) elements used on sub-pages */
+/*#side-nav{
+	display:inline;
+	float:left;
+	margin:-1px 10px 0 10px;
+	width:198px;
+}*/
+#right-sidebar{
+	display:inline;
+	float:right;
+	border:14px solid #f5f5f5;
+	padding:10px;
+	margin:23px 10px 0 10px;
+	width:162px;
+}
+#right-sidebar h3{
+	margin-top:24px;
+}
+#right-sidebar h3:first-child{
+	margin-top:10px;
+}
+#right-sidebar h4{
+	margin-top:24px;
+}
+#right-sidebar h4:first-child{
+	margin-top:10px;
+}
+#right-sidebar h5{
+	margin-top:24px;
+}
+#right-sidebar h5:first-child{
+	margin-top:10px;
+}
+#main-content{
+	display:inline;
+	float:left;
+	margin:17px 10px 0 18px;
+	width:70%;
+}
+#main-content p{
+	line-height:1.5;
+}
+/*---------------------------------------------
+	Variations on main content width based
+	upon presence of left and right sidebar(s)
+----------------------------------------------*/
+#main-content.left-sidebar-only{
+	width:65%;
+}
+#main-content.right-sidebar-only{
+	margin-left:150px;
+}
+#main-content.no-sidebars{
+	width:65%;
+	margin-left:150px;
+}
+/*---------------------------------------------
+	In-page videos such as those found
+	in the 'Video Testimonials' section
+	are contained inside this box
+----------------------------------------------*/
+.video-container{
+	width:442px;
+	margin:24px 0;
+	padding:10px;
+	background-color:#f5f5f5;
+	border-radius:4px;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+}
+.video-container iframe{
+	margin:0;
+	padding:0;
+	border:0;
+}
+.video-container h4{
+	width:95%;
+	margin:1em 0 .5em .5em;
+	padding:0;
+	font-weight:bold;
+}
+.video-container p{
+	width:95%;
+	margin:0 0 .75em .5em;
+	padding:0;
+}
+/*---------------------------------------------
+	These boxes are used to highlight
+	specific content, generally they
+	contain a figure/caption and copy.
+	Examples are found in the 'Features'
+	section.
+----------------------------------------------*/
+.feature{
+	margin:0 0 36px 0;
+	padding:10px;
+	background-color:#f5f5f5;
+	border-bottomright-radius:4px;
+	-moz-border-radius-bottomright:4px;
+	-webkit-border-bottom-right-radius:4px;
+	border-bottomleft-radius:4px;
+	-moz-border-radius-bottomleft:4px;
+	-webkit-border-bottom-left-radius:4px;
+}
+.feature-head{
+	padding:6px;
+	border-topright-radius:4px;
+	-moz-border-radius-topright:4px;
+	-webkit-border-top-right-radius:4px;
+	border-topleft-radius:4px;
+	-moz-border-radius-topleft:4px;
+	-webkit-border-top-left-radius:4px;
+}
+.feature-head{
+	margin-bottom:0;
+}
+/*---------------------------------------------
+	Pointer elements are rendered with an
+	arrow graphic (sprite) used to indicate
+	the current status of sub-content related
+	to the pointer (toggle switch). An example
+	of user would be the 'Ordering information'
+	elements on the 'Books Available' screen.
+----------------------------------------------*/
+.pointer:link,
+.pointer:visited{
+	color:#333;
+	background:url(../images/global/pointer-closed.gif) no-repeat scroll 6px center #f5f5f5;
+	cursor:pointer;
+	padding:6px 6px 6px 16px;
+	font-size:11px;
+	display:block;
+	width:140px;
+	
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	-webkit-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out; 
+}
+.pointer:hover,
+.pointer:active,
+.pointer:focus{
+	background-color:#ddd;
+	text-decoration:none;
+	color:#333!important;
+	/* must be set to !important
+	to nullify effect of alternate
+	(colors) stylesheets which have
+	to be served after this file. */
+}
+.pointer-open{
+	background:url(../images/global/pointer-open.gif) no-repeat scroll 6px center #ededed;
+}
+/*---------------------------------------------
+	Mimics table alignment using
+	an unordered list element.
+	Used on the 'Books Available'
+	screen to rendering the order
+	info data.
+----------------------------------------------*/
+.table,
+.table-narrow{
+	width:400px;
+	margin:1.125em 0;
+	padding:0;
+	font-size:11px;
+}
+.table-narrow{
+	width:280px;
+}
+.table li,
+.table-narrow li{
+	margin:0;
+	padding:0;
+	border:0;
+}
+.table li:first-child,
+.table-narrow li:first-child{
+	padding:6px;
+}
+.table li.not-linked,
+.table-narrow li.not-linked{
+	padding:6px;
+	border-bottom:1px solid #ddd;
+}
+.table li.not-linked em,
+.table-narrow li.not-linked em{
+	color:#444;
+}
+.table li a,
+.table-narrow li a{
+	display:block;
+	padding:4px 6px;
+	border-bottom:1px solid #ddd;
+	overflow:hidden;
+	color:#444;
+}
+.table li.last a,
+.table-narrow li.last a{
+	border:none;
+}
+.table a:hover,
+.table-narrow a:hover{
+	background:#f7f7f7;
+	text-decoration:none;
+}
+.table li em,
+.table-narrow li em{
+	float:right;
+	margin:0 0 0 5px;
+	font-style:normal;
+	color:#36c;
+}
+/*---------------------------------------------
+	Profile listings
+	Generally used for the 'Meet our Faculty
+	Advisors' screens
+----------------------------------------------*/
+img.frame{
+	/*
+	RWP: removed height and width declarations
+	*/
+	padding:6px;
+	background-color:#fff;
+	border:1px solid #585858;
+	border-radius:3px;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	box-shadow:2px 2px 2px rgba(89,89,89,.7);
+	-webkit-box-shadow:2px 2px 2px rgba(89,89,89,.7);
+	-moz-box-shadow:2px 2px 2px rgba(89,89,89,.7);
+	position:relative;
+	z-index:10;
+}
+.profiles{
+	margin-top:24px;
+}
+.profiles img.frame{
+	float:left;
+	margin:0 16px 6px 0;
+}
+.profiles > li:first-child{
+	padding-top:0;
+}
+.profiles > li > dl{
+}
+.profiles > li > dl > dt{
+	font-size:1.15em;
+	font-weight:bold;
+}
+.profiles dt > a:link,
+.profiles dt > a:visited{
+	text-decoration:none;
+}
+.profiles dt > a:hover,
+.profiles dt > a:active{
+	text-decoration:underline;
+}
+.profiles > li > dl > dd{
+	margin:0 0 8px 0;
+}
+/*
+	RWP: added 18-July-2011
+	Notes: Add a bit of top
+	margin before the first
+	biographical content
+	definition in 'profiles'
+	(Meet our Faculty Advisors)
+*/
+.profiles > li > dl > dd.aff{
+	margin-bottom:2em;
+}
+/*---------------------------------------------
+	Pearson branding strap
+----------------------------------------------*/
+.color-strap{
+/* 	width:100%; */
+	height:44px;
+	line-height:44px;
+	background-color:#9d1248;/* needed for IE7? */
+	color:#fff;
+	padding:0;
+	margin:0 auto;
+}
+.color-strap > #pearson-logo{
+	height:44px;
+	width:114px;
+	background:url(/highlander/resources/img/pearson/pearson-logo.png) no-repeat 0 0 transparent;
+	margin-right:16px;
+	margin-left:24px;
+	float:right;
+}
+.color-strap #always-learning{
+	height:44px;
+	width:138px;
+	background:url(/highlander/resources/img/pearson/always-learning.png) no-repeat 0 0 transparent;
+	margin-left:16px;
+	margin-right:24px;
+	float:left;
+}
+/*---------------------------------------------
+	Product branding strap (ex: 'MyMathLab')
+----------------------------------------------*/
+.product-strap{
+	width:980px;
+	height:60px;
+	line-height:60px;
+	border-bottom:1px solid #444;
+	padding-bottom:4px;
+	margin:0 auto;
+}
+/*	product logo */
+.product-logo{
+	clear:none;
+	padding:0;
+	margin:0 0 0 14px;
+	float:left;
+	height: 60px;
+}
+.product-logo img{
+	border:none;
+	margin-top:18px;
+	line-height:60px;
+}
+/*---------------------------------------------
+	Global navigation (full-size/standard)
+----------------------------------------------*/
+#global-menubar{
+/* 	width:978px; */
+	height:33px;
+	position:relative;
+	padding:0;
+	background:url(../images/global/global-nav-bg.png) repeat-x 0 0 transparent;
+	border-bottomright-radius:2px;
+	-moz-border-radius-bottomright:2px;
+	-webkit-border-bottom-right-radius:2px;
+	border-bottomleft-radius:2px;
+	-moz-border-radius-bottomleft:2px;
+	-webkit-border-bottom-left-radius:2px;
+	box-shadow:0 2px 2px rgba(89,89,89,.5);
+	-webkit-box-shadow:0 2px 2px rgba(89,89,89,.5);
+	-moz-box-shadow:0 2px 2px rgba(89,89,89,.5);
+	border:1px solid #cfcbb4;
+	border-top:1px solid #fff;
+	margin:0 auto;
+}
+.global-nav{
+	height:33px;
+	position:relative;
+	padding:0;
+	z-index:999;
+}
+.global-nav > li{
+	background:url(../images/global/global-nav-bg.png) repeat-x 0 0 transparent;
+	white-space:nowrap;
+	min-height:33px;
+	position:relative;
+	margin:0;
+	float:left;
+}
+.global-nav > li > a:link,
+.global-nav > li > a:visited{
+	text-decoration:none;
+	display:inline-block;
+	line-height:33px;
+	padding:0 14px;
+	white-space:nowrap;
+	
+	color:#333!important;
+	/* must be set to !important
+	to nullify effect of alternate
+	(colors) stylesheets which have
+	to be served after this file. */
+	
+	-moz-transition:all 0.2s ease-out;
+	-o-transition:all 0.2s ease-out;
+	-webkit-transition:all 0.2s ease-out;
+	-ms-transition:all 0.2s ease-out;
+	transition:all 0.2s ease-out;
+}
+.global-nav > li > a:hover,
+.global-nav > li > a:focus{
+	background-color:#dad4ca;
+	color:#333;
+}
+.global-nav > li > a:active{
+	background-color:#dad4ca;
+	color:#444;
+}
+.global-nav > li > a:link:first-child{
+	padding-left:15px;
+}
+.global-nav > li.drop:hover{
+	background:url(../images/global/menu-bg-grey.png) repeat 0 0 scroll transparent;
+	color:#fff;
+	border-radius:5px 5px 0 0;
+	-webkit-border-radius:5px 5px 0 0;
+	-moz-border-radius:5px 5px 0 0;
+}
+.global-nav > li.drop > a:link,
+.global-nav > li.drop > a:visited{
+	color:#444;
+}
+.global-nav > li.drop > a:hover,
+.global-nav > li.drop:hover > a{
+	color:#fff;
+}
+.global-nav > li.drop > a:active{
+	color:#fff;
+}
+.global-nav > li > a:link > ul{
+	display:none;
+}
+.global-nav > li.drop:hover > ul{
+	display:block;
+}
+/*---------------------------------------------
+	We're not using drop menus
+	now, but this is how we'll
+	render them if the decision
+	changes. Based on McCann's
+	PE HED styles.
+----------------------------------------------*/
+.sub-menu{
+	width:25em;
+	position:absolute;
+	display:none;
+	background:url(../images/gloabl/menu-bg-grey.png) repeat 0 0 scroll transparent;
+	border-radius:0 0 5px 5px;
+	-webkit-border-radius:0 0 5px 5px;
+	-moz-border-radius:0 0 5px 5px;
+	padding:11px;
+	margin:0;
+}
+.sub-menu > li{
+	padding:0 11px;
+	line-height:29px;
+	float:none;
+	margin:0;
+}
+.sub-menu > li > a:link,
+.sub-menu > li > a:visited{
+	display:block;
+	text-decoration:none;
+	font-size:11px;
+	line-height:1.25;
+	color:#444;
+	white-space:normal;
+	border-bottom:1px solid #999;
+	padding:8px 6px;
+}
+.sub-menu > li > a:hover{
+	background-color:#dfdfdf;
+	text-decoration:none;
+	color:#333;
+}
+/*---------------------------------------------
+	Query term (quick search in global nav)
+----------------------------------------------*/
+#search{
+	width:234px;
+	height:22px;
+	line-height:22px;
+	white-space:nowrap;
+	padding:0;
+	margin:19px 14px 0 0;
+	float:right;
+}
+#query_term{
+	width:206px;
+	height:22px;
+	font:normal 0.6875em/22px Verdana, Arial, Helvetica, sans-serif;
+	color:#818181;
+	background-color:#fff;
+	vertical-align:middle;
+	border:none;
+	outline:none;
+	padding:0 2px 0 4px;
+	margin:0;
+	float:left;
+	border-topleft-radius:3px;
+	-moz-border-radius-topleft:3px;
+	-webkit-border-top-left-radius:3px;
+	border-bottomleft-radius:3px;
+	-moz-border-radius-bottomleft:3px;
+	-webkit-border-bottom-left-radius:3px;
+	-moz-transition:all 0.2s ease-out;
+	-o-transition:all 0.2s ease-out;
+	-webkit-transition:all 0.2s ease-out;
+	-ms-transition:all 0.2s ease-out;
+	transition:all 0.2s ease-out;
+}
+#query_term:hover,
+#query_term:focus{
+	color:#333;
+}
+#query_submit{
+	width:22px;
+	height:22px;
+	line-height:22px;
+	background:url(../images/global/search-submit.png) no-repeat 0 0 scroll #fff;
+	vertical-align:middle;
+	cursor:pointer;
+	border:none;
+	overflow:hidden;
+	padding:0;
+	margin:0;
+	float:left;
+	border-topright-radius:3px;
+	-moz-border-radius-topright:3px;
+	-webkit-border-top-right-radius:3px;
+	border-bottomright-radius:3px;
+	-moz-border-radius-bottomright:3px;
+	-webkit-border-bottom-right-radius:3px;
+}
+#query_submit:hover,
+#query_submit:focus{
+	background:url(../images/global/search-submit-hover.png) no-repeat 0 0 scroll #fff;
+}
+/*---------------------------------------------
+	Sign-in | Register
+----------------------------------------------*/
+#sign-in-register-box{
+	background-color:#f2f2f2;
+	height:260px;
+	margin-bottom:10px;
+	border-radius:3px;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	display:inline;
+  	float:left;
+	margin:0 10px 10px 10px;
+	width:222px;
+}
+#sign-in-register-box h2{
+	margin:6px 0 0 12px;
+}
+#sign-in-register-box p{
+	font-size:0.6875em;
+	line-height:1.2;
+	width:84%;
+	text-align:center;
+	margin:6px 0 9px 12px;
+}
+#sign-in-register-box p.international{
+	margin-top:0;
+	margin-bottom:6px;
+	padding-top:0;
+	padding-bottom:0;
+}
+#sign-in-register-box a#sign-in{
+	display:block;
+	margin:0 auto 8px auto;
+	width:156px;
+	clear:both;
+}
+#sign-in-register-box a#student,
+#sign-in-register-box a#instructor{
+	width:68px;
+	float:left;
+}
+#sign-in-register-box a#student{
+	margin:0 6px 0 26px;
+}
+#signIn-register{
+	padding:0;
+	margin:5px 14px 0 0;
+}
+#signIn-register > li{
+	margin-left:6px;
+	float:left;
+}
+#signIn-register > li,
+#signIn-register > li > a{
+	padding:0;
+	margin:0;
+}
+#signIn-register > li > a:link{
+	padding:0 4px;
+}
+/*---------------------------------------------
+	Announcements (optional)
+----------------------------------------------*/
+.announcement{
+	background-color:#ff9;
+	height:2em;
+	padding:.35em 1.25em 1.25em 1.25em;
+	margin:0 10px 1.5em 10px;
+	border:2px solid #f90;
+	border-radius:3px;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+}
+.announcement h1{
+	font-size:1.1em; /*20px*/
+	font:bold;
+	margin:4px 0 0 0;
+
+}
+.announcement-icon{
+	float:left;
+	display:block;
+	clear:none;
+	margin:4px .6em 0 0;
+	padding:0;
+	border:none;
+}
+.announcement_reg{
+	background-color:#ff9;
+	height:2em;
+	padding:.35em 1.25em 1.25em 1.0em;
+	margin:0 10px 1.5em 10px;
+	width:500px;
+	border:2px solid #f90;
+	border-radius:3px;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+}
+.announcement_reg h1{
+	font-size:0.8em; /*20px*/
+	font:bold;
+	margin:6px 0 0 0;
+
+}
+/*---------------------------------------------
+	Footer
+----------------------------------------------*/
+#footer{
+	margin:6px auto;
+	/*width:960px;*/
+	padding-left:17px;
+}
+#footer p{
+	font-size:0.6875em; /*11px*/
+	line-height:1.5;
+}
+/*---------------------------------------------
+	Slideshow (home page)
+----------------------------------------------*/
+.slideshow-outer-wrap{
+	display:inline;
+	float:left;
+	width:698px;
+	height:260px;
+	overflow:hidden;
+	margin:0 10px 10px 10px;
+	position:relative;
+}
+#slideshow-container > .panel{
+	width:698px;
+	height:260px;
+	overflow:hidden;
+	position:relative;
+	z-index:100;
+}
+/*	control elements for the slideshow */
+.control-wrap{
+	position:absolute;
+	right:12px;
+	bottom:12px;
+	z-index:999;
+}
+.control-wrap > a:link,
+.control-wrap > a:visited{
+	background-color:#fff;
+	width:19px;
+	height:19px;
+	line-height:19px;
+	font-size:1em;
+	font-weight:bold;
+	color:#5b5b5b;
+	float:left;
+	margin:0 1px;
+	opacity:0.65;
+	display:block;
+	text-align:center;
+	text-decoration:none;
+	border-radius:2px;
+	-webkit-border-radius:2px;
+	-moz-border-radius:2px;
+	-moz-transition:all 0.2s ease-out;
+	-o-transition:all 0.2s ease-out;
+	-webkit-transition:all 0.2s ease-out;
+	-ms-transition:all 0.2s ease-out;
+	transition:all 0.2s ease-out;
+}
+.control-wrap > a:hover,
+.control-wrap > a:active,
+.control-wrap > a:focus{
+	opacity:1.0;
+	text-decoration:none;
+}
+#slideshow-controls{
+	float:left;
+	display:inline;
+}
+#slideshow-controls > a:link,
+#slideshow-controls > a:visited{
+	background-color:#fff;
+	width:19px;
+	height:19px;
+	line-height:19px;
+	font-size:12px;
+	color:#5b5b5b;
+	float:left;
+	margin:0 1px;
+	opacity:0.65;
+	display:block;
+	text-align:center;
+	text-decoration:none;
+	border-radius:2px;
+	-webkit-border-radius:2px;
+	-moz-border-radius:2px;
+	-moz-transition:all 0.2s ease-out;
+	-o-transition:all 0.2s ease-out;
+	-webkit-transition:all 0.2s ease-out;
+	-ms-transition:all 0.2s ease-out;
+	transition:all 0.2s ease-out;
+}
+#slideshow-controls > a:hover,
+#slideshow-controls > a:active,
+#slideshow-controls > a.activeSlide,
+#slideshow-controls > a:focus,
+#slideshow-controls > a.activeSlide:focus{
+	opacity:1.0;
+	color:#444;
+	text-decoration:none;
+	font-weight:bold;
+}
+/*	the 'pause' and 'resume' links */
+#pauseSlideshow,
+#resumeSlideshow{
+	font-size:11px;
+	font-weight:normal;
+	width:auto;
+	width:4em;
+}
+/*	Use this as a container to overlay your text, buttons, etc. */
+.panel-overlay{
+	position:absolute;
+	top:20px;
+	z-index:999;
+	width:40%;
+}
+/*	Align your overlay container on top of the right side of your carousel ad */
+.right-align{
+	right:20px;
+}
+/*	Align your overlay container on top of the left side of your carousel ad */
+.left-align{
+	left:20px;
+}
+/*	If you need your overlay to be more narrow than the default, use the 'skinny' class */
+.skinny{
+	width:30%;
+}
+/*---------------------------------------------
+	Typography rules for slideshow
+	panel overlays
+----------------------------------------------*/
+.panel-overlay h3{
+	font-weight:normal;
+	font-size:2em;
+	line-height:1.15;
+	letter-spacing:-1px;
+	word-spacing:-1px;
+	margin-top:0;
+	margin-bottom:10px;
+}
+.panel-overlay h4{
+	font-weight:normal;
+	font-size:1.5em;
+	line-height:1.1;
+	letter-spacing:normal;
+	margin-top:0;
+	margin-bottom:10px;
+}
+.panel-overlay p{
+	line-height:1.35;
+	margin-bottom:1.5em;
+}
+.panel-overlay cite{
+	font-size:0.8125em;
+	font-weight:bold;
+	font-style:normal;
+	line-height:1.5;
+	padding:0;
+	display:block;
+	margin-bottom:0.5em;
+}
+/*	Light-colored text for dark background panel */
+.light-text,
+a.light-text:link,
+a.light-text:visited,
+a.light-text:hover,
+a.light-text:active{
+	color:#fff;
+}
+/*	Dark-colred text for dark background panel */
+.dark-text,
+a.dark-text:link,
+a.dark-text:visited,
+a.dark-text:hover,
+a.dark-text:active{
+	color:#333!important;
+	/* must be set to !important
+	to nullify effect of alternate
+	(colors) stylesheets which have
+	to be served after this file. */
+}
+/*---------------------------------------------
+	Advertising bucket elements
+----------------------------------------------*/
+/*	the thick grey border style from McCann */
+.bucket-border{
+	border:14px solid #f5f5f5;
+	padding:0;
+}
+.bucket-border h2{
+	font-size:0.975em;/* prev = 0.935em */
+	line-height:1.4;
+	font-weight:bold;
+	letter-spacing:normal;
+	padding:0;
+}
+.bucket-border h1,
+.bucket-border h2,
+.bucket-border h3,
+.bucket-border h4{
+	margin:10px 0 6px 14px;
+}
+.bucket-border h4{
+	font-size:0.875em;
+}
+/*	'For Students | For Instructors' container buckets */
+.default-box{
+	height:140px;
+	width:192px;
+	overflow:hidden;
+	float:left;
+	display:inline;
+	margin-right:10px;
+	margin-left:10px;
+}
+.default-box ul{
+	margin:4px 10px 10px 30px;
+}
+.default-box ul li{
+	list-style-type:disc;
+	font-size:0.875em;
+	line-height:1.35;
+	padding:3px 0;
+}
+
+
+
+
+
+
+/*	user-controlled ad space lower-right home page */
+.ad-box{
+	height:140px;
+	width:432px;
+	float:left;
+	display:inline;
+	margin-right:10px;
+	margin-left:10px;
+	border:14px solid #f5f5f5;
+	padding:0;
+}
+.ad-box h1{
+	font-size:0.975em;/* prev = 0.935em */
+	line-height:1.4;
+	font-weight:bold;
+	letter-spacing:normal;
+	padding:0;
+	margin-top:10px;
+	margin-bottom:6px;
+}
+.ad-box h4{
+	font-size:0.875em;
+	margin-top:12px;
+	margin-bottom:9px;
+	margin-right:10px;
+	line-height:1.4;
+	float:none;
+}
+.ad-box p{
+	margin-top:6px;
+	margin-right:10px;
+	margin-bottom:8px;
+	float:none;
+}
+.ad-box p.smaller{
+	font-size:0.6875em;
+}
+.ad-box cite{
+	margin:0;
+	padding:0;
+	font-size:11px;
+	font-style:normal;
+	float:none;
+}
+.ad-box a{
+	font-size:11px;
+	float:none;
+}
+.ad-box a.arrow:link,
+.ad-box a.arrow:visited{
+	font-weight:bold;
+	padding:4px 21px 4px 0;
+	width:90%;
+	background:url(../images/global/arrow-in-circle-dark.png) no-repeat right center scroll transparent;
+}
+.ad-box a.arrow:hover,
+.ad-box a.arrow:active{
+	text-decoration:underline;
+	border:none;
+}
+.ad-box > .box-140{
+	width:140px;
+	height:140px;
+	overflow:hidden;
+	float:left;
+}
+.box-140 > img.snapshot{
+	display:block;
+	margin-right:auto;
+	margin-left:auto;
+	float:none;
+}
+.ad-box > img.full-height{
+	float:left;
+}
+.box-140,
+.ad-box > img.full-height{
+	margin-right:12px;
+}
+/*---------------------------------------------
+	Figure + caption
+----------------------------------------------*/
+.feature{
+	padding-bottom:24px;
+}
+.feature p{
+	font-size:0.75em;
+	margin:12px 12px 0 12px;
+}
+.figure{
+	display:inline;
+	padding:6px;
+	position:relative;
+	margin:10px 12px;
+	/*
+	RWP
+	Notes: match 'Showcase'
+	project fix; removed
+	script / add width
+	*/
+	width:219px;
+}
+.figure img{ /* per LL 17-Jun-2011: make std width, use same img for thumb and zoomed */
+	width:219px;
+}
+.figure p{ /*caption*/
+	font-size:0.6875em;
+	line-height:1.2;
+	width:85%;
+	margin:6px;
+}
+a.zoom{
+	display:block;
+	text-decoration:none;
+}
+a.zoom span{
+	font-size:0.75em;
+	color:#fff;
+	display:block;
+	cursor:pointer;
+	position:absolute;
+	top:6px;
+	right:4px;
+	height:20px;
+	padding:4px 8px 4px 24px;
+	background:url(../images/global/zoom.png) no-repeat 8px center scroll #444;
+	opacity:0.75;
+	border-topright-radius:3px;
+	-moz-border-radius-topright:3px;
+	-webkit-border-top-right-radius:3px;
+	border-bottomleft-radius:3px;
+	-moz-border-radius-bottomleft:3px;
+	-webkit-border-bottom-left-radius:3px;
+	/*
+	RWP
+	18-July-2011
+	Notes: added z-index
+	*/
+	z-index:999;
+}
+a.zoom img{
+	border:1px solid #585858;
+	border-radius:3px;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	box-shadow:2px 2px 2px rgba(89,89,89,.7);
+	-webkit-box-shadow:2px 2px 2px rgba(89,89,89,.7);
+	-moz-box-shadow:2px 2px 2px rgba(89,89,89,.7);
+	cursor:pointer;
+	-moz-transition:all 0.1s ease-in;
+	-o-transition:all 0.1s ease-in;
+	-webkit-transition:all 0.1s ease-in;
+	-ms-transition:all 0.1s ease-in;
+	transition:all 0.1s ease-in; 
+}
+a.zoom:hover img,
+a.zoom:focus img{
+	box-shadow:4px 4px 4px rgba(89,89,89,.6);
+	-webkit-box-shadow:4px 4px 4px rgba(89,89,89,.6);
+	-moz-box-shadow:4px 4px 4px rgba(89,89,89,.6);
+}
+/*---------------------------------------------
+	FAQs
+----------------------------------------------*/
+dl.faq{
+	margin:12px 0;
+	width:90%;
+}
+dl.faq > dt{
+	margin:0 0 0.5em 0;
+}
+dl.faq > dt > a:link,
+dl.faq > dt > a:visited{
+	display:block;
+	font-size:0.85em;
+	font-weight:bold;
+	line-height:1.2;
+	cursor:pointer;
+	text-decoration:none;
+	/*background:url(../images/global/plus.png) no-repeat 4px 7px scroll transparent;*/
+	padding:4px;
+	border-bottom:1px solid #fff;
+	color:#333!important;
+	/* must be set to !important
+	to nullify effect of alternate
+	(colors) stylesheets which have
+	to be served after this file. */
+	
+	-moz-transition:all 0.2s ease-in;
+	-o-transition:all 0.2s ease-in;
+	-webkit-transition:all 0.2s ease-in;
+	-ms-transition:all 0.2s ease-in;
+	transition:all 0.2s ease-in;
+}
+dl.faq > dt > a:hover,
+dl.faq > dt > a:active,
+dl.faw > dt > a:focus{
+	text-decoration:none;
+	background-color:#f5f5f5;
+}
+dl.faq > dt > a.faq-open{
+	/*background:url(../images/global/minus.png) no-repeat 4px 7px scroll #f5f5f5;*/
+	border-bottom:1px solid #ccc;
+}
+dl.faq > dd{
+	font-size:0.75em;
+	margin-left:22px;
+	margin-bottom:2.5em;
+}
+dl.faq > dd > h4,
+dl.faq > dd > p,
+dl.faq > dd > ul,
+dl.faq > dd > ol{
+	font-size:1em;
+	margin-top:0;
+}
+dl.faq > dd > p{
+	line-height:1.65;
+}
+dl.faq > dd > ul,
+dl.faq > dd > ol{
+	margin-left:1.5em;
+}
+dl.faq > dd > ul > li,
+dl.faq > dd > ol > li{
+	line-height:1.45;
+	margin:0.75em 0;
+	list-style-type:disc;
+}
+.faq-expand,
+.faq-collapse{
+	width:13px;
+	height:13px;
+	vertical-align:middle;
+	margin-right:6px;
+	margin-bottom:2px;
+	line-height:1.2;
+}
+/*---------------------------------------------
+	Registration wizard
+----------------------------------------------*/
+.registration-sidebar{
+	display:inline;
+	float:left;
+	width:190px;
+	margin:0 10px;
+}
+.registration-sidebar h4{
+	margin:12px 0 0 12px;
+}
+.registration-sidebar p{
+	margin:12px 0 12px 12px;
+	width:75%;
+	font-size:11px;
+}
+#wizard{
+	display:inline;
+	float:left;
+	margin-right:10px;
+	margin-left:36px;
+	width:800px;
+}
+/*	RWP
+	18-August-2011
+	Tired of the slow jQuery for hiding these on initial load
+	Added the 'display:none' to hide via CSS instead
+*/
+#registration-form > fieldset{
+	padding-top:10px;
+	margin-top:10px;
+	width:700px;
+	display:none;
+}
+/*	RWP
+	18-August-2011
+	We're hiding the fieldsets for the Registration Wizard
+	screens using CSS now, but we need to show the first
+	fieldset upon initial view
+*/
+#registration-form > fieldset:first-child{
+	display:block;
+}
+/*	RWP
+	18-August-2011
+	No need to see this content flash upon initial view
+	Let's hide with CSS instead
+*/
+#registration-form > fieldset.selectCourseID li.enterCourseID{
+	display:none;
+}
+#registration-form > fieldset > legend{
+	margin:0;
+	padding:0;
+	font-size:0.9375;
+	font-weight:bold;
+	display:block;
+}
+#registration-form > fieldset > p{
+	padding:0 0 5px 0;
+	margin-bottom:5px;
+	max-width:700px;
+}
+#registration-form > fieldset p.note,
+.note{
+	font-size:11px;/*0.9166666em;*/
+	color:#585858;
+	margin-top:3px;
+	padding:0;
+}
+#registration-form > fieldset > p#book-chosen{
+	max-width:700px;
+}
+#gallery-view-controls-container{
+	max-width:600px;
+}
+#registration-form > fieldset > ul{
+	padding-top:5px;
+}
+#registration-form > fieldset li.indent{
+	padding-left:16px;
+}
+#registration-form button,
+#registration-form a.button{
+	font-size:12px;
+	float:left;
+	margin-right:6px;
+	padding:2px 6px;
+	height:auto;
+}
+#registration-form button > strong,
+#registration-form a.button > strong{
+	font-size:14px;
+}
+/*courseID check button*/
+#registration-form button#courseID-validator{
+	float:none;
+	margin-top:-3px;
+	margin-left:5px;
+}
+#registration-form button.invalid-ID,
+#registration-form button.invalid-ID:hover,
+#registration-form button.invalid-ID:focus{
+	width:17px;
+	height:16px;
+	background:url(../images/global/error.png) no-repeat center center scroll transparent;
+	background-color:transparent;
+	border:none;
+	text-indent:-9999px;
+}
+#registration-form button.valid-ID,
+#registration-form button.valid-ID:hover,
+#registration-form button.valid-ID:focus{
+	width:20px;
+	height:15px;
+	background:url(../images/global/success.png) no-repeat center center scroll transparent;
+	background-color:transparent;
+	border:none;
+	text-indent:-9999px;
+}
+#registration-form #courseID{
+	width:300px;
+	margin:0;
+	display:inline-block;
+}
+/*	RWP
+	18-August-2011
+	Tired of the slow jQuery for hiding these on initial load
+*/
+/*	Previous / Next buttons */
+#registration-form #previous-screen,
+#registration-form #next-screen{
+	display:none;
+}
+/*	special case for MyEconLab */
+.author-title img{
+	margin-top:18px;
+	float:left;
+	width:118px;
+	border:1px solid #585858;
+}
+.author-title ul{
+	margin:18px 0 18px 136px;
+}
+.author-title label{
+	display:block;
+}
+.author-title select{
+	width:340px;
+	margin-top:5px;
+}
+/*---------------------------------------------
+	Form elements
+----------------------------------------------*/
+.dropdown{
+	font:normal 100%/1em Verdana, Arial, Helvetica, sans-serif;
+	border:1px solid #ccc;
+	padding:2px;
+}
+.input-text{
+	-moz-transition:all 0.2s ease-out;
+	-o-transition:all 0.2s ease-out;
+	-webkit-transition:all 0.2s ease-out;
+	-ms-transition:all 0.2s ease-out;
+	transition:all 0.2s ease-out;
+	font-size:12px;
+	line-height:12px;
+	padding:3px;
+	border:1px solid #ccc;
+}
+.input-text:focus,
+.dropdown:focus{
+	border:1px solid #585858;
+}
+input.radio{
+	vertical-align:middle;
+}
+label{
+	 vertical-align:middle;
+	 padding-left:4px;
+	 cursor:pointer;
+}
+label:focus{
+	font-weight:bold;
+}
+input[type="radio"]:checked+label{
+	font-weight:bold;
+}
+.error,
+.error:focus{
+	border:1px solid #f60;
+	background-color:#ff9;
+}
+.success,
+.success:focus{
+	background-color:#9f6;
+	border:1px solid #0f0;
+}
+.error-msg{
+	background-color:#fc0;
+	color:#333;
+	padding:6px;
+	font-size:11px;
+}
+/*---------------------------------------------
+	Product Carousel
+	Displays the book cover, author, and title
+	on the 'Select your book' screen of the
+	MyLab Registration process
+----------------------------------------------*/
+/*	this wraps the product carousel items
+	and renders the light grey gradient bg
+*/
+.product-carousel-container{
+	margin:0;
+	white-space:nowrap;
+	margin:0;
+	padding:0;
+	width:700px;
+}
+/*	the product carousel itself:
+	this is the unordered list
+	upon which the 'cycle' jQuery
+	function is run
+*/
+.product-carousel{
+	float:left;
+	margin:0;
+	padding:0;
+}
+/*	Each list-item of the
+	product-carousel parent
+	list holds (4) product
+	profiles, which are
+	rendered using the
+	definition list element
+*/
+.product-carousel > li{
+	height:242px;
+	padding-top:15px;
+	list-style-type:none;
+	margin:0 0 1em 0;
+	width:auto;
+	text-align:center;
+}
+/*	Each of the products in
+	the product-carousel are
+	rendered using the definition
+	list element; there are (4)
+	in each parent list-item.
+	We float each of them to
+	the left, with no padding
+	or margins
+*/
+.product-carousel > li > dl{
+	width:130px;
+	height:252px;
+	padding:8px 16px 6px 4px;
+	margin:0 auto;
+	float:left;
+	-moz-transition: all 0.1s ease-out;
+	-o-transition: all 0.1s ease-out;
+	-webkit-transition: all 0.1s ease-out;
+	-ms-transition: all 0.1s ease-out;
+	transition: all 0.1s ease-out;
+	 border-radius:5px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+	opacity:1.0;
+}
+/* semi-transparent variety */
+.product-carousel > li > dl.not-chosen{
+	opacity:0.50;
+}
+.product-carousel > li > dl.not-chosen:hover{
+	opacity:1.0;
+}
+.product-carousel > li > dl:hover{
+	background-color:#f2f2f2;
+	cursor:pointer;
+}
+.product-carousel > li > dl.selected,
+.product-carousel > li > dl.selected:hover,
+.product-carousel > li > dl.selected:focus{
+	background-color:#ff9;
+	margin-top:-1px;
+	opacity:1.0;
+}
+.product-carousel > li > dl.selected > dt > img,
+.product-carousel > li > dl.selected:hover > dt > img{
+	border:1px solid #333;
+	box-shadow:5px 5px 5px rgba(79,79,79,.8);
+	-webkit-box-shadow:5px 5px 5px rgba(79,79,79,.8);
+	-moz-box-shadow:5px 5px 5px rgba(79,79,79,.8);
+}
+/*	The product profiles
+	use the definition term (dt)
+	of the definition list parent
+	to render both the product
+	image and the author name(s)
+*/
+.product-carousel > li > dl > dt{
+	padding:0 0 0 10px;
+	margin:0;
+	/*text-align:center;*/
+	text-align:left;
+	font-size:13px;
+	line-height:16px;
+	font-weight:bold;
+	white-space:normal;
+}
+.product-carousel > li > dl > dt > img{
+	border:1px solid #666;
+	display:block;
+	cursor:pointer;
+	margin-bottom:6px;
+	padding:0;
+	-moz-transition: all 0.1s ease-out;
+	-o-transition: all 0.1s ease-out;
+	-webkit-transition: all 0.1s ease-out;
+	-ms-transition: all 0.1s ease-out;
+	transition: all 0.1s ease-out;
+}
+.product-carousel > li > dl:hover > dt > img,
+.product-carousel > li > dl > dt:hover img,
+.product-carousel > li > dl > dt:focus img{
+	border:1px solid #333;
+	box-shadow:5px 5px 5px rgba(79,79,79,.8);
+	-webkit-box-shadow:5px 5px 5px rgba(79,79,79,.8);
+	-moz-box-shadow:5px 5px 5px rgba(79,79,79,.8);
+}
+/*	The product profiles use the
+	definition data (dd) element
+	to render the product title
+*/
+.product-carousel > li > dl > dd{
+	padding:0 0 0 10px;
+	margin:0;
+	/*text-align:center;*/
+	text-align:left;
+	font-size:11px;
+	line-height:14px;
+	white-space:normal;
+}
+/*	The Previous and Next controls
+	for our product profile carousel
+	are layered above the carousel
+	using positioning and z-index
+	in order to enhance the illusion
+	of products sliding behind and
+	out of sight
+*/
+.product-carousel-previous-container{
+	height:272px;
+	width:50px;
+	float:left;
+	background:url(../images/global/carousel-bookend-left.png) no-repeat top left scroll transparent;
+	margin:0 -5px 0 0;
+	padding:0;
+	text-align:center;
+	position:relative;
+}
+.product-carousel-next-container{
+	height:272px;
+	width:50px;
+	float:left;
+	background:url(../images/global/carousel-bookend-right.png) no-repeat top right scroll transparent;
+	margin:0 0 0 -7px;
+	padding:0;
+	text-align:center;
+	position:relative;
+}
+/*	The actual Previous and Next
+	arrow images are layered above
+	their 'container' backgrounds
+	using positioning and z-index
+*/
+.product-gallery-previous{
+	width:44px;
+	height:44px;
+	display:block;
+	position:absolute;
+	top:72px;
+	left:-7px;
+	z-index:999;
+	cursor:pointer;
+	opacity:0.65;
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	-webkit-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+.product-gallery-next{
+	width:44px;
+	height:44px;
+	display:block;
+	position:absolute;
+	top:72px;
+	right:-7px;
+	z-index:999;
+	cursor:pointer;
+	opacity:0.65;
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	-webkit-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+/*	Hover states */
+.product-gallery-previous:hover,
+.product-gallery-next:hover,
+.product-gallery-previous:focus,
+.product-gallery-next:focus{
+	opacity:1.0;
+}
+.product-carousel > li > dl:hover,
+.product-carousel > li > dl:focus{
+	margin-top:-1px;
+}
+/*	Toggle product gallery views
+	Note:applied to container element
+*/
+.carousel-view{
+	height:300px;
+}
+.carousel-view > ul{
+	height:300px;
+	overflow:hidden;
+	overflow-x:hidden;
+	overflow-y:hidden;
+	background:url(../images/global/carousel-bg-gradient.png) repeat-x top left scroll #fff;
+}
+.carousel-view > ul > li{
+	overflow:hidden;
+	height:300px;
+}
+.carousel-view > .product-carousel-previous-container,
+.carousel-view > .product-carousel-next-container{
+	display:block;
+}
+.grid-view{
+	height:auto!important;
+	/* must be set to !important
+	being toggled dynamically
+	in script; needs to override
+	settings for carousel-view. */
+	
+	background-image:none;
+	padding-top:15px;
+}
+.grid-view > ul{
+	height:100%;
+	position:relative;
+	left:auto;
+	z-index:auto;
+	overflow:visible;
+	overflow-x:visible;
+	overflow-y:visible;
+	background-image:none;
+}
+.grid-view > ul > li{
+	display:list-item!important;
+	/* must be set to !important
+	being toggled dynamically
+	in script; needs to override
+	settings for carousel-view. */
+	
+	position:relative!important;
+	/* must be set to !important
+	being toggled dynamically
+	in script; needs to override
+	settings for carousel-view. */
+	
+	float:none;
+	height:272px;
+	padding:0;
+	z-index:auto;
+}
+.grid-view > .product-carousel-previous-container,
+.grid-view > .product-carousel-next-container{
+	display:none;
+}
+/*---------------------------------------------
+	Miscellaneous
+----------------------------------------------*/
+.snapshot{
+    float:left;
+    display:inline;
+    clear:none;
+    margin:0 12px 0 0;
+    padding:5px;
+    background-color:#fff;
+    border:1px solid #585858;
+    border-radius:3px;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    box-shadow:2px 2px 2px rgba(89,89,89,.5);
+    -webkit-box-shadow:2px 2px 2px rgba(89,89,89,.5);
+    -moz-box-shadow:2px 2px 2px rgba(89,89,89,.5);
+}
+.toggle-all{
+	color:#444;
+	background-color:#f5f5f5;
+	cursor:pointer;
+	padding:6px;
+	font-size:11px;
+	display:inline-block;
+	text-align:center;
+	margin-bottom:6px;
+	
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	-webkit-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+.toggle-all:hover,
+.toggle-all:focus{
+	background-color:#ddd;
+	text-decoration:none;
+	color:#333!important;
+	/* must be set to !important
+	to nullify effect of alternate
+	(colors) stylesheets which have
+	to be served after this file. */
+}
+.magnify{
+	position:absolute;
+	top:70px;
+	left:20px;
+	z-index:998;
+	width:80px;
+	height:76px;
+	background:url(../images/global/magnify.png) no-repeat top left scroll transparent;
+	cursor:pointer;
+	display:none;
+}
+
+/* MAPLE LEAF AND CCND ICONS ON BOOKS AVAILABLE PAGE */
+/* 
+ RWP: 27-July-2011
+ 
+ Product Markers:
+ Used for regional flags
+ and product types (such as
+ CCND, etc.)
+ 
+ */
+.product-markers{
+ position:absolute;
+ top:10px;
+ right:4px;
+ z-index:999;
+ display:inline-block;
+ height:22px;
+}
+.product-markers > a,
+.product-markers > span{
+ display:inline;
+ float:left;
+ width:21px;
+ height:22px;
+ border:none;
+ margin-left:4px;
+ text-indent:-2000em;
+}
+.CA{
+ background:url(../images/regional-markers/ca-maple-leaf.png) no-repeat top left scroll transparent;
+}
+.ccnd{
+ background:url(../images/icons/ccnd-icon-default.png) no-repeat top left scroll transparent;
+}
+
+
+
+
+/*	dividers */
+.divide-dash,
+.rule-dash{
+	width:95%;
+	height:3px;
+	margin:6px auto;
+	line-height:3px;
+	border-top:1px dashed #ccc;
+}
+.divide-solid,
+.rule-solid{
+	height:1px;
+	margin:0 auto;
+	line-height:1px;
+	border-top:1px solid #ccc;
+}
+.divide-dotted,
+.rule-dotted{
+	height:1px;
+	margin:0 auto;
+	line-height:1px;
+	border-top:1px dotted #ccc;
+	/*
+	RWP: 19-July-2011
+	Added clear:both;
+	*/
+	clear:both;
+}
+.pipe{
+	padding:0;
+	margin:0 3px;
+	color:#999;
+}
+.horizontal-rule{
+	height:0;
+	line-height:0;
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #fff;
+	width:90%;
+	margin:0 auto;
+}
+.anchor-toc,
+.anchor-toc-wide{
+	padding:0 12px 0 0;
+	margin:12px 0;
+	list-style-type:none;
+	/*
+	RWP: modified width
+	*/
+	max-width:220px;/* old value = 200px; */
+}
+.anchor-toc-wide{
+	max-width:90%;
+}
+.anchor-toc > li,
+.anchor-toc-wide > li{
+	padding-left:0;
+	margin:0 0 0.75em 0;
+	/*
+	RWP: modified line-height
+	*/
+	line-height:1.35;/* old value = 1.25 */
+	color:#444;
+	height:auto;
+	border:none;
+	background:url(../images/global/8249-grey.gif) no-repeat left 4px scroll #fff;
+	padding-left:14px;
+}
+.anchor-toc > li > a:link,
+.anchor-toc > li > a:visited{
+	text-decoration:none;
+	padding:0;
+
+}
+.anchor-toc > li > a:hover,
+.anchor-toc > li > a:active,
+.anchor-toc > li > a:focus{
+	text-decoration:underline;
+}
+.anchor-toc > li > a > span{
+	display:block;
+	font-size:0.90em;
+	/*
+	RWP: modified line-height
+	*/
+	line-height:1.35;/* old = 1.15 */
+}
+.list-right-col{
+	padding-left:12px;
+	border-left:1px dotted #ccc;
+}
+.alpha-list{
+	display:block;
+	clear:both;
+	max-width:none;
+}
+.alpha-list:after{
+	content: ".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;
+}
+.alpha-list > li{
+	float:left;
+	background-image:none;
+	height:20px;
+	padding:4px 6px;
+	border-right:1px dotted #ccc;
+}
+.alpha-list > li:last-child{
+	border:none;
+}
+.alpha-list > li > a:link{
+	font-weight:bold;
+}
+.has-link{
+	margin-right:6px;
+}
+.default-color{
+	color:#444;
+}
+/*---------------------------------------------
+	Toggle-able sidebar navigation menu
+----------------------------------------------*/
+.side-nav{
+	display:inline;
+	float:left;
+	margin:-1px 10px 0 10px;
+	width:198px;
+	font-size:11px;
+	list-style-type:none;
+	list-style-position:outside;
+}
+.side-nav li{
+	list-style-type:none;
+	padding:0;
+	margin:0;
+}
+.side-nav > li.has-submenu{
+	border-bottom:1px dotted #ccc;
+}
+.side-nav li.heading{
+	font-weight:bold;
+	text-transform:uppercase;
+	padding:0 0 8px 0;
+	margin:0;
+	border-bottom:2px solid #e9e4cb;
+}
+.side-nav a:link,
+.side-nav a:visited{
+	text-decoration:none;
+	border-bottom:1px dotted #ccc;
+	display:block;
+	padding:6px 6px 6px 12px;
+	margin:0;
+	color:#444;
+	-moz-transition:all 0.2s ease-out;
+	-o-transition:all 0.2s ease-out;
+	-webkit-transition:all 0.2s ease-out;
+	-ms-transition:all 0.2s ease-out;
+	transition:all 0.2s ease-out;
+	line-height:1.3;
+}
+.side-nav a:hover,
+.side-nav a:active,
+.side-nav a:focus{
+	background-color:#f7f7f7;
+}
+.has-submenu a{
+	border-bottom:none;
+}
+/*.side-nav > li:last-child a:link{
+	border-bottom:none;
+}*/
+.side-nav a em.carat{
+	visibility:hidden;
+	font-style:normal;
+	font-size:165%;
+	font-weight:bold;
+	float:right;
+	clear:none;
+	display:block;
+	padding:0;
+	margin:0 0 0 5px;
+	line-height:0.6875;
+}
+.side-nav a:hover em.carat{
+	visibility:visible;
+}
+.side-nav a.toggle-closed:link,
+.side-nav a.toggle-closed:visited{
+	display:block;
+	background:url(../images/global/pointer-closed.gif) no-repeat scroll left center transparent;
+	cursor:pointer;
+	border-bottom:1px dotted #ccc;
+}
+.side-nav a.toggle-closed:hover,
+.side-nav a.toggle-closed:active,
+.side-nav a.toggle-closed:focus{
+	background-color:#f7f7f7;
+}
+.side-nav a.toggle-open:link,
+.side-nav a.toggle-open:visited{
+	background:url(../images/global/pointer-open.gif) no-repeat scroll left center transparent;
+	border-bottom:1px dotted #ccc;
+	font-weight:bold;
+}
+.side-nav a.toggle-open:hover,
+.side-nav a.toggle-open:active,
+.side-nav a.toggle-open:focus{
+	background-color:#f7f7f7;
+}
+.side-nav li.current-node > a{
+	cursor:default;
+	background-color:#fff;
+	
+	color:#444!important;
+	/* must be set to !important
+	to nullify effect of alternate
+	(colors) stylesheets which have
+	to be served after this file. */
+	
+	font-weight:bold;
+}
+.side-nav li.current-node > a > em.carat{
+	visibility:visible;
+}
+/*--- 2nd tier ---*/
+.side-nav ul{
+	/*
+ 	RWP: modified 26-July-2011
+ 	Added declaration for
+ 	top margin
+ 	*/
+ 	margin-top:1em;
+	margin-left:3em;
+	padding-bottom:6px;
+	font-size:11px;
+}
+.side-nav ul > li{
+ list-style-type:disc;
+ /*
+ 
+  RWP: modified 27-July-2011
+  Added declaration for
+  margins and padding
+ 
+  */
+  padding-left:0;
+  margin:0 0 0.5em 0;
+}
+ /*
+  
+  RWP: modified 26-July-2011
+  IE always requires the full
+  and proper a:pseudo order;
+  in this case, the :active
+  state was not defined.
+  Proper order = L(o)V(e)HA(te)
+  :link
+  :visited
+  :hover
+  :active
+  
+  */
+.side-nav ul a:link,
+.side-nav ul a:visited,
+.side-nav ul a:hover,
+.side-nav ul a:active,
+.side-nav ul a:focus{
+ /*
+ 
+ RWP: 27-July-2011
+ 1. Set background color
+ to transparent.
+ 
+ 2. Removed the border
+ being inherited (bottom)
+ 
+ 3. Removed padding
+ 
+ */
+ background-color:transparent;/* old = #f7f7f7; */
+ border:none;
+ padding:0;
+}
+
+/*.side-nav ul a.toggle-closed:link,
+.side-nav ul a.toggle-closed:visited,
+.side-nav ul span.toggle-closed{
+	padding-left:18px;
+	background:url(../images/global/pointer-closed.gif) no-repeat scroll 6px center transparent;
+	border-bottom:none;
+}
+.side-nav ul a.toggle-closed:hover,
+.side-nav ul a.toggle-closed:active,
+.side-nav ul span.toggle-closed:hover{
+	background-color:#f7f7f7;
+	border-bottom:none;
+}
+.side-nav ul a.toggle-open:link,
+.side-nav ul a.toggle-open:visited,
+.side-nav ul span.toggle-open{
+	background:url(../images/global/pointer-open.gif) no-repeat scroll 6px center #f2f2f2;
+	font-weight:bold;
+	border-bottom:none;
+}
+.side-nav ul a.toggle-open:hover,
+.side-nav ul a.toggle-open:active,
+.side-nav ul span.toggle-open:hover{
+	background-color:#f7f7f7;
+	border-bottom:none;
+}*/
+.side-nav > li > ul > li:last-child > a:link{
+	border:none;
+}
+/*--- 3rd tier ---*/
+.side-nav ul ul{
+	margin-left:1.5em;
+	line-height:1.1;
+}
+.side-nav ul ul li{
+	padding-left:0;
+	list-style-type:circle;
+}
+.side-nav ul ul a{
+	padding:2px;
+	border-bottom:none;
+	margin-left:0;
+}
+/*---------------------------------------------
+	Links render under associated course(s)
+	on the course page; setting their 'rel'
+	attribute value to 'anchor' allows us
+	to use JavaScript to smoothly scroll
+	to their location on the page.
+----------------------------------------------*/
+.anchor-subhead{
+	padding:6px;
+	margin:0.5em 0 0 0;
+	color:#fff;
+}
+.anchor-subhead > span{
+	float:left;
+}
+/*---------------------------------------------
+	We nest individual product profile list
+	groupings inside a parent unordered list
+	to allow for more flexibility over both
+	presentation and behavior.
+----------------------------------------------*/
+.product-list-container{
+	margin-top:2.25em;
+}
+.product-list{
+	margin-bottom:1.5em;/*3em;*/
+}
+.product-list > li{
+	padding:11px 0 22px 0;
+	border-bottom:1px solid #ccc;
+	margin:0;
+	list-style-type:none;
+}
+/*	alternate version of product-list container */
+.position-relative > li{
+	position:relative;
+}
+.big-target li{
+	padding-left:11px;
+}
+.big-target li:hover,
+.big-target li:focus{
+	cursor:pointer;
+	background-color:#f5f5f5;
+	border-bottom:1px solid #ccc;
+}
+.big-target li:hover dt a:link,
+.big-target li:focus dt a link{
+	text-decoration:underline;
+	color:#008b5d;
+}
+
+ /*
+ 
+ RWP: 27-July-2011
+ We need some buffer space between a link
+ in the <dt> of a product profile definition
+ list and the new product-markers container.
+ 
+ */
+.product-list dl.compact > dt{
+ margin-right:50px;
+}
+
+.product-list > li:hover div.cover img,
+.product-list > li:focus div.cover img,
+div.cover > a:focus img{
+	box-shadow:3px 5px 10px rgba(89,89,89,.6);
+	-webkit-box-shadow:3px 5px 10px rgba(89,89,89,.6);
+	-moz-box-shadow:3px 5px 10px rgba(89,89,89,.6);
+	margin-top:-1px;
+	margin-left:-1px;
+}
+.product-list > li:hover div.compact,
+.product-list > li:focus div.compact{
+	margin-right:11px;
+}
+/*---------------------------------------------
+	Product profile: can be used anywhere;
+	partner with 'compact' and 'full' classes
+	depending upon catalog location. Simply wrap
+	inside another component; if in a compact
+	set, use an un/ordered list; if solo
+	(product page), use a div or existing parent
+	element. Default class of (<dl class="product">
+	data</dl>) is for product-page sized renders;
+	use (<dl class="product compact">data</dl>)
+	for smaller (list of products, like on a
+	discipline or course page) size.
+----------------------------------------------*/
+div.cover{/* cover image container element */
+	float:left;
+	margin-right:16px;
+	/*position:relative;*/
+}
+div.cover img{/* cover image itself */
+	border:1px solid #333;
+	display:block;
+	margin-bottom:3px;
+	width:120px;
+}
+/*	links underneath cover image (if one exists);
+	if no cover, this list simply rises to the
+	top of the containing element
+-------------------------------------------------- */
+div.cover > p{
+	width:100%;
+}
+/* cover image itself when linked */
+div.cover-link{
+	cursor:pointer;
+	border:none;
+}
+div.cover > ul > li > a:link,
+div.cover > ul > li > a:visited,{
+	text-decoration:none;
+	outline:none;
+	display:block;
+	padding:4px;
+	border-bottom:1px dotted #ccc;
+}
+div.cover > ul > li > a:hover,
+div.cover > ul > li > a:focus{
+	background-color:#f5f5f5;
+	border-bottom:1px solid #ccc;
+}
+.product{
+	overflow:hidden;
+}
+.product > dt{
+	font-size:200%;
+	font-weight:normal;
+	word-spacing:-1px;
+	line-height:1.25;
+	margin:0 0 .25em 0;
+	padding:0 4px 0 0;
+}
+.product > dd,
+.product > dd > p{
+	font-size:1em;
+	line-height:1.35;
+	padding:0 3px 0 0;
+}
+.product > dd.author,
+.product > dd.title{
+	font-weight:bold;
+	padding:1px 0 2px 0;
+}
+.product > dd.author em{
+	font-weight:normal;
+}
+.product > dd.primary-buttons > a.button,
+.primary-buttons > a.button{
+	margin:0 4px 0 3px;
+}
+.product > dd.primary-buttons > a.button:first-child,
+.primary-buttons > a.button:first-child{
+	margin-left:0; /* we don't want any left margin for the 1st button */
+}
+.product > dt > a:link,
+.product > dt > a:visited,{
+	text-decoration:none;
+}
+.product > dt > a:hover,
+.product > dt > a:active,
+.product > dt > a:focus{
+	text-decoration:underline;
+}
+.product dd.bump-down{
+	margin-top:0.727em;
+}
+.product dd.retail-price{/* useful for manipulating the display (toggle) and position */
+	margin-top:1.090em;
+}
+/* Compact version / product profile
+	smaller profile: sized for use with compact product profiles
+	(ex: <div class="cover compact">data</div>)
+------------------------------------------------------------------*/
+div.compact{
+	margin-right:10px;
+	-moz-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	-webkit-transition: all 0.2s ease-in;
+	-ms-transition: all 0.2s ease-in;
+	transition: all 0.2s ease-in;
+}
+div.compact img.cover,
+div.compact img{/* product image only; necessary for flag/badge overlays */
+	width:75px;
+	-moz-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	-webkit-transition: all 0.2s ease-in;
+	-ms-transition: all 0.2s ease-in;
+	transition: all 0.2s ease-in;
+}
+dl.compact{
+	min-height:100px;
+	float:none;
+}
+dl.compact dt{
+	font-size:0.8125em; /* 13px */
+	font-weight:bold;
+	line-height:1.25;
+	margin-bottom:.1em;
+}
+dl.compact dd{
+	font-size:0.6875em; /* 11px */
+	line-height:1.35;
+}
+dl.compact dd.author,
+dl.compact dd.title{
+	font-size:0.75em; /* 12px */
+	margin-bottom:0.35em; /* old = 0.875em; */
+	font-weight:bold;
+}
+/*---------------------------------------------
+	Badge styling (overlays for product
+	cover images)
+----------------------------------------------*/
+.corner-flag{
+	position:absolute;
+	top:-1px;
+	left:-2px;
+	z-index:999;
+	width:38px;
+	height:38px;
+	border:none;
+}
+.badge-circle{
+	position:absolute;
+	top:44px;
+	left:-12px;
+	z-index:999;
+	border:none;
+	width:40px;
+	height:41px;
+}
+/*---------------------------------------------
+	Standardize ul + ol + li elements
+----------------------------------------------*/
+.normalize{
+	padding:0;
+	margin:12px 0 0 16px; /* old = 44px;*/
+}
+.normalize > li{
+	padding:0;
+	margin:0 0 1em 0;
+	line-height:1.5;
+	color:#444;
+	width:auto;
+	height:auto;
+	border:none;
+	clear:left;
+}
+.normalize > li > a:link{
+	margin:0;
+	padding:0;
+	display:inline;
+}
+.normalize > li > p, .normalize > li p{
+	padding:0;
+	color:#666;
+	font-size: 100%;
+	clear:left;
+}
+ul.normalize,
+ul.normalize > li{
+	list-style-type:disc;
+	margin-left:1em;
+}
+ol.normalize,
+ol.normalize > li{
+	list-style-type:decimal;
+	margin-left:1em;
+}
+ul.no-bullet,
+ol.no-bullet,
+ul.no-bullet > li,
+ol.no-bullet > li,
+li.no-bullet{
+	list-style-type:none;
+}
+.bullet-disc,
+.bullet-disc > li{
+	list-style-type:disc;
+}
+ul.no-margin > li{
+	margin-left:0;
+}
+ul.normalize li ul,
+ul.normalize li ol{
+	margin-left:2em;
+	margin-bottom:1.5em;
+}
+ul.normalize li li{
+	font-size:12px;
+	line-height:1.5;
+	margin:0 0 1em 0;
+}
+ul.normalize li ul > li{
+	list-style-type:circle;
+}
+.normalize li ul, .normalize li ol{
+    font-size: 100%;
+}
+/*---------------------------------------------
+	Tables
+----------------------------------------------*/
+table{
+	width:auto;
+}
+td{
+	padding:8px;
+	border-bottom:1px solid #ccc;
+	min-height:16px;
+}
+th{
+	font-size:0.75em;
+	background-color:#f5f5f5;
+	border-bottom:1px solid #ccc;
+	text-align:left;
+	padding:8px;
+}
+.col-sort{
+	background-color:#f5f5f5;
+	-moz-transition: background-color 0.2s ease-out;
+	-o-transition: background-color 0.2s ease-out;
+	-webkit-transition: background-color 0.2s ease-out;
+	-ms-transition: background-color 0.2s ease-out;
+	transition: background-color 0.2s ease-out;
+	padding:8px 4px;
+}
+.col-sort:hover{
+	background-color:#eee;
+	cursor:pointer;
+}
+.col-sort img{
+	vertical-align:middle;
+	margin-left:4px;
+}
+.tbody-break{
+	padding:11px 0;
+	background-color:#f2f2f2;
+}
+tfoot > tr > td{
+	border:none;
+}
+tfoot > tr > td > p{
+	font-size:0.6875em;
+}
+
+/*	'jquery-rotator-active' is
+	a class name applied via script
+	to the dynamically generated
+	elements that wrap the .ad-box
+	container element on home page.
+*/
+.jquery-rotator-active{
+	float:left;
+}
+
+
+/*---------------------------------------------
+	Clear the floats of anything inside
+	(Thanks, Dan Cederholm!)
+----------------------------------------------*/
+.group:after{
+	content: ".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;
+}
+
+/*---------------------------------------------
+	External Links
+----------------------------------------------*/
+a.external{ 
+	background: url(../images/icons/external.png) no-repeat 3px right;
+	padding-right: 13px;
+}
+
+/*---------------------------------------------
+	Moment Icon
+----------------------------------------------*/
+span.moment-icon {
+	display: inline-block;
+	width: 21px;
+	height: 22px;
+	background:url(../images/icons/moment-spark-green.png) top left no-repeat;
+	vertical-align: text-top; 
+}
+
+span.moment-icon img {
+	visibility: hidden;
+}
+
+body#blue span.moment-icon { background-image:url(../images/icons/moment-spark-blue.png); }
+body#red span.moment-icon { background-image:url(../images/icons/moment-spark-red.png); }
+body#purple span.moment-icon { background-image:url(../images/icons/moment-spark-purple.png); }
+
+/*---------------------------------------------
+	Form Fixes
+----------------------------------------------*/
+select { border: 1px solid #CCC; }
+label { padding-left: 0; }
+
+/*---------------------------------------------
+	Video Icon
+----------------------------------------------*/
+a.video {
+	padding-left: 18px;
+	background:url(../images/icons/video-green.png) top left no-repeat;
+}
+
+body#blue a.video { background-image:url(../images/icons/video-blue.png); }
+body#red a.video { background-image:url(../images/icons/video-red.png); }
+body#purple a.video { background-image:url(../images/icons/video-purple.png); }
+
+/*---------------------------------------------
+	System Requirements
+----------------------------------------------*/
+table.sysreq { border-top: 1px solid #CCC; border-left: 1px solid #CCC;}
+table.sysreq td, table.sysreq th { font-size: 1em; min-height: 8px; padding: 4px; border-right: 1px solid #CCC;}
+
+/*---------------------------------------------
+	Educator Request Modal
+----------------------------------------------*/
+#educator-request .col1 { width:220px; float: left; padding-right: 10px; margin-right: 20px; border-right: 1px dotted #CCC; }
+#educator-request .col2 { width: 225px; float: left; }
+#educator-request h4 { margin-top: 0; }
+
+/*---------------------------------------------
+	Three column program list
+----------------------------------------------*/
+.program-list, .program-list-last { width: 30%; margin-right: 5%; float: left; }
+.program-list-last { margin-right: 0; }Ë*(Æ	      X­q!X­q!=wpÁX¶«¡   J    :https://tpi.bb.pearsoncmg.com/highlander/resources/css/pearson/master.css necko:classified 1 strongly-framed 1 security-info FnhllAKWRHGAlo+ESXykKAAAAAAAAAAAwAAAAAAAAEaphjojH6pBabDSgSnsfLHeAAQAAgAAAAAAAAAAAAAAAAAAAAAB4vFIJp5wRkeyPxAQ9RJGKPqbqVvKO0mKuIl8ec8o/uhmCjImkVxP+7sgiYWmMt8FvcOXmlQiTNWFiWlrbpbqgwAAAAAAABBNMIIQSTCCDzGgAwIBAgIQOQxDJmqS3H9+1ztLBatN2TANBgkqhkiG9w0BAQsFADCBljELMAkGA1UEBhMCR0IxGzAZBgNVBAgTEkdyZWF0ZXIgTWFuY2hlc3RlcjEQMA4GA1UEBxMHU2FsZm9yZDEaMBgGA1UEChMRQ09NT0RPIENBIExpbWl0ZWQxPDA6BgNVBAMTM0NPTU9ETyBSU0EgT3JnYW5pemF0aW9uIFZhbGlkYXRpb24gU2VjdXJlIFNlcnZlciBDQTAeFw0xNjAzMjMwMDAwMDBaFw0xODAzMjMyMzU5NTlaMIGyMQswCQYDVQQGEwJHQjERMA8GA1UEERMIV0MyUiAwUkwxDzANBgNVBAgTBkxvbmRvbjEPMA0GA1UEBxMGTG9uZG9uMRQwEgYDVQQKEwtQZWFyc29uIFBMQzEgMB4GA1UECxMXSG9zdGVkIGJ5IFBlYXJzb24sIEluYy4xGTAXBgNVBAsTEE11bHRpLURvbWFpbiBTU0wxGzAZBgNVBAMTEnd3dy5wZWFyc29uY21nLmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAO9ZkT6RdfiqcVJejUxhXQKSwSvO+SP7t3P1kJsyNmN2e/o0sLkBVYHpP3eq0gRa3cZQ1Qcfzy6FlcyTMRlKfv6LSEhsW1V7PSgqSNrpY4+YsqMa6c+lzshaZPzyO80TtqCcxoK5v9bQyWENdlhSzLRW6Gu9bytBERrZoCOmowUIVBxRnmBkrPMhGiNbIiv6OcZ+Y2v/ebv6dsA6qZQwhhn7XIF16Kp8jhJgEu0m4yp3efu2HV2bjK7MJjdws1LyDET1Fby7Rcl24NPQfu9RXb1XmGV9BHzErvqtvczhoTNhGc8JEfltmsPIiJV0wZfhVq4jzx0a6GXJSnRzfxpYORsCAwEAAaOCDHMwggxvMB8GA1UdIwQYMBaAFJrzK9rPrU+2L7sqSEgqErcbQsEkMB0GA1UdDgQWBBRD0N1d6T3ABcsEEzx9oi7+0fuZszAOBgNVHQ8BAf8EBAMCBaAwDAYDVR0TAQH/BAIwADAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwUAYDVR0gBEkwRzA7BgwrBgEEAbIxAQIBAwQwKzApBggrBgEFBQcCARYdaHR0cHM6Ly9zZWN1cmUuY29tb2RvLmNvbS9DUFMwCAYGZ4EMAQICMFoGA1UdHwRTMFEwT6BNoEuGSWh0dHA6Ly9jcmwuY29tb2RvY2EuY29tL0NPTU9ET1JTQU9yZ2FuaXphdGlvblZhbGlkYXRpb25TZWN1cmVTZXJ2ZXJDQS5jcmwwgYsGCCsGAQUFBwEBBH8wfTBVBggrBgEFBQcwAoZJaHR0cDovL2NydC5jb21vZG9jYS5jb20vQ09NT0RPUlNBT3JnYW5pemF0aW9uVmFsaWRhdGlvblNlY3VyZVNlcnZlckNBLmNydDAkBggrBgEFBQcwAYYYaHR0cDovL29jc3AuY29tb2RvY2EuY29tMIIKsgYDVR0RBIIKqTCCCqWCEnd3dy5wZWFyc29uY21nLmNvbYIhYXBpLnZpZXcuZWJvb2twbHVzLnBlYXJzb25jbWcuY29tggxhcmlzZXMycy5jb22CDGFyaXNlczJzLm5ldIIaYjJiLnJlZ2lzdGVyLm15cGVhcnNvbi5jb22CGmIyYy5yZWdpc3Rlci5teXBlYXJzb24uY29tgiNicmlkZ2V0b29scy5kZXZvcHMwMS5wZWFyc29uY21nLmNvbYIjYnJpZGdldG9vbHMuZGV2b3BzMDIucGVhcnNvbmNtZy5jb22CLWNkbi1odHRwLW9yaWdpbi5saXZlLm1lZGlhLnBwZS5wZWFyc29uY21nLmNvbYIXY2VydC5hcGkucGVhcnNvbmNtZy5jb22CHGNlcnQuaXNiLmxpZnQucGVhcnNvbmNtZy5jb22CHmNlcnQubWVkaWFzaGFyZS5wZWFyc29uY21nLmNvbYIYY2VydDEucHdjLnBlYXJzb25jbWcuY29tgitjdXJyaWN1bHVtLm1lZGlhLWh0dHAtb3JpZ2luLnBlYXJzb25jbWcuY29tghZkZXYuYXBpLnBlYXJzb25jbWcuY29tghtkZXYucXVhZG5leHQucGVhcnNvbmNtZy5jb22CGmRldi5zb2Euc2d3LnBlYXJzb25jbWcuY29tghpncmFkZWl0LnBwZS5wZWFyc29uY21nLmNvbYIjaGVkLndzLm15bGFicy5weC5wcGUucGVhcnNvbmNtZy5jb22CJGhlcmVnaXN0ZXIucnVtYmEuZGVtby5wZWFyc29uY21nLmNvbYIjaGVyZWdpc3Rlci5ydW1iYS5pbnQucGVhcnNvbmNtZy5jb22CI2hlcmVnaXN0ZXIucnVtYmEucHBlLnBlYXJzb25jbWcuY29tghppbnQuc29hLnNndy5wZWFyc29uY21nLmNvbYIXaXNiLmxpZnQucGVhcnNvbmNtZy5jb22CI2sxMnJlcG9ydGluZy5pbnQuYXBpLnBlYXJzb25jbWcuY29tgiRrMTJyZXBvcnRpbmcudGVzdC5hcGkucGVhcnNvbmNtZy5jb22CHWxpdmUubWVkaWEucHBlLnBlYXJzb25jbWcuY29tgiBtZWRpYS1odHRwLW9yaWdpbi5wZWFyc29uY21nLmNvbYIabWVkaWFwbGF5ZXIucGVhcnNvbmNtZy5jb22CIm12Yy1tb2JpbGUucHBlMS5tdngucGVhcnNvbmNtZy5jb22CIm12bC1tb2JpbGUucHBlMS5tdngucGVhcnNvbmNtZy5jb22CIm12dC1tb2JpbGUucHBlMS5tdngucGVhcnNvbmNtZy5jb22CHG15bGFicy5weC5wcGUucGVhcnNvbmNtZy5jb22CGm9ic2VydmF0aW9ucy5zY2hvb2xuZXQuY29tgiJvcGVuLmxpdmUubWVkaWEucHBlLnBlYXJzb25jbWcuY29tgh5wY3QuZ3JhZGVpdC5wcGUucGVhcnNvbmNtZy5jb22CGHBlYXJzb25jb3Jlc3RhbmRhcmRzLmNvbYIQcGVhcnNvbnRleGFzLmNvbYIXcGVyZi5hcGkucGVhcnNvbmNtZy5jb22CHHBlcmYuaXNiLmxpZnQucGVhcnNvbmNtZy5jb22CH3BlcmZlbnYxLnBlZ2FzdXMucGVhcnNvbmNtZy5jb22CH3BlcmZlbnYyLnBlZ2FzdXMucGVhcnNvbmNtZy5jb22CH3BlcmZlbnYzLnBlZ2FzdXMucGVhcnNvbmNtZy5jb22CH3BlcmZlbnY0LnBlZ2FzdXMucGVhcnNvbmNtZy5jb22CH3BlcmZlbnY1LnBlZ2FzdXMucGVhcnNvbmNtZy5jb22CH3BlcmZlbnY2LnBlZ2FzdXMucGVhcnNvbmNtZy5jb22CEnBldC5wZWFyc29uY21nLmNvbYIfcGxheWVyLm1lZGlhLnBwZS5wZWFyc29uY21nLmNvbYIlcGxheWVyLm1lZGlhLnByb2QtdGVzdC5wZWFyc29uY21nLmNvbYIgcGxheWVyLm1lZGlhLnByb2QucGVhcnNvbmNtZy5jb22CFnBwZS5wZXQucGVhcnNvbmNtZy5jb22CFnBwZS5waWEucGVhcnNvbmNtZy5jb22CFnBwZS5wd2MucGVhcnNvbmNtZy5jb22CGnBwZS5zb2Euc2d3LnBlYXJzb25jbWcuY29tghtwcm9kLnNvYS5zZ3cucGVhcnNvbmNtZy5jb22CG3Byb3NwZXJvLmludC5wZWFyc29uY21nLmNvbYIScHdjLnBlYXJzb25jbWcuY29tghpxYS5xdWFkbmV4dC5wZWFyc29uY21nLmNvbYIUcmFkbWluLm15cGVhcnNvbi5jb22CHnJhZG1pbi5ydW1iYWRldi5wZWFyc29uY21nLmNvbYIfcmFkbWluLnJ1bWJhdGVzdC5wZWFyc29uY21nLmNvbYIWcmVnaXN0ZXIubXlwZWFyc29uLmNvbYImcmVnaXN0cmF0aW9uLnJ1bWJhLmRlbW8ucGVhcnNvbmNtZy5jb22CJXJlZ2lzdHJhdGlvbi5ydW1iYS5pbnQucGVhcnNvbmNtZy5jb22CL3J1bWJhLWh0dHAtb3JpZ2luLmxpdmUubWVkaWEucHBlLnBlYXJzb25jbWcuY29tghlydW1iYS5kZW1vLnBlYXJzb25jbWcuY29tghhydW1iYS5pbnQucGVhcnNvbmNtZy5jb22CFHJ1bWJhLnBlYXJzb25jbWcuY29tgh9zZWN1cmUucnVtYmEuaW50LnBlYXJzb25jbWcuY29tghRzaWduaW4ubXlwZWFyc29uLmNvbYIfc2ltNS5wcGUucGVnYXN1cy5wZWFyc29uY21nLmNvbYIhc21zLmxpdmUubWVkaWEucHBlLnBlYXJzb25jbWcuY29tgh1zc28ucnVtYmEuZGVtby5wZWFyc29uY21nLmNvbYIcc3NvLnJ1bWJhLmludC5wZWFyc29uY21nLmNvbYIYc3NvLnJ1bWJhLnBlYXJzb25jbWcuY29tghxzc28ucnVtYmEucHBlLnBlYXJzb25jbWcuY29tghhzdGFnZS5hcGkucGVhcnNvbmNtZy5jb22CHHN0YWdlLnNvYS5zZ3cucGVhcnNvbmNtZy5jb22CIXN0YWdpbmcubWVkaWFzaGFyZS5wZWFyc29uY21nLmNvbYIbc3RnLnF1YWRuZXh0LnBlYXJzb25jbWcuY29tghV0cGkuYmIucGVhcnNvbmNtZy5jb22CHXVzZXIucnVtYmEuaW50LnBlYXJzb25jbWcuY29tghl1c2VyLnJ1bWJhLnBlYXJzb25jbWcuY29tgh52Y2hpbGQucHBlMS5tdngucGVhcnNvbmNtZy5jb22CHXZpZXcuZWJvb2twbHVzLnBlYXJzb25jbWcuY29tgh92aWV3LmV0ZXh0LmhvbWUyLnBlYXJzb25jbWcuY29tgh12bGlmZS5wcGUxLm12eC5wZWFyc29uY21nLmNvbYIddnRlZW4ucHBlMS5tdngucGVhcnNvbmNtZy5jb22CHHd3dy5wZWFyc29uY29yZXN0YW5kYXJkcy5jb22CFHd3dy5wZWFyc29udGV4YXMuY29tMA0GCSqGSIb3DQEBCwUAA4IBAQAtt5duenveup5NPZzyrLSw2fChmekdRvmTfdfAZF/trK54oJyKxsGI3t6CYWonfZIdE1q9cOr167wrlPEByHZImLIz+suZaNZKdHYMwp9dhnNoxqfcGkUaP5SXAE+hDe20kNAUfnvH3TEqve3DmWlBdyourD4U5GZeEgHDuEFhp25O53w9zGa5CQbAB1mnO0rXbJZ4B08EhZdQSxDC95S1MG62/HxP0CU55EQIVvjh8eSCRq4lDCyajB4YFNNmB+rI7nSAk5JWktEbwN8JNXNtv6KAMGD65T0Eoj6xUEPdTobBs9JiChQ21ctvpGyjwD8RBPAS89DX6tEMxHJMYKddAC8AAwAAAAABAQAA request-method GET response-head HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+Last-Modified: Mon, 28 Nov 2016 21:10:16 GMT
+Content-Type: text/css;charset=UTF-8
+Content-Length: 60737
+Date: Wed, 22 Feb 2017 11:08:19 GMT
+ original-response-headers Server: Apache-Coyote/1.1
+Last-Modified: Mon, 28 Nov 2016 21:10:16 GMT
+Content-Type: text/css;charset=UTF-8
+Content-Length: 60737
+Date: Wed, 22 Feb 2017 11:08:19 GMT
+ uncompressed-len 0   íA

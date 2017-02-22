@@ -1,0 +1,1091 @@
+/*
+ * Mx.css
+ * This file is included in every Mastering page
+ */
+
+/*
+ * Every normal page will have the hat
+ */
+
+/*
+ * The "hat" is the line that sits at the very top of the page, above the "header"
+ */
+
+#hat {
+    position: relative;
+    line-height: 34px;
+}
+
+#hat h1 {
+    float: left;
+    margin-left: 20px;
+    font-size: 138.5%;
+}
+
+#hat #productLogo {
+    float: left;
+    margin-left: 8px;
+}
+
+#hat #hat-controls {
+    line-height: 160%;
+    float: right;
+    margin-top: 0.75em;
+    margin-bottom: 0.25em;
+    margin-right: 20px;
+    margin-left: 8px; /* in case we wrap */
+    font-size: 87%;
+}
+
+#hat #hat-controls ul {
+    display: inline;
+}
+
+#hat #hat-controls ul li {
+    display: inline;
+    border-left: 1px solid #999;
+    margin-left: 10px;
+    padding-left: 10px;
+    white-space: nowrap;
+}
+
+#hat #hat-controls ul li:first-child {
+    border-left: 0;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+#hat #hat-controls .signedin {
+    font-weight: bold;
+}
+
+#hat #hat-controls a {
+    /* MX color.base */ color: #333; /**/
+}
+
+/*****************************************************************************
+ * Handy, general utility things
+ */
+
+em {
+    font-style: italic;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.normal {
+    font-style: normal;
+    font-weight: normal;
+}
+
+.invisible {
+    display: none;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.faded {
+    opacity:.5;
+    filter:alpha(opacity=50);
+}
+
+a {
+    color: #003399;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+a:visited {
+    color: #003399;
+}
+
+a.disabled {
+    color: #99ADD6;
+}
+
+.linky {  /* for fake-links (that will be instrumented with js), matches a above */
+    color: #003399;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.linky.disabled {
+    color: #99ADD6;
+}
+
+.font-blue {
+    color: #003399;
+}
+
+.clear-both {
+    clear: both;
+}
+
+/* Accessibility: offscreen text spans for screen-readers only */
+
+.offscreen {
+    left: -9999em;
+    position: absolute;
+}
+
+
+/*
+ * This class exists only to give unnecessary elements a "reason" in the HTML
+ * so you know not to remove them because they look useless
+ */
+
+.forIEbug {}
+
+/*
+ * Identifies anchors that invoke a modal panel with an iframe to load its
+ * contents, see Mx.js.
+ */
+
+.in-modal-panel {}
+
+/* classes needed by alert-on-disable mechanism (see Mx.js) */
+
+.maynot {
+    position: relative;
+}
+
+.maynot > .click-trap {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1001;
+}
+
+
+body.wait,
+body.wait * {
+    cursor: wait !important;
+}
+
+.wordwrap { -moz-binding: url('./wordwrap.xml#wordwrap'); }
+
+
+/*
+ * Site-wide design styles, uses yui CSS fonts.  A sort of "skin", if you
+ * will.
+ */
+
+/*
+ * Page shell stuff
+ */
+
+html {
+    background: white;
+    /* MX color.base */ color: #333; /**/
+}
+
+body.tablet {
+    /* MX size.larger.2 */ font-size: 130%; /**/
+}
+
+body.app #bd {
+    clear: both;
+    background-color: white;
+    /* For headless pages, we have to make sure this is rounded */
+    /* MX rounded.large.top */ border-radius: 1em 1em 0 0; /**/
+}
+
+body.app .cornerBurst {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 300px;
+    background: transparent url('../../img/deco/cornerBurstWhite.png') 0 0 no-repeat;
+}
+
+
+/* main-content-wrapper exists so we can put borders and corners on the page */
+
+body.app .main-content-wrapper {
+    background-color: white;
+    /* MX rounded.large.top */ border-radius: 1em 1em 0 0; /**/
+    border: 2px solid #72c5e2;
+    border-bottom: none;
+    position: relative;
+    clear: both;
+}
+
+
+body.app div.main-content-wrapper {
+    z-index: 1; /* make sure content pop-ups are over footer elements */
+    padding-bottom: 0.5em; /* a little extra to cover #ft overlap at very small screen widths */
+}
+
+div.calendar {
+    z-index: 20; /* make sure calendar pop-ups are above *everything* */
+}
+
+
+/* override old grid styles without changing elements/classes */
+body.app .mx-main {
+    margin: auto 10px; /* Y33 */
+}
+
+
+
+/* Main body content with no grids */
+body.app #bd > .content,
+body.app .modal-content-wrapper,
+body.app .inframe-content-wrapper > .content {
+    padding: 1.5em;
+    text-align: left;
+}
+
+body.app .modal-content-wrapper {
+    position: relative;
+}
+
+body.app .inframe-content-wrapper {
+    min-width: 700px; /* set min width for full viewport width */
+    padding: 0.5em;
+    text-align: left;
+}
+
+/*
+ * Frankenstein note: .sd-page-title replaces the old .page-title
+ */
+
+body.app .sd-page-title {
+    font-size: 138.5%;
+}
+
+/* When a page title is the first thing in main body content, space it from the content that follows */
+body.app #bd > .content > .sd-page-title,
+body.app .modal-content-wrapper > .sd-page-title,
+body.app .inframe-content-wrapper > .sd-page-title {
+    margin-bottom: .25em;
+}
+
+body.app .sd-page-subtitle {
+    font-size: 120%;
+}
+
+body.app #bd > .content > .sd-page-subtitle,
+body.app .modal-content-wrapper > .sd-page-subtitle,
+body.app .inframe-content-wrapper > .sd-page-subtitle {
+    margin-bottom: .25em;
+}
+
+body.app .sd-group-title,
+body.app .sd-pod-title {
+    font-size: 123.1%;
+    font-weight: bold;
+}
+
+body.app .sd-page-instruction {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+body.app #float-container { /* for IE7's benefit */
+    width: 100%;
+}
+
+body.app #page-actions {
+    float: right;
+    margin-bottom: 0.5em;
+    white-space: nowrap;
+    clear: right;
+}
+
+body.app #page-actions > a, body.app #page-actions > span {
+    font-size: 108%;
+    font-weight: bold;
+    padding-left: 1.3em;
+}
+
+body.app #page-actions .create {
+    background: url("../../img/icon/add.png") no-repeat scroll left 1px transparent;
+}
+
+body.app #page-actions .create.disabled {
+    background-image: url("../../img/icon/addDisabled.png");
+}
+
+body.app #page-actions .export {
+    background: url("../../img/icon/importExport.png") no-repeat scroll left 1px transparent;
+}
+
+.yui3-skin-sam.app .yui3-panel .yui3-panel-content {
+    border: 1px solid #808080;
+}
+
+.yui3-skin-sam.app .yui3-panel .yui3-widget-hd {
+    background: none;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.yui3-skin-sam.app .yui3-panel .yui3-widget-bd {
+    padding-top: 0;
+}
+
+.yui3-skin-sam .yui3-panel > .yui3-panel-content {
+    -webkit-box-shadow: 0 5px 5px #666666;
+    -moz-box-shadow: 0 5px 5px #666666;
+    box-shadow: 0 5px 5px #666666;
+}
+
+/* Trim the padding from modals */
+
+#modal-iframe-panel {
+    border-radius: 0.5em 0.5em 0 0;
+    box-shadow: 0 0 5px #666;
+}
+
+#modal-iframe-panel .yui3-widget-hd {
+    background-color: #EEE;
+    background: -moz-linear-gradient(top, #FFF, #DDD); /* Mozilla: */
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#DDD)); /* Chrome, Safari:*/
+    filter: progid:DXImageTransform.Microsoft.Gradient(StartColorStr='#FFFFFF', EndColorStr='#DDDDDD', GradientType=0); /* MSIE */
+    background: linear-gradient(#FFF, #DDD); /* Standard syntax (must be last) */
+    border: 0 none;
+    border-bottom: 1px solid #CCC;
+    border-radius: 0.5em 0.5em 0 0;
+    padding: 0.5em 2em 0.5em 1em;
+}
+
+#modal-iframe-panel .yui3-widget-hd .title  {
+    color: #333;
+    font-size: 140%;
+    font-weight: bold;
+}
+
+#modal-iframe-panel .yui3-widget-hd .yui3-widget-buttons {
+    right: 4px;
+    top: 3px;
+}
+
+/* Special formatting for custom left and right content areas in modals */
+
+#modal-iframe-panel .yui3-widget-hd .left-container {
+    position: absolute;
+    top: 3px;
+    left: 2px;
+    font-weight: normal;
+}
+
+#modal-iframe-panel .yui3-widget-hd .right-container {
+    /* MX color.lighter */ color: #666; /**/
+    position: absolute;
+    right: 31px;
+    top: 7px;
+}
+
+#modal-iframe-panel .yui3-widget-hd .right-container #help-container {
+    display: inline-block; /* makes vertical position not get messed up when print link is missing */
+}
+
+#modal-iframe-panel .yui3-widget-hd .right-container > #help-container:first-child,
+#modal-iframe-panel .yui3-widget-hd .right-container > #print-container.invisible + #help-container {
+    margin-top: 2px;
+}
+
+#modal-iframe-panel .yui3-widget-hd .right-container a {
+    /* MX color.lighter */ color: #666; /**/
+}
+
+#modal-iframe-panel .yui3-widget-hd .right-container .action {
+    font-size: 11px;
+    margin: 0 .75em;
+    margin-top: -5px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#modal-iframe-panel .yui3-widget-bd {
+    padding: 0;
+    border-width: 1px;
+    border-top-color: #CCC;
+    border-bottom-color: #777;
+    border-right-color: #777;
+    border-left-color: #777;
+    z-index: 100;
+}
+
+/* Modal panel mask */
+
+.modal-panel-mask {
+    background-color:#FFF;
+    display:block;
+    height:100%;
+    left:0px;
+    opacity:0.75;
+    position:fixed;
+    top:0px;
+    width:100%;
+}
+
+.modal-panel-mask.custom-mask {
+    position:absolute;
+}
+
+/* Modal alert, Modal error alert */
+
+#modal-alert-panel, #modal-error-panel {
+    box-shadow: 0 0 5px #666;
+}
+
+#modal-alert-panel {
+    border: 2px solid #1b8216;
+    background-color: #d7fdcf;
+}
+
+#modal-alert-panel .yui3-widget-bd,
+#modal-alert-panel .yui3-widget-ft {
+    background-color: #d7fdcf;
+    padding-top: 0;
+    text-align: center;
+}
+
+#modal-error-panel {
+    border: 1px solid #ffc600;
+}
+
+#modal-error-panel .yui3-widget-bd {
+    color: #C93523;
+}
+
+#modal-error-panel .yui3-widget-bd,
+#modal-error-panel .yui3-widget-ft {
+    background-color: #fdf9c6;
+    text-align: center;
+}
+
+#modal-alert-panel .yui3-widget-bd, #modal-error-panel .yui3-widget-bd {
+    padding: 20px 40px;
+    font-size: 120%;
+    font-weight: bold;
+}
+
+#modal-alert-panel .yui3-widget-ft .yui3-widget-buttons, #modal-error-panel .yui3-widget-ft .yui3-widget-buttons {
+    padding-bottom: 10px;
+}
+
+#modal-alert-panel .yui3-widget-ft .yui3-button,
+#modal-error-panel .yui3-widget-ft .yui3-button,
+#error-dialog .yui3-widget-ft .yui3-button {
+    /* MX color.base */ color: #333; /**/
+    margin: 0;
+    width: 80px;
+}
+
+#modal-alert-panel .yui3-button-primary,
+#modal-error-panel .yui3-button-primary,
+#error-dialog .yui3-button-primary {
+    background-color: #E6E6E6;
+}
+
+/* Modal confirmation alert */
+
+#modal-confirm-panel {
+    border: 1px solid #ffc600;
+    box-shadow: 0 0 5px #666;
+}
+
+#modal-confirm-panel .yui3-widget-bd,
+#modal-confirm-panel .yui3-widget-ft {
+    background-color: #fdf9c6;
+}
+
+#modal-confirm-panel .yui3-widget-bd {
+    padding: 10px 20px 20px 20px;
+}
+
+#modal-confirm-panel .yui3-widget-ft {
+    padding-top: 0;
+    text-align: center;
+}
+
+#modal-confirm-panel .yui3-widget-bd .headline {
+    background: transparent url('../../img/icon/alertLarge.png') no-repeat top;
+    padding-top: 50px;  /* for icon */
+    font-size: 120%;
+    font-weight: bold;
+}
+
+#modal-confirm-panel .yui3-widget-ft .yui3-widget-buttons {
+    padding-bottom: 10px;
+}
+
+#modal-confirm-panel .yui3-widget-ft .yui3-button-primary {
+    /* MX color.darker */ color: #000; /**/
+    background-color: #E6E6E6;
+    margin-left: 0;
+}
+
+#modal-confirm-panel .yui3-widget-ft .yui3-button-primary + button {
+    margin-left: 20px;
+}
+
+/* Modal for no access to Add Adaptive alert */
+
+#modal-no-add-adaptive-panel {
+    border: 1px solid #CCC;
+    box-shadow: 0 0 5px #666;
+}
+
+#modal-no-add-adaptive-panel p {
+    padding: 7px;
+}
+
+#modal-no-add-adaptive-panel .yui3-widget-bd,
+#modal-no-add-adaptive-panel .yui3-widget-ft {
+    background-color: #EEEEEE;
+}
+
+#modal-no-add-adaptive-panel .yui3-widget-bd {
+    padding: 20px 20px 10px 20px;
+}
+
+#modal-no-add-adaptive-panel .yui3-widget-ft {
+    padding-top: 0;
+    text-align: center;
+}
+
+#modal-no-add-adaptive-panel .yui3-widget-bd .headline {
+    background: url('../../img/icon/stopIcon.png') no-repeat scroll left top transparent;
+    font-size: 120%;
+    font-weight: bold;
+    padding: 10px 0px 30px 55px;
+    display: inline-block;
+}
+
+#modal-no-add-adaptive-panel .yui3-widget-ft .yui3-widget-buttons {
+    padding-bottom: 10px;
+}
+
+#modal-no-add-adaptive-panel .yui3-widget-ft span.default + span {
+    margin-left: 20px;
+}
+
+#modal-no-add-adaptive-panel .yui3-widget-ft .yui3-button-primary {
+    /* MX color.darker */ color: #000; /**/
+    background-color: #FEFEFE;
+    margin-left: 0;
+}
+
+/* modal progress panel*/
+
+#modal-progress-panel .yui3-widget-hd {
+    display: none;
+}
+
+#modal-progress-panel .yui3-widget-bd {
+    background-color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+#modal-progress-panel .yui3-widget-bd > .progress-msg {
+    font-size: 120%;
+    text-align: center;
+}
+
+#modal-progress-panel .yui3-widget-bd > .progress-msg > span.default {
+    font-weight: bold;
+}
+
+#modal-progress-panel .yui3-widget-bd > .progress-img {
+    background: transparent url('../../img/icon/loading.gif') no-repeat center;
+    padding-top: 30px;
+    margin-top: 15px;
+}
+
+#error-dialog .yui3-widget-hd {
+    background-color: #EEE;
+    background: -moz-linear-gradient(top, #FFF, #DDD); /* Mozilla: */
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#DDD)); /* Chrome, Safari:*/
+    filter: progid:DXImageTransform.Microsoft.Gradient(StartColorStr='#FFFFFF', EndColorStr='#DDDDDD', GradientType=0); /* MSIE */
+    background: linear-gradient(#FFF, #DDD); /* Standard syntax (must be last) */
+    color: #000000;
+    font-size: 93%;
+    font-weight: bold;
+    line-height: 2;
+    padding: 0 1em;
+}
+
+#error-dialog .yui3-widget-bd {
+    background-color: #F2F2F2;
+    padding-top: 1em;
+}
+
+#error-dialog .yui3-widget-bd > span.icon-warn {
+    background: transparent url(../../img/icon/error.png) left top no-repeat;
+    padding-left: 16px;
+}
+
+#error-dialog .yui3-widget-ft {
+    background-color: #F2F2F2;
+    padding-bottom: 1em;
+}
+
+/*
+ * OK/Cancel (or Save/Cancel or Continue/Cancel) button pairs.
+ * They typically appear at the end of a form or group containers.
+ *
+ * TODO: Needs to be applied consistently across application:
+ *   - home page announcement editor
+ *   - gradebook adjust grade modal
+ *   - and more?
+ */
+
+.ok-cancel {
+    margin-top: 1em;
+    white-space: nowrap;
+}
+
+.ok-cancel > .ok-button {
+}
+
+.ok-cancel > .cancel-button {
+    margin-left: 1em;
+}
+
+.ok-cancel > .confirm-text {
+    float: right;
+    margin-top: 0.25em;
+}
+
+.ok-cancel > .confirm-text > input[type=checkbox] {
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.ok-cancel > .confirm-text > label {
+    margin-left: 0.2em;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.tip-box {
+    border: 1px solid #CCC;
+    padding: 1em;
+    text-align: left;
+}
+
+.tip {
+    color: #FF9900;
+    font-weight: bold;
+}
+
+.comment-box {
+    background-color: #FFFFCE;
+    border: 1px solid #E77D08;
+    padding: 1em;
+    text-align: left;
+}
+
+/*
+ * Some default error message block styling
+ *
+ */
+
+.error-message {
+    color: #900;
+    padding-left: 20px;
+    background: transparent url(../../img/icon/error.png) left top no-repeat;
+}
+
+.error-notice {
+    background: #FDF9C6 url(../../img/icon/exclamation.png) 10px 50% no-repeat;
+    border: 1px solid #FFC600;
+    color: #C93523;
+    font-weight: bold;
+    padding: 10px 10px 10px 30px;
+    margin-bottom: 1em;
+}
+
+.confirm-notice {
+    background: #DAFDDA url(../../img/icon/accept.png) 10px 50% no-repeat;
+    border: 1px solid #538B53;
+    /* MX color.base */ color: #333; /**/
+    font-weight: bold;
+    padding: 10px 10px 10px 30px;
+    margin-bottom: 1em;
+}
+
+.warning-message {
+    background: #FFFFCC url(../../img/icon/warning.png) 10px 50% no-repeat;
+    border: 1px solid #FFC600;
+    /* MX color.base */ color: #333; /**/
+    padding: 0.5em 0.5em 0.5em 2.75em;
+    margin-bottom: 1em;
+}
+
+.success-message {
+    background: #DAFDDA;
+    /* MX color.base */ color: #333; /**/
+    padding: 1.5em;
+    margin-bottom: 1em;
+}
+
+.success-message-title {
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    position: relative;
+}
+
+.success-message-title:before {
+    position: absolute;
+    font-family: FontAwesome;
+    font-size: 130%;
+    top: -3px;
+    left: -5px;
+    content: "\f00c";
+    color: #04A431;
+}
+
+.success-message > div {
+    padding-left: 1.5em;
+}
+
+.info-message {
+    background: #FFFFCC;
+    /* MX color.base */ color: #333; /**/
+    padding: 1.5em;
+    margin-bottom: 1em;
+}
+
+.info-message-title {
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    position:relative;
+}
+
+.info-message-title:before {
+    position: absolute;
+    font-family: FontAwesome;
+    font-size: 130%;
+    top: -3px;
+    left: -5px;
+    content: "\f071";
+    color: #EE812D;
+}
+
+.info-message > div {
+    padding-left: 1.75em;
+}
+
+div.notice-message {
+    margin-bottom: 1em;
+}
+
+div.notice-message > span {
+    background-color: #FFFFCC;
+    padding: 0.3em 0 0.3em 0.3em;
+}
+
+div.pooling-note {
+    margin-bottom: 1em;
+}
+
+div.pooling-note > span {
+    padding: 0.2em 0.5em 0.2em 0.6em;
+    background-color: #D6F5F9;
+    /* MX rounded.medium */ border-radius: 5px; /**/
+    border: 1px solid #72C5E2;
+    /* MX color.base */ color: #333; /**/
+    margin-bottom: 1em;
+}
+
+/*
+ * L7-28: IE buttons tend to have too little side padding.
+ * Make sure they all have the minimum prescribed here!
+ * You can override it later if you want reaaaaaaaallly wiiiiiiide buttons...
+ */
+
+button, input[type=submit] {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+/*
+ * For links that are instrumented after rendering, typically modal pop-ups
+ */
+
+.instrumented-link {
+    visibility: hidden;
+}
+
+/*
+ * Customized YUI3 Mx.MenuPopup stuff
+ */
+
+body.yui3-skin-sam .yui3-widget-mask {
+    /*background-color: #FFFFFF;*/
+    opacity: 0;
+}
+
+
+/*
+ * Customized YUI datatable stuff
+ */
+
+.yui-skin-sam .yui-dt table,
+.yui3-skin-sam .yui3-datatable table {
+    border: 1px solid #d6d6d6;  /* same as pod border */
+}
+
+.yui-skin-sam .pod .yui-dt table,
+.yui3-skin-sam .pod .yui3-datatable table {
+    border: 0;  /* no outer border when in a pod -- the pod border is flush with the table */
+}
+
+.yui-skin-sam .yui-dt th,
+.yui3-skin-sam .yui3-datatable th {
+    vertical-align: top;
+    font-size: 85%;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.yui-skin-sam .yui-dt th .yui-dt-label a,
+.yui3-skin-sam .yui3-datatable th.yui3-datatable-header a {
+    font-weight: bold;
+}
+
+.yui-skin-sam .yui-dt td,
+.yui3-skin-sam .yui3-datatable td {
+    font-size: 93%;
+}
+
+.yui-skin-sam .yui-dt .yui-dt-last,
+.yui3-skin-sam .yui3-datatable .yui-dt-last {
+    border-right: 0;
+}
+
+.yui-skin-sam .yui-dt th .yui-dt-liner,
+.yui3-skin-sam .yui3-datatable th.yui3-datatable-header {
+    padding: 3px 10px;
+}
+
+.yui-skin-sam .yui-dt td .yui-dt-liner,
+.yui3-skin-sam .yui3-datatable td.yui3-datatable-cell {
+    padding: 7px 10px;
+}
+
+.yui-skin-sam .yui-dt th, .yui-skin-sam .yui-dt th a,
+.yui3-skin-sam .yui3-datatable th, .yui3-skin-sam .yui3-datatable th a {
+    /* MX color.base */ color: #333; /**/  /* same as root html color, had to override yui */
+}
+
+
+/* background colors for table data rows */
+
+.yui-skin-sam .yui-dt .yui-dt-odd,
+.yui3-skin-sam .yui3-datatable .yui3-datatable-data .yui3-datatable-odd .yui3-datatable-cell {
+    background-color: #f4f4f4;
+}
+
+.yui-skin-sam .yui-dt .yui-dt-even .yui-dt-desc, .yui-skin-sam .yui-dt .yui-dt-even .yui-dt-asc,
+.yui3-skin-sam .yui3-datatable .yui3-datatable-data .yui3-datatable-even .yui3-datatable-sorted {
+    background-color: #eaeaea;
+}
+
+.yui-skin-sam .yui-dt .yui-dt-odd .yui-dt-desc, .yui-skin-sam .yui-dt .yui-dt-odd .yui-dt-asc,
+.yui3-skin-sam .yui3-datatable .yui3-datatable-data .yui3-datatable-odd .yui3-datatable-sorted {
+    background-color: #e0e0e0;
+}
+
+.yui-skin-sam .yui-dt tr.yui-dt-first td,
+.yui3-skin-sam .yui3-datatable tr.yui-dt-first td {
+    border-top: 1px solid #d6d6d6;  /* same as pod border */
+}
+
+.yui-skin-sam .yui-dt td,
+.yui3-skin-sam .yui3-datatable td {
+    border-top: 1px solid #e2e2e2;
+}
+
+.yui-skin-sam .yui-dt td.yui-dt-empty,
+.yui3-skin-sam .yui3-datatable td.yui-dt-empty {
+    border-right: 0;
+}
+
+.yui-skin-sam .yui-dt th,
+.yui3-skin-sam .yui3-datatable th {
+    background: #ebebeb url("../../img/deco/datatableHeaderGradient.png") repeat-x scroll left top;
+}
+
+.yui-skin-sam .yui-dt th.yui-dt-asc, .yui-skin-sam .yui-dt th.yui-dt-desc,
+.yui3-skin-sam .yui3-datatable th.yui3-datatable-sorted {
+    background: #e3e7ea url("../../img/deco/datatableHeaderGradientSorted.gif") repeat-x scroll left top;
+}
+
+.yui-skin-sam .yui-dt tr.mx-dt-subhead,
+.yui3-skin-sam .yui3-datatable tr.mx-dt-subhead {
+    background-color: #e7f0f5;
+}
+
+.yui-skin-sam .yui-dt tr.mx-dt-subhead th,
+.yui3-skin-sam .yui3-datatable tr.mx-dt-subhead th {
+    background-image: none;
+    border-top: 1px solid #e2e2e2;
+}
+
+.yui-skin-sam .yui-dt tr.mx-dt-subhead th .yui-dt-liner,
+.yui3-skin-sam .yui3-datatable tr.mx-dt-subhead th .yui-dt-liner {
+    padding: 7px 10px;
+}
+
+.yui-skin-sam .yui-dt .indent,
+.yui3-skin-sam .yui3-datatable .indent {
+    margin-left: 0.75em;
+}
+
+.yui-skin-sam .yui-dt .indent1,
+.yui3-skin-sam .yui3-datatable .indent1 {
+    margin-left: 1.5em;
+}
+
+.yui-skin-sam .yui-dt .indent2,
+.yui3-skin-sam .yui3-datatable .indent2 {
+    margin-left: 2.25em;
+}
+
+.yui-skin-sam .mask,
+.yui3-skin-sam .mask {
+    background-color:white;
+    opacity:.75;
+    filter:alpha(opacity=75);
+}
+
+/* Inline icons for assignment titles */
+
+div.icon {
+    margin-left: 0.5em;
+    display:-moz-inline-stack;
+    display:inline-block;
+    zoom:1;
+    *display:inline;
+    /* Defaults for unknown icon subclasses: overridden below */
+    background-color: red;
+    width: 16px;
+    height: 16px;
+}
+
+div.icon.followup {
+    background: transparent url("../../img/icon/loopLogo.png") no-repeat;
+    width: 16px;
+    height: 16px;
+}
+
+div.icon.followup.medium {
+    background: url("../../img/icon/adaptiveBrainIconMedium.png") no-repeat scroll 0 0 transparent;
+    width: 43px;
+    height: 38px;
+    position: relative;
+    top: -1em;
+}
+
+div.icon.timed {
+    background: transparent url("../../img/icon/clock.gif") no-repeat;
+    width: 16px;
+    height: 14px;
+}
+
+div.icon.protected {
+    background: transparent url("../../img/icon/key.png") no-repeat;
+    width: 16px;
+    height: 16px;
+}
+
+div.icon.essay {
+    background: transparent url("../../img/icon/pencil_16x16.png") no-repeat;
+    width: 16px;
+    height: 16px;
+}
+
+div.icon.dsm {
+    background: transparent url("../../img/icon/flame-logo21.png") no-repeat;
+    width: 10px;
+    height: 21px;
+    position: relative;
+    top: -0.3em;
+}
+
+#grading-note {
+    /* MX size.smaller */ font-size: 90%; /**/
+}
+
+#grading-policy {
+    background: -moz-linear-gradient(center top , #EBF3FE, #F5F9FE) repeat scroll 0 0 transparent;
+    background: -webkit-gradient(linear, left top, left bottom, from(#EBF3FE), to(#F5F9FE));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#EBF3FE', endColorstr='#F5F9FE');
+    border: 1px solid #C0DBF2;
+    /* MX rounded.medium */ border-radius: 5px; /**/
+    clear: both;
+    padding: 1.5em;
+    margin-top: 1em;
+    /* MX color.base */ color: #333; /**/
+    /* MX size.smaller */ font-size: 90%; /**/
+}
+
+#grading-policy .close {
+    position: relative;
+    top: -5px;
+    right: -5px;
+    font-size: 11px;
+    float: right;
+}
+
+#grading-policy .title {
+    font-weight: bold;
+    /* MX size.larger */ font-size: 110%; /**/
+}
+
+#grading-policy p {
+    margin: 1em 0 0 0;
+}
+
+#grading-policy ul {
+    padding: 1em 3em 0;
+    list-style: disc;
+}
+
+#grading-policy li {
+    list-style: inherit;
+}
+
+/* For Import Items popover on ItemManager page.  */
+.importBody .commentbox #file_upload_form #file-picker {
+    margin-top: 1em;
+}
+
+.importBody .commentbox #file_upload_form #import-file {
+    margin-top: 1em;
+    padding: .25em .5em;
+}
+
+…„—{’      X­q‚X­q‚=wr?X³¿   R    :https://session.masteringengineering.com/assets/ui/css/app/Mx.build1701051538.css necko:classified 1 strongly-framed 1 security-info FnhllAKWRHGAlo+ESXykKAAAAAAAAAAAwAAAAAAAAEaphjojH6pBabDSgSnsfLHeAAQAAgAAAAAAAAAAAAAAAAAAAAAB4vFIJp5wRkeyPxAQ9RJGKPqbqVvKO0mKuIl8ec8o/uhmCjImkVxP+7sgiYWmMt8FvcOXmlQiTNWFiWlrbpbqgwAAAAAAAA3nMIIN4zCCDMugAwIBAgIQK6lFdLvDbujzVgmtjxn3TDANBgkqhkiG9w0BAQsFADCBljELMAkGA1UEBhMCR0IxGzAZBgNVBAgTEkdyZWF0ZXIgTWFuY2hlc3RlcjEQMA4GA1UEBxMHU2FsZm9yZDEaMBgGA1UEChMRQ09NT0RPIENBIExpbWl0ZWQxPDA6BgNVBAMTM0NPTU9ETyBSU0EgT3JnYW5pemF0aW9uIFZhbGlkYXRpb24gU2VjdXJlIFNlcnZlciBDQTAeFw0xNjA5MDgwMDAwMDBaFw0xODA5MDgyMzU5NTlaMIHlMQswCQYDVQQGEwJHQjERMA8GA1UEERMIV0MyUiAwUkwxDzANBgNVBAgTBkxvbmRvbjEPMA0GA1UEBxMGTG9uZG9uMRIwEAYDVQQJEwk4MCBTdHJhbmQxFDASBgNVBAoTC1BlYXJzb24gUExDMRcwFQYDVQQLEw5FbnRlcnByaXNlIFNTTDEgMB4GA1UECxMXSG9zdGVkIGJ5IFBlYXJzb24sIEluYy4xGTAXBgNVBAsTEE11bHRpLURvbWFpbiBTU0wxITAfBgNVBAMTGG1hc3RlcmluZy5wZWFyc29uY21nLmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBANHGZaUS+dVKdyqj6bLiruLcZv07DaggTLkGJ+WQv5gDY33lPvZ5hSqPUGOJg3kFs1UNoUbUo6u27CBCAl+I5PA9lR3jv3aIKoo5nF26Ot6JHFnb0LzCIBPs+gV5A8GpGcrK0M7Rn6k/3mDBbhvLWrBWW/SfQEWILldwHM2E9hrwmVPu+P6WHC2rUJRgEz2KgXL2/5I68q1z/tolxV84ejZprgREJ2Ydx/uuFTQBg+rcWKhF0wfMD048qHUfaSCtiv0P/uuh1mW5Of/EylZtZhqiVAUP+jqPFnW8BtaK1HmQ+0TP2tsUHziBZEt2OAQF1Acmuzs3qHm22sXqxUTep0MCAwEAAaOCCdowggnWMB8GA1UdIwQYMBaAFJrzK9rPrU+2L7sqSEgqErcbQsEkMB0GA1UdDgQWBBSVlTKQJ3kv33EEDBSi5V9K3ZOiMDAOBgNVHQ8BAf8EBAMCBaAwDAYDVR0TAQH/BAIwADAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwUAYDVR0gBEkwRzA7BgwrBgEEAbIxAQIBAwQwKzApBggrBgEFBQcCARYdaHR0cHM6Ly9zZWN1cmUuY29tb2RvLmNvbS9DUFMwCAYGZ4EMAQICMFoGA1UdHwRTMFEwT6BNoEuGSWh0dHA6Ly9jcmwuY29tb2RvY2EuY29tL0NPTU9ET1JTQU9yZ2FuaXphdGlvblZhbGlkYXRpb25TZWN1cmVTZXJ2ZXJDQS5jcmwwgYsGCCsGAQUFBwEBBH8wfTBVBggrBgEFBQcwAoZJaHR0cDovL2NydC5jb21vZG9jYS5jb20vQ09NT0RPUlNBT3JnYW5pemF0aW9uVmFsaWRhdGlvblNlY3VyZVNlcnZlckNBLmNydDAkBggrBgEFBQcwAYYYaHR0cDovL29jc3AuY29tb2RvY2EuY29tMIIIGQYDVR0RBIIIEDCCCAyCGG1hc3RlcmluZy5wZWFyc29uY21nLmNvbYIcYWlzLm1hc3RlcmluZy5wZWFyc29uY21nLmNvbYIcYXBpLm1hc3RlcmluZy5wZWFyc29uY21nLmNvbYIdYXV0aC5tYXN0ZXJpbmcucGVhcnNvbmNtZy5jb22CH2F1dGhvci5tYXN0ZXJpbmcucGVhcnNvbmNtZy5jb22CI2NvbnRlbnRhcHAubWFzdGVyaW5nLnBlYXJzb25jbWcuY29tgidjb250ZW50c2VydmljZS5tYXN0ZXJpbmcucGVhcnNvbmNtZy5jb22CH2dpbW1pZS5tYXN0ZXJpbmcucGVhcnNvbmNtZy5jb22CIWl0ZW1lZGl0Lm1hc3RlcmluZy5wZWFyc29uY21nLmNvbYISbWFzdGVyaW5nYWFuZHAuY29tghJtYXN0ZXJpbmdhc3Ryby5jb22CFm1hc3RlcmluZ2FzdHJvbm9teS5jb22CEG1hc3RlcmluZ2Jpby5jb22CFG1hc3RlcmluZ2Jpb2xvZ3kuY29tghZtYXN0ZXJpbmdjaGVtaXN0cnkuY29tghttYXN0ZXJpbmdjb2xsZWdlcGh5c2ljcy5jb22CGG1hc3RlcmluZ2VuZ2luZWVyaW5nLmNvbYIhbWFzdGVyaW5nZW52aXJvbm1lbnRhbHNjaWVuY2UuY29tghRtYXN0ZXJpbmdnZW5jaGVtLmNvbYIVbWFzdGVyaW5nZ2VuZXRpY3MuY29tghZtYXN0ZXJpbmdnZW9ncmFwaHkuY29tghRtYXN0ZXJpbmdnZW9sb2d5LmNvbYIfbWFzdGVyaW5naGVhbHRoYW5kbnV0cml0aW9uLmNvbYIYbWFzdGVyaW5nbWV0ZW9yb2xvZ3kuY29tghltYXN0ZXJpbmdtaWNyb2Jpb2xvZ3kuY29tgh5tYXN0ZXJpbmdudXRyaXRpb24ucGVhcnNvbi5jb22CGW1hc3RlcmluZ29jZWFub2dyYXBoeS5jb22CFG1hc3RlcmluZ3BoeXNpY3MuY29tgiBteGVhbW9uLm1hc3RlcmluZy5wZWFyc29uY21nLmNvbYIgbXhsY21vbi5tYXN0ZXJpbmcucGVhcnNvbmNtZy5jb22CJnJlZGlyZWN0LnByb2QubWFzdGVyaW5nLnBlYXJzb25jbWcuY29tghpzZXNzaW9uLm1hc3RlcmluZ2FhbmRwLmNvbYIac2Vzc2lvbi5tYXN0ZXJpbmdhc3Ryby5jb22CHnNlc3Npb24ubWFzdGVyaW5nYXN0cm9ub215LmNvbYIYc2Vzc2lvbi5tYXN0ZXJpbmdiaW8uY29tghxzZXNzaW9uLm1hc3RlcmluZ2Jpb2xvZ3kuY29tgh5zZXNzaW9uLm1hc3RlcmluZ2NoZW1pc3RyeS5jb22CI3Nlc3Npb24ubWFzdGVyaW5nY29sbGVnZXBoeXNpY3MuY29tgiBzZXNzaW9uLm1hc3RlcmluZ2VuZ2luZWVyaW5nLmNvbYIpc2Vzc2lvbi5tYXN0ZXJpbmdlbnZpcm9ubWVudGFsc2NpZW5jZS5jb22CHHNlc3Npb24ubWFzdGVyaW5nZ2VuY2hlbS5jb22CHXNlc3Npb24ubWFzdGVyaW5nZ2VuZXRpY3MuY29tgh5zZXNzaW9uLm1hc3RlcmluZ2dlb2dyYXBoeS5jb22CHHNlc3Npb24ubWFzdGVyaW5nZ2VvbG9neS5jb22CJ3Nlc3Npb24ubWFzdGVyaW5naGVhbHRoYW5kbnV0cml0aW9uLmNvbYIgc2Vzc2lvbi5tYXN0ZXJpbmdtZXRlb3JvbG9neS5jb22CIXNlc3Npb24ubWFzdGVyaW5nbWljcm9iaW9sb2d5LmNvbYImc2Vzc2lvbi5tYXN0ZXJpbmdudXRyaXRpb24ucGVhcnNvbi5jb22CIXNlc3Npb24ubWFzdGVyaW5nb2NlYW5vZ3JhcGh5LmNvbYIcc2Vzc2lvbi5tYXN0ZXJpbmdwaHlzaWNzLmNvbYIWd3d3Lm1hc3RlcmluZ2FhbmRwLmNvbYIWd3d3Lm1hc3RlcmluZ2FzdHJvLmNvbYIad3d3Lm1hc3RlcmluZ2FzdHJvbm9teS5jb22CFHd3dy5tYXN0ZXJpbmdiaW8uY29tghh3d3cubWFzdGVyaW5nYmlvbG9neS5jb22CGnd3dy5tYXN0ZXJpbmdjaGVtaXN0cnkuY29tgh93d3cubWFzdGVyaW5nY29sbGVnZXBoeXNpY3MuY29tghx3d3cubWFzdGVyaW5nZW5naW5lZXJpbmcuY29tgiV3d3cubWFzdGVyaW5nZW52aXJvbm1lbnRhbHNjaWVuY2UuY29tghh3d3cubWFzdGVyaW5nZ2VuY2hlbS5jb22CGXd3dy5tYXN0ZXJpbmdnZW5ldGljcy5jb22CGnd3dy5tYXN0ZXJpbmdnZW9ncmFwaHkuY29tghh3d3cubWFzdGVyaW5nZ2VvbG9neS5jb22CI3d3dy5tYXN0ZXJpbmdoZWFsdGhhbmRudXRyaXRpb24uY29tghx3d3cubWFzdGVyaW5nbWV0ZW9yb2xvZ3kuY29tgh13d3cubWFzdGVyaW5nbWljcm9iaW9sb2d5LmNvbYIid3d3Lm1hc3RlcmluZ251dHJpdGlvbi5wZWFyc29uLmNvbYIdd3d3Lm1hc3RlcmluZ29jZWFub2dyYXBoeS5jb22CGHd3dy5tYXN0ZXJpbmdwaHlzaWNzLmNvbTANBgkqhkiG9w0BAQsFAAOCAQEABHKDE+n4VU4Ltrb9uL5aLCwBOqbMMpSUZXZup2+jViZqukfanoapjDeB6oKVEjVl3jYmRaxRIZBIbC91vskQAirK9YWqNEGk5FLtLeYwrc38/w2NkSn8I/ML3xpP6/GbgH2T6IpSPr67LE5mJqgz+RaBOnt/O0FVsHUsqBr4lxsuYDNuQXEAP4yRuxXD4hZ7On13YnnowfcAja/3YmvmxIKMZDwlwl2Elmi6VMFG6L4MryCIPydeFZDnPwgjyXsBTeXd+D9xG6IVMcNKHCm2G3rUwqUd0v6NA6zeuOseHG4P13NZF3+QT1VJo1Ow/oSOrqrNgv9V2ftCQfVEZ+fUsQAvAAMAAAAAAQEAAA== request-method GET response-head HTTP/1.1 200 OK
+Date: Wed, 22 Feb 2017 11:09:11 GMT
+Server: Apache
+Last-Modified: Thu, 05 Jan 2017 15:37:16 GMT
+Etag: "4b59980-5b60-5455aad149f77"
+Accept-Ranges: bytes
+Content-Length: 23392
+Content-Type: text/css
+ original-response-headers Date: Wed, 22 Feb 2017 11:09:11 GMT
+Server: Apache
+Last-Modified: Thu, 05 Jan 2017 15:37:16 GMT
+Etag: "4b59980-5b60-5455aad149f77"
+Accept-Ranges: bytes
+Content-Length: 23392
+Keep-Alive: timeout=1, max=50
+Connection: Keep-Alive
+Content-Type: text/css
+ uncompressed-len 0   [`

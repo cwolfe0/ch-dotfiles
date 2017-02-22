@@ -1,0 +1,1106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-gb" xml:lang="en-gb">
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="content-language" content="en-gb" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+
+<title>Firefox font changed, can't get it back to default &bull; mozillaZine Forums </title>
+
+
+
+<!--
+	phpBB style name: prosilver
+	Based on style:   prosilver (this is the default phpBB3 style)
+	Original author:  Tom Beddard ( http://www.subBlue.com/ )
+	Modified by:
+-->
+
+<script type="text/javascript">
+// <![CDATA[
+	var jump_page = 'Enter the page number you wish to go to:';
+	var on_page = '1';
+	var per_page = '';
+	var base_url = '';
+	var style_cookie = 'phpBBstyle';
+	var style_cookie_settings = '; path=/';
+	var onload_functions = new Array();
+	var onunload_functions = new Array();
+
+	
+
+	/**
+	* Find a member
+	*/
+	function find_username(url)
+	{
+		popup(url, 760, 570, '_usersearch');
+		return false;
+	}
+
+	/**
+	* New function for handling multiple calls to window.onload and window.unload by pentapenguin
+	*/
+	window.onload = function()
+	{
+		for (var i = 0; i < onload_functions.length; i++)
+		{
+			eval(onload_functions[i]);
+		}
+	};
+
+	window.onunload = function()
+	{
+		for (var i = 0; i < onunload_functions.length; i++)
+		{
+			eval(onunload_functions[i]);
+		}
+	};
+
+// ]]>
+</script>
+<script type="text/javascript" src="./styles/prosilver/template/styleswitcher.js"></script>
+<script type="text/javascript" src="./styles/prosilver/template/forum_fn.js"></script>
+
+<link href="./styles/prosilver/theme/print.css" rel="stylesheet" type="text/css" media="print" title="printonly" />
+<!--link href="./style.php?id=1&amp;lang=en" rel="stylesheet" type="text/css" media="screen, projection" /-->
+<link href="/static/forums/style/static_phpbb_style_php.css" rel="stylesheet" type="text/css" media="screen, projection" />
+<link href="./styles/prosilver/theme/normal.css" rel="stylesheet" type="text/css" title="A" />
+<link href="./styles/prosilver/theme/medium.css" rel="alternate stylesheet" type="text/css" title="A+" />
+<link href="./styles/prosilver/theme/large.css" rel="alternate stylesheet" type="text/css" title="A++" />
+
+
+
+<link rel="stylesheet" href="http://forums.mozillazine.org/static/forums/style/board.css?a" type="text/css" />
+<link rel="icon" href="http://forums.mozillazine.org/static/common/images/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32170104-1']);
+  _gaq.push(['_setDomainName', 'mozillazine.org']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<meta name="google-site-verification" content="euCK30a8gJqlhI8PJ91riJIoH-EPXmzWUMseq0i6UhU" />
+<test>
+</head>
+
+<body id="phpbb" class="section-viewtopic ltr">
+
+  <div id="masthead">
+    <h1><a href="http://forums.mozillazine.org/"><img src="http://forums.mozillazine.org/static/common/images/title2.gif" width="180" height="70" alt="MozillaZine" /></a></h1>
+    <span id="sprite"></span>
+  </div>
+  <table width="100%" cellspacing="0" cellpadding="7"><tr><td valign="top" id="main">
+
+
+<div id="wrap">
+	<a id="top" name="top" accesskey="t"></a>
+
+        <div id="gootop">
+        <div class="inner"></span></span>
+<script type="text/javascript"><!--
+google_ad_client = "pub-0651448570352947";
+google_ad_width = 728;
+google_ad_height = 90;
+google_ad_format = "728x90_as";
+google_ad_type = "text";
+//2007-06-24: boards top
+google_ad_channel = "9334581665";
+google_color_border = "CADCEB";
+google_color_bg = "CADCEB";
+google_color_link = "536482";
+google_color_text = "536482";
+google_color_url = "536482";
+//-->
+</script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+  </script>
+        <span class="corners-bottom"><span></span></span></div>
+        </div>
+
+	<div id="page-header">
+		<div class="navbar">
+			<div class="inner"><span class="corners-top"><span></span></span>
+
+			<ul class="linklist">
+				<li class="icon-home"><strong><a href="./index.php" accesskey="h">Board index</a>  <strong>&#8249;</strong> <a href="./viewforum.php?f=49">Mozilla Firefox</a> <strong>&#8249;</strong> <a href="./viewforum.php?f=38">Firefox Support</a></strong></li>
+
+				<li class="rightside"><a href="#" onclick="fontsizeup(); return false;" onkeypress="return fontsizeup(event);" class="fontsize" title="Change font size">Change font size</a></li>
+
+				
+				
+			</ul>
+			<span class="corners-bottom"><span></span></span></div>
+                </div>
+        </div>
+
+	<a name="start_here"></a>
+	<div id="page-body">
+		
+		
+<h2><a href="./viewtopic.php?f=38&amp;t=416892">Firefox font changed, can't get it back to default</a></h2>
+<!-- NOTE: remove the style="display: none" when you want to have the forum description on the topic body --><div style="display: none !important;">User Help for Mozilla Firefox<br /></div>
+
+<div class="topic-actions">
+
+	<div class="buttons">
+	
+		<div class="reply-icon"><a href="./posting.php?mode=reply&amp;f=38&amp;t=416892" title="Post a reply"><span></span>Post a reply</a></div>
+	
+	</div>
+
+	
+		<div class="pagination">
+			14 posts
+			 &bull; Page <strong>1</strong> of <strong>1</strong>
+		</div>
+	
+
+</div>
+<div class="clear"></div>
+
+
+	<div id="p2265291" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+
+                
+                        <div class="postprofile" id="profile2265291">
+			        <dt><a href="./memberlist.php?mode=viewprofile&amp;u=214132">Angelyco</a></dt>
+				
+                <dd>&nbsp;</dd>
+                <dd><strong>Posts:</strong> 6</dd><dd><strong>Joined:</strong> May 15th, 2006, 2:16 pm</dd>
+                </div>
+        
+
+
+		<div class="postbody">
+			
+
+			<p class="author">
+                          
+                            <a href="./viewtopic.php?p=2265291#p2265291"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>
+                          
+			  Posted May 15th, 2006, 2:20 pm</p>
+
+
+			
+
+			<div class="post_body" style="margin-left:137px">
+			<div class="content">Somehow my font got changed when I started up Firefox today and I can't get it back to normal, is there a way to reset the font to default, or at least what the default settings were?</div>
+
+			
+			</div>
+		
+
+		</div>
+
+<!-- old user info -->
+
+		<!--div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div-->
+                   
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p2265296" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+
+                
+                        <div class="postprofile" id="profile2265296">
+			        <dt><a href="./memberlist.php?mode=viewprofile&amp;u=152842">dickvl</a></dt>
+				
+                                        <dd><br><img src="./download/file.php?avatar=152842.jpg" width="64" height="56" alt="User avatar" /><br /></dd>
+                                
+                <dd>&nbsp;</dd>
+                <dd><strong>Posts:</strong> 51822</dd><dd><strong>Joined:</strong> July 18th, 2005, 3:25 am</dd>
+                </div>
+        
+
+
+		<div class="postbody">
+			
+
+			<p class="author">
+                          
+                            <a href="./viewtopic.php?p=2265296#p2265296"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>
+                          
+			  Posted May 15th, 2006, 2:26 pm</p>
+
+
+			
+
+			<div class="post_body" style="margin-left:137px">
+			<div class="content">See this: <!-- m --><a class="postlink" href="http://forums.mozillazine.org/viewtopic.php?p=2223995#2223995">http://forums.mozillazine.org/viewtopic ... 95#2223995</a><!-- m -->
+<br />You can also check the font settings in:
+<br />Type in the url bar: <span style="font-weight: bold">about&#058;config</span>
+<br />Filter: <span style="font-weight: bold">font</span>
+<br />If you see any settings bold then right-click and reset.</div>
+
+			
+			</div>
+		
+
+		</div>
+
+<!-- old user info -->
+
+		<!--div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div-->
+                   
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p2265345" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+
+                
+                        <div class="postprofile" id="profile2265345">
+			        <dt><a href="./memberlist.php?mode=viewprofile&amp;u=214132">Angelyco</a></dt>
+				
+                <dd>&nbsp;</dd>
+                <dd><strong>Posts:</strong> 6</dd><dd><strong>Joined:</strong> May 15th, 2006, 2:16 pm</dd>
+                </div>
+        
+
+
+		<div class="postbody">
+			
+
+			<p class="author">
+                          
+                            <a href="./viewtopic.php?p=2265345#p2265345"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>
+                          
+			  Posted May 15th, 2006, 2:56 pm</p>
+
+
+			
+
+			<div class="post_body" style="margin-left:137px">
+			<div class="content">Times New Roman seems to be the default, and that's what my font looks like, but that's not the font my Firefox always was.  I think it was the same as Internet Explorer's.  I set the options back to the screenshot in that thread and did the font config resets but it's still showing this font.  I don't know what changed or why, but it's driving me nuts <img src="./images/smilies/icon_sad.gif" alt=":(" title="Sad" /></div>
+
+			
+			</div>
+		
+
+		</div>
+
+<!-- old user info -->
+
+		<!--div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div-->
+                   
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p2265362" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+
+                
+                        <div class="postprofile" id="profile2265362">
+			        <dt><a href="./memberlist.php?mode=viewprofile&amp;u=152842">dickvl</a></dt>
+				
+                                        <dd><br><img src="./download/file.php?avatar=152842.jpg" width="64" height="56" alt="User avatar" /><br /></dd>
+                                
+                <dd>&nbsp;</dd>
+                <dd><strong>Posts:</strong> 51822</dd><dd><strong>Joined:</strong> July 18th, 2005, 3:25 am</dd>
+                </div>
+        
+
+
+		<div class="postbody">
+			
+
+			<p class="author">
+                          
+                            <a href="./viewtopic.php?p=2265362#p2265362"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>
+                          
+			  Posted May 15th, 2006, 3:07 pm</p>
+
+
+			
+
+			<div class="post_body" style="margin-left:137px">
+			<div class="content">What font do you see?
+<br />It could be that the default (arial) is damaged.
+<br />See: <!-- m --><a class="postlink" href="http://forums.mozillazine.org/viewtopic.php?t=326348">http://forums.mozillazine.org/viewtopic.php?t=326348</a><!-- m --></div>
+
+			
+			</div>
+		
+
+		</div>
+
+<!-- old user info -->
+
+		<!--div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div-->
+                   
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p2265608" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+
+                
+                        <div class="postprofile" id="profile2265608">
+			        <dt><a href="./memberlist.php?mode=viewprofile&amp;u=214132">Angelyco</a></dt>
+				
+                <dd>&nbsp;</dd>
+                <dd><strong>Posts:</strong> 6</dd><dd><strong>Joined:</strong> May 15th, 2006, 2:16 pm</dd>
+                </div>
+        
+
+
+		<div class="postbody">
+			
+
+			<p class="author">
+                          
+                            <a href="./viewtopic.php?p=2265608#p2265608"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>
+                          
+			  Posted May 15th, 2006, 5:49 pm</p>
+
+
+			
+
+			<div class="post_body" style="margin-left:137px">
+			<div class="content">I put the default font back to Arial but it's still showing Times, I checked the Arial file itself and it opens fine to view it so I'm not sure what's going on...</div>
+
+			
+			</div>
+		
+
+		</div>
+
+<!-- old user info -->
+
+		<!--div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div-->
+                   
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p2265701" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+
+                
+                        <div class="postprofile" id="profile2265701">
+			        <dt><strong>Guest</strong></dt>
+				<dd>Guest</dd>
+                <dd>&nbsp;</dd>
+                
+                </div>
+        
+
+
+		<div class="postbody">
+			
+
+			<p class="author">
+                          
+                            <a href="./viewtopic.php?p=2265701#p2265701"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>
+                          
+			  Posted May 15th, 2006, 7:03 pm</p>
+
+
+			
+
+			<div class="post_body" style="margin-left:137px">
+			<div class="content">Make sure that Sans-serif is selected for proportional in Tools &gt; Options &gt; Content &gt; Advanced.</div>
+
+			
+			</div>
+		
+
+		</div>
+
+<!-- old user info -->
+
+		<!--div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div-->
+                   
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p2265716" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+
+                
+                        <div class="postprofile" id="profile2265716">
+			        <dt><a href="./memberlist.php?mode=viewprofile&amp;u=214132">Angelyco</a></dt>
+				
+                <dd>&nbsp;</dd>
+                <dd><strong>Posts:</strong> 6</dd><dd><strong>Joined:</strong> May 15th, 2006, 2:16 pm</dd>
+                </div>
+        
+
+
+		<div class="postbody">
+			
+
+			<p class="author">
+                          
+                            <a href="./viewtopic.php?p=2265716#p2265716"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>
+                          
+			  Posted May 15th, 2006, 7:09 pm</p>
+
+
+			
+
+			<div class="post_body" style="margin-left:137px">
+			<div class="content">It was on Serif, I changed it back to Sans-serif but no appearance change...</div>
+
+			
+			</div>
+		
+
+		</div>
+
+<!-- old user info -->
+
+		<!--div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div-->
+                   
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p2265719" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+
+                
+                        <div class="postprofile" id="profile2265719">
+			        <dt><strong>Guest</strong></dt>
+				<dd>Guest</dd>
+                <dd>&nbsp;</dd>
+                
+                </div>
+        
+
+
+		<div class="postbody">
+			
+
+			<p class="author">
+                          
+                            <a href="./viewtopic.php?p=2265719#p2265719"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>
+                          
+			  Posted May 15th, 2006, 7:10 pm</p>
+
+
+			
+
+			<div class="post_body" style="margin-left:137px">
+			<div class="content">Is there a paticular page or pages you are having a problem with?</div>
+
+			
+			</div>
+		
+
+		</div>
+
+<!-- old user info -->
+
+		<!--div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div-->
+                   
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p2265771" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+
+                
+                        <div class="postprofile" id="profile2265771">
+			        <dt><a href="./memberlist.php?mode=viewprofile&amp;u=214132">Angelyco</a></dt>
+				
+                <dd>&nbsp;</dd>
+                <dd><strong>Posts:</strong> 6</dd><dd><strong>Joined:</strong> May 15th, 2006, 2:16 pm</dd>
+                </div>
+        
+
+
+		<div class="postbody">
+			
+
+			<p class="author">
+                          
+                            <a href="./viewtopic.php?p=2265771#p2265771"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>
+                          
+			  Posted May 15th, 2006, 7:54 pm</p>
+
+
+			
+
+			<div class="post_body" style="margin-left:137px">
+			<div class="content">The entire browser, even my menu bar and bookmarks along the top, and then of course all webpages.</div>
+
+			
+			</div>
+		
+
+		</div>
+
+<!-- old user info -->
+
+		<!--div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div-->
+                   
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p2265776" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+
+                
+                        <div class="postprofile" id="profile2265776">
+			        <dt><strong>Guest</strong></dt>
+				<dd>Guest</dd>
+                <dd>&nbsp;</dd>
+                
+                </div>
+        
+
+
+		<div class="postbody">
+			
+
+			<p class="author">
+                          
+                            <a href="./viewtopic.php?p=2265776#p2265776"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>
+                          
+			  Posted May 15th, 2006, 8:00 pm</p>
+
+
+			
+
+			<div class="post_body" style="margin-left:137px">
+			<div class="content">The font settings in Tools &gt; Options only affects web page fonts. The menus and other browser elements are controlled by your Windows theme.
+<br />Check the settings mentioned here:
+<br /><!-- m --><a class="postlink" href="http://kb.mozillazine.org/Website_colors_are_wrong">http://kb.mozillazine.org/Website_colors_are_wrong</a><!-- m -->
+<br />
+<br />Also check Tools &gt; Options &gt; Content &gt; Advanced. Make sure that &quot;Allow pages to choose their own fonts...&quot; is enabled.</div>
+
+			
+			</div>
+		
+
+		</div>
+
+<!-- old user info -->
+
+		<!--div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div-->
+                   
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p2265862" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+
+                
+                        <div class="postprofile" id="profile2265862">
+			        <dt><a href="./memberlist.php?mode=viewprofile&amp;u=214132">Angelyco</a></dt>
+				
+                <dd>&nbsp;</dd>
+                <dd><strong>Posts:</strong> 6</dd><dd><strong>Joined:</strong> May 15th, 2006, 2:16 pm</dd>
+                </div>
+        
+
+
+		<div class="postbody">
+			
+
+			<p class="author">
+                          
+                            <a href="./viewtopic.php?p=2265862#p2265862"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>
+                          
+			  Posted May 15th, 2006, 9:56 pm</p>
+
+
+			
+
+			<div class="post_body" style="margin-left:137px">
+			<div class="content">I checked any Windows settings I could but couldn't find anything for the fonts.  IE's fonts weren't changed so I don't know.  Gah I'm so frustrated!</div>
+
+			
+			</div>
+		
+
+		</div>
+
+<!-- old user info -->
+
+		<!--div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div-->
+                   
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p2265872" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+
+                
+                        <div class="postprofile" id="profile2265872">
+			        <dt><strong>Guest</strong></dt>
+				<dd>Guest</dd>
+                <dd>&nbsp;</dd>
+                
+                </div>
+        
+
+
+		<div class="postbody">
+			
+
+			<p class="author">
+                          
+                            <a href="./viewtopic.php?p=2265872#p2265872"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>
+                          
+			  Posted May 15th, 2006, 10:13 pm</p>
+
+
+			
+
+			<div class="post_body" style="margin-left:137px">
+			<div class="content">Did you check this setting:
+<br />Start Menu -&gt; Control Panel -&gt; Accessibility -&gt; Display -&gt; uncheck &quot;Use High Contrast&quot;
+<br />
+<br />If that is checked, uncheck it.</div>
+
+			
+			</div>
+		
+
+		</div>
+
+<!-- old user info -->
+
+		<!--div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div-->
+                   
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p2265873" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+
+                
+                        <div class="postprofile" id="profile2265873">
+			        <dt><strong>Guest</strong></dt>
+				<dd>Guest</dd>
+                <dd>&nbsp;</dd>
+                
+                </div>
+        
+
+
+		<div class="postbody">
+			
+
+			<p class="author">
+                          
+                            <a href="./viewtopic.php?p=2265873#p2265873"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>
+                          
+			  Posted May 15th, 2006, 10:15 pm</p>
+
+
+			
+
+			<div class="post_body" style="margin-left:137px">
+			<div class="content"><!-- m --><a class="postlink" href="http://kb.mozillazine.org/Standard_diagnostic_%28Firefox%29">http://kb.mozillazine.org/Standard_diag ... Firefox%29</a><!-- m -->
+<br />
+<br />Start with step 3.</div>
+
+			
+			</div>
+		
+
+		</div>
+
+<!-- old user info -->
+
+		<!--div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div-->
+                   
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p2266719" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+
+                
+                        <div class="postprofile" id="profile2266719">
+			        <dt><a href="./memberlist.php?mode=viewprofile&amp;u=152842">dickvl</a></dt>
+				
+                                        <dd><br><img src="./download/file.php?avatar=152842.jpg" width="64" height="56" alt="User avatar" /><br /></dd>
+                                
+                <dd>&nbsp;</dd>
+                <dd><strong>Posts:</strong> 51822</dd><dd><strong>Joined:</strong> July 18th, 2005, 3:25 am</dd>
+                </div>
+        
+
+
+		<div class="postbody">
+			
+
+			<p class="author">
+                          
+                            <a href="./viewtopic.php?p=2266719#p2266719"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>
+                          
+			  Posted May 16th, 2006, 9:58 am</p>
+
+
+			
+
+			<div class="post_body" style="margin-left:137px">
+			<div class="content">The default menu font is MS Shell Dlg
+<br />Check the font substitutes:
+<br /><span style="font-weight: bold">HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\FontSubstitutes</span>
+<br />
+<br />MS Shell Dlg: Microsoft Sans Serif</div>
+
+			
+			</div>
+		
+
+		</div>
+
+<!-- old user info -->
+
+		<!--div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div-->
+                   
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+
+<div class="topic-actions">
+        <div class="buttons nextprev">
+        	
+	</div>
+	
+		<div class="pagination">
+			14 posts
+			 &bull; Page <strong>1</strong> of <strong>1</strong>
+		</div>
+	
+</div>
+
+
+	<p></p><p><a href="./viewforum.php?f=38" class="left-box left" accesskey="r">Return to Firefox Support</a></p>
+
+	<form method="post" id="jumpbox" action="./viewforum.php" onsubmit="if(this.f.value == -1){return false;}">
+
+	
+		<fieldset class="jumpbox">
+	
+			<label for="f" accesskey="j">Jump to:</label>
+			<select name="f" id="f" onchange="if(this.options[this.selectedIndex].value != -1){ document.forms['jumpbox'].submit() }">
+			
+				<option value="-1">Select a forum</option>
+			<option value="-1">------------------</option>
+				<option value="49">Mozilla Firefox</option>
+			
+				<option value="38" selected="selected">&nbsp; &nbsp;Firefox Support</option>
+			
+				<option value="7">&nbsp; &nbsp;Firefox General</option>
+			
+				<option value="23">&nbsp; &nbsp;Firefox Builds</option>
+			
+				<option value="8">&nbsp; &nbsp;Firefox Features</option>
+			
+				<option value="9">&nbsp; &nbsp;Firefox Bugs</option>
+			
+				<option value="50">Mozilla Thunderbird</option>
+			
+				<option value="39">&nbsp; &nbsp;Thunderbird Support</option>
+			
+				<option value="28">&nbsp; &nbsp;Thunderbird General</option>
+			
+				<option value="29">&nbsp; &nbsp;Thunderbird Builds</option>
+			
+				<option value="30">&nbsp; &nbsp;Thunderbird Features</option>
+			
+				<option value="31">&nbsp; &nbsp;Thunderbird Bugs</option>
+			
+				<option value="51">SeaMonkey/Mozilla Suite</option>
+			
+				<option value="40">&nbsp; &nbsp;SeaMonkey Support</option>
+			
+				<option value="3">&nbsp; &nbsp;SeaMonkey General</option>
+			
+				<option value="6">&nbsp; &nbsp;SeaMonkey Builds</option>
+			
+				<option value="4">&nbsp; &nbsp;SeaMonkey Features</option>
+			
+				<option value="5">&nbsp; &nbsp;SeaMonkey Bugs</option>
+			
+				<option value="52">Other Mozilla Discussion</option>
+			
+				<option value="12">&nbsp; &nbsp;Camino</option>
+			
+				<option value="46">&nbsp; &nbsp;Calendar</option>
+			
+				<option value="47">&nbsp; &nbsp;Mobile</option>
+			
+				<option value="32">&nbsp; &nbsp;Miscellaneous Support</option>
+			
+				<option value="34">&nbsp; &nbsp;Other Applications and Distributions</option>
+			
+				<option value="53">Extensions and Themes</option>
+			
+				<option value="48">&nbsp; &nbsp;Extension/Theme Releases</option>
+			
+				<option value="19">&nbsp; &nbsp;Extension Development</option>
+			
+				<option value="18">&nbsp; &nbsp;Theme Development</option>
+			
+				<option value="54">Development</option>
+			
+				<option value="27">&nbsp; &nbsp;Mozilla Development</option>
+			
+				<option value="25">&nbsp; &nbsp;Web Development / Standards Evangelism</option>
+			
+				<option value="42">&nbsp; &nbsp;Third Party/Unofficial Builds</option>
+			
+				<option value="55">MozillaZine</option>
+			
+				<option value="11">&nbsp; &nbsp;MozillaZine Site Discussion</option>
+			
+				<option value="37">&nbsp; &nbsp;MozillaZine Tech</option>
+			
+			</select>
+			<input type="submit" value="Go" class="button2" />
+		</fieldset>
+	</form>
+
+
+
+        <div class="buttons">
+        
+                <div class="reply-icon"><a href="./posting.php?mode=reply&amp;f=38&amp;t=416892" title="Post a reply"><span></span>Post a reply</span></a></div>
+        
+        </div>
+
+
+
+<!--        <form id="viewtopic" method="post" action="./viewtopic.php?f=38&amp;t=416892">
+        <fieldset class="display-options" style="clear: all">
+	        
+                <label>Display posts from previous: <select name="st" id="st"><option value="0" selected="selected">All posts</option><option value="1">1 day</option><option value="7">7 days</option><option value="14">2 weeks</option><option value="30">1 month</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">1 year</option></select></label>
+                <label>Sort by <select name="sk" id="sk"><option value="a">Author</option><option value="t" selected="selected">Post time</option><option value="s">Subject</option></select></label> <label><select name="sd" id="sd"><option value="a" selected="selected">Ascending</option><option value="d">Descending</option></select> <input type="submit" name="sort" value="Go" class="button2" /></label>
+		
+        </fieldset>
+        </form>-->
+
+<br>
+
+	<h3 style="clear: all">Who is online</h3>
+	<p>Users browsing this forum: <span style="color: #9E8DA7;" class="username-coloured">Google [Bot]</span>, <a href="./memberlist.php?mode=viewprofile&amp;u=297225" style="color: #00AA00;" class="username-coloured">LIMPET235</a> and 10 guests</p>
+<div id="page-footer">
+
+	<div class="navbar">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<ul class="linklist">
+		        <li><strong><a class="icon-home" href="./index.php" accesskey="h">Board index</a>  &#8249; <a href="./viewforum.php?f=49">Mozilla Firefox</a>  &#8249; <a href="./viewforum.php?f=38">Firefox Support</a>  </strong></li>
+                                <!--  -->
+                       <li class="rightside">All times are UTC - 8 hours [ <abbr title="Daylight Saving Time">DST</abbr> ]</li>
+
+		</ul>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+	
+</div>
+
+        <div id="goobot">        <div class="inner"><span class="corners-top"><span></span></span>        <script type="text/javascript"><!--
+        google_ad_client = "pub-0651448570352947";
+        google_ad_width = 728;
+        google_ad_height = 90;
+        google_ad_format = "728x90_as";
+        google_ad_type = "text";
+        //2007-06-24: boards bottom
+        google_ad_channel = "9873579553";
+        google_color_border = "CADCEB";
+        google_color_bg = "CADCEB";        google_color_link = "536482";        google_color_text = "536482";
+        google_color_url = "536482";
+        //-->
+        </script>
+        <script type="text/javascript"
+          src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+          </script>
+        </div>
+        </div>
+</div>
+</div>
+
+<div>
+	<a id="bottom" name="bottom" accesskey="z"></a>
+	
+</div>
+
+  </td><td valign="top" id="sidebar" width="34">
+  <a href="http://www.mozillazine.org/"><img src="http://forums.mozillazine.org/static/common/images/navHeader.gif" width="175" height="36" alt="MozillaZine" /></a>
+  <div class="sidebar">
+    <span class="corners-top"><span></span></span>
+    <ul>
+      
+      <li><b><a href="./ucp.php?mode=login" title="Login" accesskey="x" class="icon-logout">Login</a></b></li>
+    
+    </ul>
+    <ul>
+      <li><a href="./faq.php" title="Frequently Asked Questions" class="icon-faq">FAQ</a> / <a href="http://forums.mozillazine.org/faq.php?mode=rules" title="Forum Rules">Rules</a></li>
+      <li><a href="./ucp.php?mode=register" class="icon-register">Register</a></li> 
+    </ul>
+
+    <span class="corners-bottom"><span></span></span>
+  </div>
+
+  <div class="sidebar searchBox">
+    <span class="corners-top"><span></span></span>
+    <b>Search</b><br />
+      Boards : 
+      <!--form action="./search.php" method="get" id="search">
+      <fieldset>
+        <input class="inputbox search itsy" name="keywords" type="text" />
+        <input class="button2 button4" value="Go" type="submit" /><br />
+        
+      </fieldset>
+      </form-->
+
+<form action="http://www.google.com/cse" id="cse-search-box" style="text-align: center">
+  <div>
+    <input type="hidden" name="cx" value="003258325049489668794:drr0nlojlas" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" size="31" class="inputbox search itsy" />
+    <input type="submit" name="sa" value="Go" class="button2 button4"/>
+  </div>
+</form>
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&lang=en"></script>
+
+    <br />
+
+    Knowledge Base:
+
+   <!-- Google CSE Search Box Begins -->
+    <!--form id="searchbox_003258325049489668794:ru2dpahviq8" action="http://google.com/cse">
+      <fieldset>
+        <input type="hidden" name="cx" value="003258325049489668794:ru2dpahviq8" />
+        <input class="inputbox search itsy" name="q" type="text" />
+        <input class="button2 button4" type="submit" name="sa" value="Go" />
+        <input type="hidden" name="cof" value="FORID:1" />
+      </fieldset>
+    </form-->
+    <!-- Google CSE Search Box Ends -->
+
+  <form action="http://www.google.com/cse" id="cse-search-box" style="text-align: center">
+    <div>
+      <input type="hidden" name="cx" value="003258325049489668794:ru2dpahviq8" />
+      <input type="hidden" name="ie" value="UTF-8" />
+      <input type="text" name="q" size="31" class="inputbox search itsy"/>
+      <input type="submit" name="sa" value="Go" class="button2 button4"/>
+    </div>
+  </form>
+  <script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&lang=en"></script>
+
+
+    <span class="corners-bottom"><span></span></span>
+  </div>
+
+  <div class="sidebar">
+    <span class="corners-top"><span></span></span>
+    <ul>
+      <li><a href="http://kb.mozillazine.org/">knowledge base</a></li>
+    </ul>
+    <ul>
+      <li><a href="http://www.mozillazine.org/chat/">chat</a></li>
+      <li><a href="http://www.mozillazine.org/about/">about</a></li>
+    </ul>
+    <ul class="translations">
+      <li><a href="http://mozillazine-fr.org/" hreflang="fr" title="MozillaZine in French">fr</a></li>
+      <li><a href="http://mozillazine.jp/" hreflang="ja" title="MozillaZine in Japanese">ja</a></li>
+      <li><a href="http://www.mozillaes.org/mozillazine/" hreflang="es" title="MozillaZine in Spanish">es</a></li>
+    </ul>
+    <span class="corners-bottom"><span></span></span>
+  </div>
+
+  <div class="sidebar">
+    <span class="corners-top"><span></span></span>
+    <div id="footer">
+      mozillaZine is an independent Mozilla community and advocacy site.  We're not affiliated or endorsed by the Mozilla Corporation but we love them just the same.<br><br>
+      Proudly Powered by <a href="http://www.phpbb.com/">phpBB</a><br /> &copy; phpBB Group<br /><br />
+      &copy; 1998-2015 mozillaZine<br /> All Rights Reserved
+      
+    </div>
+    <span class="corners-bottom"><span></span></span>
+  </div>
+  </td></tr></table>
+
+
+</body>
+</html>œçIJ‡·           X­j‡=wl.       :    :http://forums.mozillazine.org/viewtopic.php?f=38&t=416892 strongly-framed 1 request-method GET response-head HTTP/1.1 200 OK
+Server: Apache
+Cache-Control: private, no-cache="set-cookie"
+Expires: 0
+Pragma: no-cache
+Content-Type: text/html; charset=UTF-8
+Content-Length: 35055
+Date: Wed, 22 Feb 2017 10:40:07 GMT
+X-Varnish: 2244887597
+Age: 0
+Via: 1.1 varnish
+ original-response-headers Server: Apache
+Cache-Control: private, no-cache="set-cookie"
+Expires: 0
+Pragma: no-cache
+Content-Type: text/html; charset=UTF-8
+Content-Length: 35055
+Date: Wed, 22 Feb 2017 10:40:07 GMT
+X-Varnish: 2244887597
+Age: 0
+Via: 1.1 varnish
+Connection: keep-alive
+ charset UTF-8 uncompressed-len 0 predictor::resource-count 27 predictor::http://forums.mozillazine.org/styles/prosilver/template/styleswitcher.js 1,1,0,4096 predictor::http://forums.mozillazine.org/styles/prosilver/template/forum_fn.js 1,1,0,4096 predictor::http://forums.mozillazine.org/styles/prosilver/theme/print.css 1,1,0,4096 predictor::http://forums.mozillazine.org/static/forums/style/static_phpbb_style_php.css 1,1,0,4096 predictor::http://forums.mozillazine.org/styles/prosilver/theme/normal.css 1,1,0,4096 predictor::http://forums.mozillazine.org/static/forums/style/board.css?a 1,1,0,4096 predictor::http://pagead2.googlesyndication.com/pagead/show_ads.js 1,0,0,4096 predictor::http://www.google.com/coop/cse/brand?form=cse-search-box&lang=en 1,0,0,4096 predictor::http://forums.mozillazine.org/styles/prosilver/theme/medium.css 1,1,0,4096 predictor::http://www.google-analytics.com/ga.js 1,1,0,4096 predictor::http://forums.mozillazine.org/static/common/images/title2.gif 1,1,0,4096 predictor::http://forums.mozillazine.org/static/common/images/sky2.png 1,1,0,4096 predictor::http://forums.mozillazine.org/static/common/images/blimp.png 1,1,0,4096 predictor::http://forums.mozillazine.org/styles/prosilver/imageset/icon_post_target.gif 1,1,0,4096 predictor::http://forums.mozillazine.org/download/file.php?avatar=152842.jpg 1,1,0,4096 predictor::http://forums.mozillazine.org/images/smilies/icon_sad.gif 1,1,0,4096 predictor::http://forums.mozillazine.org/styles/prosilver/theme/images/corners_left.png 1,1,0,4096 predictor::http://forums.mozillazine.org/styles/prosilver/theme/images/corners_right.png 1,1,0,4096 predictor::http://forums.mozillazine.org/styles/prosilver/theme/images/icon_home.gif 1,1,0,4096 predictor::http://forums.mozillazine.org/styles/prosilver/theme/images/icon_fontsize.gif 1,1,0,4096 predictor::http://forums.mozillazine.org/styles/prosilver/imageset/en/button_topic_reply.gif 1,1,0,4096 predictor::http://forums.mozillazine.org/styles/prosilver/theme/images/arrow_left.gif 1,1,0,4096 predictor::http://forums.mozillazine.org/styles/prosilver/theme/images/bg_button.gif 1,1,0,4096 predictor::http://forums.mozillazine.org/styles/prosilver/theme/large.css 1,1,0,4096 predictor::http://forums.mozillazine.org/static/common/images/navHeader.gif 1,1,0,4096 predictor::https://www.google.com/cse/static/en/google_custom_search_watermark.gif 1,1,0,4096 predictor::http://forums.mozillazine.org/styles/prosilver/theme/images/icon_textbox_search.gif 1,1,0,4096   ˆï

@@ -1,1 +1,0 @@
-#FrstCksDiv, body > div:not([id]):not([class])[style*="background: #000000"] {display:none !important}

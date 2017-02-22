@@ -1,9 +1,0 @@
-{
-   "desc": {
-      "message": "Chromoji adds both Apple & Google style emoji symbols to Google Chrome for Windows, Linux, and Mac OS X."
-   },
-   "extName": {
-      "description": "Extension name.",
-      "message": "Chromoji - Emoji for Google Chrome"
-   }
-}

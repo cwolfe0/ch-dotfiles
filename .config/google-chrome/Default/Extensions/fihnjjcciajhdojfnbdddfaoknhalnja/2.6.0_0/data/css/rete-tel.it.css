@@ -1,1 +1,0 @@
-body > div .container + div:not([id]):not([class]) {display:none !important}

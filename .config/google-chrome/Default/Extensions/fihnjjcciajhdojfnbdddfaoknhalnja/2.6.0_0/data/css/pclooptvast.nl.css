@@ -1,1 +1,0 @@
-body > div[id]:not(#websitecontent):not([style]):not([class]) {display:none !important}

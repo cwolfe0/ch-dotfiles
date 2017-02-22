@@ -1,1 +1,0 @@
-body > div > div:not([id]):not([class])[style*="fixed"] {display:none !important}

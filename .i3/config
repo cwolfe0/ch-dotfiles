@@ -28,7 +28,7 @@ font pango:Fira Mono 8
 # Auto-lock on auto-login, not sure if this will work properly
 #
 
-exec ~/i3lock-fancy-multimonitor/./lock
+#exec ~/i3lock-fancy-multimonitor/./lock
 
 # use these keys for focus, movement, and resize directions when reaching for
 # the arrows is not convenient
@@ -38,6 +38,8 @@ set $left j
 set $right semicolon
 
 set $mod Mod4
+
+#exec xbindkeys
 
 # use Mouse+Mod1 to drag floating windows to their wanted position
 floating_modifier Mod1
@@ -186,11 +188,10 @@ bindsym Mod1+Shift+0 move container to workspace 10
 #
 # Take a screenshot upon pressing $mod+x (select an area)
 bindsym --release Mod1+x exec --no-startup-id import /tmp/latest-screenshot.png
-bindsym Mod4+l exec ~/i3lock-fancy-multimonitor/./lock
-workspace 4 output DVI-D-0
-exec --no-startup-id i3-msg 'workspace 4;exec steam'
-workspace 1 output DVI-D-0
-exec --no-startup-id i3-mst 'workspace 1;exec firefox'
+bindsym Mod4+l exec ~./i3lock-fancy-multimonitor/./lock
+exec --no-startup-id "i3-msg 'workspace 2;append_layout /home/cory/.i3/workspace-2.json; exec discord-ptb'"
+exec --no-startup-id "i3-msg 'workspace 1; append_layout /home/cory/.i3/workspace-1.json; exec firefox'"
+exec --no-startup-id "i3-msg 'workspace 3; append_layout /home/cory/.i3/workspace-3.json; exec urxvt;exec urxvt;exec urxvt'"
 # Multimedia Keys
 # increase volume
 bindsym XF86AudioRaiseVolume exec amixer -q set Master 5%+ unmute
@@ -202,24 +203,24 @@ bindsym XF86AudioMute exec amixer -q set Master mute
 bindsym XF86AudioPlay exec playerctl play-pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
-workspace 2 output DVI-I-0
-workspace 3 output DVI-I-0
+#workspace 2 output DVI-I-0
+#workspace 3 output DVI-I-0
 #exec --no-startup-id "i3-msg 'workspace 1; append_layout /home/cory/.i3/workspace-2.json'"
-exec --no-startup-id "i3-msg 'workspace 3; append_layout /home/cory/.i3/workspace-3.json'"
-exec --no-startup-id "i3-msg 'workspace 2; append_layout /home/cory/.i3/workspace-1.json'"
+#exec --no-startup-id "i3-msg 'workspace 3; append_layout /home/cory/.i3/workspace-3.json'"
+#exec --no-startup-id "i3-msg 'workspace 2; append_layout /home/cory/.i3/workspace-1.json'"
 exec wait 30
-exec --no-startup-id urxvt
-exec --no-startup-id urxvt
-exec --no-startup-id urxvt
-exec google-chrome-stable
-exec discord-canary
-exec redshift -l 34.730369:-86.586104
+#exec --no-startup-id urxvt
+#exec --no-startup-id urxvt
+#exec --no-startup-id urxvt
+#exec google-chrome-stable
+#exec discord-canary
+#exec redshift -l 34.730369:-86.586104
 bindsym Mod1+g exec "imgur-screenshot -o false"
 #workspace 1
 #workspace 2
 exec /home/cory/.fehbg
-exec mpdscribble
-exec compton --backend glx --vsync opengl
+#exec mpdscribble
+#exec compton --backend glx --vsync opengl
 smart_borders on
 smart_gaps on
 gaps inner 10

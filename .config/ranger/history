@@ -12,10 +12,10 @@ rename images
 rename 112f015Samplefinal.pdf
 rename xmage
 cp
-open_with 
 open_with unrar
 search mp4
 search 
 mpv --ao=alsa
 search thermo
+open_with 
 delete

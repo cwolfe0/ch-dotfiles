@@ -1,2 +1,0 @@
-
-var contextMenu = new ContextMenu();

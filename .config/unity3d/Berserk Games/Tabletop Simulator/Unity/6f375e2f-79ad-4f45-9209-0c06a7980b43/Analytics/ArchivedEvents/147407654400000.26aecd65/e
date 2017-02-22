@@ -1,5 +1,0 @@
-{"type":"custom","ts":1474076544223,"name":"unity.sceneLoad","custom_params":{"level_num":0,"total_levels":2,"level_name":"Loading"}}
-{"type":"custom","ts":1474076547009,"name":"Graphics","custom_params":{"Preset":"Custom","Resolution":"1920x1080","Fullscreen":true,"VSync":false,"Anisotropic":true,"MSAA":4,"FullTextures":true,"SSAO":true,"Shadows":"Ultra","CapFPS":false}}
-{"type":"appRunning","ts":1474076547070,"duration":9}
-{"type":"custom","ts":1474076547070,"name":"unity.sceneLoad","custom_params":{"level_num":1,"total_levels":2,"level_name":"Game"}}
-{"type":"custom","ts":1474076547608,"name":"Subscribed_Workshop","custom_params":{"Number":20}}
